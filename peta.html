@@ -661,24 +661,6 @@
             document.getElementById('custom-sidebar').style.display = 'block';
         }
 
-        map.on('locationfound', function (e) {
-            if (!navigationActive) return;
-
-            // Cari titik terdekat di path dari posisi GPS sekarang
-            let minDiv = Infinity;
-            let nearestIdx = 0;
-
-            currentPath.forEach((p, idx) => {
-                const d = map.distance(e.latlng, p);
-                if (d < minDiv) {
-                    minDiv = d;
-                    nearestIdx = idx;
-                }
-            });
-
-            updateNavigationUI(nearestIdx);
-        });
-
         function updateNavigationUI(stepIdx) {
             if (stepIdx >= navigationSteps.length) return;
             const step = navigationSteps[stepIdx];
@@ -834,6 +816,25 @@
 
         // Handle Location Found
         map.on('locationfound', function (e) {
+            // Navigation tracking logic
+            if (navigationActive) {
+                // Cari titik terdekat di path dari posisi GPS sekarang
+                let minDiv = Infinity;
+                let nearestIdx = 0;
+
+                currentPath.forEach((p, idx) => {
+                    const d = map.distance(e.latlng, p);
+                    if (d < minDiv) {
+                        minDiv = d;
+                        nearestIdx = idx;
+                    }
+                });
+
+                updateNavigationUI(nearestIdx);
+                return; // Skip normal GPS marker if navigating
+            }
+
+            // Normal GPS location display
             const radius = e.accuracy / 2;
             L.marker(e.latlng).addTo(map)
                 .bindPopup("Anda di sini (Akurasi " + radius + "m)").openPopup();
