@@ -1145,6 +1145,77 @@ const masjidilHaramLocations = [
             "type": "Point",
             "coordinates": [39.8286973, 21.4329754]
         }
+    },
+    // === GHAZA AREA AMENITIES ===
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق فجر البديع 6",
+            "name_en": "Al Fajar Al Badea 6 Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel di area Ghaza."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8345207, 21.439621]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق برج الوقار",
+            "name_en": "Burj Al Waqar Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel di area Ghaza."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8320395, 21.4367601]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "مطبق السندي",
+            "name_en": "Abdullah as-Sendi Restaurant",
+            "type": "Food",
+            "icon": "fa-utensils",
+            "description": "Restoran masakan lokal di Ghaza."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.831, 21.435]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "مطعم تكا",
+            "name_en": "Dhaka Restaurant",
+            "type": "Food",
+            "icon": "fa-utensils",
+            "description": "Restoran masakan Asia Selatan."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.832, 21.436]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "سوبر ماركت القرشي",
+            "name_en": "Al Qurashi Super Market",
+            "type": "Shopping",
+            "icon": "fa-shopping-cart",
+            "description": "Supermarket untuk kebutuhan sehari-hari."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.833, 21.437]
+        }
     }
 ];
 
