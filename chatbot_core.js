@@ -25,8 +25,8 @@ const AI_PROVIDERS = {
             "AIzaSyC2Kwu6gHkKdLLyWaCB73r70mY6WGuCjRw"
         ],
         currentKeyIndex: 0,
-        model: "gemini-2.0-flash-exp",
-        endpoint: (key) => `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${key}`
+        model: "gemini-2.0-flash",
+        endpoint: (key) => `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${key}`
     },
     groq: {
         name: "Groq (Lightning)",
