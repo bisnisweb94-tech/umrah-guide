@@ -280,7 +280,7 @@ const generateResponseGPT4o = (chatElement) => {
             if (error.message.includes("rate limit") || error.message.includes("429")) {
                 showLimitNotification("gpt4o", "GPT-4o mencapai rate limit. Beralih ke Claude...");
             } else {
-                showLimitNotification("gpt4o", `GPT-4o error: ${error.message}. Beralih ke Claude...");
+                showLimitNotification("gpt4o", "GPT-4o error: " + error.message + ". Beralih ke Claude...");
             }
 
             currentProvider = "claude";
