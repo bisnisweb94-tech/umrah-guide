@@ -22,8 +22,8 @@ const createChatLi = (message, className) => {
 }
 
 const generateResponse = (chatElement) => {
-    // API_URL updated to use gemini-2.0-flash as requested
-    const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
+    // Switching to 1.5-flash because 2.0-flash has limit 0 on this key
+    const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
     const messageElement = chatElement.querySelector("p");
 
     // Define the properties and message for the API request
