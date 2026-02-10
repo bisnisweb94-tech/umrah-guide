@@ -22,8 +22,8 @@ const createChatLi = (message, className) => {
 }
 
 const generateResponse = (chatElement) => {
-    // Switching to gemini-pro-latest which is confirmed available on this key
-    const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro-latest:generateContent?key=${API_KEY}`;
+    // Switching to gemini-3-flash-preview as requested (latest preview)
+    const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${API_KEY}`;
     const messageElement = chatElement.querySelector("p");
 
     // Define the properties and message for the API request
