@@ -9,7 +9,7 @@ const inputInitHeight = chatInput.scrollHeight;
 
 // IMPORTANT: Masukkan API Key Google Gemini Anda di sini agar Chatbot berfungsi.
 // Dapatkan API Key Gratis di: https://aistudio.google.com/app/apikey
-const API_KEY = "AIzaSyC2Kwu6gHkKdLLyWaCB73r70mY6WGuCjRw";
+const API_KEY = "AIzaSyCSn38z15_DaQxJCWGZ4sjYTHcpg4U0bkg";
 
 const createChatLi = (message, className) => {
     // Create a chat <li> element with passed message and className
@@ -22,8 +22,8 @@ const createChatLi = (message, className) => {
 }
 
 const generateResponse = (chatElement) => {
-    // API_URL updated to use gemini-1.5-flash for better quota limits
-    const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+    // API_URL updated to use gemini-2.0-flash as requested
+    const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
     const messageElement = chatElement.querySelector("p");
 
     // Define the properties and message for the API request
