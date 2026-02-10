@@ -882,143 +882,270 @@ const masjidilHaramLocations = [
             ]
         }
     }
-,
-{
-    "type": "Feature",
-    "properties": {
-        "name": "Dar Al Ghufran - Al Safwah Towers Hotel",
-        "name_en": "Dar Al Ghufran",
-        "type": "Hotel",
-        "icon": "fa-hotel",
-        "description": "Hotel di dekat Haram."
+    ,
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Dar Al Ghufran - Al Safwah Towers Hotel",
+            "name_en": "Dar Al Ghufran",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel di dekat Haram."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8265113,
+                21.4193627
+            ]
+        }
     },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [
-            39.8265113,
-            21.4193627
-        ]
-    }
-},
-{
-    "type": "Feature",
-    "properties": {
-        "name": "Al Marwa Rayhaan by Rotana",
-        "name_en": "Al Marwa Rayhaan",
-        "type": "Hotel",
-        "icon": "fa-hotel",
-        "description": "Hotel mewah dengan akses langsung ke Masjidil Haram."
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Al Marwa Rayhaan by Rotana",
+            "name_en": "Al Marwa Rayhaan",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel mewah dengan akses langsung ke Masjidil Haram."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8260952,
+                21.4191648
+            ]
+        }
     },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [
-            39.8260952,
-            21.4191648
-        ]
-    }
-},
-{
-    "type": "Feature",
-    "properties": {
-        "name": "Raffles Makkah Palace",
-        "name_en": "Raffles Makkah Palace",
-        "type": "Hotel",
-        "icon": "fa-hotel",
-        "description": "Hotel mewah dekat Haram."
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Raffles Makkah Palace",
+            "name_en": "Raffles Makkah Palace",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel mewah dekat Haram."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8249791,
+                21.4192239
+            ]
+        }
     },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [
-            39.8249791,
-            21.4192239
-        ]
-    }
-},
-{
-    "type": "Feature",
-    "properties": {
-        "name": "Dar Al Eiman Royal Hotel",
-        "name_en": "Dar Al Eiman Royal",
-        "type": "Hotel",
-        "icon": "fa-hotel",
-        "description": "Hotel dekat Haram."
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Dar Al Eiman Royal Hotel",
+            "name_en": "Dar Al Eiman Royal",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel dekat Haram."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.826808,
+                21.418874
+            ]
+        }
     },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [
-            39.826808,
-            21.418874
-        ]
-    }
-},
-{
-    "type": "Feature",
-    "properties": {
-        "name": "Swissôtel Makkah",
-        "name_en": "Swissôtel Makkah",
-        "type": "Hotel",
-        "icon": "fa-hotel",
-        "description": "Hotel dengan pemandangan Ka'bah."
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Swissôtel Makkah",
+            "name_en": "Swissôtel Makkah",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel dengan pemandangan Ka'bah."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8268075,
+                21.41838
+            ]
+        }
     },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [
-            39.8268075,
-            21.41838
-        ]
-    }
-},
-{
-    "type": "Feature",
-    "properties": {
-        "name": "Mövenpick Hotel & Residence Hajar Tower Makkah",
-        "name_en": "Mövenpick Hajar Tower",
-        "type": "Hotel",
-        "icon": "fa-hotel",
-        "description": "Hotel di menara jam."
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Mövenpick Hotel & Residence Hajar Tower Makkah",
+            "name_en": "Mövenpick Hajar Tower",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel di menara jam."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8262712,
+                21.4183039
+            ]
+        }
     },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [
-            39.8262712,
-            21.4183039
-        ]
-    }
-},
-{
-    "type": "Feature",
-    "properties": {
-        "name": "pulman zamzam",
-        "name_en": "Pullman ZamZam Makkah",
-        "type": "Hotel",
-        "icon": "fa-hotel",
-        "description": "Hotel ikonik di kompleks Abraj Al Bait."
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "pulman zamzam",
+            "name_en": "Pullman ZamZam Makkah",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel ikonik di kompleks Abraj Al Bait."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8249601,
+                21.4183327
+            ]
+        }
     },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [
-            39.8249601,
-            21.4183327
-        ]
-    }
-},
-{
-    "type": "Feature",
-    "properties": {
-        "name": "Fairmont Makkah Clock Royal Tower",
-        "name_en": "Fairmont Makkah",
-        "type": "Hotel",
-        "icon": "fa-hotel",
-        "description": "Hotel di menara jam utama."
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Fairmont Makkah Clock Royal Tower",
+            "name_en": "Fairmont Makkah",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel di menara jam utama."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.825302,
+                21.4180383
+            ]
+        }
     },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [
-            39.825302,
-            21.4180383
-        ]
+    // === HOTEL AREA GAZA (AL MASJID AL HARAM RD) ===
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق جراند مكة",
+            "name_en": "Grand Makkah Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel premium di area Al Gaza dengan akses mudah ke Masjidil Haram."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.829307, 21.432387]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق تيرا الغزة",
+            "name_en": "Tera Al Gaza Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel di area Al Gaza, dekat dengan terminal bus Gazza."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.832904, 21.431108]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق منارات الغزة",
+            "name_en": "Manarat Al-Ghazza Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel di distrik Gaza, sekitar 1 km dari Al Haram."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.83021, 21.43125]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق صرح المنامة",
+            "name_en": "Sarh Almanama Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel di Jalan Al Masjid Al Haram, area Gaza."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8307341, 21.4348696]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق سجى الغزة",
+            "name_en": "Al Ghazza Saja Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel Saja di area Al Gaza, dekat dengan Gerbang Marwah."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.82955, 21.43052]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "أبراج معاد",
+            "name_en": "Abraj Maad",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Kompleks perhotelan Abraj Maad di area timur laut Masjidil Haram."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8326416, 21.4215643]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق بكر حسن حبحb",
+            "name_en": "Bakr Hasan Habhab Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel melati di area Gaza/Ajyad."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8323489, 21.4203015]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق أرائك الغزة",
+            "name_en": "Araek Al Ghaza Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel yang berlokasi strategis di area Gaza, dekat dengan terminal bus."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.83152, 21.43351]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق شذى الوسام",
+            "name_en": "Shaza Al Wissam Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel Shaza Al Wissam di area Al Gaza / Al Sulaymaniyyah."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8286973, 21.4329754]
+        }
     }
-}
 ];
 
 // Helper functions (Tetap sama)

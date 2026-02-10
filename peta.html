@@ -487,6 +487,9 @@
         L.control.gps = function (opts) { return new L.Control.Gps(opts); }
         L.control.gps({ position: 'bottomright' }).addTo(map);
 
+        // Auto-locate GPS on Load (User Request: "langsung ditanya allow GPS")
+        map.locate({ setView: true, maxZoom: 18 });
+
         // Handle Location Found
         map.on('locationfound', function (e) {
             const radius = e.accuracy / 2;
@@ -716,6 +719,10 @@
         // --- Interaction Logic ---
         let routeLayer = null;
         let pickingMode = null; // 'start' or 'end'
+        let startMarker = null;
+        let endMarker = null;
+        let startPoint = null;
+        let endPoint = null;
 
         function setPickMode(mode) {
             pickingMode = mode;

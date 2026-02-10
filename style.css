@@ -653,6 +653,11 @@ body {
     .ritual-card {
         padding: 1.25rem;
     }
+
+    .nav-item {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.75rem;
+    }
 }
 
 /* Premium Visual Info Enhancements */

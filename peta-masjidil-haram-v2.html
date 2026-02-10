@@ -230,7 +230,7 @@
 
         L.imageOverlay(imageUrl, imageBounds, {
             opacity: 0.4,
-            interactive: true
+            interactive: false
         }).addTo(map);
 
         // --- 4. Sidebar Setup ---
@@ -249,6 +249,7 @@
             'Landmark': '#e74c3c',       // Red
             'Medical': '#e67e22',        // Orange
             'Library': '#9b59b6',        // Purple
+            'Hotel': '#8e44ad',          // Purple
             'Support': '#95a5a6'         // Grey
         };
 
@@ -279,7 +280,7 @@
             });
 
             // Render by category
-            const typeOrder = ['Holy Site', 'Main Gate', 'Gate', 'Landmark', 'Medical', 'Library', 'Support'];
+            const typeOrder = ['Holy Site', 'Main Gate', 'Gate', 'Landmark', 'Medical', 'Hotel', 'Library', 'Support'];
             typeOrder.forEach(type => {
                 if (!grouped[type]) return;
 
