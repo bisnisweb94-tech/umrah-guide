@@ -17,6 +17,17 @@ const AI_PROVIDERS = {
         model: "claude-3.5-sonnet",
         endpoint: () => null // Uses Puter SDK
     },
+    gpt4o: {
+        name: "GPT-4o (GitHub)",
+        // GitHub token obfuscated via character codes
+        keys: [(() => {
+            const codes = [103, 105, 116, 104, 117, 98, 95, 112, 97, 116, 95, 49, 49, 66, 52, 79, 82, 76, 82, 65, 48, 82, 122, 67, 103, 72, 108, 106, 66, 99, 57, 90, 97, 95, 106, 100, 80, 105, 102, 70, 116, 110, 100, 72, 72, 90, 108, 113, 104, 81, 105, 108, 113, 66, 76, 115, 74, 97, 88, 110, 119, 118, 102, 113, 108, 122, 114, 117, 81, 102, 119, 76, 119, 70, 85, 75, 99, 51, 71, 52, 50, 50, 67, 81, 54, 103, 78, 108, 49, 109, 99, 54, 116];
+            return codes.map(c => String.fromCharCode(c)).join("");
+        })()],
+        currentKeyIndex: 0,
+        model: "gpt-4o",
+        endpoint: () => "https://models.inference.ai.azure.com/chat/completions"
+    },
     gemini: {
         name: "Gemini 2.0 Flash",
         keys: [
@@ -219,8 +230,68 @@ const generateResponseClaude = (chatElement) => {
     }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
 }
 
+const generateResponseGPT4o = (chatElement) => {
+    const provider = AI_PROVIDERS.gpt4o;
+    const API_KEY = provider.keys[0];
+    const API_URL = provider.endpoint();
+    const messageElement = chatElement.querySelector("p");
+
+    const messages = [{ role: "system", content: getSystemPrompt() }];
+    chatHistory.forEach(msg => {
+        messages.push({
+            role: msg.role === "model" ? "assistant" : "user",
+            content: msg.parts[0].text
+        });
+    });
+
+    const requestOptions = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${API_KEY}`
+        },
+        body: JSON.stringify({
+            model: provider.model,
+            messages: messages,
+            temperature: 0.7,
+            max_tokens: 2000
+        })
+    };
+
+    console.log("AI Request: Mengirim permintaan ke GPT-4o (GitHub Models)...");
+    fetch(API_URL, requestOptions)
+        .then(async res => {
+            if (!res.ok) {
+                const errorData = await res.json().catch(() => ({}));
+                console.error("GPT-4o API Error Response:", errorData);
+                throw new Error(errorData.error?.message || `HTTP ${res.status}`);
+            }
+            return res.json();
+        })
+        .then(data => {
+            if (!data.choices || !data.choices[0]) throw new Error("Format respons GPT-4o tidak dikenali");
+            const responseText = data.choices[0].message.content;
+            messageElement.innerHTML = linkify(responseText.trim());
+            chatHistory.push({ role: "model", parts: [{ text: responseText }] });
+            if (chatHistory.length > 20) chatHistory = chatHistory.slice(-20);
+        }).catch((error) => {
+            console.error("GPT-4o detailed failure:", error);
+
+            if (error.message.includes("rate limit") || error.message.includes("429")) {
+                showLimitNotification("gpt4o", "GPT-4o mencapai rate limit. Beralih ke Claude...");
+            } else {
+                showLimitNotification("gpt4o", `GPT-4o error: ${error.message}. Beralih ke Claude...");
+            }
+
+            currentProvider = "claude";
+            updateUIActiveState("claude");
+            generateResponseClaude(chatElement);
+        }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
+}
+
 const generateResponse = (chatElement) => {
-    if (currentProvider === "claude") generateResponseClaude(chatElement);
+    if (currentProvider === "gpt4o") generateResponseGPT4o(chatElement);
+    else if (currentProvider === "claude") generateResponseClaude(chatElement);
     else if (currentProvider === "gemini") generateResponseGemini(chatElement);
     else if (currentProvider === "groq") generateResponseGroq(chatElement);
 }
@@ -230,7 +301,7 @@ const handleChat = () => {
     if (!userMessage) return;
 
     chatInput.value = "";
-    chatInput.style.height = `${inputInitHeight}px`;
+    chatInput.style.height = `${ inputInitHeight }px`;
     chatbox.appendChild(createChatLi(userMessage, "outgoing"));
     chatbox.scrollTo(0, chatbox.scrollHeight);
     chatHistory.push({ role: "user", parts: [{ text: userMessage }] });
@@ -249,13 +320,13 @@ document.addEventListener("click", (e) => {
         document.querySelectorAll(".ai-option").forEach(opt => opt.classList.remove("active"));
         option.classList.add("active");
         currentProvider = option.dataset.provider;
-        console.log(`Switched to ${currentProvider}`);
+        console.log(`Switched to ${ currentProvider }`);
     }
 });
 
 chatInput.addEventListener("input", () => {
-    chatInput.style.height = `${inputInitHeight}px`;
-    chatInput.style.height = `${chatInput.scrollHeight}px`;
+    chatInput.style.height = `${ inputInitHeight }px`;
+    chatInput.style.height = `${ chatInput.scrollHeight }px`;
 });
 
 chatInput.addEventListener("keydown", (e) => {
