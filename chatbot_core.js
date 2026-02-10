@@ -90,27 +90,53 @@ const updateUIActiveState = (provider) => {
     });
 }
 
-const getSystemPrompt = () => `Kamu adalah IslamAI, asisten Islami yang hangat, empati, dan bijaksana. Berlakulah seperti seorang pembimbing ibadah yang ramah dan menyejukkan hati. 
+const getSystemPrompt = (retrievedContext = null) => {
+    const basePrompt = `Kamu adalah IslamAI, asisten Islami yang hangat, empati, dan bijaksana. Berlakulah seperti seorang pembimbing ibadah yang ramah dan menyejukkan hati.`;
 
-ATURAN PENTING & MUTLAK DALAM MENJAWAB:
-1.  **SUMBER TUNGGAL**: WAJIB dan HANYA gunakan rujukan dari https://islamqa.info/ (Syeikh Muhammad Shalih Al-Munajjid). Jangan gunakan sumber lain.
-2.  **PRIORITAS BAHASA ARAB**: Untuk menjamin keakuratan maksimal, ambillah referensi materi dari situs islamqa.info versi BAHASA ARAB (karena paling lengkap dan mendalam), namun sampaikan jawaban akhir ke pengguna dalam BAHASA INDONESIA yang santun.
-3.  **KEJUJURAN (NO HALLUCINATION)**: Jika informasi atau fatwa spesifik tidak ditemukan di islamqa.info, KATAKAN SEJUJURNYA bahwa Anda tidak menemukannya. DILARANG KERAS mengarang jawaban, mengarang nomor fatwa, atau memberikan informasi tanpa dasar. Lebih baik mengatakan "Saya tidak menemukan informasi spesifik mengenai hal ini di IslamQA" daripada mengada-ada.
-4.  **GREETING & DO'A**: Berikan salam dan doa pembuka hanya pada pesan pertama. Untuk kelanjutan chat, langsung ke inti jawaban agar percakapan mengalir.
-5.  **DALIL & REFERENSI**: Sertakan teks Arab asli untuk dalil, nomor fatwa yang akurat, dan link URL lengkap ke islamqa.info.
-6.  **PENUTUP**: Selalu tutup dengan doa yang baik dan santun.`;
+    if (retrievedContext) {
+        // RAG-enhanced prompt with strict source adherence
+        return `${basePrompt}
 
-const generateResponseGemini = (chatElement, retryCount = 0) => {
+=== KONTEKS DARI ISLAMQA.INFO ===
+${retrievedContext}
+=== AKHIR KONTEKS ===
+
+ATURAN PENTING & MUTLAK:
+1. **SUMBER WAJIB**: Jawab HANYA berdasarkan konteks di atas. DILARANG menambah informasi dari luar konteks.
+2. **NO HALLUCINATION**: Jika konteks tidak cukup untuk menjawab, katakan sejujurnya: "Saya tidak menemukan informasi lengkap mengenai hal ini di database IslamQA saya. Silakan kunjungi islamqa.info untuk informasi lebih detail."
+3. **CITE SOURCES**: WAJIB cantumkan nomor fatwa dan URL dari konteks.
+4. **DALIL**: Jika ada dalil di konteks, sertakan teks Arab asli.
+5. **GREETING**: Salam hanya di pesan pertama.
+6. **PENUTUP**: Tutup dengan doa yang baik.`;
+    } else {
+        // Fallback prompt (when no context found)
+        return `${basePrompt}
+
+ATURAN PENTING & MUTLAK:
+1. **SUMBER TUNGGAL**: WAJIB dan HANYA gunakan rujukan dari https://islamqa.info/ (Syeikh Muhammad Shalih Al-Munajjid). Jangan gunakan sumber lain.
+2. **PRIORITAS BAHASA ARAB**: Untuk menjamin keakuratan maksimal, ambillah referensi materi dari situs islamqa.info versi BAHASA ARAB (karena paling lengkap dan mendalam), namun sampaikan jawaban akhir ke pengguna dalam BAHASA INDONESIA yang santun.
+3. **KEJUJURAN (NO HALLUCINATION)**: Jika informasi atau fatwa spesifik tidak ditemukan di islamqa.info, KATAKAN SEJUJURNYA bahwa Anda tidak menemukannya. DILARANG KERAS mengarang jawaban, mengarang nomor fatwa, atau memberikan informasi tanpa dasar. Lebih baik mengatakan "Saya tidak menemukan informasi spesifik mengenai hal ini di IslamQA" daripada mengada-ada.
+4. **GREETING & DO'A**: Berikan salam dan doa pembuka hanya pada pesan pertama. Untuk kelanjutan chat, langsung ke inti jawaban agar percakapan mengalir.
+5. **DALIL & REFERENSI**: Sertakan teks Arab asli untuk dalil, nomor fatwa yang akurat, dan link URL lengkap ke islamqa.info.
+6. **PENUTUP**: Selalu tutup dengan doa yang baik dan santun.`;
+    }
+};
+
+const generateResponseGemini = async (chatElement, retryCount = 0) => {
     const provider = AI_PROVIDERS.gemini;
     const API_KEY = provider.keys[provider.currentKeyIndex];
     const API_URL = provider.endpoint(API_KEY);
     const messageElement = chatElement.querySelector("p");
 
+    // RAG: Get context from knowledge base
+    const userQuery = chatHistory[chatHistory.length - 1].parts[0].text;
+    const retrievedContext = await islamQARetriever.getContext(userQuery, 3);
+
     const requestOptions = {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-            system_instruction: { parts: [{ text: getSystemPrompt() }] },
+            system_instruction: { parts: [{ text: getSystemPrompt(retrievedContext) }] },
             contents: chatHistory
         })
     }
@@ -142,13 +168,17 @@ const generateResponseGemini = (chatElement, retryCount = 0) => {
         }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
 }
 
-const generateResponseGroq = (chatElement) => {
+const generateResponseGroq = async (chatElement) => {
     const provider = AI_PROVIDERS.groq;
     const API_KEY = provider.keys[0];
     const API_URL = provider.endpoint();
     const messageElement = chatElement.querySelector("p");
 
-    const messages = [{ role: "system", content: getSystemPrompt() }];
+    // RAG: Get context from knowledge base
+    const userQuery = chatHistory[chatHistory.length - 1].parts[0].text;
+    const retrievedContext = await islamQARetriever.getContext(userQuery, 3);
+
+    const messages = [{ role: "system", content: getSystemPrompt(retrievedContext) }];
     chatHistory.forEach(msg => {
         messages.push({
             role: msg.role === "model" ? "assistant" : "user",
@@ -202,10 +232,14 @@ const generateResponseGroq = (chatElement) => {
         }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
 }
 
-const generateResponseClaude = (chatElement) => {
+const generateResponseClaude = async (chatElement) => {
     const messageElement = chatElement.querySelector("p");
 
-    const messages = [{ role: "system", content: getSystemPrompt() }];
+    // RAG: Get context from knowledge base
+    const userQuery = chatHistory[chatHistory.length - 1].parts[0].text;
+    const retrievedContext = await islamQARetriever.getContext(userQuery, 3);
+
+    const messages = [{ role: "system", content: getSystemPrompt(retrievedContext) }];
     chatHistory.forEach(msg => {
         messages.push({
             role: msg.role === "model" ? "assistant" : "user",
@@ -230,13 +264,17 @@ const generateResponseClaude = (chatElement) => {
     }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
 }
 
-const generateResponseGPT4o = (chatElement) => {
+const generateResponseGPT4o = async (chatElement) => {
     const provider = AI_PROVIDERS.gpt4o;
     const API_KEY = provider.keys[0];
     const API_URL = provider.endpoint();
     const messageElement = chatElement.querySelector("p");
 
-    const messages = [{ role: "system", content: getSystemPrompt() }];
+    // RAG: Get context from knowledge base
+    const userQuery = chatHistory[chatHistory.length - 1].parts[0].text;
+    const retrievedContext = await islamQARetriever.getContext(userQuery, 3);
+
+    const messages = [{ role: "system", content: getSystemPrompt(retrievedContext) }];
     chatHistory.forEach(msg => {
         messages.push({
             role: msg.role === "model" ? "assistant" : "user",
@@ -301,7 +339,7 @@ const handleChat = () => {
     if (!userMessage) return;
 
     chatInput.value = "";
-    chatInput.style.height = `${ inputInitHeight }px`;
+    chatInput.style.height = `${inputInitHeight}px`;
     chatbox.appendChild(createChatLi(userMessage, "outgoing"));
     chatbox.scrollTo(0, chatbox.scrollHeight);
     chatHistory.push({ role: "user", parts: [{ text: userMessage }] });
@@ -320,13 +358,13 @@ document.addEventListener("click", (e) => {
         document.querySelectorAll(".ai-option").forEach(opt => opt.classList.remove("active"));
         option.classList.add("active");
         currentProvider = option.dataset.provider;
-        console.log(`Switched to ${ currentProvider }`);
+        console.log(`Switched to ${currentProvider}`);
     }
 });
 
 chatInput.addEventListener("input", () => {
-    chatInput.style.height = `${ inputInitHeight }px`;
-    chatInput.style.height = `${ chatInput.scrollHeight }px`;
+    chatInput.style.height = `${inputInitHeight}px`;
+    chatInput.style.height = `${chatInput.scrollHeight}px`;
 });
 
 chatInput.addEventListener("keydown", (e) => {

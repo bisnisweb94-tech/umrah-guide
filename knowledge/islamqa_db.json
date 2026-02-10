@@ -1,0 +1,200 @@
+{
+    "metadata": {
+        "version": "1.0",
+        "source": "islamqa.info (Arabic)",
+        "last_updated": "2026-02-11",
+        "total_fatwas": 50,
+        "categories": [
+            "Umrah",
+            "Hajj",
+            "Shalat",
+            "Puasa",
+            "Zakat"
+        ]
+    },
+    "fatwas": [
+        {
+            "id": "31819",
+            "title": "شروط الحج والعمرة",
+            "title_id": "Syarat-syarat Haji dan Umrah",
+            "category": "Umrah",
+            "question": "ما هي شروط الحج والعمرة؟",
+            "question_id": "Apa saja syarat haji dan umrah?",
+            "answer": "شروط الحج والعمرة خمسة: الإسلام، والعقل، والبلوغ، والحرية، والاستطاعة. والاستطاعة تشمل: القدرة البدنية والمالية، وأمن الطريق، وإمكان السفر للمرأة مع محرم.",
+            "answer_id": "Syarat haji dan umrah ada lima: Islam, berakal, baligh, merdeka, dan mampu. Kemampuan mencakup: kemampuan fisik dan finansial, keamanan jalan, dan bagi wanita harus bersama mahram.",
+            "url": "https://islamqa.info/ar/answers/31819",
+            "keywords": [
+                "syarat",
+                "umrah",
+                "haji",
+                "rukun",
+                "wajib"
+            ]
+        },
+        {
+            "id": "109280",
+            "title": "أركان العمرة",
+            "title_id": "Rukun-rukun Umrah",
+            "category": "Umrah",
+            "question": "ما هي أركان العمرة؟",
+            "question_id": "Apa saja rukun umrah?",
+            "answer": "أركان العمرة ثلاثة: الإحرام، والطواف بالبيت، والسعي بين الصفا والمروة. ومن ترك ركناً من هذه الأركان لم تصح عمرته.",
+            "answer_id": "Rukun umrah ada tiga: ihram, tawaf di Ka'bah, dan sa'i antara Safa dan Marwah. Barangsiapa meninggalkan salah satu rukun ini, maka umrahnya tidak sah.",
+            "url": "https://islamqa.info/ar/answers/109280",
+            "keywords": [
+                "rukun",
+                "umrah",
+                "ihram",
+                "tawaf",
+                "sai"
+            ]
+        },
+        {
+            "id": "146571",
+            "title": "واجبات العمرة",
+            "title_id": "Wajib-wajib Umrah",
+            "category": "Umrah",
+            "question": "ما هي واجبات العمرة؟",
+            "question_id": "Apa saja wajib umrah?",
+            "answer": "واجبات العمرة اثنان: الإحرام من الميقات، والحلق أو التقصير. ومن ترك واجباً فعليه دم (ذبح شاة).",
+            "answer_id": "Wajib umrah ada dua: ihram dari miqat, dan mencukur atau memotong rambut. Barangsiapa meninggalkan wajib maka wajib dam (menyembelih kambing).",
+            "url": "https://islamqa.info/ar/answers/146571",
+            "keywords": [
+                "wajib",
+                "umrah",
+                "miqat",
+                "ihram",
+                "cukur",
+                "dam"
+            ]
+        },
+        {
+            "id": "109283",
+            "title": "كيفية أداء العمرة",
+            "title_id": "Tata Cara Pelaksanaan Umrah",
+            "category": "Umrah",
+            "question": "كيف أؤدي العمرة؟",
+            "question_id": "Bagaimana cara melaksanakan umrah?",
+            "answer": "إذا وصل المعتمر إلى الميقات يستحب له أن يغتسل ويتطيب، ثم يحرم بالعمرة قائلاً: لبيك عمرة. ثم يلبي قائلاً: لبيك اللهم لبيك، لبيك لا شريك لك لبيك، إن الحمد والنعمة لك والملك، لا شريك لك. ثم إذا وصل مكة يطوف بالبيت سبعة أشواط، ثم يصلي ركعتين خلف المقام، ثم يسعى بين الصفا والمروة سبعة أشواط، ثم يحلق أو يقصر.",
+            "answer_id": "Jika orang yang berumrah sampai di miqat, disunnahkan mandi dan memakai wewangian, lalu berniat ihram umrah dengan mengucapkan: Labbaika umratan. Kemudian bertalbiyah: Labbaikallahumma labbaik, labbaika laa syariika laka labbaik, innal hamda wan ni'mata laka wal mulk, laa syariika lak. Kemudian jika sampai di Makkah, tawaf di Ka'bah tujuh putaran, lalu shalat dua rakaat di belakang Maqam Ibrahim, kemudian sa'i antara Safa dan Marwah tujuh putaran, lalu mencukur atau memotong rambut.",
+            "url": "https://islamqa.info/ar/answers/109283",
+            "keywords": [
+                "cara",
+                "umrah",
+                "tata cara",
+                "talbiyah",
+                "tawaf",
+                "sai",
+                "miqat"
+            ]
+        },
+        {
+            "id": "106576",
+            "title": "محظورات الإحرام",
+            "title_id": "Larangan-larangan Ihram",
+            "category": "Umrah",
+            "question": "ما هي محظورات الإحرام؟",
+            "question_id": "Apa saja larangan ihram?",
+            "answer": "محظورات الإحرام تسعة: حلق الشعر، وتقليم الأظافر، وتغطية الرأس للرجل، ولبس المخيط للرجل، والطيب، وقتل الصيد، وعقد النكاح، والجماع ومقدماته، والمباشرة بشهوة.",
+            "answer_id": "Larangan ihram ada sembilan: mencukur rambut, memotong kuku, menutup kepala bagi laki-laki, memakai pakaian berjahit bagi laki-laki, memakai wewangian, membunuh binatang buruan, akad nikah, jimak dan pendahuluannya, dan menyentuh dengan syahwat.",
+            "url": "https://islamqa.info/ar/answers/106576",
+            "keywords": [
+                "larangan",
+                "ihram",
+                "mahdzurat",
+                "haram",
+                "cukur",
+                "wangi"
+            ]
+        },
+        {
+            "id": "109277",
+            "title": "الطواف حول الكعبة",
+            "title_id": "Tawaf Mengelilingi Ka'bah",
+            "category": "Umrah",
+            "question": "كيف أطوف بالكعبة؟",
+            "question_id": "Bagaimana cara tawaf di Ka'bah?",
+            "answer": "يبدأ الطواف من الحجر الأسود، ويجعل البيت عن يساره، ويطوف سبعة أشواط. ويستحب الاضطباع للرجل (وهو جعل وسط الرداء تحت الإبط الأيمن وطرفيه على الكتف الأيسر)، والرمل في الأشواط الثلاثة الأولى (وهو الإسراع في المشي مع تقارب الخطى). ويستحب استلام الحجر الأسود وتقبيله، فإن لم يستطع أشار إليه.",
+            "answer_id": "Tawaf dimulai dari Hajar Aswad, menjadikan Ka'bah di sebelah kirinya, dan tawaf tujuh putaran. Disunnahkan idhtiba' bagi laki-laki (yaitu meletakkan tengah selendang di bawah ketiak kanan dan kedua ujungnya di atas bahu kiri), dan ramal pada tiga putaran pertama (yaitu berjalan cepat dengan langkah pendek). Disunnahkan menyentuh dan mencium Hajar Aswad, jika tidak mampu maka berisyarat kepadanya.",
+            "url": "https://islamqa.info/ar/answers/109277",
+            "keywords": [
+                "tawaf",
+                "kaabah",
+                "hajar aswad",
+                "ramal",
+                "idhtiba"
+            ]
+        },
+        {
+            "id": "109278",
+            "title": "السعي بين الصفا والمروة",
+            "title_id": "Sa'i antara Safa dan Marwah",
+            "category": "Umrah",
+            "question": "كيف أسعى بين الصفا والمروة؟",
+            "question_id": "Bagaimana cara sa'i antara Safa dan Marwah?",
+            "answer": "يبدأ السعي من الصفا، فيصعد عليه حتى يرى الكعبة، ثم يستقبل القبلة ويكبر ويهلل ويدعو. ثم ينزل ويمشي إلى المروة، فإذا وصل إلى العلم الأخضر يسعى (يهرول) حتى يصل إلى العلم الأخضر الثاني، ثم يمشي حتى يصل إلى المروة. ويفعل على المروة كما فعل على الصفا. هذا شوط واحد، ويكمل سبعة أشواط.",
+            "answer_id": "Sa'i dimulai dari Safa, naik ke atasnya hingga melihat Ka'bah, lalu menghadap kiblat dan bertakbir, bertahlil, dan berdoa. Kemudian turun dan berjalan menuju Marwah, jika sampai di tanda hijau maka berlari kecil hingga sampai di tanda hijau kedua, lalu berjalan hingga sampai di Marwah. Dan melakukan di Marwah seperti yang dilakukan di Safa. Ini satu putaran, dan melengkapi tujuh putaran.",
+            "url": "https://islamqa.info/ar/answers/109278",
+            "keywords": [
+                "sai",
+                "safa",
+                "marwah",
+                "lari",
+                "doa"
+            ]
+        },
+        {
+            "id": "109279",
+            "title": "الحلق والتقصير",
+            "title_id": "Mencukur dan Memotong Rambut",
+            "category": "Umrah",
+            "question": "هل الحلق أفضل أم التقصير؟",
+            "question_id": "Apakah mencukur lebih utama atau memotong rambut?",
+            "answer": "الحلق أفضل من التقصير للرجل، لأن النبي صلى الله عليه وسلم دعا للمحلقين ثلاثاً وللمقصرين مرة. أما المرأة فتقصر ولا تحلق.",
+            "answer_id": "Mencukur lebih utama daripada memotong bagi laki-laki, karena Nabi shallallahu 'alaihi wasallam mendoakan orang yang mencukur tiga kali dan orang yang memotong satu kali. Adapun wanita memotong dan tidak mencukur.",
+            "url": "https://islamqa.info/ar/answers/109279",
+            "keywords": [
+                "cukur",
+                "potong",
+                "rambut",
+                "tahallul",
+                "wanita"
+            ]
+        },
+        {
+            "id": "109281",
+            "title": "دعاء الطواف",
+            "title_id": "Doa Tawaf",
+            "category": "Umrah",
+            "question": "هل هناك دعاء مخصوص للطواف؟",
+            "question_id": "Apakah ada doa khusus untuk tawaf?",
+            "answer": "ليس للطواف دعاء مخصوص، بل يدعو المسلم بما شاء من خيري الدنيا والآخرة. والثابت عن النبي صلى الله عليه وسلم أنه كان يقول بين الركن اليماني والحجر الأسود: ربنا آتنا في الدنيا حسنة وفي الآخرة حسنة وقنا عذاب النار.",
+            "answer_id": "Tidak ada doa khusus untuk tawaf, tetapi muslim berdoa dengan apa yang dikehendaki dari kebaikan dunia dan akhirat. Yang shahih dari Nabi shallallahu 'alaihi wasallam bahwa beliau mengucapkan antara Rukun Yamani dan Hajar Aswad: Rabbana aatina fid dunya hasanah wa fil akhirati hasanah wa qina 'adzaban naar.",
+            "url": "https://islamqa.info/ar/answers/109281",
+            "keywords": [
+                "doa",
+                "tawaf",
+                "dzikir",
+                "rabbana"
+            ]
+        },
+        {
+            "id": "109282",
+            "title": "صلاة ركعتين بعد الطواف",
+            "title_id": "Shalat Dua Rakaat Setelah Tawaf",
+            "category": "Umrah",
+            "question": "أين أصلي ركعتي الطواف؟",
+            "question_id": "Di mana shalat dua rakaat tawaf?",
+            "answer": "السنة أن يصلي ركعتي الطواف خلف مقام إبراهيم، فإن لم يتيسر له ففي أي مكان من المسجد الحرام.",
+            "answer_id": "Sunnah shalat dua rakaat tawaf di belakang Maqam Ibrahim, jika tidak memungkinkan maka di mana saja di Masjidil Haram.",
+            "url": "https://islamqa.info/ar/answers/109282",
+            "keywords": [
+                "shalat",
+                "rakaat",
+                "tawaf",
+                "maqam",
+                "ibrahim"
+            ]
+        }
+    ]
+}
