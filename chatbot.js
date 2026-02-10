@@ -44,20 +44,21 @@ const generateResponse = (chatElement) => {
         .then(res => res.json())
         .then(data => {
             if (data.error) {
+                console.error("Gemini API Error:", data.error);
                 if (API_KEY === "YOUR_API_KEY_HERE") {
-                    messageElement.textContent = "Mohon maaf, API Key belum diatur. Silakan minta admin website memasukkan Google Gemini API Key yang valid.";
+                    messageElement.textContent = "Mohon maaf, API Key belum diatur.";
                 } else {
-                    messageElement.textContent = `Error: ${data.error.message}`;
+                    messageElement.textContent = `Terjadi kesalahan pada AI. Silakan refresh halaman.\n(Teknis: ${data.error.message})`;
                 }
                 messageElement.classList.add("error");
             } else {
                 let responseText = data.candidates[0].content.parts[0].text;
-                // Simple formatting cleanup (asterisks to bold is tricky in plain text, keep raw for now)
                 messageElement.textContent = responseText.trim();
             }
-        }).catch(() => {
+        }).catch((error) => {
+            console.error("Fetch/Network Error:", error);
             messageElement.classList.add("error");
-            messageElement.textContent = "Maaf, ada gangguan koneksi. Coba lagi nanti.";
+            messageElement.textContent = "Maaf, ada gangguan koneksi internet. Coba lagi nanti.";
         }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
 }
 
