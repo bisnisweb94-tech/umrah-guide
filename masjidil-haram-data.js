@@ -170,10 +170,71 @@ const masjidilHaramLocations = [
     {
         "type": "Feature",
         "properties": {
+            "name": "باب العمرة",
+            "name_en": "Umrah Gate (No. 40)",
+            "type": "Main Gate",
+            "icon": "fa-archway",
+            "ref": "40",
+            "description": "Gerbang utama bersejarah di sisi barat daya."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8245696, 21.4228378]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "باب الفتح",
+            "name_en": "Fateh Gate (No. 30)",
+            "type": "Main Gate",
+            "icon": "fa-archway",
+            "ref": "30",
+            "description": "Gerbang kemenangan, salah satu akses utama tertua."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8265147, 21.4240151]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "باب قريش",
+            "name_en": "Quraish Gate (No. 28)",
+            "type": "Main Gate",
+            "icon": "fa-archway",
+            "ref": "28",
+            "description": "Gerbang akses penting di area Masa'a."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8269231, 21.4254428]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "باب المروة",
+            "name_en": "Al-Marwah Gate (No. 25)",
+            "type": "Main Gate",
+            "icon": "fa-archway",
+            "ref": "25",
+            "description": "Gerbang akses langsung ke bukit Marwah."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8273872, 21.4253183]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
             "name": "باب السلام",
-            "name_en": "Bab Al-Salam",
-            "type": "Gate",
-            "icon": "fa-door-open",
+            "name_en": "Al Salam Gate (No. 2)",
+            "type": "Main Gate",
+            "icon": "fa-archway",
+            "ref": "2",
             "description": "Gerbang Salam, akses tradisional masuk ke area Mataf."
         },
         "geometry": {
