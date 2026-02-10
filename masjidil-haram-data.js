@@ -287,7 +287,7 @@ const masjidilHaramLocations = [
             "coordinates": [39.8254126, 21.4209651]
         }
     },
-{
+    {
         "type": "Feature",
         "properties": {
             "name": "Toilet",
@@ -442,335 +442,284 @@ const masjidilHaramLocations = [
     {
         "type": "Feature",
         "properties": {
-            "name": "Toilet",
-            "name_en": "Public Toilet",
+            "name": "Toilet Pria",
+            "name_en": "Men's Toilet (King Abdullah - West)",
             "type": "Support",
             "subtype": "Toilet",
-            "icon": "fa-restroom",
-            "description": "Fasilitas toilet umum.",
-            "gender": "Unspecified"
+            "icon": "fa-person",
+            "description": "Fasilitas toilet di area King Abdullah Extension.",
+            "gender": "Male"
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [
-                39.8213574,
-                21.4251632
-            ]
+            "coordinates": [39.8213574, 21.4251632]
         }
     },
     {
         "type": "Feature",
         "properties": {
-            "name": "Toilet",
-            "name_en": "Public Toilet",
+            "name": "Toilet Pria",
+            "name_en": "Men's Toilet (King Abdullah - West)",
             "type": "Support",
             "subtype": "Toilet",
-            "icon": "fa-restroom",
-            "description": "Fasilitas toilet umum.",
-            "gender": "Unspecified"
+            "icon": "fa-person",
+            "description": "Fasilitas toilet di area King Abdullah Extension.",
+            "gender": "Male"
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [
-                39.8211451,
-                21.4252752
-            ]
+            "coordinates": [39.8211451, 21.4252752]
         }
     },
     {
         "type": "Feature",
         "properties": {
-            "name": "Toilet",
-            "name_en": "Public Toilet",
+            "name": "Toilet Pria",
+            "name_en": "Men's Toilet (King Abdullah - West)",
             "type": "Support",
             "subtype": "Toilet",
-            "icon": "fa-restroom",
-            "description": "Fasilitas toilet umum.",
-            "gender": "Unspecified"
+            "icon": "fa-person",
+            "description": "Fasilitas toilet di area King Abdullah Extension.",
+            "gender": "Male"
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [
-                39.8207911,
-                21.4254201
-            ]
+            "coordinates": [39.8207911, 21.4254201]
         }
     },
     {
         "type": "Feature",
         "properties": {
-            "name": "Toilet",
-            "name_en": "Public Toilet",
+            "name": "Toilet Pria",
+            "name_en": "Men's Toilet (King Abdullah - West)",
             "type": "Support",
             "subtype": "Toilet",
-            "icon": "fa-restroom",
-            "description": "Fasilitas toilet umum.",
-            "gender": "Unspecified"
+            "icon": "fa-person",
+            "description": "Fasilitas toilet di area King Abdullah Extension.",
+            "gender": "Male"
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [
-                39.8216689,
-                21.4258089
-            ]
+            "coordinates": [39.8216689, 21.4258089]
         }
     },
     {
         "type": "Feature",
         "properties": {
-            "name": "Toilet",
-            "name_en": "Public Toilet",
+            "name": "Toilet Pria",
+            "name_en": "Men's Toilet (King Abdullah - West)",
             "type": "Support",
             "subtype": "Toilet",
-            "icon": "fa-restroom",
-            "description": "Fasilitas toilet umum.",
-            "gender": "Unspecified"
+            "icon": "fa-person",
+            "description": "Fasilitas toilet di area King Abdullah Extension.",
+            "gender": "Male"
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [
-                39.8213928,
-                21.4260725
-            ]
+            "coordinates": [39.8213928, 21.4260725]
         }
     },
     {
         "type": "Feature",
         "properties": {
-            "name": "Toilet",
-            "name_en": "Public Toilet",
+            "name": "Toilet Pria",
+            "name_en": "Men's Toilet (King Abdullah - West)",
             "type": "Support",
             "subtype": "Toilet",
-            "icon": "fa-restroom",
-            "description": "Fasilitas toilet umum.",
-            "gender": "Unspecified"
+            "icon": "fa-person",
+            "description": "Fasilitas toilet di area King Abdullah Extension.",
+            "gender": "Male"
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [
-                39.8219166,
-                21.4256376
-            ]
+            "coordinates": [39.8219166, 21.4256376]
         }
     },
     {
         "type": "Feature",
         "properties": {
-            "name": "Toilet",
-            "name_en": "Public Toilet",
+            "name": "Toilet Pria",
+            "name_en": "Men's Toilet (King Abdullah - West)",
             "type": "Support",
             "subtype": "Toilet",
-            "icon": "fa-restroom",
-            "description": "Fasilitas toilet umum.",
-            "gender": "Unspecified"
+            "icon": "fa-person",
+            "description": "Fasilitas toilet di area King Abdullah Extension.",
+            "gender": "Male"
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [
-                39.8226032,
-                21.4264151
-            ]
+            "coordinates": [39.8226032, 21.4264151]
         }
     },
     {
         "type": "Feature",
         "properties": {
-            "name": "Toilet",
-            "name_en": "Public Toilet",
+            "name": "Toilet Pria",
+            "name_en": "Men's Toilet (King Abdullah - West)",
             "type": "Support",
             "subtype": "Toilet",
-            "icon": "fa-restroom",
-            "description": "Fasilitas toilet umum.",
-            "gender": "Unspecified"
+            "icon": "fa-person",
+            "description": "Fasilitas toilet di area King Abdullah Extension.",
+            "gender": "Male"
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [
-                39.8224758,
-                21.4266457
-            ]
+            "coordinates": [39.8224758, 21.4266457]
         }
     },
     {
         "type": "Feature",
         "properties": {
-            "name": "Toilet",
-            "name_en": "Public Toilet",
+            "name": "Toilet Pria",
+            "name_en": "Men's Toilet (King Abdullah - West)",
             "type": "Support",
             "subtype": "Toilet",
-            "icon": "fa-restroom",
-            "description": "Fasilitas toilet umum.",
-            "gender": "Unspecified"
+            "icon": "fa-person",
+            "description": "Fasilitas toilet di area King Abdullah Extension.",
+            "gender": "Male"
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [
-                39.8222847,
-                21.4269422
-            ]
+            "coordinates": [39.8222847, 21.4269422]
         }
     },
     {
         "type": "Feature",
         "properties": {
-            "name": "Toilet",
-            "name_en": "Public Toilet",
+            "name": "Toilet Wanita",
+            "name_en": "Women's Toilet (King Abdullah - East)",
             "type": "Support",
             "subtype": "Toilet",
-            "icon": "fa-restroom",
-            "description": "Fasilitas toilet umum.",
-            "gender": "Unspecified"
+            "icon": "fa-person-dress",
+            "description": "Fasilitas toilet di area King Abdullah Extension.",
+            "gender": "Female"
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [
-                39.823849,
-                21.4273442
-            ]
+            "coordinates": [39.823849, 21.4273442]
         }
     },
     {
         "type": "Feature",
         "properties": {
-            "name": "Toilet",
-            "name_en": "Public Toilet",
+            "name": "Toilet Wanita",
+            "name_en": "Women's Toilet (King Abdullah - East)",
             "type": "Support",
             "subtype": "Toilet",
-            "icon": "fa-restroom",
-            "description": "Fasilitas toilet umum.",
-            "gender": "Unspecified"
+            "icon": "fa-person-dress",
+            "description": "Fasilitas toilet di area King Abdullah Extension.",
+            "gender": "Female"
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [
-                39.823849,
-                21.4275946
-            ]
+            "coordinates": [39.823849, 21.4275946]
         }
     },
     {
         "type": "Feature",
         "properties": {
-            "name": "Toilet",
-            "name_en": "Public Toilet",
+            "name": "Toilet Wanita",
+            "name_en": "Women's Toilet (King Abdullah - East)",
             "type": "Support",
             "subtype": "Toilet",
-            "icon": "fa-restroom",
-            "description": "Fasilitas toilet umum.",
-            "gender": "Unspecified"
+            "icon": "fa-person-dress",
+            "description": "Fasilitas toilet di area King Abdullah Extension.",
+            "gender": "Female"
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [
-                39.8238278,
-                21.4278515
-            ]
+            "coordinates": [39.8238278, 21.4278515]
         }
     },
     {
         "type": "Feature",
         "properties": {
-            "name": "Toilet",
-            "name_en": "Public Toilet",
+            "name": "Toilet Wanita",
+            "name_en": "Women's Toilet (King Abdullah - East)",
             "type": "Support",
             "subtype": "Toilet",
-            "icon": "fa-restroom",
-            "description": "Fasilitas toilet umum.",
-            "gender": "Unspecified"
+            "icon": "fa-person-dress",
+            "description": "Fasilitas toilet di area King Abdullah Extension.",
+            "gender": "Female"
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [
-                39.8249391,
-                21.4276934
-            ]
+            "coordinates": [39.8249391, 21.4276934]
         }
     },
     {
         "type": "Feature",
         "properties": {
-            "name": "Toilet",
-            "name_en": "Public Toilet",
+            "name": "Toilet Wanita",
+            "name_en": "Women's Toilet (King Abdullah - East)",
             "type": "Support",
             "subtype": "Toilet",
-            "icon": "fa-restroom",
-            "description": "Fasilitas toilet umum.",
-            "gender": "Unspecified"
+            "icon": "fa-person-dress",
+            "description": "Fasilitas toilet di area King Abdullah Extension.",
+            "gender": "Female"
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [
-                39.8248966,
-                21.4279306
-            ]
+            "coordinates": [39.8248966, 21.4279306]
         }
     },
     {
         "type": "Feature",
         "properties": {
-            "name": "Toilet",
-            "name_en": "Public Toilet",
+            "name": "Toilet Wanita",
+            "name_en": "Women's Toilet (King Abdullah - East)",
             "type": "Support",
             "subtype": "Toilet",
-            "icon": "fa-restroom",
-            "description": "Fasilitas toilet umum.",
-            "gender": "Unspecified"
+            "icon": "fa-person-dress",
+            "description": "Fasilitas toilet di area King Abdullah Extension.",
+            "gender": "Female"
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [
-                39.8248825,
-                21.4281744
-            ]
+            "coordinates": [39.8248825, 21.4281744]
         }
     },
     {
         "type": "Feature",
         "properties": {
-            "name": "Toilet",
-            "name_en": "Public Toilet",
+            "name": "Toilet Wanita",
+            "name_en": "Women's Toilet (King Abdullah - East)",
             "type": "Support",
             "subtype": "Toilet",
-            "icon": "fa-restroom",
-            "description": "Fasilitas toilet umum.",
-            "gender": "Unspecified"
+            "icon": "fa-person-dress",
+            "description": "Fasilitas toilet di area King Abdullah Extension.",
+            "gender": "Female"
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [
-                39.8258522,
-                21.4277922
-            ]
+            "coordinates": [39.8258522, 21.4277922]
         }
     },
     {
         "type": "Feature",
         "properties": {
-            "name": "Toilet",
-            "name_en": "Public Toilet",
+            "name": "Toilet Wanita",
+            "name_en": "Women's Toilet (King Abdullah - East)",
             "type": "Support",
             "subtype": "Toilet",
-            "icon": "fa-restroom",
-            "description": "Fasilitas toilet umum.",
-            "gender": "Unspecified"
+            "icon": "fa-person-dress",
+            "description": "Fasilitas toilet di area King Abdullah Extension.",
+            "gender": "Female"
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [
-                39.8258805,
-                21.4282074
-            ]
+            "coordinates": [39.8258805, 21.4282074]
         }
-    },
+    }
+    ,
     {
         "type": "Feature",
         "properties": {
-            "name": "مصعد 1",
-            "name_en": "Lift/Escalator 1",
+            "name": "Escalator/Elevator",
+            "name_en": "Escalator/Elevator",
             "type": "Support",
-            "subtype": "Escalator",
             "icon": "fa-elevator",
-            "description": "Lift/Escalator untuk akses lantai atas."
+            "description": "Akses lift/eskalator."
         },
         "geometry": {
             "type": "Point",
@@ -783,12 +732,11 @@ const masjidilHaramLocations = [
     {
         "type": "Feature",
         "properties": {
-            "name": "مصعد 2",
-            "name_en": "Lift/Escalator 2",
+            "name": "Escalator/Elevator",
+            "name_en": "Escalator/Elevator",
             "type": "Support",
-            "subtype": "Escalator",
             "icon": "fa-elevator",
-            "description": "Lift/Escalator untuk akses lantai atas."
+            "description": "Akses lift/eskalator."
         },
         "geometry": {
             "type": "Point",
@@ -801,12 +749,11 @@ const masjidilHaramLocations = [
     {
         "type": "Feature",
         "properties": {
-            "name": "مصعد 3",
-            "name_en": "Lift/Escalator 3",
+            "name": "Escalator/Elevator",
+            "name_en": "Escalator/Elevator",
             "type": "Support",
-            "subtype": "Escalator",
             "icon": "fa-elevator",
-            "description": "Lift/Escalator untuk akses lantai atas."
+            "description": "Akses lift/eskalator."
         },
         "geometry": {
             "type": "Point",
@@ -819,12 +766,11 @@ const masjidilHaramLocations = [
     {
         "type": "Feature",
         "properties": {
-            "name": "مصعد 4",
-            "name_en": "Lift/Escalator 4",
+            "name": "Escalator/Elevator",
+            "name_en": "Escalator/Elevator",
             "type": "Support",
-            "subtype": "Escalator",
             "icon": "fa-elevator",
-            "description": "Lift/Escalator untuk akses lantai atas."
+            "description": "Akses lift/eskalator."
         },
         "geometry": {
             "type": "Point",
@@ -837,12 +783,11 @@ const masjidilHaramLocations = [
     {
         "type": "Feature",
         "properties": {
-            "name": "مصعد 5",
-            "name_en": "Lift/Escalator 5",
+            "name": "Escalator/Elevator",
+            "name_en": "Escalator/Elevator",
             "type": "Support",
-            "subtype": "Escalator",
             "icon": "fa-elevator",
-            "description": "Lift/Escalator untuk akses lantai atas."
+            "description": "Akses lift/eskalator."
         },
         "geometry": {
             "type": "Point",
@@ -855,12 +800,11 @@ const masjidilHaramLocations = [
     {
         "type": "Feature",
         "properties": {
-            "name": "مصعد 6",
-            "name_en": "Lift/Escalator 6",
+            "name": "Escalator/Elevator",
+            "name_en": "Escalator/Elevator",
             "type": "Support",
-            "subtype": "Escalator",
             "icon": "fa-elevator",
-            "description": "Lift/Escalator untuk akses lantai atas."
+            "description": "Akses lift/eskalator."
         },
         "geometry": {
             "type": "Point",
@@ -873,12 +817,11 @@ const masjidilHaramLocations = [
     {
         "type": "Feature",
         "properties": {
-            "name": "مصعد 7",
-            "name_en": "Lift/Escalator 7",
+            "name": "Escalator/Elevator",
+            "name_en": "Escalator/Elevator",
             "type": "Support",
-            "subtype": "Escalator",
             "icon": "fa-elevator",
-            "description": "Lift/Escalator untuk akses lantai atas."
+            "description": "Akses lift/eskalator."
         },
         "geometry": {
             "type": "Point",
@@ -891,12 +834,11 @@ const masjidilHaramLocations = [
     {
         "type": "Feature",
         "properties": {
-            "name": "مصعد 8",
-            "name_en": "Lift/Escalator 8",
+            "name": "Escalator/Elevator",
+            "name_en": "Escalator/Elevator",
             "type": "Support",
-            "subtype": "Escalator",
             "icon": "fa-elevator",
-            "description": "Lift/Escalator untuk akses lantai atas."
+            "description": "Akses lift/eskalator."
         },
         "geometry": {
             "type": "Point",
@@ -909,12 +851,11 @@ const masjidilHaramLocations = [
     {
         "type": "Feature",
         "properties": {
-            "name": "مصعد 9",
-            "name_en": "Lift/Escalator 9 (Multi-Level)",
+            "name": "Escalator/Elevator",
+            "name_en": "Escalator/Elevator",
             "type": "Support",
-            "subtype": "Escalator",
             "icon": "fa-elevator",
-            "description": "Lift/Escalator untuk akses lantai atas."
+            "description": "Akses lift/eskalator."
         },
         "geometry": {
             "type": "Point",
@@ -927,12 +868,11 @@ const masjidilHaramLocations = [
     {
         "type": "Feature",
         "properties": {
-            "name": "مصعد 10",
-            "name_en": "Lift/Escalator 10 (Multi-Level)",
+            "name": "Escalator/Elevator",
+            "name_en": "Escalator/Elevator",
             "type": "Support",
-            "subtype": "Escalator",
             "icon": "fa-elevator",
-            "description": "Lift/Escalator untuk akses lantai atas."
+            "description": "Akses lift/eskalator."
         },
         "geometry": {
             "type": "Point",
@@ -940,6 +880,341 @@ const masjidilHaramLocations = [
                 39.827742,
                 21.4225647
             ]
+        }
+    }
+    ,
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Dar Al Ghufran - Al Safwah Towers Hotel",
+            "name_en": "Dar Al Ghufran",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel di dekat Haram."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8265113,
+                21.4193627
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Al Marwa Rayhaan by Rotana",
+            "name_en": "Al Marwa Rayhaan",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel mewah dengan akses langsung ke Masjidil Haram."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8260952,
+                21.4191648
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Raffles Makkah Palace",
+            "name_en": "Raffles Makkah Palace",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel mewah dekat Haram."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8249791,
+                21.4192239
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Dar Al Eiman Royal Hotel",
+            "name_en": "Dar Al Eiman Royal",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel dekat Haram."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.826808,
+                21.418874
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Swissôtel Makkah",
+            "name_en": "Swissôtel Makkah",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel dengan pemandangan Ka'bah."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8268075,
+                21.41838
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Mövenpick Hotel & Residence Hajar Tower Makkah",
+            "name_en": "Mövenpick Hajar Tower",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel di menara jam."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8262712,
+                21.4183039
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "pulman zamzam",
+            "name_en": "Pullman ZamZam Makkah",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel ikonik di kompleks Abraj Al Bait."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8249601,
+                21.4183327
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Fairmont Makkah Clock Royal Tower",
+            "name_en": "Fairmont Makkah",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel di menara jam utama."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.825302,
+                21.4180383
+            ]
+        }
+    },
+    // === HOTEL AREA GAZA (AL MASJID AL HARAM RD) ===
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق جراند مكة",
+            "name_en": "Grand Makkah Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel premium di area Al Gaza dengan akses mudah ke Masjidil Haram."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.829307, 21.432387]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق تيرا الغزة",
+            "name_en": "Tera Al Gaza Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel di area Al Gaza, dekat dengan terminal bus Gazza."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.832904, 21.431108]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق منارات الغزة",
+            "name_en": "Manarat Al-Ghazza Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel di distrik Gaza, sekitar 1 km dari Al Haram."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.83021, 21.43125]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق صرح المنامة",
+            "name_en": "Sarh Almanama Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel di Jalan Al Masjid Al Haram, area Gaza."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8307341, 21.4348696]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق سجى الغزة",
+            "name_en": "Al Ghazza Saja Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel Saja di area Al Gaza, dekat dengan Gerbang Marwah."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.82955, 21.43052]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "أبراج معاد",
+            "name_en": "Abraj Maad",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Kompleks perhotelan Abraj Maad di area timur laut Masjidil Haram."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8326416, 21.4215643]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق بكر حسن حبحb",
+            "name_en": "Bakr Hasan Habhab Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel melati di area Gaza/Ajyad."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8323489, 21.4203015]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق أرائك الغزة",
+            "name_en": "Araek Al Ghaza Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel yang berlokasi strategis di area Gaza, dekat dengan terminal bus."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.83152, 21.43351]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق شذى الوسام",
+            "name_en": "Shaza Al Wissam Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel Shaza Al Wissam di area Al Gaza / Al Sulaymaniyyah."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8286973, 21.4329754]
+        }
+    },
+    // === GHAZA AREA AMENITIES ===
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق فجر البديع 6",
+            "name_en": "Al Fajar Al Badea 6 Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel di area Ghaza."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8345207, 21.439621]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "فندق برج الوقار",
+            "name_en": "Burj Al Waqar Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel di area Ghaza."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8320395, 21.4367601]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "مطبق السندي",
+            "name_en": "Abdullah as-Sendi Restaurant",
+            "type": "Food",
+            "icon": "fa-utensils",
+            "description": "Restoran masakan lokal di Ghaza."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.831, 21.435]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "مطعم تكا",
+            "name_en": "Dhaka Restaurant",
+            "type": "Food",
+            "icon": "fa-utensils",
+            "description": "Restoran masakan Asia Selatan."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.832, 21.436]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "سوبر ماركت القرشي",
+            "name_en": "Al Qurashi Super Market",
+            "type": "Shopping",
+            "icon": "fa-shopping-cart",
+            "description": "Supermarket untuk kebutuhan sehari-hari."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.833, 21.437]
         }
     }
 ];
