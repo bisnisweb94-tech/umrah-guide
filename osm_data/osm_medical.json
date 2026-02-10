@@ -1,0 +1,1193 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مستوصف هاله بن لادن",
+      "name_en": "مستوصف هاله بن لادن",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "4340644089",
+      "tags": {
+        "amenity": "clinic",
+        "name": "مستوصف هاله بن لادن",
+        "name:ar": "مستوصف هاله بن لادن"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.7867296,
+        21.4237503
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الهلال الأحمر السعودي",
+      "name_en": "الهلال الأحمر السعودي",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "4432076296",
+      "tags": {
+        "addr:street": "Al Malik Mansour Bin Abdulaziz Street",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "internet_access": "wlan",
+        "name": "الهلال الأحمر السعودي",
+        "name:ar": "الهلال الأحمر السعودي",
+        "opening_hours": "24/7"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.806575,
+        21.4184393
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مستوصف العبير",
+      "name_en": "مستوصف العبير",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5070401203",
+      "tags": {
+        "amenity": "hospital",
+        "name": "مستوصف العبير",
+        "name:ar": "مستوصف العبير"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8628741,
+        21.4163884
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مستشفى الحرم للطوارئ",
+      "name_en": "Al Haram Emergency Hospital",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5075704816",
+      "tags": {
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "مستشفى الحرم للطوارئ",
+        "name:ar": "مستشفى الحرم للطوارئ",
+        "name:en": "Al Haram Emergency Hospital",
+        "name:fr": "Hôpital des urgences Al-Haram",
+        "name:tk": "Häräm Çalt ýagdaýlar Keselhanasy",
+        "name:tr": "Harem Acil Hastanesi",
+        "name:ur": "الحرم ایمرجنسی ہسپتال"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8232661,
+        21.4267071
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مستشفى أجياد للطوارئ",
+      "name_en": "Ajyad Emergency Hospital",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5076188152",
+      "tags": {
+        "amenity": "hospital",
+        "name": "مستشفى أجياد للطوارئ",
+        "name:ar": "مستشفى أجياد للطوارئ",
+        "name:en": "Ajyad Emergency Hospital",
+        "name:tr": "Ajyad Acil Hastanesi",
+        "phone": "+966 12 573 0070"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8263838,
+        21.4197202
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الحلواني",
+      "name_en": "al-Halwani",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5077099025",
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "الحلواني",
+        "name:ar": "الحلواني",
+        "name:en": "al-Halwani"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8266003,
+        21.4196657
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "النهدي",
+      "name_en": "Al Nahdi",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5077124619",
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "النهدي",
+        "name:ar": "النهدي",
+        "name:en": "Al Nahdi"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8065587,
+        21.4297854
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "شفاء البركة",
+      "name_en": "Pharmacy Shifa al-Baraka",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5077145982",
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "شفاء البركة",
+        "name:ar": "شفاء البركة",
+        "name:en": "Pharmacy Shifa al-Baraka"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8050739,
+        21.4412579
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "النهدي",
+      "name_en": "an-Nahdi Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5077157348",
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "النهدي",
+        "name:ar": "النهدي",
+        "name:en": "an-Nahdi Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.789753,
+        21.4382888
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "غاية ام القرى",
+      "name_en": "Ghaya Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5077162954",
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "غاية ام القرى",
+        "name:ar": "غاية ام القرى",
+        "name:en": "Ghaya Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.801118,
+        21.4230325
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "جمال المركزية",
+      "name_en": "Jamal Central Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5077230548",
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "جمال المركزية",
+        "name:ar": "جمال المركزية",
+        "name:en": "Jamal Central Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8244652,
+        21.4373306
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مجمع الفهد الطبي",
+      "name_en": "Al Fahd Medical Complex",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5077299107",
+      "tags": {
+        "amenity": "hospital",
+        "name": "مجمع الفهد الطبي",
+        "name:ar": "مجمع الفهد الطبي",
+        "name:en": "Al Fahd Medical Complex"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8355345,
+        21.4431374
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "النهدي",
+      "name_en": "Nahdi Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5077343888",
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "النهدي",
+        "name:ar": "النهدي",
+        "name:en": "Nahdi Pharmacy",
+        "phone": "+966 800 119 1198",
+        "website": "https://www.nahdi.sa/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8279574,
+        21.4149077
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nahdi Pharmacy",
+      "name_en": "Nahdi Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5077616006",
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Nahdi Pharmacy",
+        "name:en": "Nahdi Pharmacy",
+        "website": "https://www.nahdi.sa/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.80903,
+        21.4458886
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nahdi Pharmacy",
+      "name_en": "Nahdi Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5077627038",
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Nahdi Pharmacy",
+        "name:en": "Nahdi Pharmacy",
+        "website": "https://www.nahdi.sa/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.7956894,
+        21.4401747
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nahdi Pharmacy",
+      "name_en": "Nahdi Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5077629512",
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Nahdi Pharmacy",
+        "name:en": "Nahdi Pharmacy",
+        "website": "https://www.nahdi.sa/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.7932683,
+        21.4088538
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Pharmacy Kingdom Med",
+      "name_en": "Pharmacy Kingdom Med",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5077810152",
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Pharmacy Kingdom Med",
+        "name:en": "Pharmacy Kingdom Med"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8293092,
+        21.432854
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باوزير",
+      "name_en": "Bawazeer Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5077819618",
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "باوزير",
+        "name:ar": "باوزير",
+        "name:en": "Bawazeer Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8285522,
+        21.4320397
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "النهدي",
+      "name_en": "Nahdi",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5084616457",
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "النهدي",
+        "name:ar": "النهدي",
+        "name:en": "Nahdi",
+        "website": "https://www.nahdi.sa/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.7884479,
+        21.4285501
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "البعثة الطبية العراقية",
+      "name_en": "Iraqi medical delegation",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5828839701",
+      "tags": {
+        "amenity": "hospital",
+        "name": "البعثة الطبية العراقية",
+        "name:en": "Iraqi medical delegation"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8618606,
+        21.4123984
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Pharmacy Rajah",
+      "name_en": "Pharmacy Rajah",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "5923074192",
+      "tags": {
+        "addr:housenumber": "18",
+        "addr:street": "الحديثة",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Pharmacy Rajah"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8235189,
+        21.4200807
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Pharmacy Mansor",
+      "name_en": "Pharmacy Mansor",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6047258976",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Pharmacy Mansor"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8277552,
+        21.4132193
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "رقية",
+      "name_en": "Roqia",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6055798022",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "رقية",
+        "name:ar": "رقية",
+        "name:en": "Roqia"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8153972,
+        21.4329281
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Is'haq Pharmacy",
+      "name_en": "Is'haq Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6214131049",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Is'haq Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8220112,
+        21.4139398
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "ضيوف مكة",
+      "name_en": "Dhiouf Makkah",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6214483638",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "ضيوف مكة",
+        "name:en": "Dhiouf Makkah"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8239783,
+        21.4191226
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "United Pharmacy",
+      "name_en": "United Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6226079490",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "United Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8281943,
+        21.4201178
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "صيدلية النهدي",
+      "name_en": "Nahdi",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6283475050",
+      "tags": {
+        "amenity": "pharmacy",
+        "branch": "Pharmacy (Ground Floor)",
+        "brand": "صيدلية النهدي",
+        "brand:ar": "صيدلية النهدي",
+        "brand:en": "Nahdi",
+        "brand:wikidata": "Q98582564",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "صيدلية النهدي",
+        "name:ar": "صيدلية النهدي",
+        "name:en": "Nahdi"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8257521,
+        21.41955
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "غاية ام القرى",
+      "name_en": "غاية ام القرى",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6286793555",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "غاية ام القرى",
+        "name:ar": "غاية ام القرى"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8228881,
+        21.4210886
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "النهدي",
+      "name_en": "النهدي",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6291998465",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "النهدي",
+        "name:ar": "النهدي"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8239084,
+        21.4202197
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nahdi Pharmacy",
+      "name_en": "Nahdi Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6312985526",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Nahdi Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8291346,
+        21.431889
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6314589561",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "operator": "Al Rowida Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8279984,
+        21.4162561
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Quraish Pharmacy",
+      "name_en": "Quraish Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6322556737",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Quraish Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8183553,
+        21.4357153
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Taher Pharmacy",
+      "name_en": "Taher Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6331888223",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Taher Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8635486,
+        21.4134402
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Pharmacy Dawaa",
+      "name_en": "Pharmacy Dawaa",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6333122478",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Pharmacy Dawaa"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8594552,
+        21.4178757
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Pharmacy Hekmah",
+      "name_en": "Pharmacy Hekmah",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6333127354",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Pharmacy Hekmah"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8602783,
+        21.4169273
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Taher Pharmacy",
+      "name_en": "Taher Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6333656535",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Taher Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8642311,
+        21.4127116
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Nahdi Pharmacy - 1st Floor",
+      "name_en": "Al Nahdi Pharmacy - 1st Floor",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6336211360",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "level": "1",
+        "name": "Al Nahdi Pharmacy - 1st Floor",
+        "name:tr": "Al Nahdi Eczanesi - 1. Kat"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.821869,
+        21.4209972
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nahdi Pharmacy",
+      "name_en": "Nahdi Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6437181282",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Nahdi Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8613946,
+        21.445874
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nahdi Pharmacy",
+      "name_en": "Nahdi Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6536855095",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Nahdi Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.7981308,
+        21.4240908
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "النهدي",
+      "name_en": "Al Nahdi",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6579860910",
+      "tags": {
+        "addr:city": "Makkah al Mukarramah",
+        "addr:postcode": "24231",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "النهدي",
+        "name:ar": "النهدي",
+        "name:en": "Al Nahdi"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8267363,
+        21.4193551
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Nahdi Pharmacy",
+      "name_en": "Al Nahdi Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6587383192",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Al Nahdi Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.824221,
+        21.4195088
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Bin Hassan Pharmacy",
+      "name_en": "Bin Hassan Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "6587572604",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Bin Hassan Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8209913,
+        21.4115762
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "8304076940",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.822241,
+        21.414415
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مجمع مبارك الطبي المتخصص لطب الاسنان",
+      "name_en": "مجمع مبارك الطبي المتخصص لطب الاسنان",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "مجمع مبارك الطبي هوا مجمع طبي حديث يختص بتجميل الاسنان ومعالجتها وتقويم الاسنان علي يد افضل الكوادر الطبيه من اخصائين و استشارين ذو خبره وكفائه",
+      "osm_id": "8583386218",
+      "tags": {
+        "addr:city": "مكه",
+        "addr:housenumber": "1",
+        "addr:postcode": "24221",
+        "addr:street": "Ar Ridwa Street",
+        "amenity": "hospital",
+        "description": "مجمع مبارك الطبي هوا مجمع طبي حديث يختص بتجميل الاسنان ومعالجتها وتقويم الاسنان علي يد افضل الكوادر الطبيه من اخصائين و استشارين ذو خبره وكفائه",
+        "email": "mobarak_1990@hotmail.com",
+        "healthcare": "hospital",
+        "healthcare:speciality": "dentist",
+        "image": "https://www.google.com/maps/uv?pb=!1s0x15c21b6be89ab065%3A0xfc92a056466aac8e!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPaMHc3aC43j4bIFpMtIb_LRnf8K5vY0CKJebBm%3Dw160-h160-k-no!5z2YXYrNmF2Lkg2YXYqNin2LHZgyDYp9mE2LfYqNmKINin2YTZhdiq2K7Y",
+        "name": "مجمع مبارك الطبي المتخصص لطب الاسنان",
+        "name:tr": "Mübarek İhtisas Tıbbi Diş Kompleksi",
+        "operator": "عيادة اسنان",
+        "operator:type": "public",
+        "phone": "+966550234360"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.7921537,
+        21.4318676
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nahdi Pharmacy",
+      "name_en": "Nahdi Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "8769948883",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Nahdi Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8332319,
+        21.438659
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "12397465285",
+      "tags": {
+        "amenity": "pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8299335,
+        21.409765
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "صيدلية",
+      "name_en": "Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "12809375237",
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Pharmacy صيدلية",
+        "name:ar": "صيدلية",
+        "name:en": "Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8231609,
+        21.4118595
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "صيدلية",
+      "name_en": "Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Masjidil Haram.",
+      "osm_id": "12811956600",
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Pharmacy صيدلية",
+        "name:ar": "صيدلية",
+        "name:en": "Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8228725,
+        21.4121978
+      ]
+    }
+  }
+]

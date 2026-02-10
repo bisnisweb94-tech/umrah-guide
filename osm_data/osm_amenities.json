@@ -1,0 +1,184 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Masjidil Haram.",
+      "osm_id": "977854264",
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.840247,
+        21.43868
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Masjidil Haram.",
+      "osm_id": "977855352",
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.840272,
+        21.43871
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "ثانوية الملك عبدالعزيز",
+      "name_en": "ثانوية الملك عبدالعزيز",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Masjidil Haram.",
+      "osm_id": "2706849590",
+      "tags": {
+        "addr:city": "mecca",
+        "addr:postcode": "24243",
+        "addr:street": "شارع العزيزية",
+        "amenity": "school",
+        "name": "ثانوية الملك عبدالعزيز"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8614454,
+        21.4154546
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Pakistani school",
+      "name_en": "Pakistani school",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Masjidil Haram.",
+      "osm_id": "4549865889",
+      "tags": {
+        "amenity": "school",
+        "name": "Pakistani school",
+        "name:ar": "Pakistani school",
+        "name:en": "Pakistani school"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.7893828,
+        21.4358647
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مدرسة سعد بن معاذ",
+      "name_en": "مدرسة سعد بن معاذ",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Masjidil Haram.",
+      "osm_id": "4603580892",
+      "tags": {
+        "amenity": "school",
+        "name": "مدرسة سعد بن معاذ",
+        "name:ar": "مدرسة سعد بن معاذ"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.7938112,
+        21.4420816
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "وزارة التعليم",
+      "name_en": "Ministry of education",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Masjidil Haram.",
+      "osm_id": "5158415821",
+      "tags": {
+        "amenity": "school",
+        "name": "وزارة التعليم",
+        "name:en": "Ministry of education"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8628587,
+        21.4142466
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مدرسة دار العلوم الابتدائية للبنين",
+      "name_en": "School House Elementary Science Boys",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Masjidil Haram.",
+      "osm_id": "12397680339",
+      "tags": {
+        "amenity": "school",
+        "name": "School House Elementary Science Boys مدرسة دار العلوم الابتدائية للبنين",
+        "name:ar": "مدرسة دار العلوم الابتدائية للبنين",
+        "name:en": "School House Elementary Science Boys"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8309916,
+        21.4060318
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Masjidil Haram.",
+      "osm_id": "12674386165",
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8397147,
+        21.4389809
+      ]
+    }
+  }
+]

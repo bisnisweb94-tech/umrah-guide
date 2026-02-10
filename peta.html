@@ -789,7 +789,7 @@
         const overlayMaps = {
             "Label": labels
         };
-        L.control.layers(baseMaps, overlayMaps, { position: 'topright' }).addTo(map);
+        window.layerControl = L.control.layers(baseMaps, overlayMaps, { position: 'topright' }).addTo(map);
 
         // GPS Locate Control
         L.Control.Gps = L.Control.extend({
@@ -870,8 +870,65 @@
             }
         });
 
+        // Layer Groups untuk data tambahan (Jalan & Bangunan)
+        const roadsLayer = L.featureGroup();
+        const buildingsLayer = L.featureGroup();
+
+        function renderExtraLayers() {
+            // 1. Render Roads
+            if (typeof masjidilHaramRoads !== 'undefined' && masjidilHaramRoads.length > 0) {
+                console.log("Rendering " + masjidilHaramRoads.length + " roads...");
+                masjidilHaramRoads.forEach(road => {
+                    const polyline = L.polyline(road.geometry.coordinates, {
+                        color: '#a8a29e', // Stone/Grayish
+                        weight: 2,
+                        opacity: 0.6,
+                        className: 'road-path'
+                    });
+
+                    const type = road.properties.highway_type || 'Road';
+                    const name = road.properties.name || type;
+                    const nameAr = road.properties.name_ar || name;
+
+                    polyline.bindPopup(`<b>${nameAr}</b><br>${name}<br><span style="font-size:12px;color:#666">${type}</span>`);
+                    roadsLayer.addLayer(polyline);
+                });
+                roadsLayer.addTo(map); // Default Visible
+            }
+
+            // 2. Render Buildings
+            if (typeof masjidilHaramBuildings !== 'undefined' && masjidilHaramBuildings.length > 0) {
+                console.log("Rendering " + masjidilHaramBuildings.length + " buildings...");
+                masjidilHaramBuildings.forEach(building => {
+                    const polygon = L.polygon(building.geometry.coordinates, {
+                        color: '#c2410c', // Dark Orange/Brown
+                        weight: 1,
+                        fillColor: '#fdba74', // Light Orange
+                        fillOpacity: 0.2,
+                        className: 'building-poly'
+                    });
+
+                    const type = building.properties.building_type || 'Building';
+                    const name = building.properties.name || type;
+                    const nameAr = building.properties.name_ar || name;
+
+                    polygon.bindPopup(`<b>${nameAr}</b><br>${name}<br><span style="font-size:12px;color:#666">${type}</span>`);
+                    buildingsLayer.addLayer(polygon);
+                });
+                // Buildings default hidden to reduce clutter, user can toggle
+            }
+        }
+
         map.addLayer(markersLayer);
         map.addLayer(clusterGroup);
+
+        // Add layers to existing control
+        if (window.layerControl) {
+            window.layerControl.addOverlay(markersLayer, "Points of Interest");
+            window.layerControl.addOverlay(clusterGroup, "Facilities (Clustered)");
+            window.layerControl.addOverlay(roadsLayer, "Roads / Jalur");
+            window.layerControl.addOverlay(buildingsLayer, "Buildings / Bangunan");
+        }
 
         function createPremiumMarker(feature) {
             const type = feature.properties.type;
@@ -977,6 +1034,7 @@
 
         // --- 5. Initial Load & Filter ---
         renderUI(masjidilHaramLocations);
+        renderExtraLayers();
 
         window.filterList = function () {
             const query = document.getElementById('searchInput').value;

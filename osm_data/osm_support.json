@@ -1,0 +1,1388 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "2420682656",
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8138632,
+        21.4233785
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "4802449424",
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8300843,
+        21.4343522
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "4802449425",
+      "tags": {
+        "amenity": "toilets",
+        "operator": "الحجون"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8304693,
+        21.4352325
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "5856319045",
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8499441,
+        21.4386058
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "5862054603",
+      "tags": {
+        "amenity": "toilets",
+        "check_date": "2021-10-19",
+        "male": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8286892,
+        21.4248517
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "5862054604",
+      "tags": {
+        "amenity": "toilets",
+        "check_date": "2021-10-19",
+        "female": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8282164,
+        21.4250444
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مكتب الإفتاء الديني",
+      "name_en": "Religious Guidance Office",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "5862282585",
+      "tags": {
+        "information": "office",
+        "level": "0",
+        "name": "مكتب الإفتاء الديني",
+        "name:ar": "مكتب الإفتاء الديني",
+        "name:en": "Religious Guidance Office",
+        "name:tk": "Dini gönükdirme-Fetwa bölümi",
+        "name:tr": "Dini Fetvalar Bölümü",
+        "office": "religion",
+        "religion": "muslim",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8239342,
+        21.4217735
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مكتب الإفتاء الديني",
+      "name_en": "Religious Guidance Office",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "5862282586",
+      "tags": {
+        "information": "office",
+        "level": "0",
+        "name": "مكتب الإفتاء الديني",
+        "name:ar": "مكتب الإفتاء الديني",
+        "name:cy": "Swyddfa Gyngor Crefyddol",
+        "name:en": "Religious Guidance Office",
+        "name:tk": "Dini gönükdirme-Fetwa bölümi",
+        "name:tr": "Dini Fetvalar Bölümü",
+        "office": "religion",
+        "religion": "muslim",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8246751,
+        21.4209205
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "5862288832",
+      "tags": {
+        "amenity": "toilets",
+        "male": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8300249,
+        21.4232362
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "5862288833",
+      "tags": {
+        "amenity": "toilets",
+        "female": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.83031,
+        21.4229161
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "حمامات رجال",
+      "name_en": "Men's WC - 8",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "5869157285",
+      "tags": {
+        "amenity": "toilets",
+        "male": "yes",
+        "name": "حمامات رجال",
+        "name:ar": "حمامات رجال",
+        "name:en": "Men's WC - 8"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8237035,
+        21.4206025
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "5905128623",
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8192143,
+        21.4280577
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "زمزم",
+      "name_en": "زمزم",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6274474323",
+      "tags": {
+        "amenity": "drinking_water",
+        "name": "زمزم",
+        "shop": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8289968,
+        21.4286256
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "إلى الدور الأرضي من المسعى",
+      "name_en": "To Masa'a Ground Floor",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6284805634",
+      "tags": {
+        "direction": "forward",
+        "information": "guidepost",
+        "level": "-1",
+        "name": "إلى الدور الأرضي من المسعى",
+        "name:ar": "إلى الدور الأرضي من المسعى",
+        "name:en": "To Masa'a Ground Floor",
+        "name:tk": "Mäsa-dan Yerzemin Gatyna",
+        "name:tr": "Mesa'dan Zemin Katına Gidiş",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.82687,
+        21.4232621
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "إلى توسعة الملك عبد الله",
+      "name_en": "To King Abdullah Expansion",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6285102966",
+      "tags": {
+        "direction": "backward",
+        "information": "guidepost",
+        "level": "-1",
+        "name": "إلى توسعة الملك عبد الله",
+        "name:ar": "إلى توسعة الملك عبد الله",
+        "name:en": "To King Abdullah Expansion",
+        "name:tk": "Melik Abdullah Giňişligine gider",
+        "name:tr": "Melik Abdullah Genişlemesine gider",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8258054,
+        21.4230578
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "إلى المسعى",
+      "name_en": "To Masa'a",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6285102968",
+      "tags": {
+        "direction": "backward",
+        "information": "guidepost",
+        "level": "-1",
+        "name": "إلى المسعى",
+        "name:ar": "إلى المسعى",
+        "name:en": "To Masa'a",
+        "name:tk": "Mäsa gider",
+        "name:tr": "Mesa'ya gidiş",
+        "name:ur": "مسعیٰ کرنے کی جگہ",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8267017,
+        21.4231546
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "سلم الملك فهد رقم 80",
+      "name_en": "King Fahd Stair No. 80",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6286964900",
+      "tags": {
+        "information": "guidepost",
+        "level": "0",
+        "name": "سلم الملك فهد رقم 80",
+        "name:en": "King Fahd Stair No. 80",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8242008,
+        21.4210767
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "إلى مكتبة المسجد الحرام",
+      "name_en": "To Library al-Masjid al-Haram",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6287084165",
+      "tags": {
+        "information": "guidepost",
+        "name": "إلى مكتبة المسجد الحرام",
+        "name:ar": "إلى مكتبة المسجد الحرام",
+        "name:en": "To Library al-Masjid al-Haram",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8243277,
+        21.4210307
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Toilet for Men",
+      "name_en": "Toilet for Men",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6312653665",
+      "tags": {
+        "amenity": "toilets",
+        "male": "yes",
+        "name": "Toilet for Men"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.829182,
+        21.4295167
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6314370976",
+      "tags": {
+        "amenity": "parking",
+        "layer": "-1",
+        "parking": "underground"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8306832,
+        21.420667
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6314582900",
+      "tags": {
+        "access": "customers",
+        "amenity": "parking",
+        "operator": "Al Shohada Parking",
+        "parking": "underground"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8278485,
+        21.4152249
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Jamarat Second Floor",
+      "name_en": "Jamarat Second Floor",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6332006085",
+      "tags": {
+        "information": "guidepost",
+        "name": "Jamarat Second Floor",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8653794,
+        21.4231154
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Souq Alarab Road",
+      "name_en": "Souq Alarab Road",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6332010673",
+      "tags": {
+        "information": "guidepost",
+        "name": "Souq Alarab Road",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8654901,
+        21.4233509
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Jawharat Road",
+      "name_en": "Al Jawharat Road",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6332010676",
+      "tags": {
+        "information": "guidepost",
+        "name": "Al Jawharat Road",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8655048,
+        21.4233825
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Exit Only - No Entry",
+      "name_en": "Exit Only - No Entry",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6332012251",
+      "tags": {
+        "information": "guidepost",
+        "name": "Exit Only - No Entry",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8657449,
+        21.423483
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Exit Only - No Entry",
+      "name_en": "Exit Only - No Entry",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6332019830",
+      "tags": {
+        "information": "guidepost",
+        "name": "Exit Only - No Entry",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.865279,
+        21.4236262
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Slaughter Houses",
+      "name_en": "Slaughter Houses",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6332019832",
+      "tags": {
+        "information": "guidepost",
+        "name": "Slaughter Houses",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8651916,
+        21.4236587
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Moaisem",
+      "name_en": "Moaisem",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6332019834",
+      "tags": {
+        "information": "guidepost",
+        "name": "Moaisem",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8652153,
+        21.4236606
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Slaughter Houses",
+      "name_en": "Slaughter Houses",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6332022778",
+      "tags": {
+        "information": "guidepost",
+        "name": "Slaughter Houses",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8648969,
+        21.4247631
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Moaisem",
+      "name_en": "Moaisem",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6332022779",
+      "tags": {
+        "information": "guidepost",
+        "name": "Moaisem",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.864919,
+        21.424761
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Bus Station",
+      "name_en": "Bus Station",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6332026257",
+      "tags": {
+        "information": "guidepost",
+        "name": "Bus Station",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8648647,
+        21.4247734
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Hajj Street",
+      "name_en": "Al Hajj Street",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6332026259",
+      "tags": {
+        "information": "guidepost",
+        "name": "Al Hajj Street",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8648402,
+        21.4247744
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Makkah",
+      "name_en": "Makkah",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "6332032998",
+      "tags": {
+        "information": "guidepost",
+        "name": "Makkah",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8632095,
+        21.4251582
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Masjid al Haram Map",
+      "name_en": "Masjid al Haram Map",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "7076364820",
+      "tags": {
+        "information": "map",
+        "name": "Masjid al Haram Map",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8266404,
+        21.4199717
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "إلى قبو المسعى",
+      "name_en": "To Masa'a Basement",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "7078266770",
+      "tags": {
+        "direction": "backward",
+        "information": "guidepost",
+        "name": "إلى قبو المسعى",
+        "name:ar": "إلى قبو المسعى",
+        "name:en": "To Masa'a Basement",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8270751,
+        21.4231986
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Masjid al Haram Map",
+      "name_en": "Masjid al Haram Map",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "7078522110",
+      "tags": {
+        "information": "map",
+        "name": "Masjid al Haram Map",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8232464,
+        21.420928
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Masjid al Haram Map",
+      "name_en": "Masjid al Haram Map",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "7086734027",
+      "tags": {
+        "information": "map",
+        "name": "Masjid al Haram Map",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8236373,
+        21.4206984
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Masjid al Haram Map",
+      "name_en": "Masjid al Haram Map",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "7087026096",
+      "tags": {
+        "information": "map",
+        "name": "Masjid al Haram Map",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8249666,
+        21.4201529
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Masjid al Haram Map",
+      "name_en": "Masjid al Haram Map",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "8715792153",
+      "tags": {
+        "information": "map",
+        "name": "Masjid al Haram Map",
+        "name:tk": "Mesjid-i Haram Kartasy",
+        "name:tr": "Mescid-i Haram Harita",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8281714,
+        21.4248282
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "إلى الدور الأول للمطاف",
+      "name_en": "To Mataf First Floor",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "8754315146",
+      "tags": {
+        "direction": "forward",
+        "information": "guidepost",
+        "level": "0",
+        "name": "إلى الدور الأول للمطاف",
+        "name:en": "To Mataf First Floor",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8266698,
+        21.4203959
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "ترجمة خطب الجمعة إلى لغة الإشارة",
+      "name_en": "ترجمة خطب الجمعة إلى لغة الإشارة",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "8783559582",
+      "tags": {
+        "name": "ترجمة خطب الجمعة إلى لغة الإشارة",
+        "name:ar": "ترجمة خطب الجمعة إلى لغة الإشارة",
+        "name:tk": "Kerler Üçin Juma Hutbasy",
+        "name:tr": "Cuma Hutbesi İşaret Dili Çevirisi",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.825449,
+        21.4210911
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "8783651591",
+      "tags": {
+        "amenity": "drinking_water"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8233198,
+        21.425182
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "12898339022",
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8213574,
+        21.4251632
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "12898339023",
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8211451,
+        21.4252752
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "12898339024",
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8207911,
+        21.4254201
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "12898339025",
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8216689,
+        21.4258089
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "12898339026",
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8213928,
+        21.4260725
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "12898339027",
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8219166,
+        21.4256376
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "12898339028",
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8226032,
+        21.4264151
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "12898339029",
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8224758,
+        21.4266457
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "12898339030",
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8222847,
+        21.4269422
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "12898339031",
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.823849,
+        21.4273442
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "12898339032",
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.823849,
+        21.4275946
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "12898339033",
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8238278,
+        21.4278515
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "12898339034",
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8249391,
+        21.4276934
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "12898339035",
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8248966,
+        21.4279306
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "12898339036",
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8248825,
+        21.4281744
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "12898339037",
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8258522,
+        21.4277922
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "12898339038",
+      "tags": {
+        "amenity": "toilets"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8258805,
+        21.4282074
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Entrance Anjum Hotel",
+      "name_en": "Entrance Anjum Hotel",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Masjidil Haram.",
+      "osm_id": "13087657898",
+      "tags": {
+        "ele": "0",
+        "information": "guidepost",
+        "name": "Entrance Anjum Hotel",
+        "operator": "Anjum ahotel",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8200771,
+        21.4241612
+      ]
+    }
+  }
+]

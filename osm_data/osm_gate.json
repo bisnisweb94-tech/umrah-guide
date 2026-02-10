@@ -1,0 +1,884 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب قريش 28",
+      "name_en": "Quraish Gate",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "1199442714",
+      "tags": {
+        "door": "hinged",
+        "entrance": "yes",
+        "name": "باب قريش 28",
+        "name:ar": "باب قريش 28",
+        "name:en": "Quraish Gate",
+        "ref": "28"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8269231,
+        21.4254428
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب الملك فھد - 79",
+      "name_en": "King Fahd Gate - 79",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "دخول ذوي الاحتياجات الخاصة",
+      "osm_id": "3210622327",
+      "tags": {
+        "description": "دخول ذوي الاحتياجات الخاصة",
+        "description:en": "Accessible entrance",
+        "entrance": "main",
+        "foot": "yes",
+        "name": "باب الملك فھد - 79",
+        "name:ar": "باب الملك فھد - 79",
+        "name:en": "King Fahd Gate - 79",
+        "opening_hours": "24/7",
+        "ref": "79",
+        "short_name:ar": "باب الملك فھد",
+        "tourism": "attraction",
+        "wheelchair": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8240461,
+        21.421232
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب الفتح",
+      "name_en": "Fateh Gate",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "4318154227",
+      "tags": {
+        "bicycle": "no",
+        "entrance": "main",
+        "foot": "yes",
+        "motor_vehicle": "no",
+        "name": "باب الفتح",
+        "name:ar": "باب الفتح",
+        "name:en": "Fateh Gate",
+        "name:ml": "ബാബ് അൽ ഫത്തേഹ്",
+        "name:tr": "Fetih Kapısı",
+        "ref": "30",
+        "short_name:ar": "باب الفتح",
+        "tourism": "attraction"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8265147,
+        21.4240151
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب العمرة - 40",
+      "name_en": "Umra Gate 40",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "4318154228",
+      "tags": {
+        "bicycle": "no",
+        "entrance": "main",
+        "foot": "yes",
+        "name": "باب العمرة - 40",
+        "name:ar": "باب العمرة - 40",
+        "name:en": "Umra Gate 40",
+        "name:tk": "Umra Gapysy",
+        "name:tr": "Ümre Kapısı",
+        "ref": "40",
+        "short_name:ar": "باب العمرة",
+        "tourism": "attraction"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8245696,
+        21.4228378
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب السلام",
+      "name_en": "Bab Al Salam",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "4562384977",
+      "tags": {
+        "bicycle": "no",
+        "door": "hinged",
+        "entrance": "yes",
+        "foot": "yes",
+        "inscription": "Bab Al Salam",
+        "level": "-1",
+        "name": "باب السلام",
+        "name:ar": "باب السلام",
+        "name:en": "Bab Al Salam",
+        "name:ml": "ബാബ് അൽ സലാം",
+        "name:tk": "Salam Gapysy",
+        "name:tr": "Selam Kapısı",
+        "short_name:ar": "باب السلام"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8275662,
+        21.4230322
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب المروة - 25",
+      "name_en": "Bab Al Marwah 25",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "4562391840",
+      "tags": {
+        "entrance": "main",
+        "level": "0",
+        "name": "باب المروة - 25",
+        "name:ar": "باب المروة - 25",
+        "name:en": "Bab Al Marwah 25",
+        "ref": "25",
+        "short_name:ar": "باب المروة"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8273872,
+        21.4253183
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "كباب",
+      "name_en": "Iskender Kebab",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "4585764106",
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "turkish",
+        "name": "كباب",
+        "name:ar": "كباب",
+        "name:en": "Iskender Kebab"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.7937049,
+        21.4376896
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب الملك عبد العزیز (1)",
+      "name_en": "King Abdul Aziz Gate 1",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "4755914231",
+      "tags": {
+        "entrance": "main",
+        "image": "File:King_Abdul_Aziz_Gate_-_panoramio.jpg",
+        "inscription": "1",
+        "level": "0",
+        "name": "باب الملك عبد العزیز (1)",
+        "name:ar": "باب الملك عبد العزیز (1)",
+        "name:en": "King Abdul Aziz Gate 1",
+        "opening_hours": "24/7",
+        "ref": "1",
+        "tourism": "attraction",
+        "wheelchair": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8258406,
+        21.4210447
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب الكعبة",
+      "name_en": "Bab al Kaaba",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "4900636561",
+      "tags": {
+        "access": "no",
+        "automatic_door": "no",
+        "door": "hinged",
+        "entrance": "yes",
+        "height": "5.4",
+        "min_height": "2.22",
+        "name": "باب الكعبة",
+        "name:en": "Bab al Kaaba",
+        "name:ml": "ബാബ് അൽ കഅബ",
+        "width": "1.9",
+        "wikidata": "Q16122214",
+        "wikipedia": "ar:باب الكعبة"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8262411,
+        21.4225173
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Kebab al-Miro",
+      "name_en": "Kebab al-Miro",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "5077247462",
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Kebab al-Miro",
+        "name:en": "Kebab al-Miro"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.834511,
+        21.4399613
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Gate 4 - Jabel Omar Jumeirah East Tower",
+      "name_en": "Gate 4 - Jabel Omar Jumeirah East Tower",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "5077494802",
+      "tags": {
+        "entrance": "main",
+        "name": "Gate 4 - Jabel Omar Jumeirah East Tower"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8225795,
+        21.4188602
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Kebab Restaurant",
+      "name_en": "Kebab Restaurant",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "5849931977",
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "kebab",
+        "name": "Kebab Restaurant"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.862493,
+        21.4155063
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب علي",
+      "name_en": "باب علي",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "5858896077",
+      "tags": {
+        "door": "hinged",
+        "entrance": "yes",
+        "inscription": "باب علي Bab Ali - 17",
+        "level": "-1",
+        "name": "باب علي",
+        "name:ar": "باب علي",
+        "name:ml": "ബാബ് അലി",
+        "ref": "17"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8275792,
+        21.4229524
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب 3 أجياد",
+      "name_en": "Bab Ajyad - Gate 3",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "5858933516",
+      "tags": {
+        "door": "hinged",
+        "entrance": "yes",
+        "layer": "1",
+        "level": "1",
+        "name": "باب 3 أجياد",
+        "name:ar": "باب 3 أجياد",
+        "name:en": "Bab Ajyad - Gate 3",
+        "ref": "3",
+        "wheelchair": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8264059,
+        21.4210652
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "إلى باب العمرة",
+      "name_en": "To Umra Gate",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "5871248351",
+      "tags": {
+        "direction": "backward",
+        "information": "guidepost",
+        "level": "-1",
+        "name": "إلى باب العمرة",
+        "name:ar": "إلى باب العمرة",
+        "name:en": "To Umra Gate",
+        "name:ml": "ഉംറ കവാടത്തിലേക്ക്",
+        "name:tk": "Umra Gapysyna gider",
+        "name:tr": "Umre Kapısına Gidiş",
+        "name:ur": "العمرہ گیٹ کی طرف",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8254572,
+        21.4226591
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب الملك عبد الله",
+      "name_en": "King Abdullah Gate -100",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "5875587679",
+      "tags": {
+        "entrance": "main",
+        "inscription": "King Abdullah Gate",
+        "name": "باب الملك عبد الله",
+        "name:ar": "باب الملك عبد الله",
+        "name:en": "King Abdullah Gate -100",
+        "tourism": "attraction"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.824132,
+        21.4253914
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب أجياد 5",
+      "name_en": "Ajyad Gate 5",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "5875608247",
+      "tags": {
+        "entrance": "main",
+        "level": "0",
+        "name": "باب أجياد 5",
+        "name:ar": "باب أجياد 5",
+        "name:en": "Ajyad Gate 5",
+        "name:tk": "Äjýad Gapysy 5",
+        "name:tr": "Ecyad Kapısı 5",
+        "wheelchair": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8268532,
+        21.4213059
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب الصفا",
+      "name_en": "As-Safa Gate",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "5875608248",
+      "tags": {
+        "direction": "forward",
+        "information": "guidepost",
+        "level": "-1",
+        "name": "باب الصفا",
+        "name:ar": "باب الصفا",
+        "name:de": "Tor As-Safa",
+        "name:en": "As-Safa Gate",
+        "name:es": "Puerta de Asafa",
+        "name:ml": "ബാബ് അൽ സഫ",
+        "name:tk": "Sapa Gapysy",
+        "name:tr": "Safa Kapısı",
+        "name:ur": "باب الصفا",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8264354,
+        21.4219419
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Bani Shaibah Bridge Gate - 21",
+      "name_en": "Bani Shaibah Bridge Gate - 21",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "6284017920",
+      "tags": {
+        "door": "hinged",
+        "entrance": "yes",
+        "name": "Bani Shaibah Bridge Gate - 21",
+        "ref": "21"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.827387,
+        21.4244632
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب بني شيبة 22",
+      "name_en": "22 Bani Shaibah Gate",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "6284838118",
+      "tags": {
+        "door": "hinged",
+        "entrance": "yes",
+        "name": "باب بني شيبة 22",
+        "name:ar": "باب بني شيبة 22",
+        "name:en": "22 Bani Shaibah Gate",
+        "ref": "22"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8273569,
+        21.4246888
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "إلى باب الملك عبد العزيز",
+      "name_en": "To King Abdul Aziz Gate",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "6285102963",
+      "tags": {
+        "direction": "backward",
+        "information": "guidepost",
+        "name": "إلى باب الملك عبد العزيز",
+        "name:ar": "إلى باب الملك عبد العزيز",
+        "name:en": "To King Abdul Aziz Gate",
+        "name:tk": "Melik Abdulaziz Gapysyna Gider",
+        "name:tr": "Kral Abdülaziz Kapısı",
+        "name:ur": "ملک عبد العزیز گیٹ کی طرف",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8260296,
+        21.4218558
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "إلى باب الملك فهد",
+      "name_en": "To King Fahd Gate",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "6285102964",
+      "tags": {
+        "direction": "backward",
+        "information": "guidepost",
+        "level": "-1",
+        "name": "إلى باب الملك فهد",
+        "name:ar": "إلى باب الملك فهد",
+        "name:en": "To King Fahd Gate",
+        "name:ml": "കിംഗ് ഫഹദ് കവാടത്തിലേക്ക്",
+        "name:tk": "Melik Fähd Gapysyna gider",
+        "name:tr": "Melik Fehd Kapısına Gidiş",
+        "name:ur": "ملک فہد گیٹ کی طرف",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8256169,
+        21.4221802
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "إلى باب الفتح",
+      "name_en": "To Fateh Gate",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "6285102967",
+      "tags": {
+        "direction": "backward",
+        "information": "guidepost",
+        "level": "-1",
+        "name": "إلى باب الفتح",
+        "name:ar": "إلى باب الفتح",
+        "name:en": "To Fateh Gate",
+        "name:ml": "ഫത്തേഹ് കവാടത്തിലേക്ക്",
+        "name:tk": "Petih Gapysyna gider",
+        "name:tr": "Fetih Kapısına Gidiş",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8263278,
+        21.4231996
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Doner Kebab DK72 - 4th Floor",
+      "name_en": "Doner Kebab DK72 - 4th Floor",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "6292142155",
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "turkish",
+        "name": "Doner Kebab DK72 - 4th Floor"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8258702,
+        21.4186103
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب القدس 35",
+      "name_en": "Al Quds Gate 35",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "6297046470",
+      "tags": {
+        "bicycle": "no",
+        "entrance": "main",
+        "foot": "yes",
+        "motor_vehicle": "no",
+        "name": "باب القدس 35",
+        "name:ar": "باب القدس 35",
+        "name:en": "Al Quds Gate 35",
+        "ref": "35",
+        "short_name:ar": "باب 35",
+        "tourism": "attraction"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8252692,
+        21.4238175
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Bab Al-Salam",
+      "name_en": "Bab Al-Salam",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "6301219294",
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "chicken",
+        "name": "Bab Al-Salam"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.829878,
+        21.4283825
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "دفاع مدني باب الملك",
+      "name_en": "Civil Defense",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "6800257641",
+      "tags": {
+        "amenity": "fire_station",
+        "name": "دفاع مدني باب الملك",
+        "name:ar": "دفاع مدني باب الملك",
+        "name:en": "Civil Defense"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8273551,
+        21.4146487
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب سلم الأرقم الكهربائي",
+      "name_en": "باب سلم الأرقم الكهربائي",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "7728594724",
+      "tags": {
+        "door": "hinged",
+        "entrance": "yes",
+        "level": "0",
+        "name": "باب سلم الأرقم الكهربائي",
+        "name:ar": "باب سلم الأرقم الكهربائي",
+        "ref": "16",
+        "wheelchair": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8277405,
+        21.4224983
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب المروة - 25",
+      "name_en": "Bab Al Marwah 25",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "8715775972",
+      "tags": {
+        "entrance": "main",
+        "level": "1",
+        "name": "باب المروة - 25",
+        "name:ar": "باب المروة - 25",
+        "name:en": "Bab Al Marwah 25",
+        "name:tk": "Merwe Gapysy - 25",
+        "name:tr": "Merve Kapısı - 25",
+        "ref": "25",
+        "short_name:ar": "باب المروة",
+        "short_name:tk": "Merwe Gapysy",
+        "short_name:tr": "Merve Kapısı",
+        "wheelchair": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8273881,
+        21.4253089
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب النبي",
+      "name_en": "Al Nabi Gate 14",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "8756153753",
+      "tags": {
+        "door": "hinged",
+        "entrance": "yes",
+        "level": "-1",
+        "name": "باب النبي",
+        "name:ar": "باب النبي",
+        "name:en": "Al Nabi Gate 14",
+        "ref": "14"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8276781,
+        21.4222008
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Gate 6 - Jabel Omar Jumeirah - West Tower",
+      "name_en": "Gate 6 - Jabel Omar Jumeirah - West Tower",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "10838162448",
+      "tags": {
+        "entrance": "main",
+        "name": "Gate 6 - Jabel Omar Jumeirah - West Tower"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8226701,
+        21.4180447
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Gate 5 - Jabel Omar Jumeirah",
+      "name_en": "Gate 5 - Jabel Omar Jumeirah",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Masjidil Haram.",
+      "osm_id": "10838162449",
+      "tags": {
+        "entrance": "main",
+        "name": "Gate 5 - Jabel Omar Jumeirah"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.8226351,
+        21.4183813
+      ]
+    }
+  }
+]

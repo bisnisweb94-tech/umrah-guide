@@ -1216,6 +1216,761 @@ const masjidilHaramLocations = [
             "type": "Point",
             "coordinates": [39.833, 21.437]
         }
+    },
+    // === UPDATED FACILITIES (MAP-3.OSM) ===
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8300843,
+                21.4343522
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8304693,
+                21.4352325
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet (Pria)",
+            "name_en": "Public Toilet (Men)",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-person",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Male"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8286892,
+                21.4248517
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet (Wanita)",
+            "name_en": "Public Toilet (Women)",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-person-dress",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Female"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8282164,
+                21.4250444
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet (Pria)",
+            "name_en": "Public Toilet (Men)",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-person",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Male"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8300249,
+                21.4232362
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet (Wanita)",
+            "name_en": "Public Toilet (Women)",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-person-dress",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Female"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.83031,
+                21.4229161
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "حمامات رجال (Pria)",
+            "name_en": "Men's WC - 8 (Men)",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-person",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Male"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8237035,
+                21.4206025
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet for Men (Pria)",
+            "name_en": "Public Toilet (Men)",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-person",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Male"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.829182,
+                21.4295167
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8213574,
+                21.4251632
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8211451,
+                21.4252752
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8207911,
+                21.4254201
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8216689,
+                21.4258089
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8213928,
+                21.4260725
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8219166,
+                21.4256376
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8226032,
+                21.4264151
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8224758,
+                21.4266457
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8222847,
+                21.4269422
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.823849,
+                21.4273442
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.823849,
+                21.4275946
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8238278,
+                21.4278515
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8249391,
+                21.4276934
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8248966,
+                21.4279306
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8248825,
+                21.4281744
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8258522,
+                21.4277922
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Public Toilet",
+            "type": "Support",
+            "subtype": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Fasilitas toilet umum.",
+            "gender": "Unspecified"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8258805,
+                21.4282074
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "مصعد 1",
+            "name_en": "Lift/Escalator 1",
+            "type": "Support",
+            "subtype": "Escalator",
+            "icon": "fa-elevator",
+            "description": "Lift/Escalator untuk akses lantai atas."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8228696,
+                21.4198481
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "مصعد 2",
+            "name_en": "Lift/Escalator 2",
+            "type": "Support",
+            "subtype": "Escalator",
+            "icon": "fa-elevator",
+            "description": "Lift/Escalator untuk akses lantai atas."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8231105,
+                21.4204201
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "مصعد 3",
+            "name_en": "Lift/Escalator 3",
+            "type": "Support",
+            "subtype": "Escalator",
+            "icon": "fa-elevator",
+            "description": "Lift/Escalator untuk akses lantai atas."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.822662,
+                21.4240541
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "مصعد 4",
+            "name_en": "Lift/Escalator 4",
+            "type": "Support",
+            "subtype": "Escalator",
+            "icon": "fa-elevator",
+            "description": "Lift/Escalator untuk akses lantai atas."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.823173,
+                21.4248131
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "مصعد 5",
+            "name_en": "Lift/Escalator 5",
+            "type": "Support",
+            "subtype": "Escalator",
+            "icon": "fa-elevator",
+            "description": "Lift/Escalator untuk akses lantai atas."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8234278,
+                21.4250853
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "مصعد 6",
+            "name_en": "Lift/Escalator 6",
+            "type": "Support",
+            "subtype": "Escalator",
+            "icon": "fa-elevator",
+            "description": "Lift/Escalator untuk akses lantai atas."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8247166,
+                21.4258793
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "مصعد 7",
+            "name_en": "Lift/Escalator 7",
+            "type": "Support",
+            "subtype": "Escalator",
+            "icon": "fa-elevator",
+            "description": "Lift/Escalator untuk akses lantai atas."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8251846,
+                21.4260241
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "مصعد 8",
+            "name_en": "Lift/Escalator 8",
+            "type": "Support",
+            "subtype": "Escalator",
+            "icon": "fa-elevator",
+            "description": "Lift/Escalator untuk akses lantai atas."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8260322,
+                21.4261464
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "مصعد 9",
+            "name_en": "Lift/Escalator 9 (Multi-Level)",
+            "type": "Support",
+            "subtype": "Escalator",
+            "icon": "fa-elevator",
+            "description": "Lift/Escalator untuk akses lantai atas."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8274467,
+                21.4248656
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "مصعد 10",
+            "name_en": "Lift/Escalator 10 (Multi-Level)",
+            "type": "Support",
+            "subtype": "Escalator",
+            "icon": "fa-elevator",
+            "description": "Lift/Escalator untuk akses lantai atas."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.827742,
+                21.4225647
+            ]
+        }
+    },
+    // === AREA & TRANSPORT (MAP-3.OSM) ===
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "الزهراء",
+            "name_en": "Az Zahra",
+            "type": "Landmark",
+            "icon": "fa-map-marker-alt",
+            "description": "Area lingkungan Az Zahra."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8141527, 21.4277832]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "جرول",
+            "name_en": "Jarwal",
+            "type": "Landmark",
+            "icon": "fa-map-marker-alt",
+            "description": "Area lingkungan Jarwal."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8141527, 21.4277832]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "المسفلة",
+            "name_en": "Al Misfalah",
+            "type": "Landmark",
+            "icon": "fa-map-marker-alt",
+            "description": "Area lingkungan Al Misfalah."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8223054, 21.4050055]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "الهنداوية",
+            "name_en": "Al Hindawiyah",
+            "type": "Landmark",
+            "icon": "fa-map-marker-alt",
+            "description": "Area lingkungan Al Hindawiyah."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8000204, 21.4154351]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "الجميزة",
+            "name_en": "Al Jummayzah",
+            "type": "Landmark",
+            "icon": "fa-map-marker-alt",
+            "description": "Area lingkungan Al Jummayzah."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8335719, 21.4371708]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "الرصيفة",
+            "name_en": "Ar Rusayfah",
+            "type": "Landmark",
+            "icon": "fa-map-marker-alt",
+            "description": "Area lingkungan Ar Rusayfah."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.7870107, 21.4137530]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "محطة قطار الحرمين",
+            "name_en": "Makkah Haramain HSR Station",
+            "type": "Support",
+            "icon": "fa-train",
+            "description": "Stasiun Kereta Cepat Haramain Makkah."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.7879275, 21.4180648]
+        }
     }
 ];
 
