@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peta Digital Masjidil Haram - Data OSM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-sidebar-v2@3.1.1/css/leaflet-sidebar.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Styling Sidebar List */
+        .location-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .location-item {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+        }
+
+        .location-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .location-icon {
+            margin-right: 15px;
+            color: #bfa15f;
+            /* Warna Emas Masjid */
+            font-size: 1.2em;
+        }
+
+        .location-info h4 {
+            margin: 0 0 5px 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .location-info p {
+            margin: 0;
+            font-size: 12px;
+            color: #666;
+        }
+
+        /* Category Header */
+        .category-header {
+            padding: 10px 15px;
+            background: linear-gradient(135deg, #bfa15f 0%, #9d8548 100%);
+            font-weight: bold;
+            color: white;
+            border-bottom: 1px solid #ddd;
+            text-transform: uppercase;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+
+        /* Search Box di Sidebar */
+        .search-container {
+            padding: 15px;
+            border-bottom: 2px solid #bfa15f;
+            position: sticky;
+            top: 0;
+            background: #fff;
+            z-index: 10;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #bfa15f;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #9d8548;
+            box-shadow: 0 0 5px rgba(191, 161, 95, 0.3);
+        }
+
+        /* Legend Styling */
+        .legend {
+            background: white;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .legend h4 {
+            margin: 0 0 8px 0;
+            font-size: 14px;
+            color: #333;
+            border-bottom: 2px solid #bfa15f;
+            padding-bottom: 5px;
+        }
+
+        .legend-item {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .legend-color {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            margin-right: 8px;
+            border: 2px solid white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .legend-label {
+            font-size: 12px;
+            color: #555;
+        }
+
+        /* Popup Styling */
+        .leaflet-popup-content {
+            margin: 10px;
+        }
+
+        .leaflet-popup-content h3 {
+            margin: 0 0 5px 0;
+            color: #bfa15f;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="sidebar" class="leaflet-sidebar collapsed">
+        <div class="leaflet-sidebar-tabs">
+            <ul role="tablist">
+                <li><a href="#home" role="tab"><i class="fa fa-bars"></i></a></li>
+                <li><a href="#info" role="tab"><i class="fa fa-info-circle"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="leaflet-sidebar-content">
+            <div class="leaflet-sidebar-pane" id="home">
+                <h1 class="leaflet-sidebar-header">
+                    Lokasi Penting
+                    <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h1>
+
+                <div class="search-container">
+                    <input type="text" id="searchInput" class="search-box"
+                        placeholder="🔍 Cari lokasi (Arab/English)..." onkeyup="filterList()">
+                </div>
+
+                <ul class="location-list" id="sidebarList">
+                </ul>
+            </div>
+
+            <div class="leaflet-sidebar-pane" id="info">
+                <h1 class="leaflet-sidebar-header">Tentang Peta<span class="leaflet-sidebar-close"><i
+                            class="fa fa-caret-left"></i></span></h1>
+                <div style="padding: 20px;">
+                    <h3>📍 Peta Interaktif Masjidil Haram</h3>
+                    <p>Peta ini menggunakan data akurat dari <strong>OpenStreetMap</strong> yang mencakup:</p>
+                    <ul>
+                        <li>🕋 Tempat-tempat suci (Ka'bah, Hajar Aswad, Maqam Ibrahim)</li>
+                        <li>🚪 Gerbang-gerbang utama masjid</li>
+                        <li>⛰️ Bukit Safa dan Marwah untuk Sa'i</li>
+                    </ul>
+                    <p><strong>Cara Menggunakan:</strong></p>
+                    <ol>
+                        <li>Klik pada lokasi di sidebar untuk zoom ke tempat tersebut</li>
+                        <li>Gunakan search box untuk mencari lokasi tertentu</li>
+                        <li>Lihat legenda di pojok kanan bawah untuk memahami warna marker</li>
+                    </ol>
+                    <hr>
+                    <p style="font-size: 11px; color: #888;">Data © OpenStreetMap contributors<br>Tiles © Esri</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-sidebar-v2@3.1.1/js/leaflet-sidebar.min.js"></script>
+    <script src="masjidil-haram-data.js"></script>
+
+    <script>
+        // --- 1. Inisialisasi Peta ---
+        const kaabaCoords = [21.4225, 39.8262];
+        const map = L.map('map', {
+            center: kaabaCoords,
+            zoom: 18,
+            zoomControl: false
+        });
+
+        L.control.zoom({ position: 'topright' }).addTo(map);
+
+        // --- 2. Base Layers (Satellite Imagery) ---
+        const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; Esri | Data &copy; OpenStreetMap',
+            maxZoom: 20
+        }).addTo(map);
+
+        // --- 3. Image Overlay (Optional) ---
+        const imageUrl = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Great_Mosque_of_Mecca.jpg/1280px-Great_Mosque_of_Mecca.jpg';
+        const imageBounds = [[21.419, 39.822], [21.426, 39.830]];
+
+        L.imageOverlay(imageUrl, imageBounds, {
+            opacity: 0.4,
+            interactive: true
+        }).addTo(map);
+
+        // --- 4. Sidebar Setup ---
+        const sidebar = L.control.sidebar({
+            container: 'sidebar',
+            position: 'left'
+        }).addTo(map);
+
+        sidebar.open('home');
+
+        // --- 5. Custom Marker Icons berdasarkan tipe ---
+        const markerColors = {
+            'Holy Site': '#d4af37',      // Gold
+            'Main Gate': '#27ae60',      // Green
+            'Gate': '#3498db',           // Blue
+            'Landmark': '#e74c3c',       // Red
+            'Medical': '#e67e22',        // Orange
+            'Library': '#9b59b6',        // Purple
+            'Support': '#95a5a6'         // Grey
+        };
+
+        function getMarkerIcon(type) {
+            const color = markerColors[type] || '#95a5a6';
+            return L.divIcon({
+                className: 'custom-marker',
+                html: `<div style="background-color: ${color}; width: 20px; height: 20px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.4);"></div>`,
+                iconSize: [20, 20],
+                iconAnchor: [10, 10]
+            });
+        }
+
+        // --- 6. Logika Render Markers & Sidebar ---
+        const markersLayer = L.layerGroup().addTo(map);
+        const sidebarList = document.getElementById('sidebarList');
+
+        function renderData(data) {
+            sidebarList.innerHTML = '';
+            markersLayer.clearLayers();
+
+            // Group data by type
+            const grouped = {};
+            data.forEach(feature => {
+                const type = feature.properties.type;
+                if (!grouped[type]) grouped[type] = [];
+                grouped[type].push(feature);
+            });
+
+            // Render by category
+            const typeOrder = ['Holy Site', 'Main Gate', 'Gate', 'Landmark', 'Medical', 'Library', 'Support'];
+            typeOrder.forEach(type => {
+                if (!grouped[type]) return;
+
+                // Add category header
+                const categoryHeader = document.createElement('div');
+                categoryHeader.className = 'category-header';
+                categoryHeader.innerHTML = `<i class="fa fa-folder"></i> ${type}`;
+                sidebarList.appendChild(categoryHeader);
+
+                grouped[type].forEach(feature => {
+                    const props = feature.properties;
+                    const coords = feature.geometry.coordinates;
+                    const latLng = [coords[1], coords[0]];
+
+                    // 1. Tambahkan Marker ke Peta
+                    const popupContent = `
+                        <div style="min-width: 220px;">
+                            <h3>${props.name}</h3>
+                            <p style="margin: 0 0 8px 0; font-style: italic; color: #666; font-size: 13px;">${props.name_en || props.name}</p>
+                            <p style="margin: 0 0 5px 0;"><strong>📍 Tipe:</strong> ${props.type}</p>
+                            ${props.ref ? `<p style="margin: 0 0 5px 0;"><strong>🔢 Nomor:</strong> ${props.ref}</p>` : ''}
+                            ${props.description ? `<p style="margin: 8px 0 0 0; padding: 8px; background: #f9f9f9; border-left: 3px solid #bfa15f; font-size: 12px; color: #555;">${props.description}</p>` : ''}
+                        </div>
+                    `;
+
+                    const marker = L.marker(latLng, { icon: getMarkerIcon(props.type) })
+                        .bindPopup(popupContent);
+                    markersLayer.addLayer(marker);
+
+                    // 2. Tambahkan Item ke Sidebar
+                    const listItem = document.createElement('li');
+                    listItem.className = 'location-item';
+                    listItem.innerHTML = `
+                        <div class="location-icon"><i class="fa ${props.icon}"></i></div>
+                        <div class="location-info">
+                            <h4>${props.name_en || props.name}</h4>
+                            <p style="font-size: 11px; color: #888; font-style: italic;">${props.name}</p>
+                            ${props.ref ? `<span style="background: #bfa15f; color: white; padding: 2px 6px; border-radius: 3px; font-size: 10px; margin-top: 3px; display: inline-block;">No. ${props.ref}</span>` : ''}
+                        </div>
+                    `;
+
+                    listItem.addEventListener('click', () => {
+                        map.setView(latLng, 19, { animate: true });
+                        marker.openPopup();
+                        if (window.innerWidth < 768) {
+                            sidebar.close();
+                        }
+                    });
+
+                    sidebarList.appendChild(listItem);
+                });
+            });
+
+            // Show message if no results
+            if (data.length === 0) {
+                sidebarList.innerHTML = '<div style="padding: 20px; text-align: center; color: #888;">Tidak ada hasil ditemukan</div>';
+            }
+        }
+
+        // Render data dari file eksternal
+        renderData(masjidilHaramLocations);
+
+        // --- 7. Fitur Pencarian ---
+        window.filterList = function () {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+
+            if (query === '') {
+                renderData(masjidilHaramLocations);
+                return;
+            }
+
+            const filteredData = searchLocation(query);
+            renderData(filteredData);
+        }
+
+        // --- 8. Legend ---
+        const legend = L.control({ position: 'bottomright' });
+        legend.onAdd = function (map) {
+            const div = L.DomUtil.create('div', 'legend');
+            div.innerHTML = '<h4>📌 Legenda</h4>';
+
+            Object.keys(markerColors).forEach(type => {
+                div.innerHTML += `
+                    <div class="legend-item">
+                        <span class="legend-color" style="background: ${markerColors[type]};"></span>
+                        <span class="legend-label">${type}</span>
+                    </div>
+                `;
+            });
+
+            return div;
+        };
+        legend.addTo(map);
+
+        // --- 9. Add Scale Control ---
+        L.control.scale({ position: 'bottomleft', imperial: false }).addTo(map);
+
+    </script>
+</body>
+
+</html>
