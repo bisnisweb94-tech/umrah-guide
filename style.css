@@ -730,6 +730,17 @@ body {
     padding: 0 1rem 1rem 1rem;
 }
 
+/* Fix for left alignment in premium visualization */
+.visual-info.premium .check-list {
+    padding-left: 0.5rem;
+    margin: 0;
+}
+
+.visual-info.premium .check-list li {
+    justify-content: flex-start;
+    text-align: left;
+}
+
 /* === Tata Cara Video + Horizontal Transcript === */
 
 .tatacara-video-wrapper {
