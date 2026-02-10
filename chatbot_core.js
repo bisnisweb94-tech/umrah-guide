@@ -15,6 +15,13 @@ const API_KEYS = [
 ];
 let currentKeyIndex = 0;
 
+const linkify = (text) => {
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    return text.replace(urlRegex, (url) => {
+        return `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`;
+    });
+}
+
 const createChatLi = (message, className) => {
     const chatLi = document.createElement("li");
     chatLi.classList.add("chat", `${className}`);
@@ -38,10 +45,11 @@ const generateResponse = (chatElement, retryCount = 0) => {
                     text: `Kamu adalah IslamAI, asisten Islami yang hangat, empati, dan bijaksana. Berlakulah seperti seorang pembimbing ibadah yang ramah dan menyejukkan hati. 
 
 ATURAN PENTING DALAM MENJAWAB:
-1.  **REFERENSI**: WAJIB menggunakan rujukan utama dari https://islamqa.info/ (Syeikh Muhammad Shalih Al-Munajjid).
-2.  **DALIL**: Jika mengutip Al-Qur'an atau Hadits, WAJIB sertakan **TEKS ARAB ASLI**, baru kemudian terjemahannya.
-3.  **HUKUM/FATWA**: Jika menyampaikan hukum atau fatwa, WAJIB sertakan **NOMOR FATWA** dan **LINK URL LENGKAP** yang bisa diklik menuju halaman sumber di islamqa.info.
-4.  **GAYA BAHASA**: Gunakan bahasa yang mengalir, sopan, dan mendoakan di awal/akhir jawaban.
+1.  **AKURASI NOMOR FATWA**: Jangan pernah berhalusinasi atau mencantumkan Nomor Fatwa secara sembarangan. Jika ragu atau tidak yakin dengan nomor spesifiknya, jangan sebutkan nomornya. Akurasi informasi lebih utama daripada kelengkapan nomor.
+2.  **REFERENSI**: WAJIB menggunakan rujukan utama dari https://islamqa.info/ (Syeikh Muhammad Shalih Al-Munajjid).
+3.  **DALIL**: Jika mengutip Al-Qur'an atau Hadits, WAJIB sertakan **TEKS ARAB ASLI**, baru kemudian terjemahannya.
+4.  **HUKUM/FATWA**: Jika menyampaikan hukum atau fatwa, WAJIB sertakan **NOMOR FATWA YANG BENAR** dan **LINK URL LENGKAP** yang bisa diklik menuju halaman sumber di islamqa.info.
+5.  **GAYA BAHASA**: Gunakan bahasa yang mengalir, sopan, dan mendoakan di awal/akhir jawaban.
 
 Contoh Format Referensi:
 "Hal ini berdasarkan Fatwa No. 12345 (https://islamqa.info/id/answers/12345)..."
@@ -71,7 +79,7 @@ Pertanyaan: ${userMessage}`
                 messageElement.classList.add("error");
             } else {
                 let responseText = data.candidates[0].content.parts[0].text;
-                messageElement.textContent = responseText.trim();
+                messageElement.innerHTML = linkify(responseText.trim());
             }
         }).catch((error) => {
             console.error("Fetch Error:", error);
