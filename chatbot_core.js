@@ -7,26 +7,28 @@ const sendChatBtn = document.querySelector(".chat-input span");
 let userMessage = null; // Variable to store user's message
 const inputInitHeight = chatInput.scrollHeight;
 
-// IMPORTANT: Masukkan API Key Google Gemini Anda di sini agar Chatbot berfungsi.
-// Dapatkan API Key Gratis di: https://aistudio.google.com/app/apikey
-const API_KEY = "AIzaSyBod86uKNfCRbuQw9DaQbYAJzIWrlFeyts";
+// List API Keys untuk rotasi jika satu key kena limit
+const API_KEYS = [
+    "AIzaSyBod86uKNfCRbuQw9DaQbYAJzIWrlFeyts",
+    "AIzaSyCSn38z15_DaQxJCWGZ4sjYTHcpg4U0bkg",
+    "AIzaSyC2Kwu6gHkKdLLyWaCB73r70mY6WGuCjRw"
+];
+let currentKeyIndex = 0;
 
 const createChatLi = (message, className) => {
-    // Create a chat <li> element with passed message and className
     const chatLi = document.createElement("li");
     chatLi.classList.add("chat", `${className}`);
     let chatContent = className === "outgoing" ? `<p></p>` : `<span>🤖</span><p></p>`;
     chatLi.innerHTML = chatContent;
     chatLi.querySelector("p").textContent = message;
-    return chatLi; // return chat <li> element
+    return chatLi;
 }
 
-const generateResponse = (chatElement) => {
-    // Switching to gemini-3-flash-preview as requested (latest preview)
+const generateResponse = (chatElement, retryCount = 0) => {
+    const API_KEY = API_KEYS[currentKeyIndex];
     const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${API_KEY}`;
     const messageElement = chatElement.querySelector("p");
 
-    // Define the properties and message for the API request
     const requestOptions = {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -39,26 +41,30 @@ const generateResponse = (chatElement) => {
         })
     }
 
-    // Send POST request to API, get response and set the reponse as paragraph text
     fetch(API_URL, requestOptions)
         .then(res => res.json())
         .then(data => {
             if (data.error) {
-                console.error("Gemini API Error:", data.error);
-                if (API_KEY === "YOUR_API_KEY_HERE") {
-                    messageElement.textContent = "Mohon maaf, API Key belum diatur.";
-                } else {
-                    messageElement.textContent = `Terjadi kesalahan pada AI. Silakan refresh halaman.\n(Teknis: ${data.error.message})`;
+                console.error(`Error with Key ${currentKeyIndex}:`, data.error);
+
+                // Jika error Quota (429) dan masih ada key cadangan
+                if ((data.error.code === 429 || data.error.status === "RESOURCE_EXHAUSTED") && retryCount < API_KEYS.length - 1) {
+                    currentKeyIndex = (currentKeyIndex + 1) % API_KEYS.length;
+                    console.log(`Rotating to Key ${currentKeyIndex}...`);
+                    generateResponse(chatElement, retryCount + 1);
+                    return;
                 }
+
+                messageElement.textContent = `Maaf, sistem sedang sibuk. Silakan coba lagi nanti.\n(Pesan: ${data.error.message})`;
                 messageElement.classList.add("error");
             } else {
                 let responseText = data.candidates[0].content.parts[0].text;
                 messageElement.textContent = responseText.trim();
             }
         }).catch((error) => {
-            console.error("Fetch/Network Error:", error);
+            console.error("Fetch Error:", error);
             messageElement.classList.add("error");
-            messageElement.textContent = "Maaf, ada gangguan koneksi internet. Coba lagi nanti.";
+            messageElement.textContent = "Maaf, koneksi terputus. Mohon periksa internet Anda.";
         }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
 }
 
