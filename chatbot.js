@@ -9,7 +9,7 @@ const inputInitHeight = chatInput.scrollHeight;
 
 // IMPORTANT: Masukkan API Key Google Gemini Anda di sini agar Chatbot berfungsi.
 // Dapatkan API Key Gratis di: https://aistudio.google.com/app/apikey
-const API_KEY = "AIzaSyBE7KJ2nPr0rnLFnTFdw0GlYqwbDkhOSK8";
+const API_KEY = "AIzaSyC2Kwu6gHkKdLLyWaCB73r70mY6WGuCjRw";
 
 const createChatLi = (message, className) => {
     // Create a chat <li> element with passed message and className
