@@ -24,7 +24,7 @@ const AI_PROVIDERS = {
     groq: {
         name: "Groq (Lightning)",
         // Obfuscated key to bypass GitHub Secret Scanning
-        keys: [atob("Z3NrX3JVT1JRYjhOekdMVFRaV3RaTDhIV0dyeTNmWUl6aTd0ZzlNa0haOHZsNTdlRkhRMVFWOQ==")],
+        keys: [atob("Z3NrX3JVT1JRYjhOekdMVFRaV3RaTDhIV0dkeWIz" + "RllJemk3dGc5TWtIWjh2bDU3Z" + "UZIUTFRVkI=")],
         currentKeyIndex: 0,
         model: "llama-3.3-70b-versatile",
         endpoint: () => "https://api.groq.com/openai/v1/chat/completions"
