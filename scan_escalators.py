@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 import sys
 import math
 
-OSM_FILE = "/Users/aditya/Downloads/map-2.osm"
+OSM_FILE = "/Users/aditya/Downloads/map-3.osm"
 
 def main():
     if hasattr(sys.stdout, 'reconfigure'):

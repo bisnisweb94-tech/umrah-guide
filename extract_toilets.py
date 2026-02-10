@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 import json
 
-osm_file = '/Users/aditya/Downloads/map-2.osm'
+osm_file = '/Users/aditya/Downloads/map-3.osm'
 output_file = 'toilets_data.json'
 
 toilets = []
