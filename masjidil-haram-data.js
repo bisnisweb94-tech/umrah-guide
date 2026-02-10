@@ -181,6 +181,21 @@ const masjidilHaramLocations = [
             "coordinates": [39.8275662, 21.4230322]
         }
     },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "باب 3 أجياد",
+            "name_en": "Bab Ajyad (Gate 3)",
+            "type": "Gate",
+            "ref": "3",
+            "icon": "fa-door-open",
+            "description": "Gerbang akses dari arah jalan Ajyad. Ramah kursi roda."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8266416, 21.4212097]
+        }
+    },
 
     // === FASILITAS & MEDIS ===
     {
