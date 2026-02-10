@@ -33,7 +33,8 @@ const createChatLi = (message, className) => {
 
 const generateResponse = (chatElement, retryCount = 0) => {
     const API_KEY = API_KEYS[currentKeyIndex];
-    const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${API_KEY}`;
+    // Upgrading to gemini-3-pro-preview for higher performance and stability
+    const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-preview:generateContent?key=${API_KEY}`;
     const messageElement = chatElement.querySelector("p");
 
     const requestOptions = {
