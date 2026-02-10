@@ -160,14 +160,14 @@ body.show-chatbot .chatbot {
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.chatbox .incoming p a {
-    color: #4da3ff;
-    text-decoration: underline;
+.chatbox .chat.incoming p a {
+    color: #4da3ff !important;
+    text-decoration: underline !important;
     font-weight: 500;
 }
 
-.chatbox .incoming p a:hover {
-    color: #80bfff;
+.chatbox .chat.incoming p a:hover {
+    color: #80bfff !important;
 }
 
 .chatbox .incoming p.error {
