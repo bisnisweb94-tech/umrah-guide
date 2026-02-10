@@ -18,15 +18,15 @@ const AI_PROVIDERS = {
         endpoint: () => null // Uses Puter SDK
     },
     gemini: {
-        name: "Gemini Flash",
+        name: "Gemini 2.0 Flash",
         keys: [
             "AIzaSyBod86uKNfCRbuQw9DaQbYAJzIWrlFeyts",
             "AIzaSyCSn38z15_DaQxJCWGZ4sjYTHcpg4U0bkg",
             "AIzaSyC2Kwu6gHkKdLLyWaCB73r70mY6WGuCjRw"
         ],
         currentKeyIndex: 0,
-        model: "gemini-3-flash-preview",
-        endpoint: (key) => `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${key}`
+        model: "gemini-2.0-flash-exp",
+        endpoint: (key) => `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${key}`
     },
     groq: {
         name: "Groq (Lightning)",
