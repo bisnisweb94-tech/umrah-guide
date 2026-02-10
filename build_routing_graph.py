@@ -6,10 +6,11 @@ import json
 OSM_FILE = "/Users/aditya/Downloads/map-3.osm"
 OUTPUT_FILE = "/Users/aditya/.gemini/antigravity/scratch/umrah-guide/haram-routing-graph.js"
 
-# Allowed highway types for walking
+# Allowed highway types for walking (expanded for full Makkah coverage)
 WALKABLE_TYPES = {
     'footway', 'pedestrian', 'path', 'steps', 'corridor', 'service', 
-    'track', 'residential', 'living_street', 'elevator'
+    'track', 'residential', 'living_street', 'elevator',
+    'primary', 'secondary', 'tertiary', 'trunk', 'unclassified'
 }
 
 def haversine(lat1, lon1, lat2, lon2):
