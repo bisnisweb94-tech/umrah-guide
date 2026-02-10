@@ -10,6 +10,13 @@ let chatHistory = [];
 
 // AI Provider Configuration
 const AI_PROVIDERS = {
+    claude: {
+        name: "Claude 3.5 (Pro)",
+        keys: [""], // No key needed for Puter SDK
+        currentKeyIndex: 0,
+        model: "claude-3.5-sonnet",
+        endpoint: () => null // Uses Puter SDK
+    },
     gemini: {
         name: "Gemini Flash",
         keys: [
@@ -39,7 +46,7 @@ const AI_PROVIDERS = {
     }
 };
 
-let currentProvider = "gemini"; // Default provider
+let currentProvider = "claude"; // Default provider (Claude 3.5 Sonnet - Most Intelligent)
 
 const linkify = (text) => {
     const urlRegex = /(https?:\/\/[^\s]+)/g;
@@ -184,8 +191,37 @@ const generateResponseGroq = (chatElement) => {
         }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
 }
 
+const generateResponseClaude = (chatElement) => {
+    const messageElement = chatElement.querySelector("p");
+
+    const messages = [{ role: "system", content: getSystemPrompt() }];
+    chatHistory.forEach(msg => {
+        messages.push({
+            role: msg.role === "model" ? "assistant" : "user",
+            content: msg.parts[0].text
+        });
+    });
+
+    console.log("AI Request: Mengirim permintaan ke Claude 3.5 Sonnet via Puter...");
+    puter.ai.chat(messages, {
+        model: 'claude-3.5-sonnet'
+    }).then(response => {
+        const responseText = response.message.content;
+        messageElement.innerHTML = linkify(responseText.trim());
+        chatHistory.push({ role: "model", parts: [{ text: responseText }] });
+        if (chatHistory.length > 20) chatHistory = chatHistory.slice(-20);
+    }).catch(error => {
+        console.error("Claude (Puter) Error:", error);
+        showLimitNotification("claude", "Claude sedang sibuk. Beralih ke Gemini...");
+        currentProvider = "gemini";
+        updateUIActiveState("gemini");
+        generateResponseGemini(chatElement);
+    }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
+}
+
 const generateResponse = (chatElement) => {
-    if (currentProvider === "gemini") generateResponseGemini(chatElement);
+    if (currentProvider === "claude") generateResponseClaude(chatElement);
+    else if (currentProvider === "gemini") generateResponseGemini(chatElement);
     else if (currentProvider === "groq") generateResponseGroq(chatElement);
 }
 
