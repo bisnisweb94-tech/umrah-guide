@@ -427,9 +427,9 @@
         const map = L.map('map', {
             zoomControl: false,
             center: [21.4225, 39.8262],
-            zoom: 17, // Zoom out slightly to see clusters better initially
-            maxZoom: 22,
-            minZoom: 15
+            zoom: 17,
+            maxZoom: 20,
+            minZoom: 16
         });
 
         L.control.zoom({ position: 'bottomright' }).addTo(map);
@@ -813,7 +813,7 @@
                         totalDist += map.distance(path[i], path[i + 1]);
                     }
                     const timeMins = Math.round(totalDist / 80);
-                    alert(`Rute Offline Ditemukan!\nJarak: ${Math.round(totalDist)} meter\nWaktu: ~${timeMins} menit`);
+                    alert(`✅ Rute Berhasil Ditemukan!\n\n📍 Jarak: ${Math.round(totalDist)} meter\n⏱️ Estimasi Waktu: ~${timeMins} menit jalan kaki`);
 
                     document.getElementById('routeBtn').innerText = "Cari Rute Offline";
                 } else {

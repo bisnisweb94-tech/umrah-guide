@@ -3,7 +3,7 @@ import sys
 import math
 import json
 
-OSM_FILE = "/Users/aditya/Downloads/map-2.osm"
+OSM_FILE = "/Users/aditya/Downloads/map-3.osm"
 OUTPUT_FILE = "/Users/aditya/.gemini/antigravity/scratch/umrah-guide/haram-routing-graph.js"
 
 # Allowed highway types for walking
