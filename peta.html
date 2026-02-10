@@ -362,6 +362,120 @@
                 bottom: 20px;
             }
         }
+
+        /* Navigation Panel Styling */
+        #nav-panel {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 400px;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 15px;
+            z-index: 2000;
+            display: none;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        .nav-step-icon {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-right: 15px;
+        }
+
+        .nav-instruction {
+            flex: 1;
+        }
+
+        .nav-instruction h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .nav-instruction p {
+            margin: 5px 0 0;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        .nav-close {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        /* Landmark Modal Styling */
+        #landmark-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            z-index: 3000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: var(--bg-dark);
+            width: 90%;
+            max-width: 500px;
+            max-height: 80vh;
+            border-radius: 25px;
+            border: 1px solid var(--glass-border);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-header {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid #444;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-body {
+            padding: 10px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .landmark-item {
+            padding: 12px 15px;
+            border-bottom: 1px solid #333;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            transition: background 0.2s;
+        }
+
+        .landmark-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .landmark-item i {
+            margin-right: 15px;
+            color: var(--secondary);
+            font-size: 1.1rem;
+        }
     </style>
 </head>
 
@@ -388,28 +502,72 @@
                 <h3 style="margin: 0 0 10px; font-size: 0.9rem; color: #94a3b8;">Navigasi Offline</h3>
 
                 <div style="display: flex; gap: 5px; margin-bottom: 5px;">
-                    <input type="text" id="routeStart" placeholder="Dari..." readonly
+                    <input type="text" id="routeStart" placeholder="Dari (pilih landmark/peta)..." readonly
                         style="flex: 1; padding: 5px; background: rgba(0,0,0,0.2); border: 1px solid #444; color: white; border-radius: 5px;">
-                    <button onclick="setPickMode('start')"
-                        style="background: #334155; color: white; border: none; border-radius: 5px; cursor: pointer;"><i
+                    <button onclick="openLandmarkModal('start')" title="Pilih Landmark"
+                        style="background: #b89968; color: white; border: none; border-radius: 5px; cursor: pointer; width: 35px;"><i
+                            class="fa fa-university"></i></button>
+                    <button onclick="setPickMode('start')" title="Pilih di Peta"
+                        style="background: #334155; color: white; border: none; border-radius: 5px; cursor: pointer; width: 35px;"><i
                             class="fa fa-map-pin"></i></button>
                 </div>
 
                 <div style="display: flex; gap: 5px; margin-bottom: 10px;">
-                    <input type="text" id="routeEnd" placeholder="Ke..." readonly
+                    <input type="text" id="routeEnd" placeholder="Ke (pilih landmark/peta)..." readonly
                         style="flex: 1; padding: 5px; background: rgba(0,0,0,0.2); border: 1px solid #444; color: white; border-radius: 5px;">
-                    <button onclick="setPickMode('end')"
-                        style="background: #334155; color: white; border: none; border-radius: 5px; cursor: pointer;"><i
+                    <button onclick="openLandmarkModal('end')" title="Pilih Landmark"
+                        style="background: #b89968; color: white; border: none; border-radius: 5px; cursor: pointer; width: 35px;"><i
+                            class="fa fa-university"></i></button>
+                    <button onclick="setPickMode('end')" title="Pilih di Peta"
+                        style="background: #334155; color: white; border: none; border-radius: 5px; cursor: pointer; width: 35px;"><i
                             class="fa fa-flag-checkered"></i></button>
                 </div>
 
                 <button id="routeBtn" onclick="calculateRoute()"
-                    style="width: 100%; padding: 8px; background: var(--secondary); border: none; border-radius: 5px; cursor: pointer; color: black; font-weight: bold;">Cari
-                    Rute Offline</button>
+                    style="width: 100%; padding: 10px; background: var(--secondary); color: var(--bg-dark); border: none; border-radius: 10px; font-weight: bold; cursor: pointer;">
+                    Cari Rute Peta
+                </button>
+                <button id="followBtn" onclick="startNavigation()"
+                    style="width: 100%; padding: 10px; background: #22c55e; color: white; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; margin-top: 5px; display: none;">
+                    🚀 Ikuti Rute (Navigasi)
+                </button>
             </div>
         </div>
         <div class="sidebar-content" id="locationList">
             <!-- Data will be injected here -->
+        </div>
+    </div>
+
+    <!-- Navigation Panel UI -->
+    <div id="nav-panel">
+        <div style="display: flex; align-items: center;">
+            <div id="nav-icon" class="nav-step-icon"><i class="fa fa-arrow-up"></i></div>
+            <div class="nav-instruction">
+                <h3 id="nav-main-text">Lurus terus</h3>
+                <p id="nav-sub-text">Dan tetap di jalur</p>
+            </div>
+        </div>
+        <div id="nav-distance" style="margin-top: 10px; font-weight: bold; text-align: right; color: var(--secondary);">
+            0 m
+        </div>
+        <button class="nav-close" onclick="stopNavigation()">Berhenti Navigasi</button>
+    </div>
+
+    <!-- Landmark Modal -->
+    <div id="landmark-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 style="margin:0; font-size: 1.2rem;">Pilih Landmark</h2>
+                <button onclick="closeLandmarkModal()"
+                    style="background:none; border:none; color:white; font-size:1.5rem;">&times;</button>
+            </div>
+            <div style="padding: 10px; border-bottom: 1px solid #333;">
+                <input type="text" id="landmarkSearch" placeholder="Cari landmark..." onkeyup="filterLandmarks()"
+                    style="width:100%; padding:10px; background:rgba(255,255,255,0.1); border:1px solid #444; color:white; border-radius:10px;">
+            </div>
+            <div class="modal-body" id="landmarkList">
+                <!-- Dropdown contents go here -->
+            </div>
         </div>
     </div>
 
@@ -423,6 +581,191 @@
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 
     <script>
+        // --- State Navigasi ---
+        let startPoint = null;
+        let endPoint = null;
+        let startMarker = null;
+        let endMarker = null;
+        let routeLayer = null;
+        let pickingMode = null; // 'start' atau 'end'
+        let navigationActive = false;
+        let currentPath = [];
+        let navigationSteps = [];
+        let landmarkPickingType = 'start';
+
+        // --- Logika Navigasi ---
+        function calculateBearing(lat1, lon1, lat2, lon2) {
+            const y = Math.sin((lon2 - lon1) * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180);
+            const x = Math.cos(lat1 * Math.PI / 180) * Math.sin(lat2 * Math.PI / 180) -
+                Math.sin(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.cos((lon2 - lon1) * Math.PI / 180);
+            let brng = Math.atan2(y, x) * 180 / Math.PI;
+            return (brng + 360) % 360;
+        }
+
+        function generateInstructions(path) {
+            if (path.length < 2) return [];
+            let steps = [];
+
+            for (let i = 0; i < path.length - 1; i++) {
+                const current = path[i];
+                const next = path[i + 1];
+                const dist = map.distance(current, next);
+
+                let instruction = "Lurus terus";
+                let icon = "fa-arrow-up";
+
+                if (i > 0) {
+                    const prev = path[i - 1];
+                    const bearing1 = calculateBearing(prev[0], prev[1], current[0], current[1]);
+                    const bearing2 = calculateBearing(current[0], current[1], next[0], next[1]);
+                    let diff = bearing2 - bearing1;
+                    if (diff > 180) diff -= 360;
+                    if (diff < -180) diff += 360;
+
+                    if (diff > 30) { instruction = "Belok Kanan"; icon = "fa-arrow-turn-right"; }
+                    else if (diff < -30) { instruction = "Belok Kiri"; icon = "fa-arrow-turn-left"; }
+                }
+
+                steps.push({
+                    coords: current,
+                    instruction: instruction,
+                    icon: icon,
+                    distance: dist
+                });
+            }
+
+            steps.push({
+                coords: path[path.length - 1],
+                instruction: "Tiba di Tujuan",
+                icon: "fa-flag-checkered",
+                distance: 0
+            });
+
+            return steps;
+        }
+
+        function startNavigation() {
+            if (!currentPath || currentPath.length === 0) return;
+            navigationActive = true;
+            navigationSteps = generateInstructions(currentPath);
+            document.getElementById('nav-panel').style.display = 'block';
+            document.getElementById('custom-sidebar').style.display = 'none';
+            map.locate({ watch: true, enableHighAccuracy: true });
+            updateNavigationUI(0);
+        }
+
+        function stopNavigation() {
+            navigationActive = false;
+            map.stopLocate();
+            document.getElementById('nav-panel').style.display = 'none';
+            document.getElementById('custom-sidebar').style.display = 'block';
+        }
+
+        map.on('locationfound', function (e) {
+            if (!navigationActive) return;
+
+            // Cari titik terdekat di path dari posisi GPS sekarang
+            let minDiv = Infinity;
+            let nearestIdx = 0;
+
+            currentPath.forEach((p, idx) => {
+                const d = map.distance(e.latlng, p);
+                if (d < minDiv) {
+                    minDiv = d;
+                    nearestIdx = idx;
+                }
+            });
+
+            updateNavigationUI(nearestIdx);
+        });
+
+        function updateNavigationUI(stepIdx) {
+            if (stepIdx >= navigationSteps.length) return;
+            const step = navigationSteps[stepIdx];
+            document.getElementById('nav-main-text').innerText = step.instruction;
+            document.getElementById('nav-icon').innerHTML = `<i class="fa ${step.icon}"></i>`;
+            document.getElementById('nav-distance').innerText = `${Math.round(step.distance)} m`;
+        }
+
+        // --- Landmark Modal Logic ---
+        function openLandmarkModal(type) {
+            landmarkPickingType = type;
+            document.getElementById('landmark-modal').style.display = 'flex';
+            renderLandmarks();
+        }
+
+        function closeLandmarkModal() {
+            document.getElementById('landmark-modal').style.display = 'none';
+        }
+
+        function renderLandmarks() {
+            const list = document.getElementById('landmarkList');
+            const searchInput = document.getElementById('landmarkSearch');
+            const search = searchInput.value.toLowerCase();
+            list.innerHTML = '';
+
+            const filtered = masjidilHaramLocations.filter(loc =>
+                loc.properties.name.toLowerCase().includes(search) ||
+                loc.properties.name_en.toLowerCase().includes(search)
+            ).slice(0, 50);
+
+            filtered.forEach(loc => {
+                const item = document.createElement('div');
+                item.className = 'landmark-item';
+                item.innerHTML = `
+                    <i class="fa ${loc.properties.icon || 'fa-map-marker-alt'}"></i>
+                    <div>
+                        <div style="font-weight:bold;">${loc.properties.name_en || loc.properties.name}</div>
+                        <div style="font-size:0.8rem; color:#888;">${loc.properties.name}</div>
+                    </div>
+                `;
+                item.onclick = () => selectLandmark(loc);
+                list.appendChild(item);
+            });
+        }
+
+        function filterLandmarks() {
+            renderLandmarks();
+        }
+
+        function selectLandmark(loc) {
+            const coords = loc.geometry.coordinates;
+            const latlng = L.latLng(coords[1], coords[0]);
+
+            if (landmarkPickingType === 'start') {
+                setStartPoint(latlng, loc.properties.name_en || loc.properties.name);
+            } else {
+                setEndPoint(latlng, loc.properties.name_en || loc.properties.name);
+            }
+            closeLandmarkModal();
+        }
+
+        function setStartPoint(latlng, name) {
+            if (startMarker) map.removeLayer(startMarker);
+            startMarker = L.marker(latlng, {
+                icon: L.divIcon({
+                    className: 'premium-marker',
+                    html: '<div style="background:#b89968;width:12px;height:12px;border-radius:50%;border:2px solid white;box-shadow: 0 0 10px #b89968;"></div>'
+                })
+            }).addTo(map).bindPopup("Mulai: " + name).openPopup();
+            startPoint = latlng;
+            document.getElementById('routeStart').value = name;
+            map.setView(latlng, 18);
+        }
+
+        function setEndPoint(latlng, name) {
+            if (endMarker) map.removeLayer(endMarker);
+            endMarker = L.marker(latlng, {
+                icon: L.divIcon({
+                    className: 'premium-marker',
+                    html: '<div style="background:red;width:12px;height:12px;border-radius:50%;border:2px solid white;box-shadow: 0 0 10px red;"></div>'
+                })
+            }).addTo(map).bindPopup("Tujuan: " + name).openPopup();
+            endPoint = latlng;
+            document.getElementById('routeEnd').value = name;
+            map.setView(latlng, 18);
+        }
+
         // --- 1. Inisialisasi Map ---
         const map = L.map('map', {
             zoomControl: false,
@@ -716,12 +1059,6 @@
         }
 
         // --- Interaction Logic ---
-        let routeLayer = null;
-        let pickingMode = null; // 'start' or 'end'
-        let startMarker = null;
-        let endMarker = null;
-        let startPoint = null;
-        let endPoint = null;
 
         function setPickMode(mode) {
             pickingMode = mode;
@@ -736,21 +1073,11 @@
 
         map.on('click', function (e) {
             if (!pickingMode) return;
-
+            const name = `${e.latlng.lat.toFixed(5)}, ${e.latlng.lng.toFixed(5)}`;
             if (pickingMode === 'start') {
-                if (startMarker) map.removeLayer(startMarker);
-                startMarker = L.marker(e.latlng, { draggable: true }).addTo(map).bindPopup("Titik Awal").openPopup();
-                startPoint = e.latlng;
-                const latStr = e.latlng.lat.toFixed(5);
-                const lonStr = e.latlng.lng.toFixed(5);
-                document.getElementById('routeStart').value = `${latStr}, ${lonStr}`;
+                setStartPoint(e.latlng, name);
             } else if (pickingMode === 'end') {
-                if (endMarker) map.removeLayer(endMarker);
-                endMarker = L.marker(e.latlng, { icon: L.divIcon({ className: 'premium-marker', html: '<div style="background:red;width:12px;height:12px;border-radius:50%;border:2px solid white;box-shadow: 0 0 10px red;"></div>' }) }).addTo(map).bindPopup("Tujuan").openPopup();
-                endPoint = e.latlng;
-                const latStr = e.latlng.lat.toFixed(5);
-                const lonStr = e.latlng.lng.toFixed(5);
-                document.getElementById('routeEnd').value = `${latStr}, ${lonStr}`;
+                setEndPoint(e.latlng, name);
             }
 
             // Reset cursor and mode
@@ -796,9 +1123,10 @@
                 const path = dijkstra(startNode, endNode);
 
                 if (path) {
+                    currentPath = path;
                     if (routeLayer) map.removeLayer(routeLayer);
                     routeLayer = L.polyline(path, {
-                        color: '#3b82f6',
+                        color: '#b89968',
                         weight: 6,
                         opacity: 0.8,
                         dashArray: '10, 10',
@@ -812,12 +1140,16 @@
                         totalDist += map.distance(path[i], path[i + 1]);
                     }
                     const timeMins = Math.round(totalDist / 80);
+
+                    // Show Follow Button
+                    document.getElementById('followBtn').style.display = 'block';
+
                     alert(`✅ Rute Berhasil Ditemukan!\n\n📍 Jarak: ${Math.round(totalDist)} meter\n⏱️ Estimasi Waktu: ~${timeMins} menit jalan kaki`);
 
-                    document.getElementById('routeBtn').innerText = "Cari Rute Offline";
+                    document.getElementById('routeBtn').innerText = "Cari Rute Peta";
                 } else {
                     alert("Tidak ada jalur yang terhubung.");
-                    document.getElementById('routeBtn').innerText = "Cari Rute Offline";
+                    document.getElementById('routeBtn').innerText = "Cari Rute Peta";
                 }
             }, 50);
         }

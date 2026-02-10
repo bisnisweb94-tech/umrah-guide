@@ -1218,7 +1218,7 @@ const masjidilHaramLocations = [
         }
     },
     // === UPDATED FACILITIES (MAP-3.OSM) ===
-{
+    {
         "type": "Feature",
         "properties": {
             "name": "Toilet",
@@ -1871,6 +1871,105 @@ const masjidilHaramLocations = [
                 39.827742,
                 21.4225647
             ]
+        }
+    },
+    // === AREA & TRANSPORT (MAP-3.OSM) ===
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "الزهراء",
+            "name_en": "Az Zahra",
+            "type": "Landmark",
+            "icon": "fa-map-marker-alt",
+            "description": "Area lingkungan Az Zahra."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8141527, 21.4277832]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "جرول",
+            "name_en": "Jarwal",
+            "type": "Landmark",
+            "icon": "fa-map-marker-alt",
+            "description": "Area lingkungan Jarwal."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8141527, 21.4277832]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "المسفلة",
+            "name_en": "Al Misfalah",
+            "type": "Landmark",
+            "icon": "fa-map-marker-alt",
+            "description": "Area lingkungan Al Misfalah."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8223054, 21.4050055]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "الهنداوية",
+            "name_en": "Al Hindawiyah",
+            "type": "Landmark",
+            "icon": "fa-map-marker-alt",
+            "description": "Area lingkungan Al Hindawiyah."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8000204, 21.4154351]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "الجميزة",
+            "name_en": "Al Jummayzah",
+            "type": "Landmark",
+            "icon": "fa-map-marker-alt",
+            "description": "Area lingkungan Al Jummayzah."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.8335719, 21.4371708]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "الرصيفة",
+            "name_en": "Ar Rusayfah",
+            "type": "Landmark",
+            "icon": "fa-map-marker-alt",
+            "description": "Area lingkungan Ar Rusayfah."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.7870107, 21.4137530]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "محطة قطار الحرمين",
+            "name_en": "Makkah Haramain HSR Station",
+            "type": "Support",
+            "icon": "fa-train",
+            "description": "Stasiun Kereta Cepat Haramain Makkah."
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [39.7879275, 21.4180648]
         }
     }
 ];
