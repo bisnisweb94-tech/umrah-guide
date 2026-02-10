@@ -14,6 +14,7 @@ const API_KEYS = [
     "AIzaSyC2Kwu6gHkKdLLyWaCB73r70mY6WGuCjRw"
 ];
 let currentKeyIndex = 0;
+let chatHistory = []; // Untuk menyimpan riwayat percakapan agar AI punya konteks
 
 const linkify = (text) => {
     const urlRegex = /(https?:\/\/[^\s]+)/g;
@@ -41,7 +42,7 @@ const generateResponse = (chatElement, retryCount = 0) => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-            contents: [{
+            system_instruction: {
                 parts: [{
                     text: `Kamu adalah IslamAI, asisten Islami yang hangat, empati, dan bijaksana. Berlakulah seperti seorang pembimbing ibadah yang ramah dan menyejukkan hati. 
 
@@ -51,11 +52,10 @@ ATURAN PENTING DALAM MENJAWAB:
 3.  **REFERENSI**: WAJIB menggunakan rujukan utama dari https://islamqa.info/ (Syeikh Muhammad Shalih Al-Munajjid).
 4.  **DALIL**: Jika mengutip Al-Qur'an atau Hadits, WAJIB sertakan **TEKS ARAB ASLI**, baru kemudian terjemahannya.
 5.  **HUKUM/FATWA**: Jika menyampaikan hukum atau fatwa, WAJIB sertakan **NOMOR FATWA YANG BENAR** dan **LINK URL LENGKAP** yang bisa diklik menuju halaman sumber di islamqa.info.
-6.  **PENUTUP**: Gunakan kalimat penutup yang mendoakan dan santun.
-
-Pertanyaan: ${userMessage}`
+6.  **PENUTUP**: Gunakan kalimat penutup yang mendoakan dan santun.`
                 }]
-            }]
+            },
+            contents: chatHistory
         })
     }
 
@@ -78,6 +78,11 @@ Pertanyaan: ${userMessage}`
             } else {
                 let responseText = data.candidates[0].content.parts[0].text;
                 messageElement.innerHTML = linkify(responseText.trim());
+
+                // Simpan jawaban AI ke history
+                chatHistory.push({ role: "model", parts: [{ text: responseText }] });
+                // Batasi history agar tidak terlalu panjang (misal 10 turn)
+                if (chatHistory.length > 20) chatHistory = chatHistory.slice(-20);
             }
         }).catch((error) => {
             console.error("Fetch Error:", error);
@@ -97,6 +102,9 @@ const handleChat = () => {
     // Append the user's message to the chatbox
     chatbox.appendChild(createChatLi(userMessage, "outgoing"));
     chatbox.scrollTo(0, chatbox.scrollHeight);
+
+    // Simpan pesan user ke history
+    chatHistory.push({ role: "user", parts: [{ text: userMessage }] });
 
     // Display "Thinking..." message while waiting for the response
     setTimeout(() => {
