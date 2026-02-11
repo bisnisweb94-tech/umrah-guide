@@ -17,7 +17,7 @@ CATEGORIES = {
     "zakat": "/id/categories/topics/105/zakat-dan-sedekah"
 }
 OUTPUT_FILE = "knowledge/islamqa_db.json"
-MAX_FATWAS_PER_CATEGORY = 2  # Start small for testing, scale up later
+MAX_FATWAS_PER_CATEGORY = 10  # Start small for testing, scale up later
 DELAY = 1.5  # Seconds between requests to be polite
 
 def get_soup(url):
@@ -52,22 +52,26 @@ def parse_detail_page(soup, url):
         fatwa_id = url.split('/')[-1]
         
         # Question
-        # On detail pages, the question is usually in a div with section title "Pertanyaan"
-        # Or in a specific container
-        question_section = soup.find('section', class_='single_fatwa__question')
-        if not question_section:
-            # Fallback based on typical structure
-            question_section = soup.find('div', class_='content')
-        
+        # Selector found: .tw-bg-paperQuestion
+        question_section = soup.select_one('.tw-bg-paperQuestion')
         question_text = question_section.get_text(strip=True) if question_section else "No Question"
         
         # Answer
-        answer_section = soup.find('section', class_='single_fatwa__answer')
+        # Selector found: .SUT_answer_text
+        answer_section = soup.select_one('.SUT_answer_text')
+        if not answer_section:
+            # Fallback for some pages
+            answer_section = soup.select_one('h2 + p')
+        
         answer_text = answer_section.get_text(strip=True) if answer_section else "No Answer"
         
+        # Cleanup
+        if question_text == "No Question" or answer_text == "No Answer":
+            print(f"  ⚠️ Skipping {fatwa_id}: Missing content.")
+            return None
+
         # Keywords (simple extraction from title)
         keywords = list(set(re.findall(r'\w+', title.lower())))
-        # Filter short words
         keywords = [k for k in keywords if len(k) > 3]
 
         return {
@@ -76,7 +80,7 @@ def parse_detail_page(soup, url):
             "question_id": question_text,
             "answer_id": answer_text,
             "url": url,
-            "category": "scraped", # Will be updated
+            "category": "scraped",
             "keywords": keywords[:10]
         }
     except Exception as e:
