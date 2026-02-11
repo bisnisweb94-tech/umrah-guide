@@ -8,15 +8,20 @@ export default async function handler(req, res) {
         return res.status(405).json({ error: 'Method not allowed' });
     }
 
-    const { messages, provider = 'gemini' } = req.body;
+    const { messages, provider = 'gemini', context: clientContext } = req.body;
     const userQuery = messages[messages.length - 1].content;
 
     try {
-        // 1. Generate Embeddings for the Query
-        const embedding = await generateEmbedding(userQuery);
+        let context = clientContext;
 
-        // 2. Search Upstash Vector DB
-        const context = await searchVectorDB(embedding);
+        // Only use Vector DB if no client context provided (server-side backup)
+        if (!context) {
+            // 1. Generate Embeddings for the Query
+            const embedding = await generateEmbedding(userQuery);
+
+            // 2. Search Upstash Vector DB
+            context = await searchVectorDB(embedding);
+        }
 
         // 3. Construct System Prompt with Context
         const systemPrompt = constructSystemPrompt(context);
@@ -89,7 +94,7 @@ async function callAIProvider(provider, systemPrompt, messages) {
     // Basic implementation for Gemini
     const keys = process.env.GEMINI_API_KEYS ? process.env.GEMINI_API_KEYS.split(',') : [process.env.GEMINI_API_KEY];
     const GEMINI_API_KEY = keys[Math.floor(Math.random() * keys.length)];
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${GEMINI_API_KEY}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${GEMINI_API_KEY}`;
 
     const contents = messages.map(m => ({
         role: m.role === 'user' ? 'user' : 'model',

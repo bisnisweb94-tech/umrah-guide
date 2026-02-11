@@ -1375,6 +1375,17 @@
 
         // ========== BOTTOM SHEET ==========
         function showLocationDetail(feature, marker) {
+            // Deactivate previous active marker
+            if (activeMarker) {
+                const el = activeMarker.getElement();
+                if (el) el.classList.remove('active');
+            }
+
+            // Activate new marker
+            activeMarker = marker;
+            const el = marker.getElement();
+            if (el) el.classList.add('active');
+
             const props = feature.properties;
             const type = props.type;
             const color = markerColors[type] || '#1a73e8';
@@ -1386,29 +1397,34 @@
                 </button>
                 <div class="detail-header">
                     <div class="detail-icon" style="background: ${color};">
-                        <i class="fa ${props.icon || 'fa-map-marker'}"></i>
+                        <i class="fa ${props.icon || 'fa-map-marker-alt'}"></i>
                     </div>
                     <div class="detail-info">
                         <h2>${props.name_en || props.name}</h2>
                         <span class="arabic">${props.name}</span>
-                        <p>${props.description || type}</p>
+                        <p>${type} &middot; Lantai ${props.floor || 'Dasar'}</p>
                     </div>
                 </div>
                 <div class="action-buttons">
-                    <button class="action-btn primary" onclick="routeToLocation([${coords}], '${(props.name_en || props.name).replace(/'/g, "\\'")}')">
-                        <i class="fa fa-directions"></i> Arah
+                    <button class="action-btn primary" onclick="routeToLocation([${coords[1]}, ${coords[0]}], '${(props.name_en || props.name).replace(/'/g, "\\'")}')">
+                        <i class="fa fa-directions"></i> Rute
                     </button>
-                    <button class="action-btn secondary" onclick="shareLocation('${(props.name_en || props.name).replace(/'/g, "\\'")}', ${coords[1]}, ${coords[0]})">
+                    <button class="action-btn secondary" onclick="shareLocation('${(props.name_en || props.name).replace(/'/g, "\\'")}')">
                         <i class="fa fa-share"></i> Bagikan
                     </button>
                 </div>
             `;
 
-            document.getElementById('locationDetail').innerHTML = detailHTML;
-            document.getElementById('locationDetail').classList.add('active');
-            document.getElementById('locationsList').style.display = 'none';
-            openBottomSheet();
+            const detailEl = document.getElementById('locationDetail');
+            if (detailEl) {
+                detailEl.innerHTML = detailHTML;
+                detailEl.classList.add('active');
+                const listEl = document.getElementById('locationsList');
+                if (listEl) listEl.style.display = 'none';
+                openBottomSheet();
+            }
         }
+
 
         function resetBottomSheet() {
             document.getElementById('locationDetail').classList.remove('active');

@@ -35,6 +35,17 @@ const generateResponse = async (chatElement) => {
     }));
 
     try {
+
+        // Get relevant context from local RAG (if available)
+        let context = "";
+        if (typeof islamQARetriever !== 'undefined') {
+            try {
+                context = await islamQARetriever.getContext(userMessage);
+            } catch (err) {
+                console.warn("Local RAG failed:", err);
+            }
+        }
+
         const response = await fetch('/api/chat', {
             method: 'POST',
             headers: {
@@ -42,7 +53,8 @@ const generateResponse = async (chatElement) => {
             },
             body: JSON.stringify({
                 messages: apiMessages,
-                provider: 'gemini' // Default to Gemini
+                provider: 'gemini', // Default to Gemini
+                context: context
             })
         });
 
