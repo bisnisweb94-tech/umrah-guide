@@ -6,8 +6,8 @@ import json
 
 # --- CONFIGURATION ---
 UPSTASH_VECTOR_REST_URL = "https://adapting-aardvark-73650-us1-vector.upstash.io"
-UPSTASH_VECTOR_REST_TOKEN = "ABsFMGFkYXB0aW5nLWFhcmR2YXJrLTczNjUwLXVzMWFkbWluT1RFMk56VTJNakV0WkdVeE9DMDBNVGxqTFdFMk1HVXROemcwWTJaaU16UTBNR0Zp"
-GEMINI_API_KEY = "AIzaSyDvHuWPQ_Ak7R-Yl0nqpuoo5mtwOSTxqgs"
+UPSTASH_VECTOR_REST_TOKEN = "PASTE_YOUR_UPSTASH_TOKEN"
+GEMINI_API_KEY = "PASTE_YOUR_GEMINI_KEY"
 BASE_URL = "https://islamqa.info/ar"
 # ---------------------
 

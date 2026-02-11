@@ -5,10 +5,10 @@ import time
 # --- CONFIGURATION (EDIT BEFORE RUNNING) ---
 # Paste your credentials here temporarily or use environment variables
 UPSTASH_VECTOR_REST_URL = "https://adapting-aardvark-73650-us1-vector.upstash.io"
-UPSTASH_VECTOR_REST_TOKEN = "ABsFMGFkYXB0aW5nLWFhcmR2YXJrLTczNjUwLXVzMWFkbWluT1RFMk56VTJNakV0WkdVeE9DMDBNVGxqTFdFMk1HVXROemcwWTJaaU16UTBNR0Zp"
+UPSTASH_VECTOR_REST_TOKEN = "PASTE_YOUR_TOKEN_HERE"
 
 # Get a Gemini API Key from: https://aistudio.google.com/app/apikey
-GEMINI_API_KEY = "AIzaSyDvHuWPQ_Ak7R-Yl0nqpuoo5mtwOSTxqgs"
+GEMINI_API_KEY = "PASTE_YOUR_GEMINI_API_KEY_HERE"
 
 # Path to your existing local DB
 SOURCE_FILE = "../knowledge/islamqa_db.json"
