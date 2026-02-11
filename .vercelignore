@@ -1,0 +1,23 @@
+# Vercel Ignore
+# Exclude Python processing scripts
+*.py
+scripts/
+
+# Exclude backup and temp files
+*-backup.js
+*_temp.*
+*.bak
+
+# Exclude raw data processing js
+merge_data.js
+merge_osm_data.js
+add_hotels.js
+add_escalators.js
+rebuild_data_file.py
+
+# Exclude large backup files
+masjidil-haram-data-backup.js
+
+# Git
+.git/
+.gitignore

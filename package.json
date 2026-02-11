@@ -1,0 +1,16 @@
+{
+    "name": "umrah-guide",
+    "version": "1.0.0",
+    "description": "Panduan Umrah Digital Premium",
+    "private": true,
+    "scripts": {
+        "start": "npx serve ."
+    },
+    "keywords": [
+        "umrah",
+        "guide",
+        "haramain"
+    ],
+    "author": "",
+    "license": "ISC"
+}
