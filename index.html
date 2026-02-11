@@ -226,6 +226,7 @@
                         <div id="badge-tawaf" class="info-badge hidden">🏃♂️ Sunnah Lari Kecil (Raml)</div>
                     </div>
 
+
                     <div class="accordion">
                         <div class="accordion-item">
                             <button class="accordion-header" onclick="toggleAccordion(this)">
@@ -236,16 +237,17 @@
                                             fill="#FFFFFF" />
                                         <circle cx="32" cy="32" r="6" fill="#B89968" />
                                     </svg></span>
-                                <span id="doa-title-tawaf" class="acc-title">Doa Awal Putaran</span>
+                                <span class="acc-title">Melintasi Hajar Aswad</span>
                                 <span class="acc-chevron"></span>
                             </button>
                             <div class="accordion-content">
                                 <div class="doa-box inner glass">
-                                    <div class="doa-header">
-                                        <button class="audio-toggle" id="btn-play-tawaf"
-                                            onclick="toggleAudio('tawaf')">🔊</button>
-                                    </div>
-                                    <div id="content-tawaf"></div>
+                                    <p class="doa-note">Setiap melintasi Hajar Aswad (Rukun Hajar Aswad), disunnahkan
+                                        mengangkat tangan kanan ke arahnya dan mengucapkan:</p>
+                                    <p class="doa-arabic">بِسْمِ اللهِ وَاللهُ أَكْبَرُ</p>
+                                    <p class="doa-latin">Bismillahi Allahu Akbar</p>
+                                    <p class="doa-translation">"Dengan nama Allah, Allah Maha Besar."</p>
+                                    <p class="doa-source">(HR. Bukhari)</p>
                                 </div>
                             </div>
                         </div>
@@ -255,20 +257,46 @@
                                 <span class="acc-icon"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="32" cy="32" r="32" fill="#B89968" />
                                         <path
-                                            d="M32 12c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm0 24c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm-14-6c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm28 0c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm-20 12c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm12 0c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4z"
+                                            d="M32 12c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm-14-6c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm28 0c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm-20 12c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm12 0c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4z"
                                             fill="#FFFFFF" />
                                     </svg></span>
-                                <span class="acc-title">Dzikir Umum Tawaf</span>
+                                <span class="acc-title">Kumpulan Doa Shahih Tawaf</span>
                                 <span class="acc-chevron"></span>
                             </button>
                             <div class="accordion-content">
                                 <div class="doa-box inner glass">
-                                    <p class="doa-arabic">سُبْحَانَ اللهِ وَالْحَمْدُ ِللهِ وَلَا إِلَهَ إِلَّا اللهُ
-                                        وَاللهُ أَكْبَرُ</p>
-                                    <p class="doa-latin">Subhanallah, walhamdulillah, wa laa ilaha illallah, wallahu
-                                        akbar</p>
-                                    <p class="doa-translation">"Maha Suci Allah, segala puji bagi Allah, tiada Tuhan
-                                        selain Allah, Allah Maha Besar."</p>
+                                    <p class="doa-note">Tidak ada doa khusus untuk setiap putaran. Anda bebas membaca
+                                        Al-Qur'an atau doa-doa ma'tsur berikut:</p>
+
+                                    <div class="doa-group"
+                                        style="margin-bottom: 1.5rem; border-bottom: 1px dashed rgba(255,255,255,0.3); padding-bottom: 1rem;">
+                                        <p class="doa-label">1. Zikir Umum</p>
+                                        <p class="doa-arabic">سُبْحَانَ اللهِ، وَالْحَمْدُ ِللهِ، وَلَا إِلَهَ إِلَّا
+                                            اللهُ، وَاللهُ أَكْبَرُ</p>
+                                        <p class="doa-latin">Subhanallah, walhamdulillah, wa laa ilaha illallah, wallahu
+                                            akbar</p>
+                                        <p class="doa-translation">"Maha Suci Allah, segala puji bagi Allah, tiada Tuhan
+                                            selain Allah, Allah Maha Besar."</p>
+                                        <p class="doa-source">(HR. Ibnu Majah)</p>
+                                    </div>
+
+                                    <div class="doa-group"
+                                        style="margin-bottom: 1.5rem; border-bottom: 1px dashed rgba(255,255,255,0.3); padding-bottom: 1rem;">
+                                        <p class="doa-label">2. Mohon Ampunan</p>
+                                        <p class="doa-arabic">رَبِّ اغْفِرْ وَارْحَمْ وَاعْفُ عَمَّا تَعْلَمْ وَأَنْتَ
+                                            الْأَعَزُّ الْأَكْرَمُ</p>
+                                        <p class="doa-latin">Rabbighfir warham wa'fu 'amma ta'lam wa antal a'azzul
+                                            akram</p>
+                                        <p class="doa-translation">"Ya Allah ampunilah, sayangilah, dan maafkanlah apa
+                                            yang Engkau ketahui, Engkau Maha Perkasa lagi Maha Mulia."</p>
+                                        <p class="doa-source">(Atsar Sahabat)</p>
+                                    </div>
+
+                                    <div class="doa-group">
+                                        <p class="doa-label">3. Shalawat Nabi</p>
+                                        <p class="doa-arabic">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ</p>
+                                        <p class="doa-latin">Allahumma shalli 'ala Muhammad wa 'ala aali Muhammad</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -281,7 +309,7 @@
                                             d="M20 24c0-2.2 1.8-4 4-4s4 1.8 4 4v10h2v-10c0-2.2 1.8-4 4-4s4 1.8 4 4v10h2c0-5 4-9 9-9v20c0 4.4-3.6 8-8 8H23c-4.4 0-8-3.6-8-8V24h5z"
                                             fill="#FFFFFF" />
                                     </svg></span>
-                                <span class="acc-title">Doa antara Rukun yamani dan Hajar Aswad</span>
+                                <span class="acc-title">Antara Rukun Yamani & Hajar Aswad</span>
                                 <span class="acc-chevron"></span>
                             </button>
                             <div class="accordion-content">
@@ -292,6 +320,7 @@
                                         'adzaban naar.</p>
                                     <p class="doa-translation">"Ya Tuhan kami, berilah kami kebaikan di dunia dan
                                         kebaikan di akhirat dan peliharalah kami dari siksa neraka."</p>
+                                    <p class="doa-source">(QS. Al-Baqarah: 201 | HR. Abu Daud)</p>
                                 </div>
                             </div>
                         </div>
@@ -691,27 +720,37 @@
                     </button>
                     <div class="accordion-content">
                         <div class="acc-body-text">
-                            <p><strong>Ihram adalah</strong> niat memasuki ibadah umrah yang merupakan rukun pertama umrah. Ihram bukan sekadar memakai pakaian putih, tetapi niat di dalam hati untuk memulai ibadah umrah.</p>
+                            <p><strong>Ihram adalah</strong> niat memasuki ibadah umrah yang merupakan rukun pertama
+                                umrah. Ihram bukan sekadar memakai pakaian putih, tetapi niat di dalam hati untuk
+                                memulai ibadah umrah.</p>
 
                             <p style="margin-top: 1rem;"><strong>Syarat Wajib Ihram:</strong></p>
                             <ul class="check-list" style="padding-left: 1rem; margin-top: 0.5rem;">
                                 <li>Berniat ihram untuk umrah di miqat atau sebelumnya</li>
-                                <li><strong>Pria:</strong> Memakai dua kain ihram putih tanpa jahitan (izar dan rida')</li>
+                                <li><strong>Pria:</strong> Memakai dua kain ihram putih tanpa jahitan (izar dan rida')
+                                </li>
                                 <li><strong>Wanita:</strong> Memakai pakaian yang menutup aurat, tidak harus putih</li>
                                 <li>Tidak memakai wangi-wangian setelah niat ihram</li>
                             </ul>
 
                             <p style="margin-top: 1rem;"><strong>Sunnah-Sunnah Sebelum Ihram:</strong></p>
                             <ul class="check-list" style="padding-left: 1rem; margin-top: 0.5rem;">
-                                <li><strong>Mandi (ghusl):</strong> Disunnahkan mandi sebelum ihram, sebagaimana diriwayatkan dari Nabi ﷺ (HR. Tirmidzi)</li>
-                                <li><strong>Memotong kuku dan mencukur bulu:</strong> Membersihkan diri sebelum berihram</li>
-                                <li><strong>Memakai wangi-wangian di badan</strong> (bukan di kain ihram) sebelum niat. Aisyah radhiyallahu 'anha berkata: <em>"Aku pernah memakaikan wewangian pada Rasulullah ﷺ untuk ihramnya sebelum beliau berihram."</em> (HR. Bukhari & Muslim)</li>
-                                <li><strong>Shalat sunnah 2 rakaat:</strong> Sebelum niat ihram, jika bukan di waktu terlarang</li>
+                                <li><strong>Mandi (ghusl):</strong> Disunnahkan mandi sebelum ihram, sebagaimana
+                                    diriwayatkan dari Nabi ﷺ (HR. Tirmidzi)</li>
+                                <li><strong>Memotong kuku dan mencukur bulu:</strong> Membersihkan diri sebelum berihram
+                                </li>
+                                <li><strong>Memakai wangi-wangian di badan</strong> (bukan di kain ihram) sebelum niat.
+                                    Aisyah radhiyallahu 'anha berkata: <em>"Aku pernah memakaikan wewangian pada
+                                        Rasulullah ﷺ untuk ihramnya sebelum beliau berihram."</em> (HR. Bukhari &
+                                    Muslim)</li>
+                                <li><strong>Shalat sunnah 2 rakaat:</strong> Sebelum niat ihram, jika bukan di waktu
+                                    terlarang</li>
                             </ul>
 
                             <p style="margin-top: 1rem;"><strong>Larangan Selama Ihram:</strong></p>
                             <ul class="check-list" style="padding-left: 1rem; margin-top: 0.5rem;">
-                                <li><strong>Pria:</strong> Dilarang memakai pakaian berjahit, menutup kepala dengan sesuatu yang menempel</li>
+                                <li><strong>Pria:</strong> Dilarang memakai pakaian berjahit, menutup kepala dengan
+                                    sesuatu yang menempel</li>
                                 <li><strong>Wanita:</strong> Dilarang memakai niqab (cadar) dan sarung tangan</li>
                                 <li>Memotong rambut atau kuku</li>
                                 <li>Memakai wangi-wangian</li>
@@ -723,28 +762,41 @@
                             <div
                                 style="margin-top: 1.5rem; padding: 1rem; background: rgba(184, 153, 104, 0.1); border-radius: 12px; border-left: 4px solid var(--accent-gold);">
                                 <p><strong>Dalil:</strong></p>
-                                <p class="doa-arabic" style="margin-top: 0.5rem;">الْحَجُّ أَشْهُرٌ مَعْلُومَاتٌ فَمَنْ فَرَضَ فِيهِنَّ الْحَجَّ فَلَا رَفَثَ وَلَا فُسُوقَ وَلَا جِدَالَ فِي الْحَجِّ</p>
-                                <p style="color: var(--text-dim); margin-top: 0.5rem; font-style: italic;">"(Musim) haji itu pada bulan-bulan yang telah dimaklumi. Maka barangsiapa yang menetapkan niatnya dalam bulan-bulan itu untuk mengerjakan haji, maka janganlah ia berkata jorok (rafats), berbuat fasik dan berbantah-bantahan dalam mengerjakan haji." (QS. Al-Baqarah: 197)</p>
+                                <p class="doa-arabic" style="margin-top: 0.5rem;">الْحَجُّ أَشْهُرٌ مَعْلُومَاتٌ فَمَنْ
+                                    فَرَضَ فِيهِنَّ الْحَجَّ فَلَا رَفَثَ وَلَا فُسُوقَ وَلَا جِدَالَ فِي الْحَجِّ</p>
+                                <p style="color: var(--text-dim); margin-top: 0.5rem; font-style: italic;">"(Musim) haji
+                                    itu pada bulan-bulan yang telah dimaklumi. Maka barangsiapa yang menetapkan niatnya
+                                    dalam bulan-bulan itu untuk mengerjakan haji, maka janganlah ia berkata jorok
+                                    (rafats), berbuat fasik dan berbantah-bantahan dalam mengerjakan haji." (QS.
+                                    Al-Baqarah: 197)</p>
                             </div>
 
                             <div class="doa-box glass" style="margin-top: 1.5rem;">
                                 <span class="doa-tag">Niat Ihram Umrah</span>
                                 <p class="doa-arabic">لَبَّيْكَ اللَّهُمَّ عُمْرَةً</p>
                                 <p class="doa-latin">Labbaikallahumma 'umratan</p>
-                                <p class="doa-translation">"Aku penuhi panggilan-Mu ya Allah untuk melaksanakan umrah."</p>
+                                <p class="doa-translation">"Aku penuhi panggilan-Mu ya Allah untuk melaksanakan umrah."
+                                </p>
                             </div>
 
                             <div class="doa-box glass" style="margin-top: 1rem;">
                                 <span class="doa-tag">Talbiyah (Dibaca Setelah Niat)</span>
-                                <p class="doa-arabic">لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ، لَبَّيْكَ لَا شَرِيكَ لَكَ لَبَّيْكَ، إِنَّ الْحَمْدَ وَالنِّعْمَةَ لَكَ وَالْمُلْكَ، لَا شَرِيكَ لَكَ</p>
-                                <p class="doa-latin">Labbaikallahumma labbaik, labbaika laa syariika laka labbaik, innal-hamda wan-ni'mata laka wal-mulk, laa syariika lak</p>
-                                <p class="doa-translation">"Aku penuhi panggilan-Mu ya Allah, aku penuhi panggilan-Mu. Aku penuhi panggilan-Mu, tiada sekutu bagi-Mu, aku penuhi panggilan-Mu. Sesungguhnya segala puji, nikmat, dan kerajaan hanya milik-Mu, tiada sekutu bagi-Mu."</p>
+                                <p class="doa-arabic">لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ، لَبَّيْكَ لَا شَرِيكَ لَكَ
+                                    لَبَّيْكَ، إِنَّ الْحَمْدَ وَالنِّعْمَةَ لَكَ وَالْمُلْكَ، لَا شَرِيكَ لَكَ</p>
+                                <p class="doa-latin">Labbaikallahumma labbaik, labbaika laa syariika laka labbaik,
+                                    innal-hamda wan-ni'mata laka wal-mulk, laa syariika lak</p>
+                                <p class="doa-translation">"Aku penuhi panggilan-Mu ya Allah, aku penuhi panggilan-Mu.
+                                    Aku penuhi panggilan-Mu, tiada sekutu bagi-Mu, aku penuhi panggilan-Mu. Sesungguhnya
+                                    segala puji, nikmat, dan kerajaan hanya milik-Mu, tiada sekutu bagi-Mu."</p>
                             </div>
 
                             <div
                                 style="margin-top: 1.5rem; padding: 1rem; background: rgba(184, 153, 104, 0.1); border-radius: 12px;">
                                 <p><strong>Hadits:</strong></p>
-                                <p style="color: var(--text-dim); margin-top: 0.5rem; font-style: italic;">"Talbiyah bagi yang berumrah seperti takbir dalam shalat." — Diriwayatkan bahwa talbiyah terus dibaca dengan suara keras (bagi pria) sejak ihram hingga mulai tawaf. (HR. Abu Dawud & Tirmidzi)</p>
+                                <p style="color: var(--text-dim); margin-top: 0.5rem; font-style: italic;">"Talbiyah
+                                    bagi yang berumrah seperti takbir dalam shalat." — Diriwayatkan bahwa talbiyah terus
+                                    dibaca dengan suara keras (bagi pria) sejak ihram hingga mulai tawaf. (HR. Abu Dawud
+                                    & Tirmidzi)</p>
                             </div>
                         </div>
                     </div>
@@ -1115,68 +1167,103 @@
                     </button>
                     <div class="accordion-content">
                         <div class="acc-body-text">
-                            <p><strong>Dam adalah</strong> denda atau tebusan yang wajib ditunaikan ketika seseorang melanggar larangan ihram atau meninggalkan salah satu kewajiban dalam ibadah umrah.</p>
+                            <p><strong>Dam adalah</strong> denda atau tebusan yang wajib ditunaikan ketika seseorang
+                                melanggar larangan ihram atau meninggalkan salah satu kewajiban dalam ibadah umrah.</p>
 
                             <div
                                 style="margin-top: 1rem; padding: 1rem; background: rgba(184, 153, 104, 0.1); border-radius: 12px; border-left: 4px solid var(--accent-gold);">
                                 <p><strong>Dalil Kewajiban Dam:</strong></p>
-                                <p class="doa-arabic" style="margin-top: 0.5rem;">فَمَنْ كَانَ مِنْكُمْ مَرِيضًا أَوْ بِهِ أَذًى مِنْ رَأْسِهِ فَفِدْيَةٌ مِنْ صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ</p>
-                                <p style="color: var(--text-dim); margin-top: 0.5rem; font-style: italic;">"Maka barangsiapa di antara kamu ada yang sakit atau ada gangguan di kepalanya (lalu ia mencukur), maka wajib atasnya fidyah, yaitu berpuasa, atau bersedekah, atau menyembelih kurban." (QS. Al-Baqarah: 196)</p>
+                                <p class="doa-arabic" style="margin-top: 0.5rem;">فَمَنْ كَانَ مِنْكُمْ مَرِيضًا أَوْ
+                                    بِهِ أَذًى مِنْ رَأْسِهِ فَفِدْيَةٌ مِنْ صِيَامٍ أَوْ صَدَقَةٍ أَوْ نُسُكٍ</p>
+                                <p style="color: var(--text-dim); margin-top: 0.5rem; font-style: italic;">"Maka
+                                    barangsiapa di antara kamu ada yang sakit atau ada gangguan di kepalanya (lalu ia
+                                    mencukur), maka wajib atasnya fidyah, yaitu berpuasa, atau bersedekah, atau
+                                    menyembelih kurban." (QS. Al-Baqarah: 196)</p>
                             </div>
 
-                            <p style="margin-top: 1.5rem;"><strong>1. Dam Karena Melanggar Larangan Ihram (Fidyah):</strong></p>
-                            <p style="margin-top: 0.5rem;">Jika melanggar larangan ihram seperti: mencukur rambut, memakai wangi-wangian, memakai pakaian berjahit (pria), memotong kuku, atau menutup kepala (pria), maka wajib membayar fidyah dengan salah satu dari tiga pilihan:</p>
+                            <p style="margin-top: 1.5rem;"><strong>1. Dam Karena Melanggar Larangan Ihram
+                                    (Fidyah):</strong></p>
+                            <p style="margin-top: 0.5rem;">Jika melanggar larangan ihram seperti: mencukur rambut,
+                                memakai wangi-wangian, memakai pakaian berjahit (pria), memotong kuku, atau menutup
+                                kepala (pria), maka wajib membayar fidyah dengan salah satu dari tiga pilihan:</p>
                             <ul class="check-list" style="padding-left: 1rem; margin-top: 0.5rem;">
-                                <li><strong>Menyembelih kambing</strong> — satu ekor kambing dan dibagikan kepada fakir miskin tanah haram</li>
+                                <li><strong>Menyembelih kambing</strong> — satu ekor kambing dan dibagikan kepada fakir
+                                    miskin tanah haram</li>
                                 <li><strong>Berpuasa 3 hari</strong></li>
-                                <li><strong>Bersedekah</strong> — memberi makan 6 orang miskin, masing-masing setengah sha' (sekitar 1,5 kg) makanan pokok</li>
+                                <li><strong>Bersedekah</strong> — memberi makan 6 orang miskin, masing-masing setengah
+                                    sha' (sekitar 1,5 kg) makanan pokok</li>
                             </ul>
 
                             <p style="margin-top: 1.5rem;"><strong>2. Dam Karena Membunuh Binatang Buruan:</strong></p>
                             <p style="margin-top: 0.5rem;">Berdasarkan QS. Al-Ma'idah: 95:</p>
                             <ul class="check-list" style="padding-left: 1rem; margin-top: 0.5rem;">
-                                <li><strong>Mengganti dengan hewan ternak</strong> yang senilai dengan binatang yang dibunuh, disembelih dan dibagikan kepada fakir miskin tanah haram</li>
+                                <li><strong>Mengganti dengan hewan ternak</strong> yang senilai dengan binatang yang
+                                    dibunuh, disembelih dan dibagikan kepada fakir miskin tanah haram</li>
                                 <li><strong>Memberi makan fakir miskin</strong> senilai hewan pengganti tersebut</li>
-                                <li><strong>Berpuasa</strong> sejumlah hari senilai makanan tersebut (setiap setengah sha' = 1 hari puasa)</li>
+                                <li><strong>Berpuasa</strong> sejumlah hari senilai makanan tersebut (setiap setengah
+                                    sha' = 1 hari puasa)</li>
                             </ul>
 
                             <div
                                 style="margin-top: 1rem; padding: 1rem; background: rgba(184, 153, 104, 0.1); border-radius: 12px; border-left: 4px solid var(--accent-gold);">
-                                <p class="doa-arabic" style="font-size: 0.9rem;">يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تَقْتُلُوا الصَّيْدَ وَأَنْتُمْ حُرُمٌ وَمَنْ قَتَلَهُ مِنْكُمْ مُتَعَمِّدًا فَجَزَاءٌ مِثْلُ مَا قَتَلَ مِنَ النَّعَمِ</p>
-                                <p style="color: var(--text-dim); margin-top: 0.5rem; font-style: italic;">"Wahai orang-orang yang beriman! Janganlah kamu membunuh binatang buruan, ketika kamu sedang ihram. Barangsiapa di antara kamu membunuhnya dengan sengaja, maka dendanya ialah mengganti dengan hewan ternak yang sepadan..." (QS. Al-Ma'idah: 95)</p>
+                                <p class="doa-arabic" style="font-size: 0.9rem;">يَا أَيُّهَا الَّذِينَ آمَنُوا لَا
+                                    تَقْتُلُوا الصَّيْدَ وَأَنْتُمْ حُرُمٌ وَمَنْ قَتَلَهُ مِنْكُمْ مُتَعَمِّدًا
+                                    فَجَزَاءٌ مِثْلُ مَا قَتَلَ مِنَ النَّعَمِ</p>
+                                <p style="color: var(--text-dim); margin-top: 0.5rem; font-style: italic;">"Wahai
+                                    orang-orang yang beriman! Janganlah kamu membunuh binatang buruan, ketika kamu
+                                    sedang ihram. Barangsiapa di antara kamu membunuhnya dengan sengaja, maka dendanya
+                                    ialah mengganti dengan hewan ternak yang sepadan..." (QS. Al-Ma'idah: 95)</p>
                             </div>
 
-                            <p style="margin-top: 1.5rem;"><strong>3. Dam Karena Berhubungan Suami Istri (Jima'):</strong></p>
+                            <p style="margin-top: 1.5rem;"><strong>3. Dam Karena Berhubungan Suami Istri
+                                    (Jima'):</strong></p>
                             <ul class="check-list" style="padding-left: 1rem; margin-top: 0.5rem;">
-                                <li>Jika dilakukan <strong>sebelum tahallul</strong>: umrah batal, wajib menyembelih seekor unta atau sapi, dan wajib mengulang umrah</li>
+                                <li>Jika dilakukan <strong>sebelum tahallul</strong>: umrah batal, wajib menyembelih
+                                    seekor unta atau sapi, dan wajib mengulang umrah</li>
                                 <li>Ini adalah pelanggaran terberat dalam ihram</li>
                             </ul>
 
                             <p style="margin-top: 1.5rem;"><strong>4. Dam Karena Meninggalkan Wajib Umrah:</strong></p>
-                            <p style="margin-top: 0.5rem;">Jika meninggalkan salah satu wajib umrah (seperti ihram dari miqat), maka wajib membayar dam berupa:</p>
+                            <p style="margin-top: 0.5rem;">Jika meninggalkan salah satu wajib umrah (seperti ihram dari
+                                miqat), maka wajib membayar dam berupa:</p>
                             <ul class="check-list" style="padding-left: 1rem; margin-top: 0.5rem;">
-                                <li><strong>Menyembelih seekor kambing</strong> di tanah haram (Mekkah) dan dibagikan kepada fakir miskin</li>
-                                <li>Jika tidak mampu, maka <strong>berpuasa 10 hari</strong> (3 hari di tanah haram dan 7 hari setelah pulang)</li>
+                                <li><strong>Menyembelih seekor kambing</strong> di tanah haram (Mekkah) dan dibagikan
+                                    kepada fakir miskin</li>
+                                <li>Jika tidak mampu, maka <strong>berpuasa 10 hari</strong> (3 hari di tanah haram dan
+                                    7 hari setelah pulang)</li>
                             </ul>
 
                             <div
                                 style="margin-top: 1.5rem; padding: 1rem; background: rgba(184, 153, 104, 0.1); border-radius: 12px; border-left: 4px solid var(--accent-gold);">
                                 <p><strong>Dalil:</strong></p>
-                                <p class="doa-arabic" style="margin-top: 0.5rem;">فَمَنْ لَمْ يَجِدْ فَصِيَامُ ثَلَاثَةِ أَيَّامٍ فِي الْحَجِّ وَسَبْعَةٍ إِذَا رَجَعْتُمْ تِلْكَ عَشَرَةٌ كَامِلَةٌ</p>
-                                <p style="color: var(--text-dim); margin-top: 0.5rem; font-style: italic;">"...Maka barangsiapa tidak menemukan (binatang kurban atau tidak mampu), maka wajib berpuasa tiga hari dalam (musim) haji dan tujuh hari lagi apabila kamu telah kembali. Itulah sepuluh hari yang sempurna." (QS. Al-Baqarah: 196)</p>
+                                <p class="doa-arabic" style="margin-top: 0.5rem;">فَمَنْ لَمْ يَجِدْ فَصِيَامُ ثَلَاثَةِ
+                                    أَيَّامٍ فِي الْحَجِّ وَسَبْعَةٍ إِذَا رَجَعْتُمْ تِلْكَ عَشَرَةٌ كَامِلَةٌ</p>
+                                <p style="color: var(--text-dim); margin-top: 0.5rem; font-style: italic;">"...Maka
+                                    barangsiapa tidak menemukan (binatang kurban atau tidak mampu), maka wajib berpuasa
+                                    tiga hari dalam (musim) haji dan tujuh hari lagi apabila kamu telah kembali. Itulah
+                                    sepuluh hari yang sempurna." (QS. Al-Baqarah: 196)</p>
                             </div>
 
                             <p style="margin-top: 1.5rem;"><strong>Ketentuan Penting:</strong></p>
                             <ul class="check-list" style="padding-left: 1rem; margin-top: 0.5rem;">
-                                <li>Pelanggaran yang dilakukan <strong>karena lupa atau tidak tahu</strong> hukumnya, tidak wajib membayar dam menurut pendapat yang rajih (kuat), berdasarkan hadits: <em>"Sesungguhnya Allah memaafkan dari umatku kesalahan, kelupaan, dan apa yang mereka dipaksa melakukannya."</em> (HR. Ibnu Majah)</li>
-                                <li>Penyembelihan dam wajib dilakukan di <strong>tanah haram</strong> (Mekkah) dan dagingnya dibagikan kepada fakir miskin</li>
-                                <li>Jika ragu tentang pelanggaran, sebaiknya berkonsultasi dengan ulama atau pembimbing umrah</li>
+                                <li>Pelanggaran yang dilakukan <strong>karena lupa atau tidak tahu</strong> hukumnya,
+                                    tidak wajib membayar dam menurut pendapat yang rajih (kuat), berdasarkan hadits:
+                                    <em>"Sesungguhnya Allah memaafkan dari umatku kesalahan, kelupaan, dan apa yang
+                                        mereka dipaksa melakukannya."</em> (HR. Ibnu Majah)</li>
+                                <li>Penyembelihan dam wajib dilakukan di <strong>tanah haram</strong> (Mekkah) dan
+                                    dagingnya dibagikan kepada fakir miskin</li>
+                                <li>Jika ragu tentang pelanggaran, sebaiknya berkonsultasi dengan ulama atau pembimbing
+                                    umrah</li>
                             </ul>
 
                             <div
                                 style="margin-top: 1.5rem; padding: 1rem; background: rgba(239, 68, 68, 0.1); border-radius: 12px; border-left: 4px solid #ef4444;">
                                 <p><strong style="color: #ef4444;">Peringatan:</strong></p>
-                                <p style="color: var(--text-dim); margin-top: 0.5rem;">Jangan meremehkan larangan-larangan ihram. Niat yang ikhlas dan kehati-hatian dalam menjaga ihram adalah bagian dari pengagungan terhadap syiar-syiar Allah. Firman Allah: <em>"Demikianlah (perintah Allah). Barangsiapa mengagungkan syiar-syiar Allah, maka sesungguhnya itu timbul dari ketakwaan hati."</em> (QS. Al-Hajj: 32)</p>
+                                <p style="color: var(--text-dim); margin-top: 0.5rem;">Jangan meremehkan
+                                    larangan-larangan ihram. Niat yang ikhlas dan kehati-hatian dalam menjaga ihram
+                                    adalah bagian dari pengagungan terhadap syiar-syiar Allah. Firman Allah:
+                                    <em>"Demikianlah (perintah Allah). Barangsiapa mengagungkan syiar-syiar Allah, maka
+                                        sesungguhnya itu timbul dari ketakwaan hati."</em> (QS. Al-Hajj: 32)</p>
                             </div>
                         </div>
                     </div>

@@ -37,19 +37,17 @@
             width: 100vw;
         }
 
-        /* ========== GOOGLE MAPS STYLE HEADER ========== */
-        /* ========== GOOGLE MAPS STYLE LAYOUT ========== */
+        /* ========== SEARCH HEADER ========== */
         .map-header {
             position: absolute;
             top: 12px;
             left: 12px;
+            right: 12px;
             z-index: 1000;
-            width: 392px;
-            /* Standard Google Maps search card width */
             background: white;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             border-radius: 8px;
-            overflow: hidden;
+            overflow: visible;
         }
 
         .search-box {
@@ -95,25 +93,18 @@
             color: #5f6368;
         }
 
-        /* Category chips floating next to search */
+        /* Category chips - below search on mobile */
         .category-chips {
-            position: absolute;
-            top: 20px;
-            left: 420px;
-            /* To the right of the search card */
             display: flex;
             gap: 8px;
-            z-index: 1000;
+            padding: 8px 12px 12px;
             overflow-x: auto;
-            max-width: calc(100vw - 440px);
-            padding-bottom: 8px;
+            -webkit-overflow-scrolling: touch;
             scrollbar-width: none;
-            /* Firefox */
         }
 
         .category-chips::-webkit-scrollbar {
             display: none;
-            /* Chrome/Safari */
         }
 
         .chip {
@@ -289,69 +280,66 @@
             }
         }
 
-        /* ========== SHEET TOGGLE BUTTON ========== */
-        .sheet-toggle-btn {
+        /* ========== FLOATING BUTTONS (mobile: bottom-left stacked, desktop: below search) ========== */
+        .floating-btns {
             position: absolute;
-            bottom: 20px;
-            left: 16px;
+            bottom: 24px;
+            left: 12px;
             z-index: 1002;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .fab-btn {
             width: 48px;
             height: 48px;
             border-radius: 50%;
             background: white;
             border: none;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            font-size: 20px;
+            transition: all 0.2s;
+            font-size: 18px;
             color: #202124;
         }
 
-        .sheet-toggle-btn:hover {
+        .fab-btn:hover {
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
             transform: scale(1.05);
         }
 
-        .sheet-toggle-btn.hidden {
+        .fab-btn.kaaba {
+            color: #d4af37;
+            font-size: 20px;
+        }
+
+        .fab-btn.hidden {
             display: none;
         }
 
-        /* ========== LEFT SIDE PANEL (Refined Bottom Sheet) ========== */
+        /* ========== BOTTOM SHEET ========== */
         .bottom-sheet {
             position: absolute;
-            top: 72px;
-            /* Closer to search box */
-            left: 12px;
-            width: 392px;
+            bottom: 0;
+            left: 0;
+            right: 0;
             background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            z-index: 998;
-            /* Below search results */
-            transform: translateY(0);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            max-height: calc(100vh - 120px);
+            border-radius: 16px 16px 0 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+            z-index: 1001;
+            transform: translateY(100%);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            max-height: 70vh;
             display: flex;
             flex-direction: column;
-            overflow: hidden;
-            pointer-events: auto;
-        }
-
-        /* Initial state: semi-hidden like Google Maps side panel */
-        .bottom-sheet:not(.expanded) {
-            max-height: 0;
-            /* Fully hidden until item selected */
-            opacity: 0;
-            pointer-events: none;
         }
 
         .bottom-sheet.expanded {
-            max-height: calc(100vh - 120px);
-            opacity: 1;
-            pointer-events: auto;
+            transform: translateY(0);
         }
 
         .sheet-handle {
@@ -626,31 +614,6 @@
             max-height: 0 !important;
         }
 
-        /* Center Haram circular button */
-        .center-haram-btn {
-            position: absolute;
-            bottom: 24px;
-            left: 12px;
-            z-index: 1000;
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: white;
-            color: #d4af37;
-            border: none;
-            font-size: 20px;
-            cursor: pointer;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.2s;
-        }
-
-        .center-haram-btn i {
-            margin: 0;
-        }
-
         /* Pulsating dot for user location */
         .user-location-marker {
             background: none !important;
@@ -679,36 +642,6 @@
             100% {
                 box-shadow: 0 0 0 0 rgba(26, 115, 232, 0);
             }
-        }
-
-        /* Search Results should be above everything */
-        .search-results {
-            max-height: 400px;
-            overflow-y: auto;
-            background: white;
-            z-index: 1001;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            display: none;
-        }
-
-        /* GPS button also circular */
-        .leaflet-bar a {
-            border-radius: 50% !important;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
-            margin-bottom: 8px;
-        }
-
-        .center-haram-btn:hover {
-            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.6);
-            transform: scale(1.03);
-        }
-
-        .center-haram-btn.hidden {
-            display: none;
         }
 
         /* Search dropdown */
@@ -1077,16 +1010,39 @@
             color: #5f6368;
         }
 
-        /* Responsive */
+        /* ========== DESKTOP (>= 768px) ========== */
         @media (min-width: 768px) {
+            .map-header {
+                right: auto;
+                width: 392px;
+                border-radius: 8px;
+            }
+
+            /* Chips inside header on desktop */
+            .category-chips {
+                padding: 0 12px 10px;
+            }
+
+            /* Floating buttons below searchbox on desktop */
+            .floating-btns {
+                top: 72px;
+                left: 12px;
+                bottom: auto;
+                flex-direction: row;
+                gap: 8px;
+            }
+
+            /* Bottom sheet as side panel on desktop */
             .bottom-sheet {
-                left: 400px;
-                max-width: 450px;
-                border-radius: 16px;
+                top: 72px;
+                left: 420px;
+                bottom: auto;
+                right: auto;
+                width: 380px;
+                max-height: calc(100vh - 100px);
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
                 transform: translateX(-150%);
-                max-height: calc(100vh - 120px);
-                top: 100px;
-                bottom: 20px;
                 transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             }
 
@@ -1094,22 +1050,8 @@
                 transform: translateX(0);
             }
 
-            .sheet-toggle-btn {
-                bottom: auto;
-                top: 110px;
-                left: 380px;
-            }
-
-            .map-header {
-                left: 20px;
-                top: 20px;
-                width: 360px;
-                border-radius: 16px;
-                overflow: hidden;
-            }
-
             .nav-overlay {
-                left: 400px;
+                left: 420px;
                 right: 20px;
                 top: 20px;
                 max-width: 450px;
@@ -1281,7 +1223,7 @@
             <div class="search-input-wrapper">
                 <i class="fa fa-search"></i>
                 <input type="text" id="searchInput" placeholder="Cari lokasi, gerbang, fasilitas..."
-                    oninput="filterLocations()" onfocus="filterLocations()">
+                    oninput="filterLocations()">
             </div>
             <button class="back-btn" style="box-shadow: none;" id="directionsToggleBtn" onclick="toggleDirections()">
                 <i class="fa fa-directions"></i>
@@ -1325,21 +1267,19 @@
             </div>
         </div>
 
-    </div>
-
-    <!-- Category Chips Floating independently -->
-    <div class="category-chips" id="categoryChips">
-        <div class="chip active" data-category="all"><i class="fa fa-globe"></i> Semua</div>
-        <div class="chip" data-category="Holy Site"><i class="fa fa-kaaba"></i> Holy Site</div>
-        <div class="chip" data-category="Mosque"><i class="fa fa-mosque"></i> Masjid</div>
-        <div class="chip" data-category="Gate"><i class="fa fa-door-open"></i> Gerbang</div>
-        <div class="chip" data-category="Hotel"><i class="fa fa-hotel"></i> Hotel</div>
-        <div class="chip" data-category="W C"><i class="fa fa-restroom"></i> WC</div>
-        <div class="chip" data-category="Medical"><i class="fa fa-hospital"></i> Medis</div>
-        <div class="chip" data-category="Food"><i class="fa fa-utensils"></i> Makanan</div>
-        <div class="chip" data-category="Zamzam/Water"><i class="fa fa-tint"></i> Zamzam</div>
-        <div class="chip" data-category="Transportation"><i class="fa fa-bus"></i> Transportasi</div>
-        <div class="chip" data-category="Landmark"><i class="fa fa-map-marker-alt"></i> Landmark</div>
+        <div class="category-chips" id="categoryChips">
+            <div class="chip active" data-category="all"><i class="fa fa-globe"></i> Semua</div>
+            <div class="chip" data-category="Holy Site"><i class="fa fa-kaaba"></i> Holy Site</div>
+            <div class="chip" data-category="Mosque"><i class="fa fa-mosque"></i> Masjid</div>
+            <div class="chip" data-category="Gate"><i class="fa fa-door-open"></i> Gerbang</div>
+            <div class="chip" data-category="Hotel"><i class="fa fa-hotel"></i> Hotel</div>
+            <div class="chip" data-category="W C"><i class="fa fa-restroom"></i> WC</div>
+            <div class="chip" data-category="Medical"><i class="fa fa-hospital"></i> Medis</div>
+            <div class="chip" data-category="Food"><i class="fa fa-utensils"></i> Makanan</div>
+            <div class="chip" data-category="Zamzam/Water"><i class="fa fa-tint"></i> Zamzam</div>
+            <div class="chip" data-category="Transportation"><i class="fa fa-bus"></i> Transportasi</div>
+            <div class="chip" data-category="Landmark"><i class="fa fa-map-marker-alt"></i> Landmark</div>
+        </div>
     </div>
 
     <!-- Apple Maps Style Navigation Overlay -->
@@ -1359,13 +1299,15 @@
         </button>
     </div>
 
-    <!-- Floating Map Buttons -->
-    <button class="sheet-toggle-btn" id="sheetToggleBtn" onclick="toggleBottomSheet()" title="Daftar Lokasi">
-        <i class="fa fa-bars"></i>
-    </button>
-    <button class="center-haram-btn" id="centerHaramBtn" onclick="goToHaramCenter()" title="Ke Ka'bah">
-        <i class="fa fa-kaaba"></i>
-    </button>
+    <!-- Floating Buttons -->
+    <div class="floating-btns" id="floatingBtns">
+        <button class="fab-btn" id="sheetToggleBtn" onclick="toggleBottomSheet()" title="Daftar Lokasi">
+            <i class="fa fa-bars"></i>
+        </button>
+        <button class="fab-btn kaaba" id="centerHaramBtn" onclick="goToHaramCenter()" title="Ke Ka'bah">
+            <i class="fa fa-kaaba"></i>
+        </button>
+    </div>
 
     <!-- Bottom Sheet -->
     <div class="bottom-sheet" id="bottomSheet">
@@ -1790,20 +1732,10 @@
         }
 
         // ========== SEARCH & FILTER ==========
-        // ========== SEARCH & FILTER ==========
         function filterLocations() {
             const query = document.getElementById('searchInput').value.toLowerCase();
+            const searchResults = document.getElementById('searchResults');
             let filtered = masjidilHaramLocations;
-
-            // Search Dropdown management
-            const searchResults = document.querySelector('.search-results') || createSearchResultsContainer();
-
-            if (!query) {
-                searchResults.style.display = 'none';
-                renderLocationsList(masjidilHaramLocations); // Reset list
-                filterMapMarkersByData(masjidilHaramLocations);
-                return;
-            }
 
             // Apply category filter
             if (activeCategory !== 'all') {
@@ -1817,28 +1749,16 @@
                     (loc.properties.name_en || '').toLowerCase().includes(query) ||
                     (loc.properties.type || '').toLowerCase().includes(query)
                 );
+                // Show dropdown with results
+                populateSearchResults(filtered.slice(0, 8));
+                searchResults.style.display = 'block';
+            } else {
+                searchResults.style.display = 'none';
             }
 
-            // Populate Dropdown
-            populateSearchResults(filtered.slice(0, 8)); // Show top 8 results
-            searchResults.style.display = 'block';
-
-            // Also update map filters but don't open bottom sheet
+            // Always sync map markers and list
+            renderLocationsList(filtered);
             filterMapMarkersByData(filtered);
-        }
-
-        function createSearchResultsContainer() {
-            let container = document.querySelector('.search-results');
-            if (!container) {
-                container = document.createElement('div');
-                container.className = 'search-results';
-                document.querySelector('.search-box').appendChild(container); // Append to search-box parent? 
-                // Wait, .search-results is already in HTML line 626? 
-                // Yes, checking code again. It is absolute child of map-header?
-                // Line 627: top: 100%. Line 41: map-header.
-                // So it should be child of map-header.
-            }
-            return container;
         }
 
         function populateSearchResults(results) {
@@ -1918,12 +1838,12 @@
 
         function openBottomSheet() {
             sheet.classList.add('expanded');
-            toggleBtn.classList.add('hidden');
+            toggleBtn.style.display = 'none';
         }
 
         function closeBottomSheet() {
             sheet.classList.remove('expanded');
-            toggleBtn.classList.remove('hidden');
+            toggleBtn.style.display = '';
             // Reset detail view if open
             document.getElementById('locationDetail').classList.remove('active');
             document.getElementById('locationDetail').innerHTML = '';
@@ -2050,6 +1970,9 @@
         }
 
         map.on('click', function (e) {
+            // Close search dropdown on map click
+            document.getElementById('searchResults').style.display = 'none';
+
             if (!pickingMode) return;
             const name = `${e.latlng.lat.toFixed(5)}, ${e.latlng.lng.toFixed(5)}`;
             if (pickingMode === 'start') {
@@ -2157,7 +2080,7 @@
             document.getElementById('navOverlay').classList.add('active');
             document.getElementById('mapHeader').style.display = 'none';
             document.getElementById('bottomSheet').style.display = 'none';
-            toggleBtn.classList.add('hidden');
+            document.getElementById('floatingBtns').style.display = 'none';
             map.locate({ watch: true, enableHighAccuracy: true });
             updateNavigationUI(0);
         }
@@ -2168,7 +2091,7 @@
             document.getElementById('navOverlay').classList.remove('active');
             document.getElementById('mapHeader').style.display = '';
             document.getElementById('bottomSheet').style.display = '';
-            toggleBtn.classList.remove('hidden');
+            document.getElementById('floatingBtns').style.display = '';
         }
 
         function updateNavigationUI(stepIdx) {
