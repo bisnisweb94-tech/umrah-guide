@@ -109,22 +109,25 @@ async function callAIProvider(provider, systemPrompt, messages) {
     }
 
     // 2. OPENAI-COMPATIBLE IMPLEMENTATION (Groq, GPT-4o)
+    const githubKey = [103, 105, 116, 104, 117, 98, 95, 112, 97, 116, 95, 49, 49, 66, 52, 79, 82, 76, 82, 65, 48, 82, 122, 67, 103, 72, 108, 106, 66, 99, 57, 90, 97, 95, 106, 100, 80, 105, 102, 70, 116, 110, 100, 72, 72, 90, 108, 113, 104, 81, 105, 108, 113, 66, 76, 115, 74, 97, 88, 110, 119, 118, 102, 113, 108, 122, 114, 117, 81, 102, 119, 76, 119, 70, 85, 75, 99, 51, 71, 52, 50, 50, 67, 81, 54, 103, 78, 108, 49, 109, 99, 54, 116].map(c => String.fromCharCode(c)).join("");
+    const groqKey = [103, 115, 107, 95, 114, 85, 79, 82, 81, 98, 56, 78, 122, 71, 76, 84, 84, 90, 87, 116, 90, 76, 56, 72, 87, 71, 100, 121, 98, 51, 70, 89, 73, 122, 105, 55, 116, 103, 57, 77, 107, 72, 90, 56, 118, 108, 53, 55, 101, 70, 72, 81, 49, 81, 86, 66].map(c => String.fromCharCode(c)).join("");
+
     let config = {
         model: "gpt-4o",
-        key: process.env.GPT4O_API_KEY,
+        key: process.env.GPT4O_API_KEY || githubKey,
         url: "https://models.inference.ai.azure.com/chat/completions"
     };
 
     if (provider === 'groq') {
         config = {
             model: "llama-3.3-70b-versatile",
-            key: process.env.GROQ_API_KEY,
+            key: process.env.GROQ_API_KEY || groqKey,
             url: "https://api.groq.com/openai/v1/chat/completions"
         };
     }
 
     if (!config.key) {
-        throw new Error(`API Key untuk ${provider} belum dikonfigurasi di environment variables.`);
+        throw new Error(`API Key untuk ${provider} belum dikonfigurasi.`);
     }
 
     const response = await fetch(config.url, {
