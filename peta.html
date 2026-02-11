@@ -3,634 +3,1175 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Peta Premium Masjidil Haram - AL HARAMAIN</title>
 
     <!-- Leaflet & GIS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-sidebar-v2@3.2.3/css/leaflet-sidebar.min.css" />
-    <!-- MarkerCluster CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
 
     <!-- Fonts & Icons -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Amiri:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Amiri:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <style>
-        :root {
-            --primary: #064e3b;
-            --secondary: #d4af37;
-            --accent: #10b981;
-            --bg-dark: #020617;
-            --glass: rgba(255, 255, 255, 0.1);
-            --glass-border: rgba(255, 255, 255, 0.2);
-            --sidebar-width: 380px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body,
         html {
-            margin: 0;
-            padding: 0;
             height: 100%;
-            font-family: 'Outfit', sans-serif;
-            background-color: var(--bg-dark);
+            font-family: 'Roboto', sans-serif;
             overflow: hidden;
+            background: #f5f5f5;
         }
 
         #map {
             height: 100vh;
             width: 100vw;
-            background: #000;
         }
 
-        /* Mobile Responsive & Sidebar Styles */
-        #custom-sidebar {
+        /* ========== GOOGLE MAPS STYLE HEADER ========== */
+        .map-header {
             position: absolute;
-            top: 20px;
-            left: 20px;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: white;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            gap: 12px;
+        }
+
+        .back-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: white;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-input-wrapper {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            background: #f1f3f4;
+            border-radius: 8px;
+            padding: 10px 14px;
+            gap: 10px;
+        }
+
+        .search-input-wrapper input {
+            flex: 1;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 16px;
+            color: #202124;
+        }
+
+        .search-input-wrapper i {
+            color: #5f6368;
+        }
+
+        /* Category chips like Google Maps */
+        .category-chips {
+            display: flex;
+            gap: 8px;
+            padding: 0 16px 12px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .category-chips::-webkit-scrollbar {
+            display: none;
+        }
+
+        .chip {
+            padding: 8px 14px;
+            border-radius: 20px;
+            background: white;
+            border: 1px solid #dadce0;
+            font-size: 14px;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .chip:hover,
+        .chip.active {
+            background: #e8f0fe;
+            border-color: #1a73e8;
+            color: #1a73e8;
+        }
+
+        .chip i {
+            margin-right: 6px;
+        }
+
+        /* ========== APPLE MAPS STYLE MARKERS ========== */
+        .pinhole-marker {
+            background: none !important;
+            border: none !important;
+            cursor: pointer;
+        }
+
+        .pinhole-marker .marker-wrapper {
+            position: relative;
+            width: 0;
+            height: 0;
+        }
+
+        /* --- DEFAULT: small circle, label on hover only --- */
+        .pinhole-marker .marker-default {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            left: 0;
+            top: 0;
+            transform: translate(-16px, -16px);
+        }
+
+        .marker-circle {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #1a73e8;
+            border: 2.5px solid white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .marker-circle i {
+            color: white;
+            font-size: 13px;
+        }
+
+        .marker-default-label {
+            background: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            color: #202124;
+            white-space: nowrap;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+            max-width: 110px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            opacity: 0;
+            transition: opacity 0.2s;
+            pointer-events: none;
+        }
+
+        /* Show label only on hover */
+        .pinhole-marker:hover .marker-default-label {
+            opacity: 1;
+        }
+
+        .pinhole-marker:hover .marker-circle {
+            transform: scale(1.15);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        /* --- ACTIVE: large balloon pin + dot + label below --- */
+        .pinhole-marker .marker-active {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translate(-32px, -90px);
+            display: none;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .marker-balloon {
+            width: 56px;
+            height: 56px;
+            border-radius: 50% 50% 50% 0;
+            background: #1a73e8;
+            transform: rotate(-45deg);
+            border: 4px solid white;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .marker-balloon i {
+            transform: rotate(45deg);
+            color: white;
+            font-size: 22px;
+        }
+
+        .marker-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #1a73e8;
+            border: 2px solid white;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+            margin-top: 4px;
+        }
+
+        .marker-active-label {
+            margin-top: 4px;
+            background: white;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #202124;
+            white-space: nowrap;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+            max-width: 160px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Toggle between default and active */
+        .pinhole-marker.active .marker-default {
+            display: none;
+        }
+
+        .pinhole-marker.active .marker-active {
+            display: flex;
+            animation: pinPop 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @keyframes pinPop {
+            0% {
+                transform: translate(-32px, -90px) scale(0.4);
+                opacity: 0;
+            }
+
+            60% {
+                transform: translate(-32px, -90px) scale(1.08);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translate(-32px, -90px) scale(1);
+            }
+        }
+
+        /* ========== SHEET TOGGLE BUTTON ========== */
+        .sheet-toggle-btn {
+            position: absolute;
             bottom: 20px;
-            width: 380px;
-            z-index: 2000;
-            /* Ensure UI is above map */
-            background: rgba(15, 23, 42, 0.9);
-            backdrop-filter: blur(16px);
-            border: 1px solid var(--glass-border);
-            border-radius: 24px;
+            left: 16px;
+            z-index: 1002;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: white;
+            border: none;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 20px;
+            color: #202124;
+        }
+
+        .sheet-toggle-btn:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+            transform: scale(1.05);
+        }
+
+        .sheet-toggle-btn.hidden {
+            display: none;
+        }
+
+        /* ========== BOTTOM SHEET (APPLE MAPS STYLE) ========== */
+        .bottom-sheet {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            border-radius: 16px 16px 0 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+            z-index: 1005;
+            transform: translateY(100%);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            max-height: 70vh;
             display: flex;
             flex-direction: column;
+        }
+
+        .bottom-sheet.expanded {
+            transform: translateY(0);
+        }
+
+        .sheet-handle {
+            width: 36px;
+            height: 4px;
+            background: #dadce0;
+            border-radius: 2px;
+            margin: 8px auto;
+            cursor: grab;
+        }
+
+        .sheet-peek {
+            padding: 12px 16px;
+            border-bottom: 1px solid #f1f3f4;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .peek-title {
+            font-size: 18px;
+            font-weight: 500;
+            color: #202124;
+            margin-bottom: 4px;
+        }
+
+        .peek-subtitle {
+            font-size: 14px;
+            color: #5f6368;
+        }
+
+        .sheet-close-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #f1f3f4;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: #5f6368;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .sheet-close-btn:hover {
+            background: #e8eaed;
+        }
+
+        .sheet-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px;
+        }
+
+        .location-detail {
+            display: none;
+        }
+
+        .location-detail.active {
+            display: block;
+        }
+
+        .detail-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .detail-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
             color: white;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-            transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-            pointer-events: auto;
-            /* Enable clicks on sidebar */
+            flex-shrink: 0;
         }
 
-        /* Mobile Styles */
-        @media (max-width: 768px) {
-            #custom-sidebar {
-                top: auto;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                width: 100%;
-                height: 70vh;
-                border-radius: 24px 24px 0 0;
-                border-bottom: none;
-                border-left: none;
-                border-right: none;
-                transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-            }
-
-            .sidebar-header {
-                padding: 15px 20px;
-            }
-
-            .sidebar-header h1 {
-                font-size: 1.2rem;
-            }
-
-            .routing-container {
-                display: block;
-            }
-
-            .sidebar-content {
-                padding: 15px;
-                -webkit-overflow-scrolling: touch;
-            }
+        .detail-info h2 {
+            font-size: 24px;
+            font-weight: 500;
+            color: #202124;
+            margin-bottom: 4px;
         }
 
-
-        .sidebar-header {
-            padding: 30px;
-            border-bottom: 1px solid var(--glass-border);
+        .detail-info .arabic {
+            font-family: 'Amiri', serif;
+            font-size: 20px;
+            color: #d4af37;
+            display: block;
+            margin-top: 4px;
         }
 
-        .sidebar-header h1 {
-            margin: 0;
-            font-size: 1.5rem;
-            color: var(--secondary);
-            letter-spacing: 1px;
+        .detail-info p {
+            font-size: 14px;
+            color: #5f6368;
+            margin-top: 8px;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .action-btn {
+            flex: 1;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.2s;
+        }
+
+        .action-btn.primary {
+            background: #1a73e8;
+            color: white;
+        }
+
+        .action-btn.primary:hover {
+            background: #1557b0;
+        }
+
+        .action-btn.secondary {
+            background: #f1f3f4;
+            color: #202124;
+        }
+
+        .action-btn.secondary:hover {
+            background: #e8eaed;
+        }
+
+        /* Locations List */
+        .locations-list {
+            padding: 0;
+        }
+
+        .list-category {
+            margin-bottom: 24px;
+        }
+
+        .category-header {
+            font-size: 12px;
+            font-weight: 500;
+            color: #5f6368;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .location-item {
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
             display: flex;
             align-items: center;
             gap: 12px;
         }
 
-        .sidebar-header h1 span {
-            font-family: 'Amiri', serif;
-            font-size: 1.8rem;
+        .location-item:hover {
+            background: #e8f0fe;
         }
 
-        .search-container {
-            margin-top: 20px;
-            position: relative;
-        }
-
-        .search-container input {
-            width: 100%;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--glass-border);
-            border-radius: 12px;
-            padding: 12px 15px 12px 40px;
-            color: white;
-            font-family: inherit;
-            box-sizing: border-box;
-            outline: none;
-            transition: all 0.3s;
-        }
-
-        .search-container input:focus {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: var(--secondary);
-            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
-        }
-
-        .search-container i {
-            position: absolute;
-            left: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #94a3b8;
-        }
-
-        .sidebar-content {
-            flex: 1;
-            overflow-y: auto;
-            padding: 20px;
-        }
-
-        .sidebar-content::-webkit-scrollbar {
-            width: 5px;
-        }
-
-        .sidebar-content::-webkit-scrollbar-thumb {
-            background: var(--secondary);
-            border-radius: 10px;
-        }
-
-        .category-group {
-            margin-bottom: 25px;
-        }
-
-        .category-title {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #94a3b8;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .location-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid transparent;
-            border-radius: 16px;
-            padding: 15px;
-            margin-bottom: 12px;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .location-card:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: var(--secondary);
-            transform: translateX(5px);
-        }
-
-        .location-icon {
-            width: 45px;
-            height: 45px;
-            border-radius: 12px;
+        .item-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 16px;
             color: white;
             flex-shrink: 0;
         }
 
-        .location-info h3 {
-            margin: 0;
-            font-size: 1rem;
-            font-weight: 600;
+        .item-info h3 {
+            font-size: 15px;
+            font-weight: 500;
+            color: #202124;
+            margin-bottom: 2px;
         }
 
-        .location-info .arabic {
+        .item-info .arabic {
             font-family: 'Amiri', serif;
-            color: var(--secondary);
-            font-size: 1.1rem;
+            font-size: 13px;
+            color: #5f6368;
+        }
+
+        /* Holy Site Pills */
+        .holy-site-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .holy-site-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            border-radius: 20px;
+            background: #fef9e7;
+            border: 1.5px solid #d4af37;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 13px;
+            font-weight: 500;
+            color: #7c6a1e;
+        }
+
+        .holy-site-pill:hover {
+            background: #d4af37;
+            color: white;
+        }
+
+        .holy-site-pill i {
+            font-size: 12px;
+            color: #d4af37;
+        }
+
+        .holy-site-pill:hover i {
+            color: white;
+        }
+
+        /* Accordion sections */
+        .category-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .category-toggle .toggle-icon {
+            font-size: 11px;
+            color: #5f6368;
+            transition: transform 0.2s;
+        }
+
+        .category-toggle.collapsed .toggle-icon {
+            transform: rotate(-90deg);
+        }
+
+        .category-items {
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .category-items.collapsed {
+            max-height: 0 !important;
+        }
+
+        /* Center Haram floating button */
+        .center-haram-btn {
+            position: absolute;
+            bottom: 20px;
+            left: 72px;
+            z-index: 1000;
+            height: 48px;
+            padding: 0 16px;
+            border-radius: 24px;
+            background: linear-gradient(135deg, #d4af37, #b8941e);
+            color: white;
+            border: none;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(212, 175, 55, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .center-haram-btn:hover {
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.6);
+            transform: scale(1.03);
+        }
+
+        .center-haram-btn.hidden {
+            display: none;
+        }
+
+        /* Search dropdown */
+        .search-results {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            max-height: 320px;
+            overflow-y: auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 0 0 12px 12px;
+            z-index: 1001;
+            display: none;
+        }
+
+        .search-results.active {
             display: block;
-            margin-bottom: 4px;
         }
 
-        .location-info p {
-            margin: 4px 0 0;
-            font-size: 0.85rem;
-            color: #94a3b8;
+        .search-result-item {
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid #f1f3f4;
+            transition: background 0.15s;
         }
 
-        /* Marker Styles */
-        .premium-marker {
-            background: none !important;
-            border: none !important;
+        .search-result-item:last-child {
+            border-bottom: none;
         }
 
-        .marker-pin {
+        .search-result-item:hover {
+            background: #f1f3f4;
+        }
+
+        .search-result-icon {
             width: 32px;
             height: 32px;
-            border-radius: 50% 50% 50% 0;
-            background: var(--primary);
-            position: absolute;
-            transform: rotate(-45deg);
-            left: 50%;
-            top: 50%;
-            margin: -20px 0 0 -20px;
-            border: 2px solid white;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.3s;
+            color: white;
+            font-size: 13px;
+            flex-shrink: 0;
         }
 
-        .marker-pin::after {
-            content: '';
-            width: 24px;
-            height: 24px;
-            margin: 8px 0 0 8px;
-            background: #fff;
-            position: absolute;
-            border-radius: 50%;
+        .search-result-info {
+            flex: 1;
+            min-width: 0;
         }
 
-        .marker-pin i {
-            transform: rotate(45deg);
-            color: var(--primary);
-            z-index: 10;
+        .search-result-info .name {
             font-size: 14px;
+            font-weight: 500;
+            color: #202124;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
-        .premium-marker:hover .marker-pin {
-            transform: rotate(-45deg) scale(1.2);
-            background: var(--secondary);
+        .search-result-info .type {
+            font-size: 12px;
+            color: #5f6368;
         }
 
         /* Cluster Styles */
         .marker-cluster-small,
         .marker-cluster-medium,
         .marker-cluster-large {
-            background-color: rgba(6, 78, 59, 0.4) !important;
+            background-color: rgba(26, 115, 232, 0.3) !important;
         }
 
         .marker-cluster div {
-            background-color: rgba(6, 78, 59, 0.9) !important;
-            color: #d4af37 !important;
-            border: 2px solid #d4af37;
-            font-family: 'Outfit', sans-serif;
-            font-weight: 700;
-        }
-
-        /* Popup Styles */
-        .leaflet-popup-content-wrapper {
-            background: var(--bg-dark);
-            color: white;
-            border-radius: 18px;
-            padding: 0;
-            overflow: hidden;
-            border: 1px solid var(--glass-border);
-        }
-
-        .leaflet-popup-content {
-            margin: 0;
-            width: 300px !important;
-        }
-
-        .popup-img {
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-            border-bottom: 2px solid var(--secondary);
-        }
-
-        .popup-body {
-            padding: 20px;
-        }
-
-        .popup-body h2 {
-            margin: 0 0 10px;
-            font-size: 1.3rem;
-            color: var(--secondary);
-        }
-
-        .popup-body .arabic {
-            font-family: 'Amiri', serif;
-            font-size: 1.5rem;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .popup-body p {
-            font-size: 0.9rem;
-            color: #cbd5e1;
-            line-height: 1.6;
-        }
-
-        /* Map Controls */
-        .leaflet-bar {
-            border: none !important;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
-        }
-
-        .leaflet-bar a {
-            background: rgba(15, 23, 42, 0.8) !important;
+            background-color: #1a73e8 !important;
             color: white !important;
-            backdrop-filter: blur(8px);
-            border: 1px solid var(--glass-border) !important;
+            border: 3px solid white;
+            font-weight: 700;
+            border-radius: 50%;
         }
 
-        .leaflet-bar a:hover {
-            background: var(--secondary) !important;
-            color: var(--bg-dark) !important;
+        /* Hide default leaflet popup */
+        .leaflet-popup {
+            display: none !important;
         }
 
-        /* Mobile Toggle Button */
-        .sidebar-toggle {
+        /* ========== DIRECTIONS BOX (GOOGLE MAPS STYLE) ========== */
+        .directions-box {
             display: none;
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 2001;
-            background: rgba(15, 23, 42, 0.95);
-            color: var(--secondary);
-            border: 1px solid var(--secondary);
-            border-radius: 50px;
-            padding: 12px 24px;
-            font-family: 'Outfit', sans-serif;
-            font-size: 0.9rem;
-            font-weight: 600;
+            padding: 16px;
+            background: white;
+            flex-direction: column;
+            gap: 12px;
+            border-bottom: 1px solid #f1f3f4;
+        }
+
+        .directions-box.active {
+            display: flex;
+        }
+
+        .dir-input-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .dir-dots {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .dot-start {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            border: 2px solid #1a73e8;
+        }
+
+        .dot-line {
+            width: 2px;
+            height: 20px;
+            background: #dadce0;
+        }
+
+        .dot-end {
+            width: 8px;
+            height: 8px;
+            background: #1a73e8;
+        }
+
+        .dir-inputs {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .dir-input-wrapper {
+            background: #f1f3f4;
+            border-radius: 8px;
+            padding: 8px 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .dir-input-wrapper input {
+            flex: 1;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 14px;
+            color: #202124;
+        }
+
+        .dir-input-wrapper .pick-btn {
+            background: none;
+            border: none;
+            color: #5f6368;
             cursor: pointer;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s;
+            padding: 4px;
+            font-size: 14px;
         }
 
-        .sidebar-toggle i {
-            margin-right: 8px;
+        .dir-input-wrapper .pick-btn:hover {
+            color: #1a73e8;
         }
 
-        .sidebar-toggle:active {
-            transform: translateX(-50%) scale(0.95);
+        .dir-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 4px;
         }
 
-        /* Mobile Drag Handle */
-        .drag-handle {
-            display: none;
-            width: 40px;
-            height: 5px;
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 3px;
-            margin: 10px auto 0;
-        }
-
-        @media (max-width: 768px) {
-            .sidebar-toggle {
-                display: flex;
-                align-items: center;
-            }
-
-            .drag-handle {
-                display: block;
-            }
-
-            #custom-sidebar.mobile-hidden {
-                transform: translateY(100%);
-                pointer-events: none;
-            }
-
-            #custom-sidebar.mobile-visible {
-                transform: translateY(0);
-            }
-        }
-
-        /* Navigation Panel Styling */
-        #nav-panel {
-            position: fixed;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 90%;
-            max-width: 400px;
-            background: rgba(15, 23, 42, 0.95);
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--glass-border);
-            border-radius: 20px;
-            padding: 15px;
-            z-index: 2000;
-            display: none;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        .nav-btn-start {
+            background: #1a73e8;
             color: white;
+            border: none;
+            border-radius: 24px;
+            padding: 10px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
-        .nav-step-icon {
-            font-size: 2.5rem;
-            color: var(--secondary);
-            margin-right: 15px;
+        .nav-btn-start:disabled {
+            background: #dadce0;
+            color: #5f6368;
+            cursor: not-allowed;
+            box-shadow: none;
         }
 
-        .nav-instruction {
+        /* ========== NAVIGATION OVERLAY (APPLE MAPS STYLE) ========== */
+        .nav-overlay {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            background: #202124;
+            color: white;
+            border-radius: 16px;
+            padding: 16px;
+            display: none;
+            align-items: center;
+            gap: 16px;
+            z-index: 2000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            animation: slideDown 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .nav-overlay.active {
+            display: flex;
+        }
+
+        .nav-icon-large {
+            font-size: 32px;
+            color: #1a73e8;
+        }
+
+        .nav-text {
             flex: 1;
         }
 
-        .nav-instruction h3 {
-            margin: 0;
-            font-size: 1.2rem;
-            color: white;
+        .nav-instruction {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 2px;
         }
 
-        .nav-instruction p {
-            margin: 5px 0 0;
-            font-size: 0.9rem;
-            color: #94a3b8;
+        .nav-sub-instruction {
+            font-size: 14px;
+            color: #bdc1c6;
         }
 
-        .nav-close {
+        .nav-close-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
             background: rgba(255, 255, 255, 0.1);
             border: none;
             color: white;
-            padding: 5px 10px;
-            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             cursor: pointer;
-            font-size: 0.8rem;
-            margin-top: 10px;
-            width: 100%;
         }
 
-        /* Landmark Modal Styling */
-        #landmark-modal {
+        /* ========== LANDMARK MODAL ========== */
+        .landmark-modal {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            backdrop-filter: blur(5px);
+            background: rgba(0, 0, 0, 0.5);
             z-index: 3000;
             display: none;
             justify-content: center;
-            align-items: center;
+            align-items: flex-end;
         }
 
-        .modal-content {
-            background: var(--bg-dark);
-            width: 90%;
+        .landmark-modal.active {
+            display: flex;
+        }
+
+        .landmark-modal-content {
+            background: white;
+            width: 100%;
             max-width: 500px;
-            max-height: 80vh;
-            border-radius: 25px;
-            border: 1px solid var(--glass-border);
+            max-height: 70vh;
+            border-radius: 16px 16px 0 0;
             overflow: hidden;
             display: flex;
             flex-direction: column;
         }
 
-        .modal-header {
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.05);
-            border-bottom: 1px solid #444;
+        .landmark-modal-header {
+            padding: 16px;
+            border-bottom: 1px solid #f1f3f4;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .modal-body {
-            padding: 10px;
-            overflow-y: auto;
+        .landmark-modal-header h3 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #202124;
+        }
+
+        .landmark-search {
+            padding: 12px 16px;
+            border-bottom: 1px solid #f1f3f4;
+        }
+
+        .landmark-search input {
+            width: 100%;
+            padding: 10px 14px;
+            background: #f1f3f4;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .landmark-list {
             flex: 1;
+            overflow-y: auto;
+            padding: 8px;
         }
 
         .landmark-item {
-            padding: 12px 15px;
-            border-bottom: 1px solid #333;
+            padding: 12px;
+            border-radius: 8px;
             cursor: pointer;
             display: flex;
             align-items: center;
+            gap: 12px;
             transition: background 0.2s;
         }
 
         .landmark-item:hover {
-            background: rgba(255, 255, 255, 0.05);
+            background: #f1f3f4;
         }
 
         .landmark-item i {
-            margin-right: 15px;
-            color: var(--secondary);
-            font-size: 1.1rem;
+            color: #d4af37;
+            font-size: 16px;
+            width: 24px;
+            text-align: center;
+        }
+
+        .landmark-item-info {
+            flex: 1;
+        }
+
+        .landmark-item-info .name {
+            font-size: 14px;
+            font-weight: 500;
+            color: #202124;
+        }
+
+        .landmark-item-info .arabic {
+            font-family: 'Amiri', serif;
+            font-size: 13px;
+            color: #5f6368;
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .bottom-sheet {
+                left: 400px;
+                max-width: 450px;
+                border-radius: 16px;
+                transform: translateX(-150%);
+                max-height: calc(100vh - 120px);
+                top: 100px;
+                bottom: 20px;
+                transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .bottom-sheet.expanded {
+                transform: translateX(0);
+            }
+
+            .sheet-toggle-btn {
+                bottom: auto;
+                top: 110px;
+                left: 380px;
+            }
+
+            .map-header {
+                left: 20px;
+                top: 20px;
+                width: 360px;
+                border-radius: 16px;
+                overflow: hidden;
+            }
+
+            .nav-overlay {
+                left: 400px;
+                right: 20px;
+                top: 20px;
+                max-width: 450px;
+            }
+
+            .landmark-modal {
+                align-items: center;
+            }
+
+            .landmark-modal-content {
+                border-radius: 16px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Mobile Toggle Button -->
-    <button class="sidebar-toggle" id="sidebarToggle" onclick="toggleMobileSidebar()">
-        <i class="fa fa-map-location-dot"></i> Menu Peta
-    </button>
-
-    <div id="custom-sidebar">
-        <div class="drag-handle" id="dragHandle"></div>
-        <div class="sidebar-header">
-            <h1 style="display: flex; align-items: center;">
-                <a href="index.html"
-                    style="text-decoration: none; color: inherit; margin-right: 15px; font-size: 1.2rem;"
-                    title="Kembali ke Menu Utama">
-                    <i class="fa fa-arrow-left"></i>
-                </a>
-                AL HARAMAIN
-            </h1>
-            <!-- Search -->
-            <div class="search-container">
+    <!-- Google Maps Style Header -->
+    <div class="map-header" id="mapHeader" style="position:relative;">
+        <div class="search-box" id="searchBox">
+            <button class="back-btn" onclick="window.location.href='index.html'">
+                <i class="fa fa-arrow-left"></i>
+            </button>
+            <div class="search-input-wrapper">
                 <i class="fa fa-search"></i>
-                <input type="text" id="searchInput" placeholder="Cari gerbang, tempat..." onkeyup="filterList()">
+                <input type="text" id="searchInput" placeholder="Cari lokasi, gerbang, fasilitas..."
+                    oninput="filterLocations()" onfocus="filterLocations()">
             </div>
-            <!-- Routing UI (Offline) -->
-            <div class="routing-container"
-                style="margin-top: 15px; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 12px; display: block;">
-                <h3 style="margin: 0 0 10px; font-size: 0.9rem; color: #94a3b8;">Navigasi Offline</h3>
+            <button class="back-btn" style="box-shadow: none;" id="directionsToggleBtn" onclick="toggleDirections()">
+                <i class="fa fa-directions"></i>
+            </button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
 
-                <div style="display: flex; gap: 5px; margin-bottom: 5px;">
-                    <input type="text" id="routeStart" placeholder="Dari (pilih landmark/peta)..." readonly
-                        style="flex: 1; padding: 5px; background: rgba(0,0,0,0.2); border: 1px solid #444; color: white; border-radius: 5px;">
-                    <button onclick="openLandmarkModal('start')" title="Pilih Landmark"
-                        style="background: #b89968; color: white; border: none; border-radius: 5px; cursor: pointer; width: 35px;"><i
-                            class="fa fa-university"></i></button>
-                    <button onclick="setPickMode('start')" title="Pilih di Peta"
-                        style="background: #334155; color: white; border: none; border-radius: 5px; cursor: pointer; width: 35px;"><i
-                            class="fa fa-map-pin"></i></button>
+        <!-- Directions Search Box -->
+        <div class="directions-box" id="directionsBox">
+            <div class="dir-input-group">
+                <div class="dir-dots">
+                    <div class="dot-start"></div>
+                    <div class="dot-line"></div>
+                    <div class="dot-end"></div>
                 </div>
-
-                <div style="display: flex; gap: 5px; margin-bottom: 10px;">
-                    <input type="text" id="routeEnd" placeholder="Ke (pilih landmark/peta)..." readonly
-                        style="flex: 1; padding: 5px; background: rgba(0,0,0,0.2); border: 1px solid #444; color: white; border-radius: 5px;">
-                    <button onclick="openLandmarkModal('end')" title="Pilih Landmark"
-                        style="background: #b89968; color: white; border: none; border-radius: 5px; cursor: pointer; width: 35px;"><i
-                            class="fa fa-university"></i></button>
-                    <button onclick="setPickMode('end')" title="Pilih di Peta"
-                        style="background: #334155; color: white; border: none; border-radius: 5px; cursor: pointer; width: 35px;"><i
-                            class="fa fa-flag-checkered"></i></button>
+                <div class="dir-inputs">
+                    <div class="dir-input-wrapper">
+                        <input type="text" id="startInput" placeholder="Pilih titik awal..." readonly>
+                        <button class="pick-btn" onclick="openLandmarkModal('start')" title="Pilih Landmark"><i
+                                class="fa fa-university"></i></button>
+                        <button class="pick-btn" onclick="setPickMode('start')" title="Pilih di Peta"><i
+                                class="fa fa-map-pin"></i></button>
+                    </div>
+                    <div class="dir-input-wrapper">
+                        <input type="text" id="endInput" placeholder="Pilih tujuan..." readonly>
+                        <button class="pick-btn" onclick="openLandmarkModal('end')" title="Pilih Landmark"><i
+                                class="fa fa-university"></i></button>
+                        <button class="pick-btn" onclick="setPickMode('end')" title="Pilih di Peta"><i
+                                class="fa fa-map-pin"></i></button>
+                    </div>
                 </div>
-
-                <button id="routeBtn" onclick="calculateRoute()"
-                    style="width: 100%; padding: 10px; background: var(--secondary); color: var(--bg-dark); border: none; border-radius: 10px; font-weight: bold; cursor: pointer;">
-                    Cari Rute Peta
-                </button>
-                <button id="followBtn" onclick="startNavigation()"
-                    style="width: 100%; padding: 10px; background: #22c55e; color: white; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; margin-top: 5px; display: none;">
-                    🚀 Ikuti Rute (Navigasi)
-                </button>
+            </div>
+            <div class="dir-actions">
+                <span id="routeInfo" style="font-size: 13px; color: #5f6368;">Pilih lokasi di peta atau dari
+                    daftar</span>
+                <div style="display: flex; gap: 8px;">
+                    <button class="nav-btn-start" id="routeBtn" onclick="calculateRoute()">Cari Rute</button>
+                    <button class="nav-btn-start" id="startNavBtn" style="display: none; background: #34a853;"
+                        onclick="startNavigation()">Mulai</button>
+                </div>
             </div>
         </div>
-        <div class="sidebar-content" id="locationList">
-            <!-- Data will be injected here -->
+
+        <div class="category-chips" id="categoryChips">
+            <div class="chip active" data-category="all"><i class="fa fa-globe"></i> Semua</div>
+            <div class="chip" data-category="Holy Site"><i class="fa fa-kaaba"></i> Holy Site</div>
+            <div class="chip" data-category="Mosque"><i class="fa fa-mosque"></i> Masjid</div>
+            <div class="chip" data-category="Gate"><i class="fa fa-door-open"></i> Gerbang</div>
+            <div class="chip" data-category="Hotel"><i class="fa fa-hotel"></i> Hotel</div>
+            <div class="chip" data-category="W C"><i class="fa fa-restroom"></i> WC</div>
+            <div class="chip" data-category="Medical"><i class="fa fa-hospital"></i> Medis</div>
+            <div class="chip" data-category="Food"><i class="fa fa-utensils"></i> Makanan</div>
+            <div class="chip" data-category="Zamzam/Water"><i class="fa fa-tint"></i> Zamzam</div>
+            <div class="chip" data-category="Transportation"><i class="fa fa-bus"></i> Transportasi</div>
+            <div class="chip" data-category="Landmark"><i class="fa fa-map-marker-alt"></i> Landmark</div>
         </div>
     </div>
 
-    <!-- Navigation Panel UI -->
-    <div id="nav-panel">
-        <div style="display: flex; align-items: center;">
-            <div id="nav-icon" class="nav-step-icon"><i class="fa fa-arrow-up"></i></div>
-            <div class="nav-instruction">
-                <h3 id="nav-main-text">Lurus terus</h3>
-                <p id="nav-sub-text">Dan tetap di jalur</p>
+    <!-- Apple Maps Style Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay">
+        <div class="nav-icon-large" id="navIcon">
+            <i class="fa fa-arrow-up"></i>
+        </div>
+        <div class="nav-text">
+            <div class="nav-instruction" id="navMainText">Lurus terus</div>
+            <div class="nav-sub-instruction" id="navSubText">Tetap di jalur</div>
+        </div>
+        <div style="text-align: right; margin-right: 10px;">
+            <div id="navDistance" style="font-size: 20px; font-weight: bold; color: #1a73e8;">0 m</div>
+        </div>
+        <button class="nav-close-btn" onclick="stopNavigation()">
+            <i class="fa fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Floating Map Buttons -->
+    <button class="sheet-toggle-btn" id="sheetToggleBtn" onclick="toggleBottomSheet()" title="Daftar Lokasi">
+        <i class="fa fa-bars"></i>
+    </button>
+    <button class="center-haram-btn" id="centerHaramBtn" onclick="goToHaramCenter()">
+        <i class="fa fa-kaaba"></i> Ka'bah
+    </button>
+
+    <!-- Bottom Sheet -->
+    <div class="bottom-sheet" id="bottomSheet">
+        <div class="sheet-handle" id="sheetHandle"></div>
+        <div class="sheet-peek" id="sheetPeek">
+            <div>
+                <div class="peek-title">Masjidil Haram</div>
+                <div class="peek-subtitle">Daftar lokasi penting</div>
             </div>
+            <button class="sheet-close-btn" onclick="closeBottomSheet()" title="Tutup">
+                <i class="fa fa-times"></i>
+            </button>
         </div>
-        <div id="nav-distance" style="margin-top: 10px; font-weight: bold; text-align: right; color: var(--secondary);">
-            0 m
+        <div class="sheet-content" id="sheetContent">
+            <div id="locationDetail" class="location-detail"></div>
+            <div id="locationsList" class="locations-list"></div>
         </div>
-        <button class="nav-close" onclick="stopNavigation()">Berhenti Navigasi</button>
     </div>
 
     <!-- Landmark Modal -->
-    <div id="landmark-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 style="margin:0; font-size: 1.2rem;">Pilih Landmark</h2>
+    <div class="landmark-modal" id="landmarkModal">
+        <div class="landmark-modal-content">
+            <div class="landmark-modal-header">
+                <h3>Pilih Landmark</h3>
                 <button onclick="closeLandmarkModal()"
-                    style="background:none; border:none; color:white; font-size:1.5rem;">&times;</button>
+                    style="background:none; border:none; font-size:20px; cursor:pointer; color:#5f6368;">&times;</button>
             </div>
-            <div style="padding: 10px; border-bottom: 1px solid #333;">
-                <input type="text" id="landmarkSearch" placeholder="Cari landmark..." onkeyup="filterLandmarks()"
-                    style="width:100%; padding:10px; background:rgba(255,255,255,0.1); border:1px solid #444; color:white; border-radius:10px;">
+            <div class="landmark-search">
+                <input type="text" id="landmarkSearch" placeholder="Cari landmark..." onkeyup="filterLandmarks()">
             </div>
-            <div class="modal-body" id="landmarkList">
-                <!-- Dropdown contents go here -->
-            </div>
+            <div class="landmark-list" id="landmarkList"></div>
         </div>
     </div>
 
@@ -640,47 +1181,677 @@
     <script src="masjidil-haram-data.js"></script>
     <script src="osm_data/haram-routing-graph-v2.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <!-- MarkerCluster JS -->
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 
     <script>
-        // --- Mobile Sidebar Toggle ---
-        function toggleMobileSidebar() {
-            const sidebar = document.getElementById('custom-sidebar');
-            const toggle = document.getElementById('sidebarToggle');
-
-            if (sidebar.classList.contains('mobile-hidden')) {
-                sidebar.classList.remove('mobile-hidden');
-                sidebar.classList.add('mobile-visible');
-                toggle.innerHTML = '<i class="fa fa-xmark"></i> Tutup';
-            } else {
-                sidebar.classList.add('mobile-hidden');
-                sidebar.classList.remove('mobile-visible');
-                toggle.innerHTML = '<i class="fa fa-map-location-dot"></i> Menu Peta';
-            }
-        }
-
-        // Initialize mobile state on load
-        (function () {
-            if (window.innerWidth <= 768) {
-                const sidebar = document.getElementById('custom-sidebar');
-                sidebar.classList.add('mobile-hidden');
-            }
-        })();
-
-        // --- State Navigasi ---
+        // ========== STATE ==========
         let startPoint = null;
         let endPoint = null;
         let startMarker = null;
         let endMarker = null;
         let routeLayer = null;
-        let pickingMode = null; // 'start' atau 'end'
+        let pickingMode = null;
         let navigationActive = false;
         let currentPath = [];
         let navigationSteps = [];
         let landmarkPickingType = 'start';
+        let activeMarker = null;
+        let allMarkers = [];
+        let activeCategory = 'all';
 
-        // --- Logika Navigasi ---
+        // ========== MAP INIT ==========
+        const map = L.map('map', {
+            zoomControl: false,
+            center: [21.4245, 39.8227],
+            zoom: 17,
+            maxZoom: 19,
+            minZoom: 13
+        });
+
+        L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+        // Base Layers
+        const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; Esri',
+            maxZoom: 19
+        });
+
+        const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors',
+            maxZoom: 19
+        });
+
+        const labels = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', {
+            zIndex: 1000,
+            maxZoom: 20
+        });
+
+        satellite.addTo(map);
+
+        const baseMaps = { "Satelit": satellite, "Peta Biasa (OSM)": osmLayer };
+        const overlayMaps = { "Label": labels };
+        window.layerControl = L.control.layers(baseMaps, overlayMaps, { position: 'topright' }).addTo(map);
+
+        // Color mapping
+        const markerColors = {
+            'Holy Site': '#d4af37',
+            'Mosque': '#2e7d32',
+            'Main Gate': '#064e3b',
+            'Gate': '#3498db',
+            'Hotel': '#8e44ad',
+            'Medical': '#e67e22',
+            'W C': '#06b6d4',
+            'Food': '#10b981',
+            'Zamzam/Water': '#3b82f6',
+            'Elevator': '#8b5cf6',
+            'Escalator': '#ec4899',
+            'Stairs': '#f97316',
+            'Transportation': '#6366f1',
+            'Amenities': '#f59e0b',
+            'Support': '#475569',
+            'Landmark': '#e74c3c'
+        };
+
+        const markersLayer = L.layerGroup().addTo(map);
+        const clusterGroup = L.markerClusterGroup({
+            showCoverageOnHover: false,
+            zoomToBoundsOnClick: true,
+            spiderfyOnMaxZoom: true,
+            maxClusterRadius: 50
+        }).addTo(map);
+
+        // Extra layers (Roads & Buildings)
+        const roadsLayer = L.featureGroup();
+        const buildingsLayer = L.featureGroup();
+
+        if (window.layerControl) {
+            window.layerControl.addOverlay(markersLayer, "Points of Interest");
+            window.layerControl.addOverlay(clusterGroup, "Facilities (Clustered)");
+            window.layerControl.addOverlay(roadsLayer, "Roads / Jalur");
+            window.layerControl.addOverlay(buildingsLayer, "Buildings / Bangunan");
+        }
+
+        // ========== GPS ==========
+        L.Control.Gps = L.Control.extend({
+            onAdd: function (map) {
+                const div = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+                div.innerHTML = '<a href="#" title="Lokasi Saya" style="font-size: 18px; display: flex; align-items: center; justify-content: center; width: 34px; height: 34px;"><i class="fa fa-crosshairs"></i></a>';
+                div.style.cursor = 'pointer';
+                div.onclick = function (e) {
+                    e.preventDefault();
+                    map.locate({ setView: true, maxZoom: 18 });
+                };
+                return div;
+            }
+        });
+        new L.Control.Gps({ position: 'bottomright' }).addTo(map);
+
+        map.locate({ setView: true, maxZoom: 18 });
+
+        map.on('locationfound', function (e) {
+            if (navigationActive) {
+                let minDiv = Infinity;
+                let nearestIdx = 0;
+                currentPath.forEach((p, idx) => {
+                    const d = map.distance(e.latlng, p);
+                    if (d < minDiv) { minDiv = d; nearestIdx = idx; }
+                });
+                updateNavigationUI(nearestIdx);
+                return;
+            }
+            const radius = e.accuracy / 2;
+            L.marker(e.latlng).addTo(map)
+                .bindPopup("Anda di sini (Akurasi " + Math.round(radius) + "m)").openPopup();
+            L.circle(e.latlng, radius).addTo(map);
+        });
+
+        // ========== PINHOLE MARKERS ==========
+        function createPinholeMarker(feature) {
+            let type = feature.properties.type;
+            let color = markerColors[type] || '#1a73e8';
+            const categoryClass = type.toLowerCase().replace(/ /g, '-');
+            let iconClass = feature.properties.icon || 'fa-map-marker';
+            const name = feature.properties.name_en || feature.properties.name;
+
+            // --- CUSTOM: 5 MAIN GATES ---
+            const mainGateOsmIds = [
+                '4755914231', // King Abdul Aziz Gate 1
+                '3210622327', // King Fahd Gate 79
+                '5875587679', // King Abdullah Gate 100
+                '6301219294', // Bab Al-Salam (Gate 24)
+                '4318154228'  // Umra Gate 40 (or 62)
+            ];
+
+            if (mainGateOsmIds.includes(String(feature.properties.osm_id))) {
+                iconClass = 'fa-archway'; // Distinct icon for main gates
+                // Force "Main Gate" color #064e3b (Dark Green) 
+                // or Gold #d4af37 if preferred. Let's use Dark Green for official "Main Gate" feel
+                // or revert to user request "distinct from normal gate (blue)".
+                // Normal "Gate" is Blue. "Main Gate" key is Dark Green.
+                color = markerColors['Main Gate'];
+            }
+
+            const icon = L.divIcon({
+                className: 'pinhole-marker',
+                html: `
+                    <div class="marker-wrapper">
+                        <div class="marker-default">
+                            <div class="marker-circle" style="background: ${color};">
+                                <i class="fa ${iconClass}"></i>
+                            </div>
+                            <div class="marker-default-label">${name}</div>
+                        </div>
+                        <div class="marker-active">
+                            <div class="marker-balloon" style="background: ${color};">
+                                <i class="fa ${iconClass}"></i>
+                            </div>
+                            <div class="marker-dot" style="background: ${color};"></div>
+                            <div class="marker-active-label">${name}</div>
+                        </div>
+                    </div>
+                `,
+                iconSize: [0, 0],
+                iconAnchor: [0, 0]
+            });
+
+            const coords = feature.geometry.coordinates;
+            const marker = L.marker([coords[1], coords[0]], { icon: icon });
+
+            marker.on('click', function () {
+                showLocationDetail(feature, marker);
+                if (activeMarker && activeMarker !== marker) {
+                    const el = activeMarker.getElement();
+                    if (el) el.classList.remove('active');
+                }
+                const el = marker.getElement();
+                if (el) el.classList.add('active');
+                activeMarker = marker;
+                map.flyTo([coords[1], coords[0]], 18);
+            });
+
+            allMarkers.push({ marker, feature });
+            return marker;
+        }
+
+        // ========== BOTTOM SHEET ==========
+        function showLocationDetail(feature, marker) {
+            const props = feature.properties;
+            const type = props.type;
+            const color = markerColors[type] || '#1a73e8';
+            const coords = feature.geometry.coordinates;
+
+            const detailHTML = `
+                <button onclick="resetBottomSheet()" style="background:none; border:none; cursor:pointer; padding:4px 0; margin-bottom:12px; display:flex; align-items:center; gap:6px; color:#1a73e8; font-size:14px; font-weight:500;">
+                    <i class="fa fa-chevron-left" style="font-size:12px;"></i> Kembali ke daftar
+                </button>
+                <div class="detail-header">
+                    <div class="detail-icon" style="background: ${color};">
+                        <i class="fa ${props.icon || 'fa-map-marker'}"></i>
+                    </div>
+                    <div class="detail-info">
+                        <h2>${props.name_en || props.name}</h2>
+                        <span class="arabic">${props.name}</span>
+                        <p>${props.description || type}</p>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="action-btn primary" onclick="routeToLocation([${coords}], '${(props.name_en || props.name).replace(/'/g, "\\'")}')">
+                        <i class="fa fa-directions"></i> Arah
+                    </button>
+                    <button class="action-btn secondary" onclick="shareLocation('${(props.name_en || props.name).replace(/'/g, "\\'")}', ${coords[1]}, ${coords[0]})">
+                        <i class="fa fa-share"></i> Bagikan
+                    </button>
+                </div>
+            `;
+
+            document.getElementById('locationDetail').innerHTML = detailHTML;
+            document.getElementById('locationDetail').classList.add('active');
+            document.getElementById('locationsList').style.display = 'none';
+            openBottomSheet();
+        }
+
+        function resetBottomSheet() {
+            document.getElementById('locationDetail').classList.remove('active');
+            document.getElementById('locationDetail').innerHTML = '';
+            document.getElementById('locationsList').style.display = '';
+            if (activeMarker) {
+                const el = activeMarker.getElement();
+                if (el) el.classList.remove('active');
+                activeMarker = null;
+            }
+        }
+
+        // ========== LOCATIONS LIST ==========
+        const categoryLabels = {
+            'Holy Site': 'Holy Site', 'Mosque': 'Masjid', 'Main Gate': 'Pintu Utama',
+            'Gate': 'Gerbang', 'W C': 'WC', 'Zamzam/Water': 'Zamzam',
+            'Medical': 'Medis', 'Transportation': 'Transportasi', 'Hotel': 'Hotel',
+            'Food': 'Makanan', 'Amenities': 'Fasilitas', 'Escalator': 'Eskalator',
+            'Elevator': 'Lift', 'Stairs': 'Tangga', 'Support': 'Support', 'Landmark': 'Landmark'
+        };
+        const categoryIcons = {
+            'Holy Site': 'fa-kaaba', 'Mosque': 'fa-mosque', 'Main Gate': 'fa-archway',
+            'Gate': 'fa-door-open', 'W C': 'fa-restroom', 'Zamzam/Water': 'fa-tint',
+            'Medical': 'fa-hospital', 'Transportation': 'fa-bus', 'Hotel': 'fa-hotel',
+            'Food': 'fa-utensils', 'Amenities': 'fa-cogs', 'Escalator': 'fa-arrows-alt-v',
+            'Elevator': 'fa-arrows-alt-v', 'Stairs': 'fa-shoe-prints', 'Support': 'fa-life-ring', 'Landmark': 'fa-map-marker-alt'
+        };
+
+        function renderLocationsList(data) {
+            data = data || masjidilHaramLocations;
+            const grouped = {};
+            data.forEach(item => {
+                const t = item.properties.type;
+                if (!grouped[t]) grouped[t] = [];
+                grouped[t].push(item);
+            });
+
+            const typeOrder = [
+                'Holy Site', 'Mosque', 'Main Gate', 'Gate',
+                'W C', 'Zamzam/Water', 'Medical', 'Transportation',
+                'Hotel', 'Food', 'Amenities',
+                'Escalator', 'Elevator', 'Stairs',
+                'Support', 'Landmark'
+            ];
+
+            let html = '';
+            typeOrder.forEach(type => {
+                if (!grouped[type]) return;
+                const color = markerColors[type] || '#475569';
+                const label = categoryLabels[type] || type;
+                const catIcon = categoryIcons[type] || 'fa-folder';
+                const sectionId = type.replace(/[\/ ]/g, '-');
+
+                // Header with accordion toggle
+                html += `<div class="list-category">
+                    <button class="category-toggle" onclick="toggleSection('${sectionId}', this)">
+                        <div class="category-header" style="margin-bottom:0;">
+                            <i class="fa ${catIcon}" style="color:${color};"></i> ${label} (${grouped[type].length})
+                        </div>
+                        <i class="fa fa-chevron-down toggle-icon"></i>
+                    </button>`;
+
+                // Holy Site rendered as pills
+                if (type === 'Holy Site') {
+                    html += `<div class="category-items" id="section-${sectionId}">
+                        <div class="holy-site-pills" style="margin-top:10px;">`;
+                    grouped[type].forEach(item => {
+                        html += `<div class="holy-site-pill" onclick="selectLocation('${item.properties.osm_id}')">
+                            <i class="fa ${item.properties.icon || 'fa-kaaba'}"></i>
+                            ${item.properties.name_en || item.properties.name}
+                        </div>`;
+                    });
+                    html += `</div></div></div>`;
+                    return;
+                }
+
+                // Regular items
+                html += `<div class="category-items" id="section-${sectionId}">`;
+                grouped[type].forEach(item => {
+                    html += `
+                        <div class="location-item" onclick="selectLocation('${item.properties.osm_id}')">
+                            <div class="item-icon" style="background: ${color};">
+                                <i class="fa ${item.properties.icon}"></i>
+                            </div>
+                            <div class="item-info">
+                                <h3>${item.properties.name_en || item.properties.name}</h3>
+                                <div class="arabic">${item.properties.name}</div>
+                            </div>
+                        </div>
+                    `;
+                });
+                html += `</div></div>`;
+            });
+
+            document.getElementById('locationsList').innerHTML = html;
+        }
+
+        function toggleSection(sectionId, btnEl) {
+            const items = document.getElementById('section-' + sectionId);
+            if (!items) return;
+            items.classList.toggle('collapsed');
+            btnEl.classList.toggle('collapsed');
+        }
+
+        function goToHaramCenter() {
+            map.flyTo([21.4225, 39.8262], 18);
+        }
+
+        function selectLocation(osmId) {
+            // Close search results if open
+            const searchResults = document.querySelector('.search-results');
+            if (searchResults) searchResults.style.display = 'none';
+
+            const item = allMarkers.find(m => m.feature.properties.osm_id === osmId);
+            if (item) item.marker.fire('click');
+        }
+
+        // ========== SEARCH & FILTER ==========
+        // ========== SEARCH & FILTER ==========
+        function filterLocations() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            let filtered = masjidilHaramLocations;
+
+            // Search Dropdown management
+            const searchResults = document.querySelector('.search-results') || createSearchResultsContainer();
+
+            if (!query) {
+                searchResults.style.display = 'none';
+                renderLocationsList(masjidilHaramLocations); // Reset list
+                filterMapMarkersByData(masjidilHaramLocations);
+                return;
+            }
+
+            // Apply category filter
+            if (activeCategory !== 'all') {
+                filtered = filtered.filter(loc => loc.properties.type === activeCategory);
+            }
+
+            // Apply search filter
+            if (query) {
+                filtered = filtered.filter(loc =>
+                    (loc.properties.name || '').toLowerCase().includes(query) ||
+                    (loc.properties.name_en || '').toLowerCase().includes(query) ||
+                    (loc.properties.type || '').toLowerCase().includes(query)
+                );
+            }
+
+            // Populate Dropdown
+            populateSearchResults(filtered.slice(0, 8)); // Show top 8 results
+            searchResults.style.display = 'block';
+
+            // Also update map filters but don't open bottom sheet
+            filterMapMarkersByData(filtered);
+        }
+
+        function createSearchResultsContainer() {
+            let container = document.querySelector('.search-results');
+            if (!container) {
+                container = document.createElement('div');
+                container.className = 'search-results';
+                document.querySelector('.search-box').appendChild(container); // Append to search-box parent? 
+                // Wait, .search-results is already in HTML line 626? 
+                // Yes, checking code again. It is absolute child of map-header?
+                // Line 627: top: 100%. Line 41: map-header.
+                // So it should be child of map-header.
+            }
+            return container;
+        }
+
+        function populateSearchResults(results) {
+            const container = document.querySelector('.search-results');
+            if (!container) return;
+
+            if (results.length === 0) {
+                container.innerHTML = '<div class="search-result-item" style="color:#5f6368; justify-content:center;">Tidak ditemukan</div>';
+                return;
+            }
+
+            let html = '';
+            results.forEach(item => {
+                const props = item.properties;
+                const type = props.type;
+                const color = markerColors[type] || '#1a73e8';
+                const icon = props.icon || 'fa-map-marker';
+
+                html += `
+                    <div class="search-result-item" onclick="selectLocation('${props.osm_id}')">
+                        <div class="search-result-icon" style="background: ${color};">
+                            <i class="fa ${icon}"></i>
+                        </div>
+                        <div class="search-result-info">
+                            <div class="name">${props.name_en || props.name}</div>
+                            <div class="type">${type}</div>
+                        </div>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+
+        function filterMapMarkersByData(filteredData) {
+            markersLayer.clearLayers();
+            clusterGroup.clearLayers();
+
+            const filteredOsmIds = new Set(filteredData.map(loc => loc.properties.osm_id));
+            const clusterTypesList = ['Support', 'Hotel', 'Landmark', 'Transportation', 'Food', 'Holy Site', 'Mosque', 'W C'];
+
+            allMarkers.forEach(({ marker, feature }) => {
+                if (filteredOsmIds.has(feature.properties.osm_id)) {
+                    const type = feature.properties.type;
+                    if (clusterTypesList.includes(type)) {
+                        clusterGroup.addLayer(marker);
+                    } else {
+                        markersLayer.addLayer(marker);
+                    }
+                }
+            });
+        }
+
+        // Category chips
+        document.querySelectorAll('.chip').forEach(chip => {
+            chip.addEventListener('click', function () {
+                document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+                this.classList.add('active');
+                activeCategory = this.dataset.category;
+                filterLocations();
+            });
+        });
+
+        // ========== BOTTOM SHEET TOGGLE ==========
+        let startY = 0;
+        const sheet = document.getElementById('bottomSheet');
+        const handle = document.getElementById('sheetHandle');
+        const peek = document.getElementById('sheetPeek');
+        const toggleBtn = document.getElementById('sheetToggleBtn');
+
+        function toggleBottomSheet() {
+            if (sheet.classList.contains('expanded')) {
+                closeBottomSheet();
+            } else {
+                openBottomSheet();
+            }
+        }
+
+        function openBottomSheet() {
+            sheet.classList.add('expanded');
+            toggleBtn.classList.add('hidden');
+        }
+
+        function closeBottomSheet() {
+            sheet.classList.remove('expanded');
+            toggleBtn.classList.remove('hidden');
+            // Reset detail view if open
+            document.getElementById('locationDetail').classList.remove('active');
+            document.getElementById('locationDetail').innerHTML = '';
+            document.getElementById('locationsList').style.display = '';
+            if (activeMarker) {
+                const el = activeMarker.getElement();
+                if (el) el.classList.remove('active');
+                activeMarker = null;
+            }
+        }
+
+        // Drag to close on mobile
+        function initSheetDrag(el) {
+            el.addEventListener('touchstart', (e) => { startY = e.touches[0].clientY; });
+            el.addEventListener('touchmove', (e) => {
+                const diff = e.touches[0].clientY - startY;
+                if (diff > 0) sheet.style.transform = `translateY(${diff}px)`;
+            });
+            el.addEventListener('touchend', (e) => {
+                const rect = sheet.getBoundingClientRect();
+                if (rect.top > window.innerHeight * 0.5) {
+                    closeBottomSheet();
+                } else {
+                    sheet.classList.add('expanded');
+                }
+                sheet.style.transform = '';
+            });
+        }
+        initSheetDrag(handle);
+
+        // ========== DIRECTIONS TOGGLE ==========
+        function toggleDirections() {
+            const box = document.getElementById('directionsBox');
+            const btn = document.getElementById('directionsToggleBtn');
+            if (box.classList.contains('active')) {
+                exitDirections();
+            } else {
+                box.classList.add('active');
+                btn.innerHTML = '<i class="fa fa-times"></i>';
+                document.getElementById('categoryChips').style.display = 'none';
+            }
+        }
+
+        function exitDirections() {
+            document.getElementById('directionsBox').classList.remove('active');
+            document.getElementById('directionsToggleBtn').innerHTML = '<i class="fa fa-directions"></i>';
+            document.getElementById('categoryChips').style.display = '';
+            // Clean up route
+            if (routeLayer) { map.removeLayer(routeLayer); routeLayer = null; }
+            if (startMarker) { map.removeLayer(startMarker); startMarker = null; }
+            if (endMarker) { map.removeLayer(endMarker); endMarker = null; }
+            startPoint = null; endPoint = null;
+            document.getElementById('startInput').value = '';
+            document.getElementById('endInput').value = '';
+            document.getElementById('routeInfo').textContent = 'Pilih lokasi di peta atau dari daftar';
+            document.getElementById('startNavBtn').style.display = 'none';
+            currentPath = [];
+        }
+
+        // Route to location from detail view
+        function routeToLocation(coords, name) {
+            // Open directions box
+            const box = document.getElementById('directionsBox');
+            if (!box.classList.contains('active')) {
+                box.classList.add('active');
+                document.getElementById('directionsToggleBtn').innerHTML = '<i class="fa fa-times"></i>';
+                document.getElementById('categoryChips').style.display = 'none';
+            }
+            // Set as destination
+            const latlng = L.latLng(coords[1], coords[0]);
+            setEndPoint(latlng, name);
+            // Collapse bottom sheet
+            sheet.classList.remove('expanded');
+        }
+
+        // ========== ROUTING POINTS ==========
+        function setStartPoint(latlng, name) {
+            if (startMarker) map.removeLayer(startMarker);
+            startMarker = L.marker(latlng, {
+                icon: L.divIcon({
+                    className: 'pinhole-marker',
+                    html: '<div style="background:#34a853;width:14px;height:14px;border-radius:50%;border:3px solid white;box-shadow: 0 2px 8px rgba(0,0,0,0.3);"></div>',
+                    iconSize: [14, 14],
+                    iconAnchor: [7, 7]
+                })
+            }).addTo(map);
+            startPoint = latlng;
+            document.getElementById('startInput').value = name;
+            updateRouteInfo();
+        }
+
+        function setEndPoint(latlng, name) {
+            if (endMarker) map.removeLayer(endMarker);
+            endMarker = L.marker(latlng, {
+                icon: L.divIcon({
+                    className: 'pinhole-marker',
+                    html: '<div style="background:#ea4335;width:14px;height:14px;border-radius:50%;border:3px solid white;box-shadow: 0 2px 8px rgba(0,0,0,0.3);"></div>',
+                    iconSize: [14, 14],
+                    iconAnchor: [7, 7]
+                })
+            }).addTo(map);
+            endPoint = latlng;
+            document.getElementById('endInput').value = name;
+            updateRouteInfo();
+        }
+
+        function updateRouteInfo() {
+            const info = document.getElementById('routeInfo');
+            if (startPoint && endPoint) {
+                info.textContent = 'Siap cari rute';
+            } else if (startPoint) {
+                info.textContent = 'Pilih tujuan...';
+            } else if (endPoint) {
+                info.textContent = 'Pilih titik awal...';
+            }
+        }
+
+        // ========== PICK MODE (MAP CLICK) ==========
+        function setPickMode(mode) {
+            pickingMode = mode;
+            document.getElementById('map').style.cursor = 'crosshair';
+            const type = mode === 'start' ? 'Awal' : 'Tujuan';
+            document.getElementById('routeInfo').textContent = `Klik di peta untuk Titik ${type}...`;
+        }
+
+        map.on('click', function (e) {
+            if (!pickingMode) return;
+            const name = `${e.latlng.lat.toFixed(5)}, ${e.latlng.lng.toFixed(5)}`;
+            if (pickingMode === 'start') {
+                setStartPoint(e.latlng, name);
+            } else if (pickingMode === 'end') {
+                setEndPoint(e.latlng, name);
+            }
+            document.getElementById('map').style.cursor = '';
+            pickingMode = null;
+        });
+
+        // ========== LANDMARK MODAL ==========
+        function openLandmarkModal(type) {
+            landmarkPickingType = type;
+            document.getElementById('landmarkModal').classList.add('active');
+            document.getElementById('landmarkSearch').value = '';
+            renderLandmarks();
+        }
+
+        function closeLandmarkModal() {
+            document.getElementById('landmarkModal').classList.remove('active');
+        }
+
+        function renderLandmarks() {
+            const list = document.getElementById('landmarkList');
+            const search = (document.getElementById('landmarkSearch').value || '').toLowerCase();
+            list.innerHTML = '';
+
+            const filtered = masjidilHaramLocations.filter(loc =>
+                (loc.properties.name || '').toLowerCase().includes(search) ||
+                (loc.properties.name_en || '').toLowerCase().includes(search)
+            ).slice(0, 50);
+
+            filtered.forEach(loc => {
+                const item = document.createElement('div');
+                item.className = 'landmark-item';
+                item.innerHTML = `
+                    <i class="fa ${loc.properties.icon || 'fa-map-marker-alt'}"></i>
+                    <div class="landmark-item-info">
+                        <div class="name">${loc.properties.name_en || loc.properties.name}</div>
+                        <div class="arabic">${loc.properties.name}</div>
+                    </div>
+                `;
+                item.onclick = () => selectLandmark(loc);
+                list.appendChild(item);
+            });
+        }
+
+        function filterLandmarks() { renderLandmarks(); }
+
+        function selectLandmark(loc) {
+            const coords = loc.geometry.coordinates;
+            const latlng = L.latLng(coords[1], coords[0]);
+            const name = loc.properties.name_en || loc.properties.name;
+
+            if (landmarkPickingType === 'start') {
+                setStartPoint(latlng, name);
+            } else {
+                setEndPoint(latlng, name);
+            }
+            closeLandmarkModal();
+            map.setView(latlng, 18);
+        }
+
+        // ========== NAVIGATION LOGIC ==========
         function calculateBearing(lat1, lon1, lat2, lon2) {
             const y = Math.sin((lon2 - lon1) * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180);
             const x = Math.cos(lat1 * Math.PI / 180) * Math.sin(lat2 * Math.PI / 180) -
@@ -692,42 +1863,26 @@
         function generateInstructions(path) {
             if (path.length < 2) return [];
             let steps = [];
-
             for (let i = 0; i < path.length - 1; i++) {
                 const current = path[i];
                 const next = path[i + 1];
                 const dist = map.distance(current, next);
-
                 let instruction = "Lurus terus";
                 let icon = "fa-arrow-up";
 
                 if (i > 0) {
                     const prev = path[i - 1];
-                    const bearing1 = calculateBearing(prev[0], prev[1], current[0], current[1]);
-                    const bearing2 = calculateBearing(current[0], current[1], next[0], next[1]);
-                    let diff = bearing2 - bearing1;
+                    const b1 = calculateBearing(prev[0], prev[1], current[0], current[1]);
+                    const b2 = calculateBearing(current[0], current[1], next[0], next[1]);
+                    let diff = b2 - b1;
                     if (diff > 180) diff -= 360;
                     if (diff < -180) diff += 360;
-
                     if (diff > 30) { instruction = "Belok Kanan"; icon = "fa-arrow-turn-right"; }
                     else if (diff < -30) { instruction = "Belok Kiri"; icon = "fa-arrow-turn-left"; }
                 }
-
-                steps.push({
-                    coords: current,
-                    instruction: instruction,
-                    icon: icon,
-                    distance: dist
-                });
+                steps.push({ coords: current, instruction, icon, distance: dist });
             }
-
-            steps.push({
-                coords: path[path.length - 1],
-                instruction: "Tiba di Tujuan",
-                icon: "fa-flag-checkered",
-                distance: 0
-            });
-
+            steps.push({ coords: path[path.length - 1], instruction: "Tiba di Tujuan", icon: "fa-flag-checkered", distance: 0 });
             return steps;
         }
 
@@ -735,9 +1890,11 @@
             if (!currentPath || currentPath.length === 0) return;
             navigationActive = true;
             navigationSteps = generateInstructions(currentPath);
-            document.getElementById('nav-panel').style.display = 'block';
-            document.getElementById('custom-sidebar').style.display = 'none';
-            document.getElementById('sidebarToggle').style.display = 'none';
+            // Show nav overlay, hide header & bottom sheet & toggle btn
+            document.getElementById('navOverlay').classList.add('active');
+            document.getElementById('mapHeader').style.display = 'none';
+            document.getElementById('bottomSheet').style.display = 'none';
+            toggleBtn.classList.add('hidden');
             map.locate({ watch: true, enableHighAccuracy: true });
             updateNavigationUI(0);
         }
@@ -745,436 +1902,47 @@
         function stopNavigation() {
             navigationActive = false;
             map.stopLocate();
-            document.getElementById('nav-panel').style.display = 'none';
-            document.getElementById('custom-sidebar').style.display = '';
-            if (window.innerWidth <= 768) {
-                document.getElementById('sidebarToggle').style.display = 'flex';
-                document.getElementById('custom-sidebar').classList.add('mobile-hidden');
-                document.getElementById('sidebarToggle').innerHTML = '<i class="fa fa-map-location-dot"></i> Menu Peta';
-            }
+            document.getElementById('navOverlay').classList.remove('active');
+            document.getElementById('mapHeader').style.display = '';
+            document.getElementById('bottomSheet').style.display = '';
+            toggleBtn.classList.remove('hidden');
         }
 
         function updateNavigationUI(stepIdx) {
             if (stepIdx >= navigationSteps.length) return;
             const step = navigationSteps[stepIdx];
-            document.getElementById('nav-main-text').innerText = step.instruction;
-            document.getElementById('nav-icon').innerHTML = `<i class="fa ${step.icon}"></i>`;
-            document.getElementById('nav-distance').innerText = `${Math.round(step.distance)} m`;
+            document.getElementById('navMainText').innerText = step.instruction;
+            document.getElementById('navIcon').innerHTML = `<i class="fa ${step.icon}"></i>`;
+            document.getElementById('navDistance').innerText = `${Math.round(step.distance)} m`;
         }
 
-        // --- Landmark Modal Logic ---
-        function openLandmarkModal(type) {
-            landmarkPickingType = type;
-            document.getElementById('landmark-modal').style.display = 'flex';
-            renderLandmarks();
-        }
-
-        function closeLandmarkModal() {
-            document.getElementById('landmark-modal').style.display = 'none';
-        }
-
-        function renderLandmarks() {
-            const list = document.getElementById('landmarkList');
-            const searchInput = document.getElementById('landmarkSearch');
-            const search = searchInput.value.toLowerCase();
-            list.innerHTML = '';
-
-            const filtered = masjidilHaramLocations.filter(loc =>
-                loc.properties.name.toLowerCase().includes(search) ||
-                loc.properties.name_en.toLowerCase().includes(search)
-            ).slice(0, 50);
-
-            filtered.forEach(loc => {
-                const item = document.createElement('div');
-                item.className = 'landmark-item';
-                item.innerHTML = `
-                    <i class="fa ${loc.properties.icon || 'fa-map-marker-alt'}"></i>
-                    <div>
-                        <div style="font-weight:bold;">${loc.properties.name_en || loc.properties.name}</div>
-                        <div style="font-size:0.8rem; color:#888;">${loc.properties.name}</div>
-                    </div>
-                `;
-                item.onclick = () => selectLandmark(loc);
-                list.appendChild(item);
-            });
-        }
-
-        function filterLandmarks() {
-            renderLandmarks();
-        }
-
-        function selectLandmark(loc) {
-            const coords = loc.geometry.coordinates;
-            const latlng = L.latLng(coords[1], coords[0]);
-
-            if (landmarkPickingType === 'start') {
-                setStartPoint(latlng, loc.properties.name_en || loc.properties.name);
-            } else {
-                setEndPoint(latlng, loc.properties.name_en || loc.properties.name);
-            }
-            closeLandmarkModal();
-        }
-
-        function setStartPoint(latlng, name) {
-            if (startMarker) map.removeLayer(startMarker);
-            startMarker = L.marker(latlng, {
-                icon: L.divIcon({
-                    className: 'premium-marker',
-                    html: '<div style="background:#b89968;width:12px;height:12px;border-radius:50%;border:2px solid white;box-shadow: 0 0 10px #b89968;"></div>'
-                })
-            }).addTo(map).bindPopup("Mulai: " + name).openPopup();
-            startPoint = latlng;
-            document.getElementById('routeStart').value = name;
-            map.setView(latlng, 18);
-        }
-
-        function setEndPoint(latlng, name) {
-            if (endMarker) map.removeLayer(endMarker);
-            endMarker = L.marker(latlng, {
-                icon: L.divIcon({
-                    className: 'premium-marker',
-                    html: '<div style="background:red;width:12px;height:12px;border-radius:50%;border:2px solid white;box-shadow: 0 0 10px red;"></div>'
-                })
-            }).addTo(map).bindPopup("Tujuan: " + name).openPopup();
-            endPoint = latlng;
-            document.getElementById('routeEnd').value = name;
-            map.setView(latlng, 18);
-        }
-
-        // --- 1. Inisialisasi Map ---
-        const map = L.map('map', {
-            zoomControl: false,
-            center: [21.4225, 39.8262],
-            zoom: 17,
-            maxZoom: 19,  // 13 (min) + 6 clicks = 19 (max)
-            minZoom: 13
-        });
-
-        L.control.zoom({ position: 'bottomright' }).addTo(map);
-
-        // --- 2. Base Layers & Controls ---
-        // Satellite Layer (Esri)
-        const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-            attribution: 'Tiles &copy; Esri',
-            maxZoom: 19
-        });
-
-        // OSM Layer (Standard)
-        const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors',
-            maxZoom: 19
-        });
-
-        // Labels Layer
-        const labels = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', {
-            zIndex: 1000,
-            maxZoom: 20
-        });
-
-        // Add default layers
-        osmLayer.addTo(map);
-
-        // Layer Controls
-        const baseMaps = {
-            "Satelit": satellite,
-            "Peta Biasa (OSM)": osmLayer
-        };
-        const overlayMaps = {
-            "Label": labels
-        };
-        window.layerControl = L.control.layers(baseMaps, overlayMaps, { position: 'topright' }).addTo(map);
-
-        // GPS Locate Control
-        L.Control.Gps = L.Control.extend({
-            onAdd: function (map) {
-                const div = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-custom');
-                div.innerHTML = '<a href="#" title="Lokasi Saya" style="font-size: 18px; display: flex; align-items: center; justify-content: center;"><i class="fa fa-crosshairs"></i></a>';
-                div.style.backgroundColor = 'white';
-                div.style.width = '34px';
-                div.style.height = '34px';
-                div.style.cursor = 'pointer';
-
-                div.onclick = function (e) {
-                    e.preventDefault();
-                    map.locate({ setView: true, maxZoom: 18 });
-                };
-                return div;
-            }
-        });
-        L.control.gps = function (opts) { return new L.Control.Gps(opts); }
-        L.control.gps({ position: 'bottomright' }).addTo(map);
-
-        // Auto-locate GPS on Load (User Request: "langsung ditanya allow GPS")
-        map.locate({ setView: true, maxZoom: 18 });
-
-        // Handle Location Found
-        map.on('locationfound', function (e) {
-            // Navigation tracking logic
-            if (navigationActive) {
-                // Cari titik terdekat di path dari posisi GPS sekarang
-                let minDiv = Infinity;
-                let nearestIdx = 0;
-
-                currentPath.forEach((p, idx) => {
-                    const d = map.distance(e.latlng, p);
-                    if (d < minDiv) {
-                        minDiv = d;
-                        nearestIdx = idx;
+        // ========== OFFLINE ROUTING (DIJKSTRA) ==========
+        class PriorityQueue {
+            constructor() { this.items = []; }
+            enqueue(element, priority) {
+                const qe = { element, priority };
+                let added = false;
+                for (let i = 0; i < this.items.length; i++) {
+                    if (this.items[i].priority > qe.priority) {
+                        this.items.splice(i, 0, qe);
+                        added = true;
+                        break;
                     }
-                });
-
-                updateNavigationUI(nearestIdx);
-                return; // Skip normal GPS marker if navigating
+                }
+                if (!added) this.items.push(qe);
             }
-
-            // Normal GPS location display
-            const radius = e.accuracy / 2;
-            L.marker(e.latlng).addTo(map)
-                .bindPopup("Anda di sini (Akurasi " + radius + "m)").openPopup();
-            L.circle(e.latlng, radius).addTo(map);
-        });
-
-
-        // --- 3. Marker & Categories Setup ---
-        const markerColors = {
-            'Holy Site': '#d4af37',      // Gold
-            'Main Gate': '#064e3b',      // Emerald
-            'Gate': '#3498db',           // Blue
-            'Landmark': '#e74c3c',       // Red
-            'Medical': '#e67e22',        // Orange
-            'Support': '#475569',        // Slate
-            'Hotel': '#8e44ad',          // Purple
-            'W C': '#06b6d4',            // Cyan
-            'Zamzam/Water': '#3b82f6',   // Blue
-            'Escalator': '#ec4899',      // Pink
-            'Elevator': '#8b5cf6',       // Violet
-            'Stairs': '#f97316',         // Orange
-            'Food': '#10b981',           // Emerald/Green
-            'Transportation': '#6366f1',  // Indigo
-            'Amenities': '#f59e0b'       // Amber
-        };
-
-        const markersLayer = L.layerGroup();
-        // Initialize Cluster Group for Support Items (Toilets, Escalators)
-        const clusterGroup = L.markerClusterGroup({
-            showCoverageOnHover: false,
-            zoomToBoundsOnClick: true,
-            spiderfyOnMaxZoom: true,
-            removeOutsideVisibleBounds: true,
-            maxClusterRadius: 50,
-            iconCreateFunction: function (cluster) {
-                return L.divIcon({
-                    html: '<div><span>' + cluster.getChildCount() + '</span></div>',
-                    className: 'marker-cluster marker-cluster-medium',
-                    iconSize: L.point(40, 40)
-                });
-            }
-        });
-
-        // Layer Groups untuk data tambahan (Jalan & Bangunan)
-        const roadsLayer = L.featureGroup();
-        const buildingsLayer = L.featureGroup();
-
-        function renderExtraLayers() {
-            // 1. Render Roads
-            if (typeof masjidilHaramRoads !== 'undefined' && masjidilHaramRoads.length > 0) {
-                console.log("Rendering " + masjidilHaramRoads.length + " roads...");
-                masjidilHaramRoads.forEach(road => {
-                    const polyline = L.polyline(road.geometry.coordinates, {
-                        color: '#a8a29e', // Stone/Grayish
-                        weight: 2,
-                        opacity: 0.6,
-                        className: 'road-path'
-                    });
-
-                    const type = road.properties.highway_type || 'Road';
-                    const name = road.properties.name || type;
-                    const nameAr = road.properties.name_ar || name;
-
-                    polyline.bindPopup(`<b>${nameAr}</b><br>${name}<br><span style="font-size:12px;color:#666">${type}</span>`);
-                    roadsLayer.addLayer(polyline);
-                });
-                roadsLayer.addTo(map); // Default Visible
-            }
-
-            // 2. Render Buildings
-            if (typeof masjidilHaramBuildings !== 'undefined' && masjidilHaramBuildings.length > 0) {
-                console.log("Rendering " + masjidilHaramBuildings.length + " buildings...");
-                masjidilHaramBuildings.forEach(building => {
-                    const polygon = L.polygon(building.geometry.coordinates, {
-                        color: '#c2410c', // Dark Orange/Brown
-                        weight: 1,
-                        fillColor: '#fdba74', // Light Orange
-                        fillOpacity: 0.2,
-                        className: 'building-poly'
-                    });
-
-                    const type = building.properties.building_type || 'Building';
-                    const name = building.properties.name || type;
-                    const nameAr = building.properties.name_ar || name;
-
-                    polygon.bindPopup(`<b>${nameAr}</b><br>${name}<br><span style="font-size:12px;color:#666">${type}</span>`);
-                    buildingsLayer.addLayer(polygon);
-                });
-                // Buildings default hidden to reduce clutter, user can toggle
-            }
+            dequeue() { return this.items.shift(); }
+            isEmpty() { return this.items.length === 0; }
         }
 
-        map.addLayer(markersLayer);
-        map.addLayer(clusterGroup);
-
-        // Add layers to existing control
-        if (window.layerControl) {
-            window.layerControl.addOverlay(markersLayer, "Points of Interest");
-            window.layerControl.addOverlay(clusterGroup, "Facilities (Clustered)");
-            window.layerControl.addOverlay(roadsLayer, "Roads / Jalur");
-            window.layerControl.addOverlay(buildingsLayer, "Buildings / Bangunan");
-        }
-
-        function createPremiumMarker(feature) {
-            const type = feature.properties.type;
-            const color = markerColors[type] || '#fff';
-            const icon = feature.properties.icon || 'fa-location-dot';
-
-            const divIcon = L.divIcon({
-                className: 'premium-marker',
-                html: `<div class="marker-pin" style="background: ${color};"><i class="fa ${icon}"></i></div>`,
-                iconSize: [40, 40],
-                iconAnchor: [20, 20],
-                popupAnchor: [0, -20]
-            });
-
-            const marker = L.marker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], { icon: divIcon });
-
-            // Popup content with Image
-            let popupHtml = '<div class="premium-popup">';
-            if (feature.properties.image) {
-                popupHtml += `<img src="${feature.properties.image}" class="popup-img">`;
-            } else {
-                popupHtml += `<div style="height: 10px; background: ${color}"></div>`;
-            }
-
-            popupHtml += `
-                <div class="popup-body">
-                    <span class="arabic">${feature.properties.name}</span>
-                    <h2>${feature.properties.name_en}</h2>
-                    <p>${feature.properties.description || ''}</p>
-                </div>
-            </div>`;
-
-            marker.bindPopup(popupHtml);
-            return marker;
-        }
-
-        // --- 4. Render Sidebar ---
-        function renderUI(data) {
-            const listContainer = document.getElementById('locationList');
-            listContainer.innerHTML = '';
-            markersLayer.clearLayers();
-            clusterGroup.clearLayers();
-
-            const grouped = {};
-            data.forEach(item => {
-                const t = item.properties.type;
-                if (!grouped[t]) grouped[t] = [];
-                grouped[t].push(item);
-            });
-
-            const typeOrder = [
-                'Holy Site', 'Main Gate', 'Gate',
-                'W C', 'Zamzam/Water', 'Medical', 'Transportation',
-                'Hotel', 'Food', 'Amenities',
-                'Escalator', 'Elevator', 'Stairs',
-                'Support', 'Landmark'
-            ];
-
-            typeOrder.forEach(type => {
-                if (!grouped[type]) return;
-
-                const groupDiv = document.createElement('div');
-                groupDiv.className = 'category-group';
-                groupDiv.innerHTML = `<div class="category-title"><i class="fa fa-folder-open"></i> ${type}</div>`;
-
-                grouped[type].forEach(item => {
-                    // Create Card
-                    const card = document.createElement('div');
-                    card.className = 'location-card';
-                    card.innerHTML = `
-                        <div class="location-icon" style="background: ${markerColors[type]}">
-                            <i class="fa ${item.properties.icon}"></i>
-                        </div>
-                        <div class="location-info">
-                            <span class="arabic">${item.properties.name}</span>
-                            <h3>${item.properties.name_en}</h3>
-                        </div>
-                    `;
-
-                    // Interaction
-                    const marker = createPremiumMarker(item);
-
-                    // Add to Cluster for high-density types, else normal layer
-                    const clusterTypes = ['Support', 'Hotel', 'Landmark', 'Transportation', 'Food', 'Holy Site', 'W C'];
-                    if (clusterTypes.includes(type)) {
-                        clusterGroup.addLayer(marker);
-                    } else {
-                        markersLayer.addLayer(marker);
-                    }
-
-                    card.onclick = () => {
-                        map.flyTo([item.geometry.coordinates[1], item.geometry.coordinates[0]], 20);
-
-                        // Handle cluster popup opening
-                        if (type === 'Support') {
-                            clusterGroup.zoomToShowLayer(marker, function () {
-                                marker.openPopup();
-                            });
-                        } else {
-                            marker.openPopup();
-                        }
-                    };
-
-                    groupDiv.appendChild(card);
-                });
-
-                listContainer.appendChild(groupDiv);
-            });
-        }
-
-        // --- 5. Initial Load & Filter ---
-        renderUI(masjidilHaramLocations);
-        renderExtraLayers();
-
-        window.filterList = function () {
-            const query = (document.getElementById('searchInput').value || "").toLowerCase();
-            const filtered = masjidilHaramLocations.filter(loc =>
-                (loc.properties.name || "").toLowerCase().includes(query) ||
-                (loc.properties.name_en || "").toLowerCase().includes(query) ||
-                (loc.properties.type || "").toLowerCase().includes(query)
-            );
-            renderUI(filtered);
-        };
-
-        function searchLocation(query) {
-            // Deprecated by inline filter, but kept for compatibility
-            return masjidilHaramLocations.filter(loc =>
-                (loc.properties.name || "").toLowerCase().includes(query.toLowerCase()) ||
-                (loc.properties.name_en || "").toLowerCase().includes(query.toLowerCase())
-            );
-        }
-
-        // --- Offline Routing Logic ---
         function findNearestNode(lat, lon) {
             let minDist = Infinity;
             let closestNode = null;
             if (typeof routingGraph === 'undefined') return null;
-
             for (const id in routingGraph.nodes) {
                 const coords = routingGraph.nodes[id];
                 const d = (lat - coords[0]) ** 2 + (lon - coords[1]) ** 2;
-                if (d < minDist) {
-                    minDist = d;
-                    closestNode = id;
-                }
+                if (d < minDist) { minDist = d; closestNode = id; }
             }
             return closestNode;
         }
@@ -1183,32 +1951,23 @@
             const distances = {};
             const previous = {};
             const queue = new PriorityQueue();
-
             distances[startNode] = 0;
             queue.enqueue(startNode, 0);
-
             const nodes = routingGraph.nodes;
             const adj = routingGraph.adj;
 
             while (!queue.isEmpty()) {
-                const { element: current, priority } = queue.dequeue();
-
+                const { element: current } = queue.dequeue();
                 if (current === endNode) {
                     const path = [];
                     let u = endNode;
-                    while (u) {
-                        path.unshift(nodes[u]);
-                        u = previous[u];
-                    }
+                    while (u) { path.unshift(nodes[u]); u = previous[u]; }
                     return path;
                 }
-
                 if (!adj[current]) continue;
-
                 for (const neighbor in adj[current]) {
                     const weight = adj[current][neighbor];
                     const alt = distances[current] + weight;
-
                     if (alt < (distances[neighbor] ?? Infinity)) {
                         distances[neighbor] = alt;
                         previous[neighbor] = current;
@@ -1219,75 +1978,30 @@
             return null;
         }
 
-        class PriorityQueue {
-            constructor() { this.items = []; }
-            enqueue(element, priority) {
-                const qElement = { element, priority };
-                let added = false;
-                for (let i = 0; i < this.items.length; i++) {
-                    if (this.items[i].priority > qElement.priority) {
-                        this.items.splice(i, 0, qElement);
-                        added = true;
-                        break;
-                    }
-                }
-                if (!added) this.items.push(qElement);
-            }
-            dequeue() { return this.items.shift(); }
-            isEmpty() { return this.items.length === 0; }
-        }
-
-        // --- Interaction Logic ---
-
-        function setPickMode(mode) {
-            pickingMode = mode;
-            // Visual feedback
-            const mapContainer = document.getElementById('map');
-            mapContainer.style.cursor = 'crosshair';
-
-            // Explicit alert for mobile users who might not notice cursor change
-            const type = mode === 'start' ? 'Awal' : 'Tujuan';
-            alert(`Silakan KLIK di peta untuk menentukan Titik ${type}.`);
-        }
-
-        map.on('click', function (e) {
-            if (!pickingMode) return;
-            const name = `${e.latlng.lat.toFixed(5)}, ${e.latlng.lng.toFixed(5)}`;
-            if (pickingMode === 'start') {
-                setStartPoint(e.latlng, name);
-            } else if (pickingMode === 'end') {
-                setEndPoint(e.latlng, name);
-            }
-
-            // Reset cursor and mode
-            document.getElementById('map').style.cursor = '';
-            pickingMode = null;
-        });
-
         function calculateRoute() {
             if (!startPoint || !endPoint) {
                 alert("Harap pilih titik awal dan tujuan.");
                 return;
             }
-
             if (typeof routingGraph === 'undefined') {
-                alert("Data routing graph belum siap. Pastikan file haram-routing-graph.js termuat.");
+                alert("Data routing graph belum siap.");
                 return;
             }
 
-            document.getElementById('routeBtn').innerText = "Menghitung...";
+            const btn = document.getElementById('routeBtn');
+            btn.innerText = "Menghitung...";
+            btn.disabled = true;
 
             setTimeout(() => {
                 const startNode = findNearestNode(startPoint.lat, startPoint.lng);
                 const endNode = findNearestNode(endPoint.lat, endPoint.lng);
 
-                // Check distance
                 if (startNode) {
-                    const startCoords = routingGraph.nodes[startNode];
-                    const d = Math.sqrt((startPoint.lat - startCoords[0]) ** 2 + (startPoint.lng - startCoords[1]) ** 2) * 111000;
+                    const sc = routingGraph.nodes[startNode];
+                    const d = Math.sqrt((startPoint.lat - sc[0]) ** 2 + (startPoint.lng - sc[1]) ** 2) * 111000;
                     if (d > 200) {
-                        if (!confirm("Titik awal berada agak jauh (>200m) dari jalur terdata. Hasil mungkin tidak akurat. Lanjutkan?")) {
-                            document.getElementById('routeBtn').innerText = "Cari Rute Offline";
+                        if (!confirm("Titik awal agak jauh (>200m) dari jalur terdata. Lanjutkan?")) {
+                            btn.innerText = "Cari Rute"; btn.disabled = false;
                             return;
                         }
                     }
@@ -1295,23 +2009,21 @@
 
                 if (!startNode || !endNode) {
                     alert("Gagal menemukan titik jalur terdekat.");
-                    document.getElementById('routeBtn').innerText = "Cari Rute Offline";
+                    btn.innerText = "Cari Rute"; btn.disabled = false;
                     return;
                 }
 
                 const path = dijkstra(startNode, endNode);
-
                 if (path) {
                     currentPath = path;
                     if (routeLayer) map.removeLayer(routeLayer);
                     routeLayer = L.polyline(path, {
-                        color: '#b89968',
+                        color: '#1a73e8',
                         weight: 6,
                         opacity: 0.8,
                         dashArray: '10, 10',
                         lineCap: 'round'
                     }).addTo(map);
-
                     map.fitBounds(routeLayer.getBounds(), { padding: [50, 50] });
 
                     let totalDist = 0;
@@ -1320,20 +2032,82 @@
                     }
                     const timeMins = Math.round(totalDist / 80);
 
-                    // Show Follow Button
-                    document.getElementById('followBtn').style.display = 'block';
+                    document.getElementById('routeInfo').innerHTML =
+                        `<strong>${Math.round(totalDist)} m</strong> &middot; ~${timeMins} menit jalan kaki`;
+                    document.getElementById('startNavBtn').style.display = '';
 
-                    alert(`✅ Rute Berhasil Ditemukan!\n\n📍 Jarak: ${Math.round(totalDist)} meter\n⏱️ Estimasi Waktu: ~${timeMins} menit jalan kaki`);
-
-                    document.getElementById('routeBtn').innerText = "Cari Rute Peta";
+                    btn.innerText = "Cari Rute"; btn.disabled = false;
                 } else {
                     alert("Tidak ada jalur yang terhubung.");
-                    document.getElementById('routeBtn').innerText = "Cari Rute Peta";
+                    btn.innerText = "Cari Rute"; btn.disabled = false;
                 }
             }, 50);
         }
 
+        // ========== EXTRA LAYERS ==========
+        function renderExtraLayers() {
+            if (typeof masjidilHaramRoads !== 'undefined' && masjidilHaramRoads.length > 0) {
+                masjidilHaramRoads.forEach(road => {
+                    const polyline = L.polyline(road.geometry.coordinates, {
+                        color: '#a8a29e', weight: 2, opacity: 0.6
+                    });
+                    const name = road.properties.name || road.properties.highway_type || 'Road';
+                    const nameAr = road.properties.name_ar || name;
+                    polyline.bindPopup(`<b>${nameAr}</b><br>${name}`);
+                    roadsLayer.addLayer(polyline);
+                });
+                roadsLayer.addTo(map);
+            }
+
+            if (typeof masjidilHaramBuildings !== 'undefined' && masjidilHaramBuildings.length > 0) {
+                masjidilHaramBuildings.forEach(building => {
+                    const polygon = L.polygon(building.geometry.coordinates, {
+                        color: '#c2410c', weight: 1, fillColor: '#fdba74', fillOpacity: 0.2
+                    });
+                    const name = building.properties.name || building.properties.building_type || 'Building';
+                    const nameAr = building.properties.name_ar || name;
+                    polygon.bindPopup(`<b>${nameAr}</b><br>${name}`);
+                    buildingsLayer.addLayer(polygon);
+                });
+            }
+        }
+
+        // ========== SHARE ==========
+        function shareLocation(name, lat, lng) {
+            const mapsUrl = lat && lng ? `https://www.google.com/maps?q=${lat},${lng}` : '';
+            const shareText = mapsUrl ? `${name}\n${mapsUrl}` : name;
+
+            if (navigator.share) {
+                const shareData = { title: name, text: `Lokasi: ${name}` };
+                if (mapsUrl) shareData.url = mapsUrl;
+                navigator.share(shareData);
+            } else if (navigator.clipboard) {
+                navigator.clipboard.writeText(shareText).then(() => {
+                    alert('Link lokasi telah disalin!');
+                }).catch(() => {
+                    prompt('Salin link lokasi:', shareText);
+                });
+            } else {
+                prompt('Salin link lokasi:', shareText);
+            }
+        }
+
+        // ========== LOAD DATA ==========
+        masjidilHaramLocations.forEach(location => {
+            const marker = createPinholeMarker(location);
+            const type = location.properties.type;
+            const clusterTypes = ['Support', 'Hotel', 'Landmark', 'Transportation', 'Food', 'Holy Site', 'Mosque', 'W C'];
+            if (clusterTypes.includes(type)) {
+                clusterGroup.addLayer(marker);
+            } else {
+                markersLayer.addLayer(marker);
+            }
+        });
+
+        renderLocationsList();
+        renderExtraLayers();
     </script>
+
 </body>
 
 </html>
