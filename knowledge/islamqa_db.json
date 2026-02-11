@@ -2,7 +2,7 @@
   "metadata": {
     "version": "2.1",
     "source": "islamqa.info",
-    "count": 50,
+    "count": 62,
     "last_updated": "2026-02-11"
   },
   "fatwas": [
@@ -741,6 +741,216 @@
         "pendek",
         "wanita",
         "hukum"
+      ]
+    },
+    {
+      "id": "208210",
+      "title_id": "Hukum Menelan Dahak Bagi orang Berpuasa",
+      "question_id": "No Question",
+      "answer_id": "No Answer",
+      "url": "https://islamqa.info/id/answers/208210",
+      "category": "umrah_haji",
+      "keywords": [
+        "hukum",
+        "orang",
+        "bagi",
+        "berpuasa",
+        "dahak",
+        "menelan"
+      ]
+    },
+    {
+      "id": "408136",
+      "title_id": "Mimpi Basah di Siang Hari Ramadhan, dan Menahan Diri Agar Tidak Ejakulasi, Lalu Ia Melihat Cairan Dengan Aroma Tidak Sedap",
+      "question_id": "No Question",
+      "answer_id": "No Answer",
+      "url": "https://islamqa.info/id/answers/408136",
+      "category": "umrah_haji",
+      "keywords": [
+        "basah",
+        "agar",
+        "hari",
+        "cairan",
+        "ejakulasi",
+        "sedap",
+        "menahan",
+        "tidak",
+        "lalu",
+        "diri"
+      ]
+    },
+    {
+      "id": "9924",
+      "title_id": "Hukum Seorang Mukmin Yang Banyak Melakukan Perbuatan Dosa",
+      "question_id": "No Question",
+      "answer_id": "No Answer",
+      "url": "https://islamqa.info/id/answers/9924",
+      "category": "shalat",
+      "keywords": [
+        "seorang",
+        "perbuatan",
+        "hukum",
+        "mukmin",
+        "yang",
+        "dosa",
+        "banyak",
+        "melakukan"
+      ]
+    },
+    {
+      "id": "343994",
+      "title_id": "Apakah Semua Cabang Iman Itu Wajib ?",
+      "question_id": "No Question",
+      "answer_id": "No Answer",
+      "url": "https://islamqa.info/id/answers/343994",
+      "category": "shalat",
+      "keywords": [
+        "cabang",
+        "apakah",
+        "iman",
+        "wajib",
+        "semua"
+      ]
+    },
+    {
+      "id": "48973",
+      "title_id": "Jenis-jenis ibadah",
+      "question_id": "No Question",
+      "answer_id": "No Answer",
+      "url": "https://islamqa.info/id/answers/48973",
+      "category": "aqidah",
+      "keywords": [
+        "jenis",
+        "ibadah"
+      ]
+    },
+    {
+      "id": "49023",
+      "title_id": "Apa Itu Urutan-urutan (Tingkatan) Dalam Agama Islam",
+      "question_id": "No Question",
+      "answer_id": "No Answer",
+      "url": "https://islamqa.info/id/answers/49023",
+      "category": "aqidah",
+      "keywords": [
+        "islam",
+        "urutan",
+        "tingkatan",
+        "agama",
+        "dalam"
+      ]
+    },
+    {
+      "id": "151034",
+      "title_id": "Menggabungkan dua salat (jamak) karena sulit, lelah, dan rasa takut saat mengemudi dalam keadaan ngantuk",
+      "question_id": "No Question",
+      "answer_id": "No Answer",
+      "url": "https://islamqa.info/id/answers/151034",
+      "category": "wanita",
+      "keywords": [
+        "sulit",
+        "mengemudi",
+        "keadaan",
+        "rasa",
+        "jamak",
+        "lelah",
+        "saat",
+        "takut",
+        "ngantuk",
+        "salat"
+      ]
+    },
+    {
+      "id": "136938",
+      "title_id": "Apa Yang Dilakukan Seorang Musafir Yang Ingin Shalat Isya’ Di Belakang Orang Yang Shalat Maghrib ?",
+      "question_id": "No Question",
+      "answer_id": "No Answer",
+      "url": "https://islamqa.info/id/answers/136938",
+      "category": "wanita",
+      "keywords": [
+        "musafir",
+        "seorang",
+        "dilakukan",
+        "isya",
+        "ingin",
+        "orang",
+        "belakang",
+        "yang",
+        "shalat",
+        "maghrib"
+      ]
+    },
+    {
+      "id": "193553",
+      "title_id": "Nisab dalam Emas dan Perak Dilihat dari Kadar Kemurniannya",
+      "question_id": "No Question",
+      "answer_id": "No Answer",
+      "url": "https://islamqa.info/id/answers/193553",
+      "category": "puasa",
+      "keywords": [
+        "emas",
+        "dari",
+        "kemurniannya",
+        "dilihat",
+        "nisab",
+        "kadar",
+        "dalam",
+        "perak"
+      ]
+    },
+    {
+      "id": "128168",
+      "title_id": "Apakah Kekurangan Sedikit dari Nisab Memengaruhi Kewajiban Zakat ?",
+      "question_id": "No Question",
+      "answer_id": "No Answer",
+      "url": "https://islamqa.info/id/answers/128168",
+      "category": "puasa",
+      "keywords": [
+        "apakah",
+        "dari",
+        "kewajiban",
+        "memengaruhi",
+        "sedikit",
+        "nisab",
+        "kekurangan",
+        "zakat"
+      ]
+    },
+    {
+      "id": "47761",
+      "title_id": "Dia Punya Kewajiban Zakat Perdagangan Tapi Tidak Mempunyai Uang",
+      "question_id": "No Question",
+      "answer_id": "No Answer",
+      "url": "https://islamqa.info/id/answers/47761",
+      "category": "zakat",
+      "keywords": [
+        "uang",
+        "perdagangan",
+        "tidak",
+        "punya",
+        "kewajiban",
+        "tapi",
+        "mempunyai",
+        "zakat"
+      ]
+    },
+    {
+      "id": "50726",
+      "title_id": "Apakah Diwajibkan Zakat Barang Dagangan Dari Persiapan Toko dan Barang-barang Yang Hilang ?",
+      "question_id": "No Question",
+      "answer_id": "No Answer",
+      "url": "https://islamqa.info/id/answers/50726",
+      "category": "zakat",
+      "keywords": [
+        "apakah",
+        "diwajibkan",
+        "dagangan",
+        "barang",
+        "dari",
+        "persiapan",
+        "hilang",
+        "yang",
+        "toko",
+        "zakat"
       ]
     }
   ]

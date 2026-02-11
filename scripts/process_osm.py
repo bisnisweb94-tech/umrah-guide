@@ -197,14 +197,13 @@ def process_data(all_nodes, all_ways):
         
         if len(coords) < 2: continue
 
+
         # A. Buildings
         if 'building' in tags:
             if way_id in processed_building_ids: continue
             
-            # Buildings need closed loops ideally, but we process as Polygon
-            # Ensure coordinates format for Polygon: [[ [lon, lat], ... ]]
-            poly_coords = [[c[1], c[0]] for c in coords] # GeoJSON uses Lon,Lat
-            
+            # 1. Add as Building Polygon
+            poly_coords = [[c[1], c[0]] for c in coords]
             building = {
                 'type': 'Feature',
                 'properties': {
@@ -219,9 +218,34 @@ def process_data(all_nodes, all_ways):
             }
             buildings.append(building)
             processed_building_ids.add(way_id)
-            
+
+            # 2. ALSO Add as POI if it has a name and a recognizable category
+            category = identify_category(tags)
+            if category and 'name' in tags:
+                # Calculate simple centroid
+                avg_lat = sum(c[0] for c in coords) / len(coords)
+                avg_lon = sum(c[1] for c in coords) / len(coords)
+                
+                poi = {
+                    'type': 'Feature',
+                    'properties': {
+                        'name': tags.get('name:ar', tags.get('name')),
+                        'name_en': tags.get('name:en', tags.get('name')),
+                        'type': category,
+                        'icon': ICON_MAP.get(category, 'fa-map-marker'),
+                        'description': tags.get('description', f'{category} - {tags.get("name")}'),
+                        'osm_id': f"way_{way_id}"
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [avg_lon, avg_lat]
+                    }
+                }
+                pois.append(poi)
+
         # B. Roads
         elif 'highway' in tags:
+
             if way_id in processed_road_ids: continue
             
             hw_type = tags['highway']

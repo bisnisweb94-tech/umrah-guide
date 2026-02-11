@@ -17,7 +17,7 @@ CATEGORIES = {
     "zakat": "/id/categories/topics/105/zakat-dan-sedekah"
 }
 OUTPUT_FILE = "knowledge/islamqa_db.json"
-MAX_FATWAS_PER_CATEGORY = 50  # Start small for testing, scale up later
+MAX_FATWAS_PER_CATEGORY = 2  # Start small for testing, scale up later
 DELAY = 1.5  # Seconds between requests to be polite
 
 def get_soup(url):
