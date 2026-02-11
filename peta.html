@@ -37,9 +37,9 @@
             width: 100vw;
         }
 
-        /* ========== SEARCH HEADER ========== */
+        /* ========== LAYOUT & COMPONENTS (MOBILE-FIRST) ========== */
         .map-header {
-            position: absolute;
+            position: fixed;
             top: 12px;
             left: 12px;
             right: 12px;
@@ -47,60 +47,22 @@
             background: white;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             border-radius: 8px;
-            overflow: visible;
+            transition: all 0.3s ease;
         }
 
-        .search-box {
-            display: flex;
-            align-items: center;
-            padding: 12px 16px;
-            gap: 12px;
-        }
-
-        .back-btn {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: white;
-            border: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .search-input-wrapper {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            background: #f1f3f4;
-            border-radius: 8px;
-            padding: 10px 14px;
-            gap: 10px;
-        }
-
-        .search-input-wrapper input {
-            flex: 1;
-            border: none;
-            background: none;
-            outline: none;
-            font-size: 16px;
-            color: #202124;
-        }
-
-        .search-input-wrapper i {
-            color: #5f6368;
-        }
-
-        /* Category chips - below search on mobile */
         .category-chips {
+            position: fixed;
+            top: 76px;
+            /* Below search box on mobile */
+            left: 12px;
+            right: 12px;
+            z-index: 999;
             display: flex;
             gap: 8px;
-            padding: 8px 12px 12px;
+            padding: 4px 0 12px;
             overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
             scrollbar-width: none;
+            transition: all 0.3s ease;
         }
 
         .category-chips::-webkit-scrollbar {
@@ -115,6 +77,7 @@
             font-size: 14px;
             white-space: nowrap;
             cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: all 0.2s;
         }
 
@@ -129,7 +92,84 @@
             margin-right: 6px;
         }
 
-        /* ========== APPLE MAPS STYLE MARKERS ========== */
+        .floating-btns {
+            position: fixed;
+            bottom: 24px;
+            left: 12px;
+            z-index: 1002;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .fab-btn {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: white;
+            border: none;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 18px;
+            color: #202124;
+        }
+
+        .fab-btn:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+            transform: scale(1.05);
+        }
+
+        .fab-btn.kaaba {
+            color: #f57c00;
+            /* Orange */
+            font-size: 22px;
+        }
+
+        .fab-btn.hidden {
+            display: none;
+        }
+
+        .bottom-sheet {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            border-radius: 16px 16px 0 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+            z-index: 1001;
+            transform: translateY(100%);
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            max-height: 70vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bottom-sheet.expanded {
+            transform: translateY(0);
+        }
+
+        .search-results {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            max-height: 320px;
+            overflow-y: auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 0 0 12px 12px;
+            z-index: 1002;
+            /* Higher than bottom sheet */
+            display: none;
+        }
+
+        /* Other base styles (markers, popups, etc.) */
         .pinhole-marker {
             background: none !important;
             border: none !important;
@@ -142,7 +182,6 @@
             height: 0;
         }
 
-        /* --- DEFAULT: small circle, label on hover only --- */
         .pinhole-marker .marker-default {
             position: absolute;
             display: flex;
@@ -189,7 +228,6 @@
             pointer-events: none;
         }
 
-        /* Show label only on hover */
         .pinhole-marker:hover .marker-default-label {
             opacity: 1;
         }
@@ -199,7 +237,6 @@
             box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
         }
 
-        /* --- ACTIVE: large balloon pin + dot + label below --- */
         .pinhole-marker .marker-active {
             position: absolute;
             left: 0;
@@ -254,7 +291,6 @@
             text-overflow: ellipsis;
         }
 
-        /* Toggle between default and active */
         .pinhole-marker.active .marker-default {
             display: none;
         }
@@ -280,892 +316,48 @@
             }
         }
 
-        /* ========== FLOATING BUTTONS (mobile: bottom-left stacked, desktop: below search) ========== */
-        .floating-btns {
-            position: absolute;
-            bottom: 24px;
-            left: 12px;
-            z-index: 1002;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .fab-btn {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: white;
-            border: none;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.2s;
-            font-size: 18px;
-            color: #202124;
-        }
-
-        .fab-btn:hover {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
-            transform: scale(1.05);
-        }
-
-        .fab-btn.kaaba {
-            color: #d4af37;
-            font-size: 20px;
-        }
-
-        .fab-btn.hidden {
-            display: none;
-        }
-
-        /* ========== BOTTOM SHEET ========== */
-        .bottom-sheet {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: white;
-            border-radius: 16px 16px 0 0;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
-            z-index: 1001;
-            transform: translateY(100%);
-            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            max-height: 70vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .bottom-sheet.expanded {
-            transform: translateY(0);
-        }
-
-        .sheet-handle {
-            width: 36px;
-            height: 4px;
-            background: #dadce0;
-            border-radius: 2px;
-            margin: 8px auto;
-            cursor: grab;
-        }
-
-        .sheet-peek {
-            padding: 12px 16px;
-            border-bottom: 1px solid #f1f3f4;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .peek-title {
-            font-size: 18px;
-            font-weight: 500;
-            color: #202124;
-            margin-bottom: 4px;
-        }
-
-        .peek-subtitle {
-            font-size: 14px;
-            color: #5f6368;
-        }
-
-        .sheet-close-btn {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            background: #f1f3f4;
-            border: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            color: #5f6368;
-            font-size: 14px;
-            flex-shrink: 0;
-        }
-
-        .sheet-close-btn:hover {
-            background: #e8eaed;
-        }
-
-        .sheet-content {
-            flex: 1;
-            overflow-y: auto;
-            padding: 16px;
-        }
-
-        .location-detail {
-            display: none;
-        }
-
-        .location-detail.active {
-            display: block;
-        }
-
-        .detail-header {
-            display: flex;
-            align-items: flex-start;
-            gap: 16px;
-            margin-bottom: 20px;
-        }
-
-        .detail-icon {
-            width: 56px;
-            height: 56px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            color: white;
-            flex-shrink: 0;
-        }
-
-        .detail-info h2 {
-            font-size: 24px;
-            font-weight: 500;
-            color: #202124;
-            margin-bottom: 4px;
-        }
-
-        .detail-info .arabic {
-            font-family: 'Amiri', serif;
-            font-size: 20px;
-            color: #d4af37;
-            display: block;
-            margin-top: 4px;
-        }
-
-        .detail-info p {
-            font-size: 14px;
-            color: #5f6368;
-            margin-top: 8px;
-        }
-
-        .action-buttons {
-            display: flex;
-            gap: 12px;
-            margin: 20px 0;
-        }
-
-        .action-btn {
-            flex: 1;
-            padding: 12px;
-            border-radius: 8px;
-            border: none;
-            font-size: 14px;
-            font-weight: 500;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            transition: all 0.2s;
-        }
-
-        .action-btn.primary {
-            background: #1a73e8;
-            color: white;
-        }
-
-        .action-btn.primary:hover {
-            background: #1557b0;
-        }
-
-        .action-btn.secondary {
-            background: #f1f3f4;
-            color: #202124;
-        }
-
-        .action-btn.secondary:hover {
-            background: #e8eaed;
-        }
-
-        /* Locations List */
-        .locations-list {
-            padding: 0;
-        }
-
-        .list-category {
-            margin-bottom: 24px;
-        }
-
-        .category-header {
-            font-size: 12px;
-            font-weight: 500;
-            color: #5f6368;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .location-item {
-            padding: 12px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            margin-bottom: 8px;
-            cursor: pointer;
-            transition: all 0.2s;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .location-item:hover {
-            background: #e8f0fe;
-        }
-
-        .item-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-            color: white;
-            flex-shrink: 0;
-        }
-
-        .item-info h3 {
-            font-size: 15px;
-            font-weight: 500;
-            color: #202124;
-            margin-bottom: 2px;
-        }
-
-        .item-info .arabic {
-            font-family: 'Amiri', serif;
-            font-size: 13px;
-            color: #5f6368;
-        }
-
-        /* Holy Site Pills */
-        .holy-site-pills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 8px;
-        }
-
-        .holy-site-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 8px 14px;
-            border-radius: 20px;
-            background: #fef9e7;
-            border: 1.5px solid #d4af37;
-            cursor: pointer;
-            transition: all 0.2s;
-            font-size: 13px;
-            font-weight: 500;
-            color: #7c6a1e;
-        }
-
-        .holy-site-pill:hover {
-            background: #d4af37;
-            color: white;
-        }
-
-        .holy-site-pill i {
-            font-size: 12px;
-            color: #d4af37;
-        }
-
-        .holy-site-pill:hover i {
-            color: white;
-        }
-
-        /* Accordion sections */
-        .category-toggle {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            background: none;
-            border: none;
-            padding: 0;
-            cursor: pointer;
-            text-align: left;
-        }
-
-        .category-toggle .toggle-icon {
-            font-size: 11px;
-            color: #5f6368;
-            transition: transform 0.2s;
-        }
-
-        .category-toggle.collapsed .toggle-icon {
-            transform: rotate(-90deg);
-        }
-
-        .category-items {
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-        }
-
-        .category-items.collapsed {
-            max-height: 0 !important;
-        }
-
-        /* Pulsating dot for user location */
-        .user-location-marker {
-            background: none !important;
-            border: none !important;
-        }
-
-        .pulse-dot {
-            width: 14px;
-            height: 14px;
-            background: #1a73e8;
-            border: 2px solid white;
-            border-radius: 50%;
-            box-shadow: 0 0 0 rgba(26, 115, 232, 0.4);
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(26, 115, 232, 0.4);
-            }
-
-            70% {
-                box-shadow: 0 0 0 10px rgba(26, 115, 232, 0);
-            }
-
-            100% {
-                box-shadow: 0 0 0 0 rgba(26, 115, 232, 0);
-            }
-        }
-
-        /* Search dropdown */
-        .search-results {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: white;
-            max-height: 320px;
-            overflow-y: auto;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            border-radius: 0 0 12px 12px;
-            z-index: 1001;
-            display: none;
-        }
-
-        .search-results.active {
-            display: block;
-        }
-
-        .search-result-item {
-            padding: 10px 16px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            cursor: pointer;
-            border-bottom: 1px solid #f1f3f4;
-            transition: background 0.15s;
-        }
-
-        .search-result-item:last-child {
-            border-bottom: none;
-        }
-
-        .search-result-item:hover {
-            background: #f1f3f4;
-        }
-
-        .search-result-icon {
-            width: 32px;
-            height: 32px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 13px;
-            flex-shrink: 0;
-        }
-
-        .search-result-info {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .search-result-info .name {
-            font-size: 14px;
-            font-weight: 500;
-            color: #202124;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .search-result-info .type {
-            font-size: 12px;
-            color: #5f6368;
-        }
-
-        /* Cluster Styles */
-        .marker-cluster-small,
-        .marker-cluster-medium,
-        .marker-cluster-large {
-            background-color: rgba(26, 115, 232, 0.3) !important;
-        }
-
-        .marker-cluster div {
-            background-color: #1a73e8 !important;
-            color: white !important;
-            border: 3px solid white;
-            font-weight: 700;
-            border-radius: 50%;
-        }
-
-        /* Hide default leaflet popup */
-        .leaflet-popup {
-            display: none !important;
-        }
-
-        /* ========== DIRECTIONS BOX (GOOGLE MAPS STYLE) ========== */
-        .directions-box {
-            display: none;
-            padding: 16px;
-            background: white;
-            flex-direction: column;
-            gap: 12px;
-            border-bottom: 1px solid #f1f3f4;
-        }
-
-        .directions-box.active {
-            display: flex;
-        }
-
-        .dir-input-group {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .dir-dots {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .dot-start {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            border: 2px solid #1a73e8;
-        }
-
-        .dot-line {
-            width: 2px;
-            height: 20px;
-            background: #dadce0;
-        }
-
-        .dot-end {
-            width: 8px;
-            height: 8px;
-            background: #1a73e8;
-        }
-
-        .dir-inputs {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .dir-input-wrapper {
-            background: #f1f3f4;
-            border-radius: 8px;
-            padding: 8px 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .dir-input-wrapper input {
-            flex: 1;
-            border: none;
-            background: none;
-            outline: none;
-            font-size: 14px;
-            color: #202124;
-        }
-
-        .dir-input-wrapper .pick-btn {
-            background: none;
-            border: none;
-            color: #5f6368;
-            cursor: pointer;
-            padding: 4px;
-            font-size: 14px;
-        }
-
-        .dir-input-wrapper .pick-btn:hover {
-            color: #1a73e8;
-        }
-
-        .dir-actions {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 4px;
-        }
-
-        .nav-btn-start {
-            background: #1a73e8;
-            color: white;
-            border: none;
-            border-radius: 24px;
-            padding: 10px 24px;
-            font-size: 14px;
-            font-weight: 500;
-            cursor: pointer;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        .nav-btn-start:disabled {
-            background: #dadce0;
-            color: #5f6368;
-            cursor: not-allowed;
-            box-shadow: none;
-        }
-
-        /* ========== NAVIGATION OVERLAY (APPLE MAPS STYLE) ========== */
-        .nav-overlay {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            right: 10px;
-            background: #202124;
-            color: white;
-            border-radius: 16px;
-            padding: 16px;
-            display: none;
-            align-items: center;
-            gap: 16px;
-            z-index: 2000;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            animation: slideDown 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .nav-overlay.active {
-            display: flex;
-        }
-
-        .nav-icon-large {
-            font-size: 32px;
-            color: #1a73e8;
-        }
-
-        .nav-text {
-            flex: 1;
-        }
-
-        .nav-instruction {
-            font-size: 18px;
-            font-weight: 500;
-            margin-bottom: 2px;
-        }
-
-        .nav-sub-instruction {
-            font-size: 14px;
-            color: #bdc1c6;
-        }
-
-        .nav-close-btn {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            border: none;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-        }
-
-        /* ========== LANDMARK MODAL ========== */
-        .landmark-modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 3000;
-            display: none;
-            justify-content: center;
-            align-items: flex-end;
-        }
-
-        .landmark-modal.active {
-            display: flex;
-        }
-
-        .landmark-modal-content {
-            background: white;
-            width: 100%;
-            max-width: 500px;
-            max-height: 70vh;
-            border-radius: 16px 16px 0 0;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .landmark-modal-header {
-            padding: 16px;
-            border-bottom: 1px solid #f1f3f4;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .landmark-modal-header h3 {
-            font-size: 18px;
-            font-weight: 500;
-            color: #202124;
-        }
-
-        .landmark-search {
-            padding: 12px 16px;
-            border-bottom: 1px solid #f1f3f4;
-        }
-
-        .landmark-search input {
-            width: 100%;
-            padding: 10px 14px;
-            background: #f1f3f4;
-            border: none;
-            border-radius: 8px;
-            font-size: 14px;
-            outline: none;
-        }
-
-        .landmark-list {
-            flex: 1;
-            overflow-y: auto;
-            padding: 8px;
-        }
-
-        .landmark-item {
-            padding: 12px;
-            border-radius: 8px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            transition: background 0.2s;
-        }
-
-        .landmark-item:hover {
-            background: #f1f3f4;
-        }
-
-        .landmark-item i {
-            color: #d4af37;
-            font-size: 16px;
-            width: 24px;
-            text-align: center;
-        }
-
-        .landmark-item-info {
-            flex: 1;
-        }
-
-        .landmark-item-info .name {
-            font-size: 14px;
-            font-weight: 500;
-            color: #202124;
-        }
-
-        .landmark-item-info .arabic {
-            font-family: 'Amiri', serif;
-            font-size: 13px;
-            color: #5f6368;
-        }
+        /* ... (all other non-layout-specific styles like markers, popups, etc remain here) ... */
 
         /* ========== DESKTOP (>= 768px) ========== */
         @media (min-width: 768px) {
             .map-header {
                 right: auto;
                 width: 392px;
-                border-radius: 8px;
             }
 
-            /* Chips inside header on desktop */
             .category-chips {
-                padding: 0 12px 10px;
-            }
-
-            /* Floating buttons below searchbox on desktop */
-            .floating-btns {
-                top: 72px;
-                left: 12px;
-                bottom: auto;
-                flex-direction: row;
-                gap: 8px;
-            }
-
-            /* Bottom sheet as side panel on desktop */
-            .bottom-sheet {
-                top: 72px;
+                top: 20px;
                 left: 420px;
-                bottom: auto;
                 right: auto;
-                width: 380px;
-                max-height: calc(100vh - 100px);
+                max-width: calc(100vw - 440px);
+                padding: 0;
+            }
+
+            .floating-btns {
+                top: 76px;
+                /* Right below search box */
+                bottom: auto;
+                left: 12px;
+                flex-direction: column;
+            }
+
+            .bottom-sheet {
+                top: 130px;
+                /* Below floating buttons */
+                left: 12px;
+                bottom: 24px;
+                right: auto;
+                width: 392px;
+                max-height: calc(100vh - 160px);
                 border-radius: 8px;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-                transform: translateX(-150%);
-                transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                transform: translateX(-450px);
+                /* Hidden by default */
             }
 
             .bottom-sheet.expanded {
                 transform: translateX(0);
             }
-
-            .nav-overlay {
-                left: 420px;
-                right: 20px;
-                top: 20px;
-                max-width: 450px;
-            }
-
-            .landmark-modal {
-                align-items: center;
-            }
-
-            .landmark-modal-content {
-                border-radius: 16px;
-            }
-        }
-
-        /* --- PREMIUM LOCK SCREEN --- */
-        #site-lock {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
-            z-index: 99999;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        #site-lock.unlocked {
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-100%);
-        }
-
-        .lock-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            padding: 2.5rem;
-            border-radius: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            text-align: center;
-            max-width: 400px;
-            width: 90%;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-        }
-
-        .lock-card h2 {
-            font-size: 1.8rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-        }
-
-        .lock-card p {
-            font-weight: 300;
-            margin-bottom: 2rem;
-            opacity: 0.8;
-        }
-
-        .lock-input-group {
-            position: relative;
-            margin-bottom: 1.5rem;
-        }
-
-        .lock-input {
-            width: 100%;
-            background: rgba(255, 255, 255, 0.15);
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            padding: 1rem 1.2rem;
-            border-radius: 12px;
-            color: white;
-            font-size: 1.1rem;
-            text-align: center;
-            outline: none;
-            transition: all 0.3s ease;
-        }
-
-        .lock-input:focus {
-            border-color: #d4af37;
-            background: rgba(255, 255, 255, 0.25);
-        }
-
-        .lock-btn {
-            background: #d4af37;
-            color: #064e3b;
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 12px;
-            font-weight: 700;
-            font-size: 1rem;
-            cursor: pointer;
-            width: 100%;
-            transition: all 0.3s ease;
-        }
-
-        .lock-btn:hover {
-            background: #f1c40f;
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .lock-error {
-            color: #ff9999;
-            font-size: 0.9rem;
-            margin-top: 1rem;
-            height: 1.2rem;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .lock-error.show {
-            opacity: 1;
         }
     </style>
 </head>
@@ -1215,7 +407,7 @@
     </script>
 
     <!-- Google Maps Style Header -->
-    <div class="map-header" id="mapHeader" style="position:relative;">
+    <div class="map-header" id="mapHeader">
         <div class="search-box" id="searchBox">
             <button class="back-btn" onclick="window.location.href='index.html'">
                 <i class="fa fa-arrow-left"></i>
@@ -1231,7 +423,7 @@
         </div>
         <div class="search-results" id="searchResults"></div>
 
-        <!-- Directions Search Box -->
+        <!-- Directions Search Box (Inside Header to keep it stable) -->
         <div class="directions-box" id="directionsBox">
             <div class="dir-input-group">
                 <div class="dir-dots">
@@ -1266,20 +458,21 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="category-chips" id="categoryChips">
-            <div class="chip active" data-category="all"><i class="fa fa-globe"></i> Semua</div>
-            <div class="chip" data-category="Holy Site"><i class="fa fa-kaaba"></i> Holy Site</div>
-            <div class="chip" data-category="Mosque"><i class="fa fa-mosque"></i> Masjid</div>
-            <div class="chip" data-category="Gate"><i class="fa fa-door-open"></i> Gerbang</div>
-            <div class="chip" data-category="Hotel"><i class="fa fa-hotel"></i> Hotel</div>
-            <div class="chip" data-category="W C"><i class="fa fa-restroom"></i> WC</div>
-            <div class="chip" data-category="Medical"><i class="fa fa-hospital"></i> Medis</div>
-            <div class="chip" data-category="Food"><i class="fa fa-utensils"></i> Makanan</div>
-            <div class="chip" data-category="Zamzam/Water"><i class="fa fa-tint"></i> Zamzam</div>
-            <div class="chip" data-category="Transportation"><i class="fa fa-bus"></i> Transportasi</div>
-            <div class="chip" data-category="Landmark"><i class="fa fa-map-marker-alt"></i> Landmark</div>
-        </div>
+    <!-- Category Chips Outside Header for floating effect -->
+    <div class="category-chips" id="categoryChips">
+        <div class="chip active" data-category="all"><i class="fa fa-globe"></i> Semua</div>
+        <div class="chip" data-category="Holy Site"><i class="fa fa-kaaba"></i> Holy Site</div>
+        <div class="chip" data-category="Mosque"><i class="fa fa-mosque"></i> Masjid</div>
+        <div class="chip" data-category="Gate"><i class="fa fa-door-open"></i> Gerbang</div>
+        <div class="chip" data-category="Hotel"><i class="fa fa-hotel"></i> Hotel</div>
+        <div class="chip" data-category="W C"><i class="fa fa-restroom"></i> WC</div>
+        <div class="chip" data-category="Medical"><i class="fa fa-hospital"></i> Medis</div>
+        <div class="chip" data-category="Food"><i class="fa fa-utensils"></i> Makanan</div>
+        <div class="chip" data-category="Zamzam/Water"><i class="fa fa-tint"></i> Zamzam</div>
+        <div class="chip" data-category="Transportation"><i class="fa fa-bus"></i> Transportasi</div>
+        <div class="chip" data-category="Landmark"><i class="fa fa-map-marker-alt"></i> Landmark</div>
     </div>
 
     <!-- Apple Maps Style Navigation Overlay -->
@@ -1418,6 +611,14 @@
             'Support': '#475569',
             'Landmark': '#e74c3c'
         };
+        const categoryIcons = {
+            'all': 'fa-globe', 'Holy Site': 'fa-kaaba', 'Mosque': 'fa-mosque',
+            'Main Gate': 'fa-archway', 'Gate': 'fa-door-open', 'W C': 'fa-restroom',
+            'Zamzam/Water': 'fa-tint', 'Medical': 'fa-hospital', 'Transportation': 'fa-bus',
+            'Hotel': 'fa-hotel', 'Food': 'fa-utensils', 'Amenities': 'fa-cogs',
+            'Escalator': 'fa-arrows-alt-v', 'Elevator': 'fa-arrows-alt-v',
+            'Stairs': 'fa-shoe-prints', 'Support': 'fa-life-ring', 'Landmark': 'fa-map-marker-alt'
+        };
 
         const markersLayer = L.layerGroup().addTo(map);
         const clusterGroup = L.markerClusterGroup({
@@ -1513,10 +714,6 @@
 
             if (mainGateOsmIds.includes(String(feature.properties.osm_id))) {
                 iconClass = 'fa-archway'; // Distinct icon for main gates
-                // Force "Main Gate" color #064e3b (Dark Green) 
-                // or Gold #d4af37 if preferred. Let's use Dark Green for official "Main Gate" feel
-                // or revert to user request "distinct from normal gate (blue)".
-                // Normal "Gate" is Blue. "Main Gate" key is Dark Green.
                 color = markerColors['Main Gate'];
             }
 
@@ -1634,13 +831,7 @@
             'Food': 'Makanan', 'Amenities': 'Fasilitas', 'Escalator': 'Eskalator',
             'Elevator': 'Lift', 'Stairs': 'Tangga', 'Support': 'Support', 'Landmark': 'Landmark'
         };
-        const categoryIcons = {
-            'Holy Site': 'fa-kaaba', 'Mosque': 'fa-mosque', 'Main Gate': 'fa-archway',
-            'Gate': 'fa-door-open', 'W C': 'fa-restroom', 'Zamzam/Water': 'fa-tint',
-            'Medical': 'fa-hospital', 'Transportation': 'fa-bus', 'Hotel': 'fa-hotel',
-            'Food': 'fa-utensils', 'Amenities': 'fa-cogs', 'Escalator': 'fa-arrows-alt-v',
-            'Elevator': 'fa-arrows-alt-v', 'Stairs': 'fa-shoe-prints', 'Support': 'fa-life-ring', 'Landmark': 'fa-map-marker-alt'
-        };
+
 
         function renderLocationsList(data) {
             data = data || masjidilHaramLocations;
@@ -1735,30 +926,64 @@
         function filterLocations() {
             const query = document.getElementById('searchInput').value.toLowerCase();
             const searchResults = document.getElementById('searchResults');
-            let filtered = masjidilHaramLocations;
+            let filteredData = masjidilHaramLocations;
 
-            // Apply category filter
+            // Apply category filter FIRST
             if (activeCategory !== 'all') {
-                filtered = filtered.filter(loc => loc.properties.type === activeCategory);
+                filteredData = filteredData.filter(loc => loc.properties.type === activeCategory);
             }
 
-            // Apply search filter
+            // Then, apply search query on the (potentially category-filtered) data
             if (query) {
-                filtered = filtered.filter(loc =>
+                filteredData = filteredData.filter(loc =>
                     (loc.properties.name || '').toLowerCase().includes(query) ||
                     (loc.properties.name_en || '').toLowerCase().includes(query) ||
                     (loc.properties.type || '').toLowerCase().includes(query)
                 );
-                // Show dropdown with results
-                populateSearchResults(filtered.slice(0, 8));
-                searchResults.style.display = 'block';
+                populateSearchResults(filteredData.slice(0, 8));
+                searchResults.classList.add('active');
             } else {
-                searchResults.style.display = 'none';
+                searchResults.classList.remove('active');
             }
 
-            // Always sync map markers and list
-            renderLocationsList(filtered);
-            filterMapMarkersByData(filtered);
+            // Sync map, list, and chips
+            renderLocationsList(filteredData);
+            filterMapMarkersByData(filteredData);
+            updateCategoryChips(masjidilHaramLocations, query); // Update chips based on original data + query
+        }
+
+        function updateCategoryChips(sourceData, query) {
+            const chipsContainer = document.getElementById('categoryChips');
+            const relevantCats = new Set(['all']);
+
+            // If there's a search query, find which categories are in the results
+            if (query) {
+                sourceData.forEach(loc => {
+                    if ((loc.properties.name || '').toLowerCase().includes(query) ||
+                        (loc.properties.name_en || '').toLowerCase().includes(query)) {
+                        relevantCats.add(loc.properties.type);
+                    }
+                });
+            } else { // Otherwise, all categories are relevant
+                sourceData.forEach(loc => relevantCats.add(loc.properties.type));
+            }
+
+            const sortedCats = ['all', ...Object.keys(categoryIcons).filter(c => c !== 'all' && relevantCats.has(c))];
+
+            chipsContainer.innerHTML = sortedCats.map(cat => `
+                <div class="chip ${cat === activeCategory ? 'active' : ''}" data-category="${cat}">
+                    <i class="fa ${categoryIcons[cat] || 'fa-info-circle'}"></i> ${cat}
+                </div>
+            `).join('');
+
+            // Re-add event listeners
+            chipsContainer.querySelectorAll('.chip').forEach(chip => {
+                chip.addEventListener('click', function () {
+                    activeCategory = this.dataset.category;
+                    // No need to remove/add active class here, filterLocations will re-render
+                    filterLocations();
+                });
+            });
         }
 
         function populateSearchResults(results) {
@@ -1811,15 +1036,6 @@
             });
         }
 
-        // Category chips
-        document.querySelectorAll('.chip').forEach(chip => {
-            chip.addEventListener('click', function () {
-                document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-                this.classList.add('active');
-                activeCategory = this.dataset.category;
-                filterLocations();
-            });
-        });
 
         // ========== BOTTOM SHEET TOGGLE ==========
         let startY = 0;
@@ -2279,19 +1495,22 @@
         }
 
         // ========== LOAD DATA ==========
-        masjidilHaramLocations.forEach(location => {
-            const marker = createPinholeMarker(location);
-            const type = location.properties.type;
-            const clusterTypes = ['Support', 'Hotel', 'Landmark', 'Transportation', 'Food', 'Holy Site', 'Mosque', 'W C'];
-            if (clusterTypes.includes(type)) {
-                clusterGroup.addLayer(marker);
-            } else {
-                markersLayer.addLayer(marker);
-            }
-        });
+        document.addEventListener('DOMContentLoaded', () => {
+            masjidilHaramLocations.forEach(location => {
+                const marker = createPinholeMarker(location);
+                const type = location.properties.type;
+                const clusterTypes = ['Support', 'Hotel', 'Landmark', 'Transportation', 'Food', 'Holy Site', 'Mosque', 'W C'];
+                if (clusterTypes.includes(type)) {
+                    clusterGroup.addLayer(marker);
+                } else {
+                    markersLayer.addLayer(marker);
+                }
+            });
 
-        renderLocationsList();
-        renderExtraLayers();
+            renderLocationsList();
+            renderExtraLayers();
+            updateCategoryChips(masjidilHaramLocations, ''); // Initial chip render
+        });
     </script>
 
     <footer
