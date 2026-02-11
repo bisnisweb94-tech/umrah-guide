@@ -73,6 +73,13 @@ function isDuplicate(poi1, poi2, threshold = COORD_THRESHOLD) {
         return true;
     }
 
+    // Check OSM ID match (Idempotency)
+    const id1 = poi1.properties?.osm_id;
+    const id2 = poi2.properties?.osm_id;
+    if (id1 && id2 && String(id1) === String(id2)) {
+        return true;
+    }
+
     return false;
 }
 
@@ -107,12 +114,17 @@ function sortPOIs(pois) {
         'Holy Site': 0,
         'Main Gate': 1,
         'Gate': 2,
-        'Hotel': 3,
-        'Medical': 4,
-        'Transportation': 5,
-        'Amenities': 6,
-        'Support': 7,
-        'Landmark': 8,
+        'W C': 3,          // New High Priority
+        'Zamzam/Water': 4, // New High Priority
+        'Medical': 5,
+        'Transportation': 6,
+        'Hotel': 7,
+        'Amenities': 8,
+        'Escalator': 9,    // Facilities
+        'Elevator': 10,    // Facilities
+        'Stairs': 11,      // Facilities
+        'Support': 12,
+        'Landmark': 13,
     };
 
     return pois.sort((a, b) => {
@@ -171,31 +183,28 @@ const masjidilHaramBuildings = ${JSON.stringify(buildings, null, 4)};
     }
 }
 
+
 function main() {
     console.log('='.repeat(60));
-    console.log('OSM Data Merge Tool (Node.js)');
+    console.log('OSM Data Gen Tool (Node.js)');
     console.log('='.repeat(60));
 
     try {
-        // Load data
-        const existingPOIs = loadExistingData();
+        // Load Fresh OSM Data
         const osmPOIs = loadJSON(OSM_DATA_FILE);
         const osmRoads = loadJSON(OSM_ROADS_FILE);
         const osmBuildings = loadJSON(OSM_BUILDINGS_FILE);
 
-        console.log(`\nLoaded OSM Data:`);
+        console.log(`\nLoaded Fresh OSM Data:`);
         console.log(`  POIs: ${osmPOIs.length}`);
         console.log(`  Roads: ${osmRoads.length}`);
         console.log(`  Buildings: ${osmBuildings.length}`);
 
-        // Merge POIs (Roads and Buildings are just added as new layers)
-        const mergedPOIs = mergePOIs(existingPOIs, osmPOIs);
-
-        // Save
-        saveAllData(mergedPOIs, osmRoads, osmBuildings);
+        // Save (Overwrite)
+        saveAllData(osmPOIs, osmRoads, osmBuildings);
 
         console.log('\n' + '='.repeat(60));
-        console.log('Merge Complete!');
+        console.log('Generation Complete!');
         console.log('='.repeat(60));
 
     } catch (error) {

@@ -76,21 +76,29 @@
                 right: 0;
                 bottom: 0;
                 width: 100%;
-                height: 50vh;
-                /* Bottom sheet style */
+                height: 70vh;
                 border-radius: 24px 24px 0 0;
                 border-bottom: none;
                 border-left: none;
                 border-right: none;
+                transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
             }
 
             .sidebar-header {
                 padding: 15px 20px;
             }
 
+            .sidebar-header h1 {
+                font-size: 1.2rem;
+            }
+
             .routing-container {
                 display: block;
-                /* Always show routing on mobile if active */
+            }
+
+            .sidebar-content {
+                padding: 15px;
+                -webkit-overflow-scrolling: touch;
             }
         }
 
@@ -352,14 +360,63 @@
             color: var(--bg-dark) !important;
         }
 
-        /* Responsive */
+        /* Mobile Toggle Button */
+        .sidebar-toggle {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2001;
+            background: rgba(15, 23, 42, 0.95);
+            color: var(--secondary);
+            border: 1px solid var(--secondary);
+            border-radius: 50px;
+            padding: 12px 24px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s;
+        }
+
+        .sidebar-toggle i {
+            margin-right: 8px;
+        }
+
+        .sidebar-toggle:active {
+            transform: translateX(-50%) scale(0.95);
+        }
+
+        /* Mobile Drag Handle */
+        .drag-handle {
+            display: none;
+            width: 40px;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 3px;
+            margin: 10px auto 0;
+        }
+
         @media (max-width: 768px) {
-            #custom-sidebar {
-                width: calc(100% - 40px);
-                bottom: auto;
-                height: 40%;
-                top: auto;
-                bottom: 20px;
+            .sidebar-toggle {
+                display: flex;
+                align-items: center;
+            }
+
+            .drag-handle {
+                display: block;
+            }
+
+            #custom-sidebar.mobile-hidden {
+                transform: translateY(100%);
+                pointer-events: none;
+            }
+
+            #custom-sidebar.mobile-visible {
+                transform: translateY(0);
             }
         }
 
@@ -481,7 +538,13 @@
 
 <body>
 
+    <!-- Mobile Toggle Button -->
+    <button class="sidebar-toggle" id="sidebarToggle" onclick="toggleMobileSidebar()">
+        <i class="fa fa-map-location-dot"></i> Menu Peta
+    </button>
+
     <div id="custom-sidebar">
+        <div class="drag-handle" id="dragHandle"></div>
         <div class="sidebar-header">
             <h1 style="display: flex; align-items: center;">
                 <a href="index.html"
@@ -575,12 +638,36 @@
 
     <!-- Data & Scripts -->
     <script src="masjidil-haram-data.js"></script>
-    <script src="haram-routing-graph.js"></script>
+    <script src="osm_data/haram-routing-graph-v2.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <!-- MarkerCluster JS -->
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 
     <script>
+        // --- Mobile Sidebar Toggle ---
+        function toggleMobileSidebar() {
+            const sidebar = document.getElementById('custom-sidebar');
+            const toggle = document.getElementById('sidebarToggle');
+
+            if (sidebar.classList.contains('mobile-hidden')) {
+                sidebar.classList.remove('mobile-hidden');
+                sidebar.classList.add('mobile-visible');
+                toggle.innerHTML = '<i class="fa fa-xmark"></i> Tutup';
+            } else {
+                sidebar.classList.add('mobile-hidden');
+                sidebar.classList.remove('mobile-visible');
+                toggle.innerHTML = '<i class="fa fa-map-location-dot"></i> Menu Peta';
+            }
+        }
+
+        // Initialize mobile state on load
+        (function () {
+            if (window.innerWidth <= 768) {
+                const sidebar = document.getElementById('custom-sidebar');
+                sidebar.classList.add('mobile-hidden');
+            }
+        })();
+
         // --- State Navigasi ---
         let startPoint = null;
         let endPoint = null;
@@ -650,6 +737,7 @@
             navigationSteps = generateInstructions(currentPath);
             document.getElementById('nav-panel').style.display = 'block';
             document.getElementById('custom-sidebar').style.display = 'none';
+            document.getElementById('sidebarToggle').style.display = 'none';
             map.locate({ watch: true, enableHighAccuracy: true });
             updateNavigationUI(0);
         }
@@ -658,7 +746,12 @@
             navigationActive = false;
             map.stopLocate();
             document.getElementById('nav-panel').style.display = 'none';
-            document.getElementById('custom-sidebar').style.display = 'block';
+            document.getElementById('custom-sidebar').style.display = '';
+            if (window.innerWidth <= 768) {
+                document.getElementById('sidebarToggle').style.display = 'flex';
+                document.getElementById('custom-sidebar').classList.add('mobile-hidden');
+                document.getElementById('sidebarToggle').innerHTML = '<i class="fa fa-map-location-dot"></i> Menu Peta';
+            }
         }
 
         function updateNavigationUI(stepIdx) {
@@ -850,7 +943,12 @@
             'Landmark': '#e74c3c',       // Red
             'Medical': '#e67e22',        // Orange
             'Support': '#475569',        // Slate
-            'Hotel': '#8e44ad'           // Purple
+            'Hotel': '#8e44ad',          // Purple
+            'W C': '#06b6d4',            // Cyan
+            'Zamzam/Water': '#3b82f6',   // Blue
+            'Escalator': '#ec4899',      // Pink
+            'Elevator': '#8b5cf6',       // Violet
+            'Stairs': '#f97316'          // Orange
         };
 
         const markersLayer = L.layerGroup();
