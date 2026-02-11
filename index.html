@@ -23,6 +23,50 @@
 </head>
 
 <body>
+    <!-- Premium Lock Screen -->
+    <div id="site-lock">
+        <div class="lock-card">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🗝️</div>
+            <h2>Kunci Ibadah</h2>
+            <p>Silakan masukkan kunci untuk membuka panduan Al Haramain.</p>
+            <div class="lock-input-group">
+                <input type="text" id="site-key" class="lock-input" placeholder="Masukkan kunci..." autocomplete="off">
+                <div id="lock-error" class="lock-error">Kunci salah, silakan coba lagi.</div>
+            </div>
+            <button onclick="checkKey()" class="lock-btn">Buka Panduan</button>
+        </div>
+    </div>
+
+    <script>
+        function checkKey() {
+            const input = document.getElementById('site-key').value.trim().toLowerCase();
+            const lock = document.getElementById('site-lock');
+            const error = document.getElementById('lock-error');
+
+            if (input === 'al-fatihah') {
+                lock.classList.add('unlocked');
+                sessionStorage.setItem('site_unlocked', 'true');
+                triggerHaptic(50);
+            } else {
+                error.classList.add('show');
+                document.getElementById('site-key').value = '';
+                triggerHaptic([50, 50, 50]);
+                setTimeout(() => error.classList.remove('show'), 3000);
+            }
+        }
+
+        // Handle Enter key
+        document.getElementById('site-key')?.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') checkKey();
+        });
+
+        // Check if already unlocked in this session
+        document.addEventListener('DOMContentLoaded', () => {
+            if (sessionStorage.getItem('site_unlocked') === 'true') {
+                document.getElementById('site-lock').style.display = 'none';
+            }
+        });
+    </script>
     <div id="toast" class="toast">Selamat Datang di Panduan Umrah</div>
 
     <header class="header">

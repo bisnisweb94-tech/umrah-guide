@@ -7,6 +7,7 @@ const sendChatBtn = document.querySelector(".chat-input span");
 let userMessage = null;
 const inputInitHeight = chatInput.scrollHeight;
 let chatHistory = [];
+let currentProvider = "claude"; // Default provider (Claude 3.5 Sonnet)
 
 const createChatLi = (message, className) => {
     const chatLi = document.createElement("li");
@@ -24,56 +25,68 @@ const linkify = (text) => {
     });
 }
 
+const getSystemPrompt = (context) => {
+    return `Kamu adalah IslamAI, asisten Islami yang hangat, empati, dan bijaksana. 
+Sampaikan jawaban HANYA berdasarkan konteks berikut:
+${context || "Gunakan pengetahuan umum Islami jika konteks tidak spesifik, namun utamakan rujukan IslamQA."}
+
+ATURAN:
+1. Santun & Menyejukkan.
+2. Sertakan nomor fatwa/URL jika ada di konteks.
+3. Jangan mengarang informasi.`;
+}
+
 const generateResponse = async (chatElement) => {
     const messageElement = chatElement.querySelector("p");
 
-    // Prepare messages for the API
-    // Convert current chat history to format expected by API
-    const apiMessages = chatHistory.map(msg => ({
-        role: msg.role === 'model' ? 'assistant' : 'user',
-        content: msg.parts[0].text
-    }));
-
     try {
-
-        // Get relevant context from local RAG (if available)
         let context = "";
         if (typeof islamQARetriever !== 'undefined') {
-            try {
-                context = await islamQARetriever.getContext(userMessage);
-            } catch (err) {
-                console.warn("Local RAG failed:", err);
-            }
+            context = await islamQARetriever.getContext(userMessage, 3);
         }
 
-        const response = await fetch('/api/chat', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                messages: apiMessages,
-                provider: 'gemini', // Default to Gemini
-                context: context
-            })
-        });
+        // 1. CLAUDE via PUTER (Frontend)
+        if (currentProvider === "claude") {
+            const messages = [{ role: "system", content: getSystemPrompt(context) }];
+            chatHistory.forEach(msg => {
+                messages.push({
+                    role: msg.role === "model" ? "assistant" : "user",
+                    content: msg.parts[0].text
+                });
+            });
 
-        const data = await response.json();
-
-        if (!response.ok) {
-            throw new Error(data.error || 'Terjadi kesalahan pada server');
+            const response = await puter.ai.chat(messages, { model: 'claude-3.5-sonnet' });
+            const responseText = response.message.content;
+            messageElement.innerHTML = linkify(responseText.trim());
+            chatHistory.push({ role: "model", parts: [{ text: responseText }] });
         }
+        // 2. OTHER PROVIDERS via BACKEND
+        else {
+            const apiMessages = chatHistory.map(msg => ({
+                role: msg.role === 'model' ? 'assistant' : 'user',
+                content: msg.parts[0].text
+            }));
 
-        const responseText = data.message.content;
-        messageElement.innerHTML = linkify(responseText.trim());
-        chatHistory.push({ role: "model", parts: [{ text: responseText }] });
+            const response = await fetch('/api/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    messages: apiMessages,
+                    provider: currentProvider,
+                    context: context
+                })
+            });
 
-        // Keep history manageable
-        if (chatHistory.length > 20) chatHistory = chatHistory.slice(-20);
+            const data = await response.json();
+            if (!response.ok) throw new Error(data.error || 'Server Error');
 
+            const responseText = data.message.content;
+            messageElement.innerHTML = linkify(responseText.trim());
+            chatHistory.push({ role: "model", parts: [{ text: responseText }] });
+        }
     } catch (error) {
-        console.error("Chat API Error:", error);
-        messageElement.textContent = "Maaf, terjadi kesalahan saat menghubungi server. Mohon coba lagi nanti.";
+        console.error("Chat Error:", error);
+        messageElement.textContent = "Maaf, terjadi kesalahan. Mohon coba lagi.";
         messageElement.classList.add("error");
     } finally {
         chatbox.scrollTo(0, chatbox.scrollHeight);
@@ -98,7 +111,17 @@ const handleChat = () => {
     }, 600);
 }
 
-// Event Listeners
+// AI Selector Click Handler
+document.addEventListener("click", (e) => {
+    const option = e.target.closest(".ai-option");
+    if (option) {
+        document.querySelectorAll(".ai-option").forEach(opt => opt.classList.remove("active"));
+        option.classList.add("active");
+        currentProvider = option.dataset.provider;
+        console.log(`Switched to ${currentProvider}`);
+    }
+});
+
 chatInput.addEventListener("input", () => {
     chatInput.style.height = `${inputInitHeight}px`;
     chatInput.style.height = `${chatInput.scrollHeight}px`;

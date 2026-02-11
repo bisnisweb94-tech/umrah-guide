@@ -37,8 +37,7 @@ export default async function handler(req, res) {
 }
 
 async function generateEmbedding(text) {
-    const keys = process.env.GEMINI_API_KEYS ? process.env.GEMINI_API_KEYS.split(',') : [process.env.GEMINI_API_KEY];
-    const GEMINI_API_KEY = keys[Math.floor(Math.random() * keys.length)];
+    const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
     const url = `https://generativelanguage.googleapis.com/v1beta/models/text-embedding-004:embedContent?key=${GEMINI_API_KEY}`;
 
     const response = await fetch(url, {
@@ -76,44 +75,78 @@ async function searchVectorDB(embedding) {
 }
 
 function constructSystemPrompt(context) {
-    return `Kamu adalah IslamAI, asisten Islami yang hangat, empati, dan bijaksana. 
-Tugas utama kamu adalah menjawab pertanyaan pengguna HANYA berdasarkan konteks yang diberikan di bawah ini.
-
-Sangat Penting:
-1. Jika konteks berisi teks dalam BAHASA ARAB, harap terjemahkan maknanya ke dalam BAHASA INDONESIA yang mudah dipahami.
-2. Selalu sertakan referensi nomor fatwa atau URL yang ada di konteks.
-3. Gunakan gaya bahasa yang santun dan menyejukkan.
-4. Jika informasi tidak ada di konteks, katakan: "Mohon maaf, saya belum menemukan informasi spesifik mengenai hal tersebut di basis pengetahuan saya. Silakan merujuk langsung ke islamqa.info untuk jawaban yang lebih lengkap."
-
-=== KONTEKS PENGETAHUAN ===
+    return `Kamu adalah IslamAI, asisten Islami yang hangat dan bijaksana.
+Sampaikan jawaban HANYA berdasarkan konteks berikut:
 ${context}
-=== AKHIR KONTEKS ===`;
+
+Jika tidak ada di konteks, katakan tidak tahu. Selalu sertakan rujukan dari teks tersebut.`;
 }
 
 async function callAIProvider(provider, systemPrompt, messages) {
-    // Basic implementation for Gemini
-    const keys = process.env.GEMINI_API_KEYS ? process.env.GEMINI_API_KEYS.split(',') : [process.env.GEMINI_API_KEY];
-    const GEMINI_API_KEY = keys[Math.floor(Math.random() * keys.length)];
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${GEMINI_API_KEY}`;
+    // 1. GEMINI IMPLEMENTATION
+    if (provider === 'gemini') {
+        const keys = process.env.GEMINI_API_KEYS ? process.env.GEMINI_API_KEYS.split(',') : [process.env.GEMINI_API_KEY];
+        const GEMINI_API_KEY = keys[Math.floor(Math.random() * keys.length)];
+        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${GEMINI_API_KEY}`;
 
-    const contents = messages.map(m => ({
-        role: m.role === 'user' ? 'user' : 'model',
-        parts: [{ text: m.content }]
-    }));
+        const contents = messages.map(m => ({
+            role: m.role === 'user' ? 'user' : 'model',
+            parts: [{ text: m.content }]
+        }));
 
-    const response = await fetch(url, {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                system_instruction: { parts: [{ text: systemPrompt }] },
+                contents: contents
+            })
+        });
+
+        const data = await response.json();
+        if (data.error) throw new Error(data.error.message);
+        return { message: { content: data.candidates[0].content.parts[0].text } };
+    }
+
+    // 2. OPENAI-COMPATIBLE IMPLEMENTATION (Groq, GPT-4o)
+    let config = {
+        model: "gpt-4o",
+        key: process.env.GPT4O_API_KEY,
+        url: "https://models.inference.ai.azure.com/chat/completions"
+    };
+
+    if (provider === 'groq') {
+        config = {
+            model: "llama-3.3-70b-versatile",
+            key: process.env.GROQ_API_KEY,
+            url: "https://api.groq.com/openai/v1/chat/completions"
+        };
+    }
+
+    if (!config.key) {
+        throw new Error(`API Key untuk ${provider} belum dikonfigurasi di environment variables.`);
+    }
+
+    const response = await fetch(config.url, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+            'Authorization': `Bearer ${config.key}`,
+            'Content-Type': 'application/json'
+        },
         body: JSON.stringify({
-            system_instruction: { parts: [{ text: systemPrompt }] },
-            contents: contents
+            model: config.model,
+            messages: [
+                { role: 'system', content: systemPrompt },
+                ...messages.map(m => ({
+                    role: m.role === 'assistant' ? 'assistant' : 'user',
+                    content: m.content
+                }))
+            ],
+            temperature: 0.7
         })
     });
 
     const data = await response.json();
-    return {
-        message: {
-            content: data.candidates[0].content.parts[0].text
-        }
-    };
+    if (data.error) throw new Error(data.error.message || JSON.stringify(data.error));
+    return { message: { content: data.choices[0].message.content } };
 }
