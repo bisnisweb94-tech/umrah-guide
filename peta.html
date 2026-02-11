@@ -48,12 +48,208 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
             border-radius: 8px;
             transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            gap: 12px;
+            background: white;
+            border-radius: 8px;
+            z-index: 1001;
+            /* Higher than chips */
+            position: relative;
+        }
+
+        .search-input-wrapper {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            background: #f1f3f4;
+            border-radius: 8px;
+            padding: 10px 14px;
+            gap: 10px;
+        }
+
+        .search-input-wrapper input {
+            flex: 1;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 16px;
+            color: #202124;
+            min-width: 0;
+            /* Fix flex child overflow */
+        }
+
+        .search-input-wrapper i {
+            color: #5f6368;
+        }
+
+        /* Directions Box - Hidden by default */
+        .directions-box {
+            display: none;
+            padding: 0 16px 16px;
+            background: white;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .directions-box.active {
+            display: block;
+        }
+
+        .dir-input-group {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .dir-dots {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 12px;
+            width: 20px;
+        }
+
+        .dot-start {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid #5f6368;
+        }
+
+        .dot-line {
+            width: 2px;
+            height: 24px;
+            background: #dadce0;
+            margin: 4px 0;
+            flex: 1;
+        }
+
+        .dot-end {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid #ea4335;
+            background: #ea4335;
+        }
+
+        .dir-inputs {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .dir-input-wrapper {
+            background: #f1f3f4;
+            border-radius: 8px;
+            padding: 8px 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .dir-input-wrapper input {
+            flex: 1;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 14px;
+            color: #202124;
+        }
+
+        .dir-input-wrapper .pick-btn {
+            background: none;
+            border: none;
+            color: #5f6368;
+            cursor: pointer;
+            padding: 4px;
+            font-size: 14px;
+        }
+
+        .dir-input-wrapper .pick-btn:hover {
+            color: #1a73e8;
+        }
+
+        .dir-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 8px;
+            border-top: 1px solid #f1f3f4;
+        }
+
+        .nav-btn-start {
+            background: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 18px;
+            padding: 8px 16px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-btn-start:disabled {
+            background: #dadce0;
+            color: white;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+
+        /* ========== OVERLAYS & MODALS ========== */
+        .nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 16px;
+            background: #34a853;
+            /* Navigation Green */
+            color: white;
+            z-index: 1100;
+            /* Highest priority */
+            display: none;
+            /* Hidden by default */
+            flex-direction: column;
+            gap: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            align-items: center;
+        }
+
+        .nav-overlay.active {
+            display: flex;
+        }
+
+        .landmark-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2000;
+            display: none;
+            /* Hidden by default */
+            align-items: center;
+            justify-content: center;
+        }
+
+        .landmark-modal.active {
+            display: flex;
         }
 
         .category-chips {
             position: fixed;
-            top: 76px;
-            /* Below search box on mobile */
+            top: 84px;
             left: 12px;
             right: 12px;
             z-index: 999;
@@ -63,6 +259,7 @@
             overflow-x: auto;
             scrollbar-width: none;
             transition: all 0.3s ease;
+            pointer-events: auto;
         }
 
         .category-chips::-webkit-scrollbar {
@@ -323,36 +520,58 @@
             .map-header {
                 right: auto;
                 width: 392px;
+                /* Fixed width for search card */
+                flex-direction: column;
+                background: none;
+                /* Let children handle background */
+                box-shadow: none;
+                /* Shadow on individual elements */
+            }
+
+            .search-box {
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                margin-bottom: 8px;
             }
 
             .category-chips {
-                top: 20px;
-                left: 420px;
+                position: absolute;
+                top: 12px;
+                /* Align with search box top */
+                left: 408px;
+                /* Right of search box (392 + 16 gap) */
                 right: auto;
-                max-width: calc(100vw - 440px);
+                max-width: calc(100vw - 420px);
                 padding: 0;
+                margin: 0;
+                background: none;
+                border-radius: 0;
+                overflow-x: auto;
+                pointer-events: auto;
+            }
+
+            .category-chips .chip {
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
             }
 
             .floating-btns {
-                top: 76px;
-                /* Right below search box */
-                bottom: auto;
+                top: auto;
+                bottom: 24px;
+                /* Keep at bottom left even on desktop */
                 left: 12px;
                 flex-direction: column;
             }
 
             .bottom-sheet {
-                top: 130px;
-                /* Below floating buttons */
+                top: 80px;
+                /* Below search box */
                 left: 12px;
-                bottom: 24px;
+                bottom: auto;
                 right: auto;
                 width: 392px;
-                max-height: calc(100vh - 160px);
+                max-height: calc(100vh - 100px);
                 border-radius: 8px;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
                 transform: translateX(-450px);
-                /* Hidden by default */
             }
 
             .bottom-sheet.expanded {
@@ -1310,74 +1529,171 @@
             document.getElementById('floatingBtns').style.display = '';
         }
 
-        function updateNavigationUI(stepIdx) {
-            if (stepIdx >= navigationSteps.length) return;
-            const step = navigationSteps[stepIdx];
-            document.getElementById('navMainText').innerText = step.instruction;
-            document.getElementById('navIcon').innerHTML = `<i class="fa ${step.icon}"></i>`;
-            document.getElementById('navDistance').innerText = `${Math.round(step.distance)} m`;
-        }
 
-        // ========== OFFLINE ROUTING (DIJKSTRA) ==========
+
+        // ========== NAVIGATION LOGIC ==========
+
+        // Priority Queue for Dijkstra
         class PriorityQueue {
-            constructor() { this.items = []; }
-            enqueue(element, priority) {
-                const qe = { element, priority };
-                let added = false;
-                for (let i = 0; i < this.items.length; i++) {
-                    if (this.items[i].priority > qe.priority) {
-                        this.items.splice(i, 0, qe);
-                        added = true;
-                        break;
-                    }
-                }
-                if (!added) this.items.push(qe);
+            constructor() { this.values = []; }
+            enqueue(val, priority) {
+                this.values.push({ val, priority });
+                this.sort();
             }
-            dequeue() { return this.items.shift(); }
-            isEmpty() { return this.items.length === 0; }
+            dequeue() { return this.values.shift(); }
+            sort() { this.values.sort((a, b) => a.priority - b.priority); }
         }
 
-        function findNearestNode(lat, lon) {
-            let minDist = Infinity;
-            let closestNode = null;
-            if (typeof routingGraph === 'undefined') return null;
-            for (const id in routingGraph.nodes) {
-                const coords = routingGraph.nodes[id];
-                const d = (lat - coords[0]) ** 2 + (lon - coords[1]) ** 2;
-                if (d < minDist) { minDist = d; closestNode = id; }
-            }
-            return closestNode;
-        }
-
+        // Dijkstra Algorithm
         function dijkstra(startNode, endNode) {
+            const nodes = routingGraph.nodes;
+            const adjacency = routingGraph.adj;
+
             const distances = {};
             const previous = {};
-            const queue = new PriorityQueue();
-            distances[startNode] = 0;
-            queue.enqueue(startNode, 0);
-            const nodes = routingGraph.nodes;
-            const adj = routingGraph.adj;
+            const pq = new PriorityQueue();
 
-            while (!queue.isEmpty()) {
-                const { element: current } = queue.dequeue();
-                if (current === endNode) {
-                    const path = [];
-                    let u = endNode;
-                    while (u) { path.unshift(nodes[u]); u = previous[u]; }
-                    return path;
+            // Initialize
+            for (let node in nodes) {
+                if (node === startNode) {
+                    distances[node] = 0;
+                    pq.enqueue(node, 0);
+                } else {
+                    distances[node] = Infinity;
+                    pq.enqueue(node, Infinity);
                 }
-                if (!adj[current]) continue;
-                for (const neighbor in adj[current]) {
-                    const weight = adj[current][neighbor];
-                    const alt = distances[current] + weight;
-                    if (alt < (distances[neighbor] ?? Infinity)) {
-                        distances[neighbor] = alt;
-                        previous[neighbor] = current;
-                        queue.enqueue(neighbor, alt);
+                previous[node] = null;
+            }
+
+            while (pq.values.length) {
+                let smallest = pq.dequeue().val;
+                if (smallest === endNode) {
+                    // Build path
+                    const path = [];
+                    while (previous[smallest]) {
+                        path.push(nodes[smallest]);
+                        smallest = previous[smallest];
+                    }
+                    path.push(nodes[smallest]); // Add start
+                    return path.reverse();
+                }
+
+                if (smallest || distances[smallest] !== Infinity) {
+                    for (let neighbor in adjacency[smallest]) {
+                        let nextNode = neighbor;
+                        let weight = adjacency[smallest][neighbor];
+                        let candidate = distances[smallest] + weight;
+
+                        if (candidate < distances[nextNode]) {
+                            distances[nextNode] = candidate;
+                            previous[nextNode] = smallest;
+                            pq.enqueue(nextNode, candidate);
+                        }
                     }
                 }
             }
             return null;
+        }
+
+        function findNearestNode(lat, lng) {
+            let minC = Infinity;
+            let nearest = null;
+            for (let node in routingGraph.nodes) {
+                const [nLat, nLng] = routingGraph.nodes[node];
+                const d = Math.sqrt((lat - nLat) ** 2 + (lng - nLng) ** 2);
+                if (d < minC) {
+                    minC = d;
+                    nearest = node;
+                }
+            }
+            return nearest;
+        }
+
+        function startNavigation() {
+            if (!currentPath || currentPath.length === 0) return;
+            navigationActive = true;
+            document.getElementById('navOverlay').classList.add('active');
+
+            // Hide other UI elements to focus on navigation
+            document.getElementById('mapHeader').style.display = 'none';
+            document.getElementById('categoryChips').style.display = 'none';
+            document.getElementById('floatingBtns').style.display = 'none';
+
+            // Generate initial instructions
+            generateInstructions(currentPath);
+            updateNavigationUI(0);
+
+            // Zoom to start
+            if (currentPath[0]) {
+                map.flyTo(currentPath[0], 19, { animate: true, duration: 1.5 });
+            }
+        }
+
+        function stopNavigation() {
+            navigationActive = false;
+            document.getElementById('navOverlay').classList.remove('active');
+
+            // Restore UI
+            document.getElementById('mapHeader').style.display = '';
+            document.getElementById('categoryChips').style.display = '';
+            document.getElementById('floatingBtns').style.display = '';
+
+            // Zoom back to show route
+            if (routeLayer) map.fitBounds(routeLayer.getBounds(), { padding: [50, 50] });
+        }
+
+        function updateNavigationUI(stepIdx) {
+            const step = navigationSteps[stepIdx] || navigationSteps[navigationSteps.length - 1];
+            if (step) {
+                document.getElementById('navMainText').innerText = step.main;
+                document.getElementById('navSubText').innerText = step.sub;
+                document.getElementById('navIcon').innerHTML = `<i class="fa ${step.icon}"></i>`;
+
+                // Calculate remaining distance
+                if (endPoint) {
+                    const dist = map.distance(map.getCenter(), endPoint);
+                    document.getElementById('navDistance').innerText = Math.round(dist) + " m";
+                }
+            }
+        }
+
+        function generateInstructions(path) {
+            navigationSteps = [];
+            // Simple generic instructions based on path turns
+            // This is a simplified version. Real turn-by-turn needs bearing calculation.
+
+            for (let i = 0; i < path.length - 1; i++) {
+                const p1 = path[i];
+                const p2 = path[i + 1];
+                const bearing = calculateBearing(p1[0], p1[1], p2[0], p2[1]);
+
+                let instruction = { main: "Lurus terus", sub: "Ikuti jalur", icon: "fa-arrow-up" };
+
+                // Detect turns (simplified)
+                if (i > 0) {
+                    const p0 = path[i - 1];
+                    const prevBearing = calculateBearing(p0[0], p0[1], p1[0], p1[1]);
+                    const diff = (bearing - prevBearing + 360) % 360;
+
+                    if (diff > 45 && diff < 135) {
+                        instruction = { main: "Belok Kanan", sub: "Dalam 10m", icon: "fa-turn-right" };
+                    } else if (diff > 225 && diff < 315) {
+                        instruction = { main: "Belok Kiri", sub: "Dalam 10m", icon: "fa-turn-left" };
+                    }
+                }
+
+                navigationSteps.push(instruction);
+            }
+            // Final step
+            navigationSteps.push({ main: "Tiba di tujuan", sub: "Lokasi di sebelah Anda", icon: "fa-check-circle" });
+        }
+
+        function calculateBearing(lat1, lon1, lat2, lon2) {
+            const y = Math.sin(lon2 - lon1) * Math.cos(lat2);
+            const x = Math.cos(lat1) * Math.sin(lat2) -
+                Math.sin(lat1) * Math.cos(lat2) * Math.cos(lon2 - lon1);
+            const brng = Math.atan2(y, x) * 180 / Math.PI;
+            return (brng + 360) % 360;
         }
 
         function calculateRoute() {
