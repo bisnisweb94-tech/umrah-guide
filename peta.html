@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Peta Premium Masjidil Haram - AL HARAMAIN</title>
 
+    <!-- Hide lock instantly if already unlocked (before paint) -->
+    <script>
+        if (localStorage.getItem('site_unlocked') === 'true') {
+            document.documentElement.classList.add('unlocked');
+        }
+    </script>
+    <style>html.unlocked #site-lock { display: none !important; }</style>
+
+    <!-- PWA Standalone -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Al Haramain">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#1a3a2a">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="kaaba_illustration_1770741171195.png">
+
     <!-- Leaflet & GIS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
@@ -209,16 +226,13 @@
             top: 0;
             left: 0;
             right: 0;
-            padding: 16px;
+            padding: 16px 20px;
             background: #34a853;
-            /* Navigation Green */
             color: white;
             z-index: 1100;
-            /* Highest priority */
             display: none;
-            /* Hidden by default */
-            flex-direction: column;
-            gap: 8px;
+            flex-direction: row;
+            gap: 16px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
             border-bottom-left-radius: 16px;
             border-bottom-right-radius: 16px;
@@ -247,19 +261,70 @@
             display: flex;
         }
 
-        .category-chips {
+        .chips-wrapper {
             position: fixed;
             top: 84px;
-            left: 12px;
-            right: 12px;
+            /* Below search box on mobile */
+            left: 0;
+            right: 0;
             z-index: 999;
+            height: 48px;
+            /* Explicit height for layout stability */
+            display: flex;
+            align-items: center;
+            pointer-events: none;
+            /* Allow clicks to pass through wrapper */
+        }
+
+        .category-chips {
             display: flex;
             gap: 8px;
-            padding: 4px 0 12px;
             overflow-x: auto;
+            padding: 0 12px;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            -ms-overflow-style: none;
             scrollbar-width: none;
-            transition: all 0.3s ease;
+            scroll-behavior: smooth;
             pointer-events: auto;
+            /* Re-enable clicks on chips */
+        }
+
+        .category-chips::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Gradient Fades for Google Maps Effect */
+        .scroll-fade-left,
+        .scroll-fade-right {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 40px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1000;
+        }
+
+        .scroll-fade-left {
+            left: 0;
+            background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .scroll-fade-right {
+            right: 0;
+            background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        /* Classes to toggle fades */
+        .chips-wrapper.can-scroll-left .scroll-fade-left {
+            opacity: 1;
+        }
+
+        .chips-wrapper.can-scroll-right .scroll-fade-right {
+            opacity: 1;
         }
 
         .category-chips::-webkit-scrollbar {
@@ -533,24 +598,38 @@
                 margin-bottom: 8px;
             }
 
-            .category-chips {
-                position: absolute;
+            .chips-wrapper {
                 top: 12px;
-                /* Align with search box top */
-                left: 408px;
-                /* Right of search box (392 + 16 gap) */
-                right: auto;
-                max-width: calc(100vw - 420px);
+                left: 416px;
+                right: 12px;
+                height: auto;
+            }
+
+            .category-chips {
                 padding: 0;
-                margin: 0;
-                background: none;
-                border-radius: 0;
-                overflow-x: auto;
-                pointer-events: auto;
             }
 
             .category-chips .chip {
                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            }
+
+            .scroll-fade-left,
+            .scroll-fade-right {
+                display: none;
+            }
+
+            /* Mask-based fade: fades chips themselves, works over any background */
+            .chips-wrapper.can-scroll-right .category-chips {
+                -webkit-mask-image: linear-gradient(to right, black 0%, black calc(100% - 40px), transparent 100%);
+                mask-image: linear-gradient(to right, black 0%, black calc(100% - 40px), transparent 100%);
+            }
+            .chips-wrapper.can-scroll-left .category-chips {
+                -webkit-mask-image: linear-gradient(to right, transparent 0%, black 40px, black 100%);
+                mask-image: linear-gradient(to right, transparent 0%, black 40px, black 100%);
+            }
+            .chips-wrapper.can-scroll-left.can-scroll-right .category-chips {
+                -webkit-mask-image: linear-gradient(to right, transparent 0%, black 40px, black calc(100% - 40px), transparent 100%);
+                mask-image: linear-gradient(to right, transparent 0%, black 40px, black calc(100% - 40px), transparent 100%);
             }
 
             .floating-btns {
@@ -578,6 +657,672 @@
                 transform: translateX(0);
             }
         }
+
+        /* MISSING LOCATION LIST STYLES */
+        .list-category {
+            border-bottom: 1px solid #f1f3f4;
+        }
+
+        .category-toggle {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 16px;
+            background: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            color: #202124;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .category-toggle:hover {
+            background: #f8f9fa;
+        }
+
+        .category-items {
+            display: block;
+        }
+
+        .category-items.collapsed {
+            display: none;
+        }
+
+        .location-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .location-item:hover {
+            background: #f1f3f4;
+        }
+
+        .item-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 14px;
+            flex-shrink: 0;
+            color: white;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .item-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .item-info h3 {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 500;
+            color: #202124;
+            margin-bottom: 2px;
+            line-height: 1.4;
+        }
+
+        .item-info .arabic {
+            font-family: 'Amiri', serif;
+            font-size: 15px;
+            color: #5f6368;
+            margin-top: 2px;
+            line-height: 1.4;
+        }
+
+        /* Holy Site Pills */
+        .holy-site-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 0 16px 12px;
+        }
+
+        .holy-site-pill {
+            padding: 6px 12px;
+            background: #f1f3f4;
+            border: 1px solid white;
+            border-radius: 16px;
+            font-size: 13px;
+            color: #3c4043;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+        }
+
+        .holy-site-pill:hover {
+            background: #e8f0fe;
+            color: #1a73e8;
+        }
+
+        /* Layer Control Positioning ("Rada Bawah") */
+        .leaflet-top.leaflet-right {
+            top: 70px !important;
+            /* Move down below header/search */
+        }
+
+        /* Mobile Adjustment for Layer Control */
+        @media (max-width: 767px) {
+            .leaflet-top.leaflet-right {
+                top: 130px !important;
+            }
+        }
+
+        /* ========== LOCK SCREEN ========== */
+        #site-lock {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, #1a3a2a 0%, #0d1f17 100%);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.5s, visibility 0.5s;
+        }
+
+        #site-lock.unlocked {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .lock-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            max-width: 360px;
+            width: 90%;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .lock-card h2 {
+            margin-bottom: 0.5rem;
+            color: #202124;
+        }
+
+        .lock-card p {
+            color: #5f6368;
+            font-size: 14px;
+            margin-bottom: 1.5rem;
+        }
+
+        .lock-input-group {
+            margin-bottom: 1rem;
+        }
+
+        .lock-input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #dadce0;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .lock-input:focus {
+            border-color: #1a73e8;
+        }
+
+        .lock-error {
+            color: #ea4335;
+            font-size: 13px;
+            margin-top: 8px;
+            display: none;
+        }
+
+        .lock-error.show {
+            display: block;
+        }
+
+        .lock-btn {
+            background: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s;
+        }
+
+        .lock-btn:hover {
+            background: #1557b0;
+        }
+
+        /* ========== BACK BUTTON ========== */
+        .back-btn {
+            background: none;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: #5f6368;
+            font-size: 16px;
+            flex-shrink: 0;
+            transition: background 0.2s;
+        }
+
+        .back-btn:hover {
+            background: #f1f3f4;
+        }
+
+        /* ========== SEARCH RESULTS ========== */
+        .search-results.active {
+            display: block;
+        }
+
+        .search-result-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 16px;
+            cursor: pointer;
+            transition: background 0.15s;
+            gap: 12px;
+        }
+
+        .search-result-item:hover {
+            background: #f1f3f4;
+        }
+
+        .search-result-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: white;
+            font-size: 13px;
+        }
+
+        .search-result-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .search-result-info .name {
+            font-size: 14px;
+            font-weight: 500;
+            color: #202124;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .search-result-info .type {
+            font-size: 12px;
+            color: #5f6368;
+        }
+
+        /* ========== BOTTOM SHEET PARTS ========== */
+        .sheet-handle {
+            width: 36px;
+            height: 4px;
+            background: #dadce0;
+            border-radius: 2px;
+            margin: 8px auto;
+            flex-shrink: 0;
+        }
+
+        .sheet-peek {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 16px 12px;
+            border-bottom: 1px solid #f1f3f4;
+            flex-shrink: 0;
+        }
+
+        .peek-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #202124;
+        }
+
+        .peek-subtitle {
+            font-size: 13px;
+            color: #5f6368;
+            margin-top: 2px;
+        }
+
+        .sheet-close-btn {
+            background: none;
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: #5f6368;
+            font-size: 16px;
+            transition: background 0.2s;
+            flex-shrink: 0;
+        }
+
+        .sheet-close-btn:hover {
+            background: #f1f3f4;
+        }
+
+        .sheet-content {
+            flex: 1;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        /* ========== LOCATION DETAIL ========== */
+        .location-detail {
+            display: none;
+            padding: 16px;
+        }
+
+        .location-detail.active {
+            display: block;
+        }
+
+        .detail-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+
+        .detail-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .detail-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .detail-info h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #202124;
+            margin: 0 0 2px;
+        }
+
+        .detail-info .arabic {
+            font-family: 'Amiri', serif;
+            font-size: 16px;
+            color: #5f6368;
+        }
+
+        .detail-info p {
+            font-size: 13px;
+            color: #5f6368;
+            margin-top: 4px;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+            padding-top: 12px;
+            border-top: 1px solid #f1f3f4;
+        }
+
+        .action-btn {
+            flex: 1;
+            padding: 10px 16px;
+            border-radius: 20px;
+            border: none;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            transition: all 0.2s;
+        }
+
+        .action-btn.primary {
+            background: #1a73e8;
+            color: white;
+        }
+
+        .action-btn.primary:hover {
+            background: #1557b0;
+        }
+
+        .action-btn.secondary {
+            background: #f1f3f4;
+            color: #202124;
+        }
+
+        .action-btn.secondary:hover {
+            background: #e8eaed;
+        }
+
+        /* ========== CATEGORY TOGGLE ICON ========== */
+        .category-toggle .toggle-icon {
+            transition: transform 0.3s ease;
+            font-size: 12px;
+            color: #5f6368;
+        }
+
+        .category-toggle.collapsed .toggle-icon {
+            transform: rotate(-90deg);
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* ========== NAV OVERLAY CHILDREN ========== */
+        .nav-icon-large {
+            width: 48px;
+            height: 48px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            flex-shrink: 0;
+        }
+
+        .nav-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .nav-instruction {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .nav-sub-instruction {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 2px;
+        }
+
+        .nav-close-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: white;
+            font-size: 16px;
+            flex-shrink: 0;
+            transition: background 0.2s;
+        }
+
+        .nav-close-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* ========== LANDMARK MODAL ========== */
+        .landmark-modal-content {
+            background: white;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 400px;
+            max-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .landmark-modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px;
+            border-bottom: 1px solid #f1f3f4;
+        }
+
+        .landmark-modal-header h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #202124;
+            margin: 0;
+        }
+
+        .landmark-search {
+            padding: 12px 16px;
+            border-bottom: 1px solid #f1f3f4;
+        }
+
+        .landmark-search input {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #dadce0;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .landmark-search input:focus {
+            border-color: #1a73e8;
+        }
+
+        .landmark-list {
+            flex: 1;
+            overflow-y: auto;
+            max-height: 400px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .landmark-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            cursor: pointer;
+            gap: 12px;
+            transition: background 0.15s;
+        }
+
+        .landmark-item:hover {
+            background: #f1f3f4;
+        }
+
+        .landmark-item i {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #e8f0fe;
+            color: #1a73e8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 14px;
+        }
+
+        .landmark-item-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .landmark-item-info .name {
+            font-size: 14px;
+            font-weight: 500;
+            color: #202124;
+        }
+
+        .landmark-item-info .arabic {
+            font-family: 'Amiri', serif;
+            font-size: 13px;
+            color: #5f6368;
+        }
+
+        /* ========== USER LOCATION PULSE ========== */
+        .user-location-marker {
+            background: none !important;
+            border: none !important;
+        }
+
+        .pulse-dot {
+            width: 14px;
+            height: 14px;
+            background: #4285f4;
+            border: 3px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 0 rgba(66, 133, 244, 0.4);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(66, 133, 244, 0.4);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(66, 133, 244, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(66, 133, 244, 0);
+            }
+        }
+
+        /* ========== DIRECTION DROPDOWN ========== */
+        .dir-input-wrapper {
+            position: relative;
+        }
+
+        .dir-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 1010;
+            display: none;
+        }
+
+        .dir-dropdown.active {
+            display: block;
+        }
+
+        .dir-dropdown-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 12px;
+            cursor: pointer;
+            gap: 10px;
+            font-size: 13px;
+            color: #202124;
+            transition: background 0.15s;
+        }
+
+        .dir-dropdown-item:hover {
+            background: #f1f3f4;
+        }
+
+        .dir-dropdown-item i {
+            color: #5f6368;
+            font-size: 12px;
+            width: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -604,7 +1349,7 @@
 
             if (input === 'al-fatihah') {
                 lock.classList.add('unlocked');
-                sessionStorage.setItem('site_unlocked', 'true');
+                localStorage.setItem('site_unlocked', 'true');
             } else {
                 error.classList.add('show');
                 document.getElementById('site-key').value = '';
@@ -619,7 +1364,7 @@
 
         // Check if already unlocked
         document.addEventListener('DOMContentLoaded', () => {
-            if (sessionStorage.getItem('site_unlocked') === 'true') {
+            if (localStorage.getItem('site_unlocked') === 'true') {
                 document.getElementById('site-lock').style.display = 'none';
             }
         });
@@ -652,18 +1397,18 @@
                 </div>
                 <div class="dir-inputs">
                     <div class="dir-input-wrapper">
-                        <input type="text" id="startInput" placeholder="Pilih titik awal..." readonly>
-                        <button class="pick-btn" onclick="openLandmarkModal('start')" title="Pilih Landmark"><i
-                                class="fa fa-university"></i></button>
+                        <input type="text" id="startInput" placeholder="Cari titik awal..."
+                            oninput="filterDirLocations('start')" onfocus="filterDirLocations('start')">
                         <button class="pick-btn" onclick="setPickMode('start')" title="Pilih di Peta"><i
                                 class="fa fa-map-pin"></i></button>
+                        <div class="dir-dropdown" id="startDropdown"></div>
                     </div>
                     <div class="dir-input-wrapper">
-                        <input type="text" id="endInput" placeholder="Pilih tujuan..." readonly>
-                        <button class="pick-btn" onclick="openLandmarkModal('end')" title="Pilih Landmark"><i
-                                class="fa fa-university"></i></button>
+                        <input type="text" id="endInput" placeholder="Cari tujuan..."
+                            oninput="filterDirLocations('end')" onfocus="filterDirLocations('end')">
                         <button class="pick-btn" onclick="setPickMode('end')" title="Pilih di Peta"><i
                                 class="fa fa-map-pin"></i></button>
+                        <div class="dir-dropdown" id="endDropdown"></div>
                     </div>
                 </div>
             </div>
@@ -680,18 +1425,23 @@
     </div>
 
     <!-- Category Chips Outside Header for floating effect -->
-    <div class="category-chips" id="categoryChips">
-        <div class="chip active" data-category="all"><i class="fa fa-globe"></i> Semua</div>
-        <div class="chip" data-category="Holy Site"><i class="fa fa-kaaba"></i> Holy Site</div>
-        <div class="chip" data-category="Mosque"><i class="fa fa-mosque"></i> Masjid</div>
-        <div class="chip" data-category="Gate"><i class="fa fa-door-open"></i> Gerbang</div>
-        <div class="chip" data-category="Hotel"><i class="fa fa-hotel"></i> Hotel</div>
-        <div class="chip" data-category="W C"><i class="fa fa-restroom"></i> WC</div>
-        <div class="chip" data-category="Medical"><i class="fa fa-hospital"></i> Medis</div>
-        <div class="chip" data-category="Food"><i class="fa fa-utensils"></i> Makanan</div>
-        <div class="chip" data-category="Zamzam/Water"><i class="fa fa-tint"></i> Zamzam</div>
-        <div class="chip" data-category="Transportation"><i class="fa fa-bus"></i> Transportasi</div>
-        <div class="chip" data-category="Landmark"><i class="fa fa-map-marker-alt"></i> Landmark</div>
+    <!-- Category Chips Outside Header for floating effect -->
+    <div class="chips-wrapper" id="chipsWrapper">
+        <div class="category-chips" id="categoryChips">
+            <div class="chip active" data-category="all"><i class="fa fa-globe"></i> Semua</div>
+            <div class="chip" data-category="Holy Site"><i class="fa fa-kaaba"></i> Holy Site</div>
+            <div class="chip" data-category="Mosque"><i class="fa fa-mosque"></i> Masjid</div>
+            <div class="chip" data-category="Gate"><i class="fa fa-door-open"></i> Gerbang</div>
+            <div class="chip" data-category="Hotel"><i class="fa fa-hotel"></i> Hotel</div>
+            <div class="chip" data-category="W C"><i class="fa fa-restroom"></i> WC</div>
+            <div class="chip" data-category="Medical"><i class="fa fa-hospital"></i> Medis</div>
+            <div class="chip" data-category="Food"><i class="fa fa-utensils"></i> Makanan</div>
+            <div class="chip" data-category="Zamzam/Water"><i class="fa fa-tint"></i> Zamzam</div>
+            <div class="chip" data-category="Transportation"><i class="fa fa-bus"></i> Transportasi</div>
+            <div class="chip" data-category="Landmark"><i class="fa fa-map-marker-alt"></i> Landmark</div>
+        </div>
+        <div class="scroll-fade-left"></div>
+        <div class="scroll-fade-right"></div>
     </div>
 
     <!-- Apple Maps Style Navigation Overlay -->
@@ -1077,9 +1827,9 @@
                 const catIcon = categoryIcons[type] || 'fa-folder';
                 const sectionId = type.replace(/[\/ ]/g, '-');
 
-                // Header with accordion toggle
+                // Header with accordion toggle (collapsed by default)
                 html += `<div class="list-category">
-                    <button class="category-toggle" onclick="toggleSection('${sectionId}', this)">
+                    <button class="category-toggle collapsed" onclick="toggleSection('${sectionId}', this)">
                         <div class="category-header" style="margin-bottom:0;">
                             <i class="fa ${catIcon}" style="color:${color};"></i> ${label} (${grouped[type].length})
                         </div>
@@ -1088,7 +1838,7 @@
 
                 // Holy Site rendered as pills
                 if (type === 'Holy Site') {
-                    html += `<div class="category-items" id="section-${sectionId}">
+                    html += `<div class="category-items collapsed" id="section-${sectionId}">
                         <div class="holy-site-pills" style="margin-top:10px;">`;
                     grouped[type].forEach(item => {
                         html += `<div class="holy-site-pill" onclick="selectLocation('${item.properties.osm_id}')">
@@ -1100,17 +1850,22 @@
                     return;
                 }
 
-                // Regular items
-                html += `<div class="category-items" id="section-${sectionId}">`;
+                // Regular items (collapsed by default)
+                html += `<div class="category-items collapsed" id="section-${sectionId}">`;
                 grouped[type].forEach(item => {
+                    const nameEn = item.properties.name_en || item.properties.name;
+                    const nameAr = item.properties.name;
+                    // Only show Arabic if it's different and actually looks like Arabic
+                    const showArabic = nameAr && nameAr !== nameEn && /[\u0600-\u06FF]/.test(nameAr);
+
                     html += `
                         <div class="location-item" onclick="selectLocation('${item.properties.osm_id}')">
                             <div class="item-icon" style="background: ${color};">
                                 <i class="fa ${item.properties.icon}"></i>
                             </div>
                             <div class="item-info">
-                                <h3>${item.properties.name_en || item.properties.name}</h3>
-                                <div class="arabic">${item.properties.name}</div>
+                                <h3>${nameEn}</h3>
+                                ${showArabic ? `<div class="arabic">${nameAr}</div>` : ''}
                             </div>
                         </div>
                     `;
@@ -1133,9 +1888,9 @@
         }
 
         function selectLocation(osmId) {
-            // Close search results if open
-            const searchResults = document.querySelector('.search-results');
-            if (searchResults) searchResults.style.display = 'none';
+            // Close search results and dropdowns
+            document.getElementById('searchResults').classList.remove('active');
+            closeDirDropdowns();
 
             const item = allMarkers.find(m => m.feature.properties.osm_id === osmId);
             if (item) item.marker.fire('click');
@@ -1153,7 +1908,7 @@
             }
 
             // Then, apply search query on the (potentially category-filtered) data
-            if (query) {
+            if (query.length > 0) {
                 filteredData = filteredData.filter(loc =>
                     (loc.properties.name || '').toLowerCase().includes(query) ||
                     (loc.properties.name_en || '').toLowerCase().includes(query) ||
@@ -1162,6 +1917,7 @@
                 populateSearchResults(filteredData.slice(0, 8));
                 searchResults.classList.add('active');
             } else {
+                searchResults.innerHTML = '';
                 searchResults.classList.remove('active');
             }
 
@@ -1206,7 +1962,7 @@
         }
 
         function populateSearchResults(results) {
-            const container = document.querySelector('.search-results');
+            const container = document.getElementById('searchResults');
             if (!container) return;
 
             if (results.length === 0) {
@@ -1290,24 +2046,49 @@
             }
         }
 
-        // Drag to close on mobile
+        // Drag to close on mobile (works on handle and peek area)
+        let sheetDragging = false;
         function initSheetDrag(el) {
-            el.addEventListener('touchstart', (e) => { startY = e.touches[0].clientY; });
+            el.addEventListener('touchstart', (e) => {
+                startY = e.touches[0].clientY;
+                sheetDragging = true;
+                sheet.style.transition = 'none';
+            }, { passive: true });
             el.addEventListener('touchmove', (e) => {
+                if (!sheetDragging) return;
                 const diff = e.touches[0].clientY - startY;
-                if (diff > 0) sheet.style.transform = `translateY(${diff}px)`;
-            });
+                if (diff > 0) {
+                    sheet.style.transform = `translateY(${diff}px)`;
+                }
+            }, { passive: true });
             el.addEventListener('touchend', (e) => {
-                const rect = sheet.getBoundingClientRect();
-                if (rect.top > window.innerHeight * 0.5) {
+                if (!sheetDragging) return;
+                sheetDragging = false;
+                sheet.style.transition = '';
+                const diff = e.changedTouches[0].clientY - startY;
+                if (diff > 80) {
                     closeBottomSheet();
                 } else {
-                    sheet.classList.add('expanded');
+                    sheet.style.transform = '';
                 }
-                sheet.style.transform = '';
             });
         }
         initSheetDrag(handle);
+        initSheetDrag(peek);
+
+        // Double-tap to close on mobile
+        let lastTapTime = 0;
+        sheet.addEventListener('touchend', (e) => {
+            if (sheetDragging) return;
+            const now = Date.now();
+            if (now - lastTapTime < 300) {
+                e.preventDefault();
+                closeBottomSheet();
+                lastTapTime = 0;
+            } else {
+                lastTapTime = now;
+            }
+        });
 
         // ========== DIRECTIONS TOGGLE ==========
         function toggleDirections() {
@@ -1326,6 +2107,7 @@
             document.getElementById('directionsBox').classList.remove('active');
             document.getElementById('directionsToggleBtn').innerHTML = '<i class="fa fa-directions"></i>';
             document.getElementById('categoryChips').style.display = '';
+            closeDirDropdowns();
             // Clean up route
             if (routeLayer) { map.removeLayer(routeLayer); routeLayer = null; }
             if (startMarker) { map.removeLayer(startMarker); startMarker = null; }
@@ -1347,11 +2129,11 @@
                 document.getElementById('directionsToggleBtn').innerHTML = '<i class="fa fa-times"></i>';
                 document.getElementById('categoryChips').style.display = 'none';
             }
-            // Set as destination
-            const latlng = L.latLng(coords[1], coords[0]);
+            // coords is [lat, lng] from template
+            const latlng = L.latLng(coords[0], coords[1]);
             setEndPoint(latlng, name);
             // Collapse bottom sheet
-            sheet.classList.remove('expanded');
+            closeBottomSheet();
         }
 
         // ========== ROUTING POINTS ==========
@@ -1406,7 +2188,8 @@
 
         map.on('click', function (e) {
             // Close search dropdown on map click
-            document.getElementById('searchResults').style.display = 'none';
+            document.getElementById('searchResults').classList.remove('active');
+            closeDirDropdowns();
 
             if (!pickingMode) return;
             const name = `${e.latlng.lat.toFixed(5)}, ${e.latlng.lng.toFixed(5)}`;
@@ -1458,6 +2241,68 @@
 
         function filterLandmarks() { renderLandmarks(); }
 
+        // ========== DIRECTION DROPDOWNS ==========
+        function filterDirLocations(type) {
+            const inputId = type === 'start' ? 'startInput' : 'endInput';
+            const dropdownId = type === 'start' ? 'startDropdown' : 'endDropdown';
+            const query = document.getElementById(inputId).value.toLowerCase();
+            const dropdown = document.getElementById(dropdownId);
+
+            let filtered = masjidilHaramLocations;
+            if (query) {
+                filtered = filtered.filter(loc =>
+                    (loc.properties.name || '').toLowerCase().includes(query) ||
+                    (loc.properties.name_en || '').toLowerCase().includes(query)
+                );
+            }
+            filtered = filtered.slice(0, 10);
+
+            if (filtered.length === 0) {
+                dropdown.innerHTML = '<div class="dir-dropdown-item" style="color:#5f6368; justify-content:center;">Tidak ditemukan</div>';
+            } else {
+                dropdown.innerHTML = filtered.map(loc => {
+                    const name = loc.properties.name_en || loc.properties.name;
+                    const icon = loc.properties.icon || 'fa-map-marker-alt';
+                    return `<div class="dir-dropdown-item" onclick="selectDirLocation('${type}', '${loc.properties.osm_id}')">
+                        <i class="fa ${icon}"></i>
+                        <span>${name}</span>
+                    </div>`;
+                }).join('');
+            }
+            dropdown.classList.add('active');
+        }
+
+        function selectDirLocation(type, osmId) {
+            const loc = masjidilHaramLocations.find(l => l.properties.osm_id === osmId);
+            if (!loc) return;
+            const coords = loc.geometry.coordinates;
+            const latlng = L.latLng(coords[1], coords[0]);
+            const name = loc.properties.name_en || loc.properties.name;
+
+            if (type === 'start') {
+                setStartPoint(latlng, name);
+            } else {
+                setEndPoint(latlng, name);
+            }
+            closeDirDropdowns();
+            map.setView(latlng, 18);
+        }
+
+        function closeDirDropdowns() {
+            document.getElementById('startDropdown').classList.remove('active');
+            document.getElementById('endDropdown').classList.remove('active');
+        }
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function (e) {
+            if (!e.target.closest('.dir-input-wrapper')) {
+                closeDirDropdowns();
+            }
+            if (!e.target.closest('.map-header')) {
+                document.getElementById('searchResults').classList.remove('active');
+            }
+        });
+
         function selectLandmark(loc) {
             const coords = loc.geometry.coordinates;
             const latlng = L.latLng(coords[1], coords[0]);
@@ -1472,66 +2317,7 @@
             map.setView(latlng, 18);
         }
 
-        // ========== NAVIGATION LOGIC ==========
-        function calculateBearing(lat1, lon1, lat2, lon2) {
-            const y = Math.sin((lon2 - lon1) * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180);
-            const x = Math.cos(lat1 * Math.PI / 180) * Math.sin(lat2 * Math.PI / 180) -
-                Math.sin(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.cos((lon2 - lon1) * Math.PI / 180);
-            let brng = Math.atan2(y, x) * 180 / Math.PI;
-            return (brng + 360) % 360;
-        }
-
-        function generateInstructions(path) {
-            if (path.length < 2) return [];
-            let steps = [];
-            for (let i = 0; i < path.length - 1; i++) {
-                const current = path[i];
-                const next = path[i + 1];
-                const dist = map.distance(current, next);
-                let instruction = "Lurus terus";
-                let icon = "fa-arrow-up";
-
-                if (i > 0) {
-                    const prev = path[i - 1];
-                    const b1 = calculateBearing(prev[0], prev[1], current[0], current[1]);
-                    const b2 = calculateBearing(current[0], current[1], next[0], next[1]);
-                    let diff = b2 - b1;
-                    if (diff > 180) diff -= 360;
-                    if (diff < -180) diff += 360;
-                    if (diff > 30) { instruction = "Belok Kanan"; icon = "fa-arrow-turn-right"; }
-                    else if (diff < -30) { instruction = "Belok Kiri"; icon = "fa-arrow-turn-left"; }
-                }
-                steps.push({ coords: current, instruction, icon, distance: dist });
-            }
-            steps.push({ coords: path[path.length - 1], instruction: "Tiba di Tujuan", icon: "fa-flag-checkered", distance: 0 });
-            return steps;
-        }
-
-        function startNavigation() {
-            if (!currentPath || currentPath.length === 0) return;
-            navigationActive = true;
-            navigationSteps = generateInstructions(currentPath);
-            // Show nav overlay, hide header & bottom sheet & toggle btn
-            document.getElementById('navOverlay').classList.add('active');
-            document.getElementById('mapHeader').style.display = 'none';
-            document.getElementById('bottomSheet').style.display = 'none';
-            document.getElementById('floatingBtns').style.display = 'none';
-            map.locate({ watch: true, enableHighAccuracy: true });
-            updateNavigationUI(0);
-        }
-
-        function stopNavigation() {
-            navigationActive = false;
-            map.stopLocate();
-            document.getElementById('navOverlay').classList.remove('active');
-            document.getElementById('mapHeader').style.display = '';
-            document.getElementById('bottomSheet').style.display = '';
-            document.getElementById('floatingBtns').style.display = '';
-        }
-
-
-
-        // ========== NAVIGATION LOGIC ==========
+        // ========== NAVIGATION & ROUTING LOGIC ==========
 
         // Priority Queue for Dijkstra
         class PriorityQueue {
@@ -1826,6 +2612,41 @@
             renderLocationsList();
             renderExtraLayers();
             updateCategoryChips(masjidilHaramLocations, ''); // Initial chip render
+
+            // ========== CHIPS SCROLL EFFECT ==========
+            const categoryChipsEl = document.getElementById('categoryChips');
+            const chipsWrapperEl = document.getElementById('chipsWrapper');
+
+            function checkScroll() {
+                if (!categoryChipsEl || !chipsWrapperEl) return;
+
+                // Check if scrolled from start
+                if (categoryChipsEl.scrollLeft > 10) {
+                    chipsWrapperEl.classList.add('can-scroll-left');
+                } else {
+                    chipsWrapperEl.classList.remove('can-scroll-left');
+                }
+
+                // Check if can scroll further right
+                // Use a small tolerance (2px)
+                if (categoryChipsEl.scrollLeft < (categoryChipsEl.scrollWidth - categoryChipsEl.clientWidth - 2)) {
+                    chipsWrapperEl.classList.add('can-scroll-right');
+                } else {
+                    chipsWrapperEl.classList.remove('can-scroll-right');
+                }
+            }
+
+            if (categoryChipsEl) {
+                categoryChipsEl.addEventListener('scroll', checkScroll);
+                setTimeout(checkScroll, 100);
+                setTimeout(checkScroll, 500);
+                window.addEventListener('resize', checkScroll);
+            }
+
+            // Register Service Worker for PWA
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('sw.js').catch(() => {});
+            }
         });
     </script>
 
