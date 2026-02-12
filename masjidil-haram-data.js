@@ -1,6 +1,6 @@
 // Data Lokasi Penting Masjidil Haram - Versi Premium (OSM Map-3)
 // Diperbarui dengan koordinat lebih akurat dan kategori tambahan
-// Total POIs: 1849
+// Total POIs: 1850
 // Total Roads: 4508
 // Total Buildings: 2650
 
@@ -441,7 +441,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "Masjid Al Malik Abdul Aziz مسجد الملك عبدالعزيز",
-            "name_en": "Masjid Al Malik Abdul Aziz Masjid الملك عبدالعزيز",
+            "name_en": "Masjid Al Malik Abdul Aziz Masjid almlk 'bdal'zyz",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - Masjid Al Malik Abdul Aziz مسجد الملك عبدالعزيز",
@@ -495,7 +495,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "Masjid Ar-Rahma مسجد الرحمة",
-            "name_en": "Masjid Ar-Rahma Masjid الرحمة",
+            "name_en": "Masjid ArRahma Masjid alrhmah",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - Masjid Ar-Rahma مسجد الرحمة",
@@ -567,7 +567,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "Masjid Rqih مسجد رقية",
-            "name_en": "Masjid Rqih Masjid رقية",
+            "name_en": "Masjid Rqih Masjid rqyah",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - Masjid Rqih مسجد رقية",
@@ -603,7 +603,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "Masjid مسجد التنعيم",
-            "name_en": "Masjid Masjid التنعيم",
+            "name_en": "Masjid Masjid altn'ym",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - Masjid مسجد التنعيم",
@@ -1089,7 +1089,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "جامع الشيخ / حسين بن إبراهيم أبو سليمان",
-            "name_en": "Grand Mosque الشيخ / حسين بن إبراهيم أبو سليمان",
+            "name_en": "Grand Mosque alshykh hsyn bn ibrahym abw slyman",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - جامع الشيخ / حسين بن إبراهيم أبو سليمان",
@@ -1107,7 +1107,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "جامع الشيخ عبدالرحمن محمد صالح",
-            "name_en": "Grand Mosque الشيخ عبدالرحمن محمد صالح",
+            "name_en": "Grand Mosque alshykh 'bdalrhmn mhmd salh",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - جامع الشيخ عبدالرحمن محمد صالح",
@@ -1251,7 +1251,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مركز صحي السليمانية",
-            "name_en": "Health Center السليمانية",
+            "name_en": "Center Health alslymanyah",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مركز صحي السليمانية",
@@ -1431,7 +1431,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد ابوتراب",
-            "name_en": "Masjid ابوتراب",
+            "name_en": "Masjid abwtrab",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد ابوتراب",
@@ -1503,7 +1503,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد الإجابة",
-            "name_en": "Masjid الإجابة",
+            "name_en": "Masjid alijabah",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد الإجابة",
@@ -1539,7 +1539,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد الإحسان والنجاح",
-            "name_en": "Masjid الإحسان والنجاح",
+            "name_en": "Masjid alihsan walnjah",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد الإحسان والنجاح",
@@ -1593,7 +1593,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد الاميرة حصة",
-            "name_en": "Masjid الاميرة حصة",
+            "name_en": "Masjid alamyrah hsah",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد الاميرة حصة",
@@ -1629,7 +1629,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد الاميرة منيرة",
-            "name_en": "Masjid الاميرة منيرة",
+            "name_en": "Masjid alamyrah mnyrah",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد الاميرة منيرة",
@@ -1647,7 +1647,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد البخاري",
-            "name_en": "Masjid البخاري",
+            "name_en": "Masjid albkhary",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد البخاري",
@@ -1665,7 +1665,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد البوقري لشيخ داود",
-            "name_en": "Masjid البوقري لشيخ داود",
+            "name_en": "Masjid albwqry lshykh dawd",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد البوقري لشيخ داود",
@@ -1719,7 +1719,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد الجمعية الخيرية",
-            "name_en": "Masjid الجمعية الخيرية",
+            "name_en": "Masjid aljm'yah alkhyryah",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد الجمعية الخيرية",
@@ -1845,7 +1845,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد الرأفة",
-            "name_en": "Masjid الرأفة",
+            "name_en": "Masjid alrafah",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد الرأفة",
@@ -1881,7 +1881,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد الرحمة",
-            "name_en": "Masjid الرحمة",
+            "name_en": "Masjid alrhmah",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد الرحمة",
@@ -2331,7 +2331,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد المجزرة الجديدة",
-            "name_en": "Masjid المجزرة الجديدة",
+            "name_en": "Masjid almjzrah aljdydah",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد المجزرة الجديدة",
@@ -2565,7 +2565,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد باعارمة",
-            "name_en": "Masjid باعارمة",
+            "name_en": "Masjid ba'armah",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد باعارمة",
@@ -2637,7 +2637,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد بر الوالدين",
-            "name_en": "Masjid بر الوالدين",
+            "name_en": "Masjid br alwaldyn",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد بر الوالدين",
@@ -2655,7 +2655,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد بركة الشامي",
-            "name_en": "Masjid بركة الشامي",
+            "name_en": "Masjid brkah alshamy",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد بركة الشامي",
@@ -2763,7 +2763,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد بن معتق",
-            "name_en": "Masjid بن معتق",
+            "name_en": "Masjid bn m'tq",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد بن معتق",
@@ -2889,7 +2889,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد زينب",
-            "name_en": "Masjid زينب",
+            "name_en": "Masjid zynb",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد زينب",
@@ -2997,7 +2997,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد سليمان خياط",
-            "name_en": "Masjid سليمان خياط",
+            "name_en": "Masjid slyman khyat",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد سليمان خياط",
@@ -3033,7 +3033,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد شاهر زيني",
-            "name_en": "Masjid شاهر زيني",
+            "name_en": "Masjid shahr zyny",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد شاهر زيني",
@@ -3357,7 +3357,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد فاطمة البتول-القزاز",
-            "name_en": "Masjid فاطمة البتول-القزاز",
+            "name_en": "Masjid fatmah albtwlalqzaz",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد فاطمة البتول-القزاز",
@@ -3447,7 +3447,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد محطة الصفوة",
-            "name_en": "Masjid محطة الصفوة",
+            "name_en": "Masjid mhtah alsfwah",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد محطة الصفوة",
@@ -3465,7 +3465,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد محمد اسحاق هوساوي",
-            "name_en": "Masjid محمد اسحاق هوساوي",
+            "name_en": "Masjid mhmd ashaq hwsawy",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد محمد اسحاق هوساوي",
@@ -3555,7 +3555,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد معتوق صعيدي",
-            "name_en": "Masjid معتوق صعيدي",
+            "name_en": "Masjid m'twq s'ydy",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد معتوق صعيدي",
@@ -3609,7 +3609,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مسجد ناصر السريع",
-            "name_en": "Masjid ناصر السريع",
+            "name_en": "Masjid nasr alsry'",
             "type": "Mosque",
             "icon": "fa-mosque",
             "description": "Mosque - مسجد ناصر السريع",
@@ -4077,7 +4077,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "باب الملتزم",
-            "name_en": "Gate الملتزم",
+            "name_en": "Gate almltzm",
             "type": "Gate",
             "icon": "fa-door-open",
             "description": "Gate - باب الملتزم",
@@ -4185,7 +4185,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "باب سلم الأرقم الكهربائي",
-            "name_en": "Gate سلم الأرقم الكهربائي",
+            "name_en": "Gate slm alarqm alkhrba'y",
             "type": "Gate",
             "icon": "fa-door-open",
             "description": "Gate - باب سلم الأرقم الكهربائي",
@@ -4203,7 +4203,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "باب علي",
-            "name_en": "Gate علي",
+            "name_en": "Gate 'ly",
             "type": "Gate",
             "icon": "fa-door-open",
             "description": "Gate - باب علي",
@@ -4977,7 +4977,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "زمزم",
-            "name_en": "زمزم",
+            "name_en": "Zmzm",
             "type": "Zamzam/Water",
             "icon": "fa-tint",
             "description": "Zamzam/Water - زمزم",
@@ -5481,7 +5481,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "النهدي",
-            "name_en": "النهدي",
+            "name_en": "Alnhdy",
             "type": "Medical",
             "icon": "fa-hospital",
             "description": "Medical - النهدي",
@@ -5517,7 +5517,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "الهلال الأحمر السعودي",
-            "name_en": "الهلال الأحمر السعودي",
+            "name_en": "Alhlal alahmr als'wdy",
             "type": "Medical",
             "icon": "fa-hospital",
             "description": "Medical - الهلال الأحمر السعودي",
@@ -5715,7 +5715,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "غاية ام القرى",
-            "name_en": "غاية ام القرى",
+            "name_en": "Ghayah am alqra",
             "type": "Medical",
             "icon": "fa-hospital",
             "description": "Medical - غاية ام القرى",
@@ -5751,7 +5751,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مجمع مبارك الطبي المتخصص لطب الاسنان",
-            "name_en": "Complex مبارك الطبي المتخصص لطب الاسنان",
+            "name_en": "Mjm' mbark altby almtkhss ltb alasnan",
             "type": "Medical",
             "icon": "fa-hospital",
             "description": "مجمع مبارك الطبي هوا مجمع طبي حديث يختص بتجميل الاسنان ومعالجتها وتقويم الاسنان علي يد افضل الكوادر الطبيه من اخصائين و استشارين ذو خبره وكفائه",
@@ -5805,7 +5805,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مستوصف العبير",
-            "name_en": "Clinic العبير",
+            "name_en": "Clinic al'byr",
             "type": "Medical",
             "icon": "fa-hospital",
             "description": "Medical - مستوصف العبير",
@@ -5823,7 +5823,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مستوصف هاله بن لادن",
-            "name_en": "Clinic هاله بن لادن",
+            "name_en": "Clinic halh bn ladn",
             "type": "Medical",
             "icon": "fa-hospital",
             "description": "Medical - مستوصف هاله بن لادن",
@@ -5841,7 +5841,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "Al-Masjid Al-Haram road 154",
-            "name_en": "طريق المسجد الحرام 154",
+            "name_en": "AlMasjid AlHaram road 154",
             "type": "Transportation",
             "icon": "fa-bus",
             "description": "Transportation - طريق المسجد الحرام 154",
@@ -6435,7 +6435,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "الحجون 70",
-            "name_en": "الحجون 70",
+            "name_en": "Alhjwn 70",
             "type": "Transportation",
             "icon": "fa-bus",
             "description": "Transportation - الحجون 70",
@@ -6687,7 +6687,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "الشبيكة439",
-            "name_en": "الشبيكة439",
+            "name_en": "Alshbykah439",
             "type": "Transportation",
             "icon": "fa-bus",
             "description": "Transportation - الشبيكة439",
@@ -6723,7 +6723,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "العزيزية 170",
-            "name_en": "العزيزية 170",
+            "name_en": "Al'zyzyah 170",
             "type": "Transportation",
             "icon": "fa-bus",
             "description": "Transportation - العزيزية 170",
@@ -6885,7 +6885,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "المنصور 48",
-            "name_en": "المنصور 48",
+            "name_en": "Almnswr 48",
             "type": "Transportation",
             "icon": "fa-bus",
             "description": "Transportation - المنصور 48",
@@ -7281,7 +7281,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "ام القرى 6",
-            "name_en": "ام القرى 6",
+            "name_en": "Am alqra 6",
             "type": "Transportation",
             "icon": "fa-bus",
             "description": "Transportation - ام القرى 6",
@@ -7317,7 +7317,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "باصات الى التنعيم",
-            "name_en": "Buses الى التنعيم",
+            "name_en": "Basat ala altn'ym",
             "type": "Transportation",
             "icon": "fa-bus",
             "description": "Transportation - باصات الى التنعيم",
@@ -12483,7 +12483,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "آسيا",
-            "name_en": "آسيا",
+            "name_en": "Aasya",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - آسيا",
@@ -12519,7 +12519,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "أخيار البيت",
-            "name_en": "أخيار البيت",
+            "name_en": "Akhyar albyt",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - أخيار البيت",
@@ -12537,7 +12537,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "أخيار رتاج البيت",
-            "name_en": "أخيار رتاج البيت",
+            "name_en": "Akhyar rtaj albyt",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - أخيار رتاج البيت",
@@ -12555,7 +12555,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "أركان بكة",
-            "name_en": "أركان بكة",
+            "name_en": "Arkan bkah",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - أركان بكة",
@@ -12573,7 +12573,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "أريس المشاعر",
-            "name_en": "أريس المشاعر",
+            "name_en": "Arys almsha'r",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - أريس المشاعر",
@@ -12591,7 +12591,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "أضواء النعيم",
-            "name_en": "أضواء النعيم",
+            "name_en": "Adwa' aln'ym",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - أضواء النعيم",
@@ -12627,7 +12627,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "أنوار الأصيل",
-            "name_en": "أنوار الأصيل",
+            "name_en": "Anwar alasyl",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - أنوار الأصيل",
@@ -12645,7 +12645,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "أوتاد الصفوة",
-            "name_en": "أوتاد الصفوة",
+            "name_en": "Awtad alsfwah",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - أوتاد الصفوة",
@@ -12717,7 +12717,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "احلى القصور",
-            "name_en": "احلى القصور",
+            "name_en": "Ahla alqswr",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - احلى القصور",
@@ -12735,7 +12735,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "اخيار راج",
-            "name_en": "اخيار راج",
+            "name_en": "Akhyar raj",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - اخيار راج",
@@ -12771,7 +12771,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "اعيان البركة",
-            "name_en": "اعيان البركة",
+            "name_en": "A'yan albrkah",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - اعيان البركة",
@@ -12789,7 +12789,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "اعيان الششة",
-            "name_en": "اعيان الششة",
+            "name_en": "A'yan alshshah",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - اعيان الششة",
@@ -12807,7 +12807,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "الأبعاد",
-            "name_en": "الأبعاد",
+            "name_en": "Alab'ad",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - الأبعاد",
@@ -12861,7 +12861,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "البلد الطيب",
-            "name_en": "البلد الطيب",
+            "name_en": "Albld altyb",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - البلد الطيب",
@@ -12897,7 +12897,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "البيت مكارم",
-            "name_en": "البيت مكارم",
+            "name_en": "Albyt mkarm",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - البيت مكارم",
@@ -12951,7 +12951,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "الخلفاء 2",
-            "name_en": "الخلفاء 2",
+            "name_en": "Alkhlfa' 2",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - الخلفاء 2",
@@ -12969,7 +12969,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "الرياض 2",
-            "name_en": "الرياض 2",
+            "name_en": "Alryad 2",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - الرياض 2",
@@ -13041,7 +13041,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "العز",
-            "name_en": "العز",
+            "name_en": "Al'z",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - العز",
@@ -13059,7 +13059,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "العليان العزيزيه",
-            "name_en": "العليان العزيزيه",
+            "name_en": "Al'lyan al'zyzyh",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - العليان العزيزيه",
@@ -13077,7 +13077,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "العليان بلازا",
-            "name_en": "العليان بلازا",
+            "name_en": "Al'lyan blaza",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - العليان بلازا",
@@ -13131,7 +13131,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "الفجر السعيد ٥",
-            "name_en": "الفجر السعيد ٥",
+            "name_en": "Alfjr als'yd",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - الفجر السعيد ٥",
@@ -13149,7 +13149,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "القفيص الذهبي",
-            "name_en": "القفيص الذهبي",
+            "name_en": "Alqfys aldhhby",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - القفيص الذهبي",
@@ -13167,7 +13167,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "الماسة النور",
-            "name_en": "الماسة النور",
+            "name_en": "Almasah alnwr",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - الماسة النور",
@@ -13203,7 +13203,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "النخيل",
-            "name_en": "النخيل",
+            "name_en": "Alnkhyl",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - النخيل",
@@ -13257,7 +13257,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "اىفجر البديع٦",
-            "name_en": "اىفجر البديع٦",
+            "name_en": "Aafjr albdy'",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - اىفجر البديع٦",
@@ -13293,7 +13293,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "باشرحيل بلازا",
-            "name_en": "باشرحيل بلازا",
+            "name_en": "Bashrhyl blaza",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - باشرحيل بلازا",
@@ -13311,7 +13311,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "برج الجوهرة",
-            "name_en": "Tower الجوهرة",
+            "name_en": "Tower aljwhrah",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - برج الجوهرة",
@@ -13347,7 +13347,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "برج الخماش السكني",
-            "name_en": "Tower الخماش السكني",
+            "name_en": "Tower alkhmash alskny",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - برج الخماش السكني",
@@ -13365,7 +13365,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "برج السابق 2",
-            "name_en": "Tower السابق 2",
+            "name_en": "Tower alsabq 2",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - برج السابق 2",
@@ -13455,7 +13455,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "بركة الاصيل",
-            "name_en": "بركة الاصيل",
+            "name_en": "Brkah alasyl",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - بركة الاصيل",
@@ -13473,7 +13473,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "بركة برهان",
-            "name_en": "بركة برهان",
+            "name_en": "Brkah brhan",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - بركة برهان",
@@ -13491,7 +13491,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "بيت الزائر",
-            "name_en": "بيت الزائر",
+            "name_en": "Byt alza'r",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - بيت الزائر",
@@ -13527,7 +13527,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "دار أم القرى الذهبي",
-            "name_en": "House/Hotel أم القرى الذهبي",
+            "name_en": "Dar am alqra aldhhby",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - دار أم القرى الذهبي",
@@ -13563,7 +13563,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "دار الرمال",
-            "name_en": "House/Hotel الرمال",
+            "name_en": "Dar alrmal",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - دار الرمال",
@@ -13617,7 +13617,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "دار الفتح 13",
-            "name_en": "House/Hotel الفتح 13",
+            "name_en": "Dar alfth 13",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - دار الفتح 13",
@@ -13689,7 +13689,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "دار بنيان",
-            "name_en": "House/Hotel بنيان",
+            "name_en": "Dar bnyan",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - دار بنيان",
@@ -13725,7 +13725,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "دار سيد الشهداء 1",
-            "name_en": "House/Hotel سيد الشهداء 1",
+            "name_en": "Dar syd alshhda' 1",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - دار سيد الشهداء 1",
@@ -13761,7 +13761,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "دار فاطمة",
-            "name_en": "House/Hotel فاطمة",
+            "name_en": "Dar fatmah",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - دار فاطمة",
@@ -13779,7 +13779,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "دار قريش",
-            "name_en": "House/Hotel قريش",
+            "name_en": "Dar qrysh",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - دار قريش",
@@ -13833,7 +13833,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "درة الأصيل الحديث",
-            "name_en": "درة الأصيل الحديث",
+            "name_en": "Drah alasyl alhdyth",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - درة الأصيل الحديث",
@@ -13869,7 +13869,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "درة منى",
-            "name_en": "درة منى",
+            "name_en": "Drah mna",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - درة منى",
@@ -14013,7 +14013,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "روضة الأصيل",
-            "name_en": "روضة الأصيل",
+            "name_en": "Rwdah alasyl",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - روضة الأصيل",
@@ -14121,7 +14121,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "ساري",
-            "name_en": "ساري",
+            "name_en": "Sary",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - ساري",
@@ -14193,7 +14193,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "شذا مكة",
-            "name_en": "شذا مكة",
+            "name_en": "Shdha mkah",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - شذا مكة",
@@ -14211,7 +14211,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "شركاء الخير",
-            "name_en": "شركاء الخير",
+            "name_en": "Shrka' alkhyr",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - شركاء الخير",
@@ -14337,7 +14337,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "ضيافة الشرق",
-            "name_en": "ضيافة الشرق",
+            "name_en": "Dyafah alshrq",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - ضيافة الشرق",
@@ -14373,7 +14373,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "عبدالله با جابر 1",
-            "name_en": "عبدالله با جابر 1",
+            "name_en": "'bdallh ba jabr 1",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - عبدالله با جابر 1",
@@ -14445,7 +14445,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فال التاج",
-            "name_en": "فال التاج",
+            "name_en": "Fal altaj",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فال التاج",
@@ -14481,7 +14481,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فجر مكة",
-            "name_en": "فجر مكة",
+            "name_en": "Fjr mkah",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فجر مكة",
@@ -14625,7 +14625,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق أثمان الحجاز",
-            "name_en": "Hotel أثمان الحجاز",
+            "name_en": "Hotel athman alhjaz",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق أثمان الحجاز",
@@ -14769,7 +14769,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق أنوار المشاعر",
-            "name_en": "Hotel أنوار المشاعر",
+            "name_en": "Hotel anwar almsha'r",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق أنوار المشاعر",
@@ -15201,7 +15201,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق الاصيل بلازا",
-            "name_en": "Hotel الاصيل بلازا",
+            "name_en": "Hotel alasyl blaza",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق الاصيل بلازا",
@@ -15417,7 +15417,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق الركائز",
-            "name_en": "Hotel الركائز",
+            "name_en": "Hotel alrka'z",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق الركائز",
@@ -15453,7 +15453,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق الزاملية",
-            "name_en": "Hotel الزاملية",
+            "name_en": "Hotel alzamlyah",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق الزاملية",
@@ -15471,7 +15471,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق الساهر",
-            "name_en": "Hotel الساهر",
+            "name_en": "Hotel alsahr",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق الساهر",
@@ -15579,7 +15579,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق الشريف محمد أبو نمي الثاني التيسير",
-            "name_en": "Hotel الشريف محمد أبو نمي الثاني التيسير",
+            "name_en": "Hotel alshryf mhmd abw nmy althany altysyr",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق الشريف محمد أبو نمي الثاني التيسير",
@@ -15633,7 +15633,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق الصاعد الاجابه",
-            "name_en": "Hotel الصاعد الاجابه",
+            "name_en": "Hotel alsa'd alajabh",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق الصاعد الاجابه",
@@ -16047,7 +16047,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق انوار المجد",
-            "name_en": "Hotel انوار المجد",
+            "name_en": "Hotel anwar almjd",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق انوار المجد",
@@ -16209,7 +16209,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق برج الوقار",
-            "name_en": "Hotel Tower الوقار",
+            "name_en": "Hotel Tower alwqar",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق برج الوقار",
@@ -16569,7 +16569,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق جوهرة العلا",
-            "name_en": "Hotel جوهرة العلا",
+            "name_en": "Hotel jwhrah al'la",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق جوهرة العلا",
@@ -17271,7 +17271,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق رحلتي",
-            "name_en": "Hotel رحلتي",
+            "name_en": "Hotel rhlty",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق رحلتي",
@@ -17325,7 +17325,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق رفاف المشاعر الفندقية",
-            "name_en": "Hotel رفاف المشاعر الفندقية",
+            "name_en": "Hotel rfaf almsha'r alHotelyah",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق رفاف المشاعر الفندقية",
@@ -17541,7 +17541,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق روضة ميار",
-            "name_en": "Hotel روضة ميار",
+            "name_en": "Hotel rwdah myar",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق روضة ميار",
@@ -17919,7 +17919,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق سدرة الأحسان",
-            "name_en": "Hotel سدرة الأحسان",
+            "name_en": "Hotel sdrah alahsan",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق سدرة الأحسان",
@@ -17937,7 +17937,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق سدرة البيت 1",
-            "name_en": "Hotel سدرة البيت 1",
+            "name_en": "Hotel sdrah albyt 1",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق سدرة البيت 1",
@@ -17973,7 +17973,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق سراي اسطنبول 2",
-            "name_en": "Hotel سراي اسطنبول 2",
+            "name_en": "Hotel sray astnbwl 2",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق سراي اسطنبول 2",
@@ -18063,7 +18063,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق سما الضيف",
-            "name_en": "Hotel سما الضيف",
+            "name_en": "Hotel sma aldyf",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق سما الضيف",
@@ -18189,7 +18189,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق سيف بلص",
-            "name_en": "Hotel سيف بلص",
+            "name_en": "Hotel syf bls",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق سيف بلص",
@@ -18207,7 +18207,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق شذى الوسام",
-            "name_en": "Hotel شذى الوسام",
+            "name_en": "Hotel shdha alwsam",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق شذى الوسام",
@@ -18711,7 +18711,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق فجربديع6",
-            "name_en": "Hotel فجربديع6",
+            "name_en": "Hotel fjrbdy'6",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق فجربديع6",
@@ -19287,7 +19287,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق مآثر اللؤلؤة",
-            "name_en": "Hotel مآثر اللؤلؤة",
+            "name_en": "Hotel maathr all'l'ah",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق مآثر اللؤلؤة",
@@ -19791,7 +19791,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق مواسم أجياد",
-            "name_en": "Hotel مواسم أجياد",
+            "name_en": "Hotel mwasm ajyad",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق مواسم أجياد",
@@ -19827,7 +19827,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق مواسم جرول",
-            "name_en": "Hotel مواسم جرول",
+            "name_en": "Hotel mwasm jrwl",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق مواسم جرول",
@@ -20043,7 +20043,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق نجمة كامل",
-            "name_en": "Hotel نجمة كامل",
+            "name_en": "Hotel njmah kaml",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق نجمة كامل",
@@ -20115,7 +20115,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق نزل الكرام ٢",
-            "name_en": "Hotel نزل الكرام ٢",
+            "name_en": "Hotel nzl alkram",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق نزل الكرام ٢",
@@ -20151,7 +20151,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق نزهة المشتاق",
-            "name_en": "Hotel نزهة المشتاق",
+            "name_en": "Hotel nzhah almshtaq",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق نزهة المشتاق",
@@ -20241,7 +20241,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فندق نواره",
-            "name_en": "Hotel نواره",
+            "name_en": "Hotel nwarh",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - فندق نواره",
@@ -20619,7 +20619,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "قفيص النوري",
-            "name_en": "قفيص النوري",
+            "name_en": "Qfys alnwry",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - قفيص النوري",
@@ -20637,7 +20637,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "كرستالات الأصيل",
-            "name_en": "كرستالات الأصيل",
+            "name_en": "Krstalat alasyl",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - كرستالات الأصيل",
@@ -20655,7 +20655,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "كنوز الضيافة",
-            "name_en": "كنوز الضيافة",
+            "name_en": "Knwz aldyafah",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - كنوز الضيافة",
@@ -20673,7 +20673,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "كونكورد الروضة",
-            "name_en": "كونكورد الروضة",
+            "name_en": "Kwnkwrd alrwdah",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - كونكورد الروضة",
@@ -20781,7 +20781,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مدن الخير",
-            "name_en": "مدن الخير",
+            "name_en": "Mdn alkhyr",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - مدن الخير",
@@ -20871,7 +20871,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مكارم الفردوس",
-            "name_en": "مكارم الفردوس",
+            "name_en": "Mkarm alfrdws",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - مكارم الفردوس",
@@ -20979,7 +20979,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "ميار ميسال",
-            "name_en": "ميار ميسال",
+            "name_en": "Myar mysal",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - ميار ميسال",
@@ -21105,7 +21105,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "نسك منى",
-            "name_en": "نسك منى",
+            "name_en": "Nsk mna",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - نسك منى",
@@ -21177,7 +21177,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "هبة الله",
-            "name_en": "هبة الله",
+            "name_en": "Hbah allh",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - هبة الله",
@@ -21213,7 +21213,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "وردة المعابدة",
-            "name_en": "وردة المعابدة",
+            "name_en": "Wrdah alm'abdah",
             "type": "Hotel",
             "icon": "fa-hotel",
             "description": "Hotel - وردة المعابدة",
@@ -21303,7 +21303,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "ثانوية القدس",
-            "name_en": "ثانوية القدس",
+            "name_en": "Thanwyah alqds",
             "type": "Amenities",
             "icon": "fa-building",
             "description": "Amenities - ثانوية القدس",
@@ -21321,7 +21321,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "ثانوية الملك عبدالعزيز",
-            "name_en": "ثانوية الملك عبدالعزيز",
+            "name_en": "Thanwyah almlk 'bdal'zyz",
             "type": "Amenities",
             "icon": "fa-building",
             "description": "Amenities - ثانوية الملك عبدالعزيز",
@@ -21357,7 +21357,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مدرسة سعد بن معاذ",
-            "name_en": "School سعد بن معاذ",
+            "name_en": "School s'd bn m'adh",
             "type": "Amenities",
             "icon": "fa-building",
             "description": "Amenities - مدرسة سعد بن معاذ",
@@ -22023,7 +22023,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "ترجمة خطب الجمعة إلى لغة الإشارة",
-            "name_en": "ترجمة خطب الجمعة إلى لغة الإشارة",
+            "name_en": "Trjmah khtb aljm'ah ila lghah alisharah",
             "type": "Support",
             "icon": "fa-info-circle",
             "description": "Support - ترجمة خطب الجمعة إلى لغة الإشارة",
@@ -22095,7 +22095,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "2443 طريق مكة جدة القديم",
-            "name_en": "2443 طريق مكة جدة القديم",
+            "name_en": "2443 Road mkah jdah alqdym",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - 2443 طريق مكة جدة القديم",
@@ -23985,7 +23985,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "Maktab Ibn Baz مكتبة جامع ابن باز",
-            "name_en": "Maktab Ibn Baz Library Grand Mosque ابن باز",
+            "name_en": "Maktab Ibn Baz Library Grand Mosque abn baz",
             "type": "Mosque",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - Maktab Ibn Baz مكتبة جامع ابن باز",
@@ -24309,7 +24309,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "Nuts Shop مقلى تسالي القاهرة",
-            "name_en": "Nuts Shop مقلى تسالي القاهرة",
+            "name_en": "Nuts Shop mqla tsaly alqahrah",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - Nuts Shop مقلى تسالي القاهرة",
@@ -24975,7 +24975,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "أسطول زاد",
-            "name_en": "أسطول زاد",
+            "name_en": "Astwl zad",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - أسطول زاد",
@@ -25245,7 +25245,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "الادارة العامة للتعليم بمنطقة مكة المكرمة",
-            "name_en": "الاHouse/Hotelة العامة للتعليم بمنطقة مكة المكرمة",
+            "name_en": "Aladarah al'amah llt'lym bmntqah mkah almkrmah",
             "type": "Hotel",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - الادارة العامة للتعليم بمنطقة مكة المكرمة",
@@ -25299,7 +25299,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "البركة",
-            "name_en": "البركة",
+            "name_en": "Albrkah",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - البركة",
@@ -25317,7 +25317,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "البريد السعودي",
-            "name_en": "البريد السعودي",
+            "name_en": "Albryd als'wdy",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - البريد السعودي",
@@ -25335,7 +25335,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "البريد السعودي",
-            "name_en": "البريد السعودي",
+            "name_en": "Albryd als'wdy",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - البريد السعودي",
@@ -25353,7 +25353,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "البريد السعودي",
-            "name_en": "البريد السعودي",
+            "name_en": "Albryd als'wdy",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - البريد السعودي",
@@ -25371,7 +25371,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "البعثة الطبية لحجاج العراق",
-            "name_en": "البعثة الطبية لحجاج العراق",
+            "name_en": "Alb'thah altbyah lhjaj al'raq",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - البعثة الطبية لحجاج العراق",
@@ -25389,7 +25389,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "البنك السعودي الفرنسي",
-            "name_en": "البنك السعودي الفرنسي",
+            "name_en": "Albnk als'wdy alfrnsy",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - البنك السعودي الفرنسي",
@@ -25479,7 +25479,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "الجوهرة للعطور",
-            "name_en": "الجوهرة للعطور",
+            "name_en": "Aljwhrah ll'twr",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - الجوهرة للعطور",
@@ -25623,7 +25623,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "الحجون 70",
-            "name_en": "الحجون 70",
+            "name_en": "Alhjwn 70",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - الحجون 70",
@@ -26145,7 +26145,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "العربية",
-            "name_en": "العربية",
+            "name_en": "Al'rbyah",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - العربية",
@@ -26181,7 +26181,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "العربية للعود",
-            "name_en": "العربية للعود",
+            "name_en": "Al'rbyah ll'wd",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - العربية للعود",
@@ -26199,7 +26199,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "العربية للعود",
-            "name_en": "العربية للعود",
+            "name_en": "Al'rbyah ll'wd",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - العربية للعود",
@@ -26235,7 +26235,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "العزيزية 170",
-            "name_en": "العزيزية 170",
+            "name_en": "Al'zyzyah 170",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - العزيزية 170",
@@ -26343,7 +26343,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "القارات",
-            "name_en": "القارات",
+            "name_en": "Alqarat",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - القارات",
@@ -26613,7 +26613,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "المنصور 48",
-            "name_en": "المنصور 48",
+            "name_en": "Almnswr 48",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - المنصور 48",
@@ -26793,7 +26793,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "الموده للحج والعمرة",
-            "name_en": "الموده للحج والعمرة",
+            "name_en": "Almwdh llhj wal'mrah",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - الموده للحج والعمرة",
@@ -27099,7 +27099,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "ام القرى 6",
-            "name_en": "ام القرى 6",
+            "name_en": "Am alqra 6",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - ام القرى 6",
@@ -27153,7 +27153,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "باسنبل ابو نجيب",
-            "name_en": "باسنبل ابو نجيب",
+            "name_en": "Basnbl abw njyb",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - باسنبل ابو نجيب",
@@ -27207,7 +27207,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "بستان البخاري",
-            "name_en": "بستان البخاري",
+            "name_en": "Bstan albkhary",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - بستان البخاري",
@@ -27243,7 +27243,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "بقالة مكة",
-            "name_en": "Grocery مكة",
+            "name_en": "Grocery mkah",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - بقالة مكة",
@@ -27261,7 +27261,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "بلدية الغزة",
-            "name_en": "بلدية الغزة",
+            "name_en": "Bldyah alghzah",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - بلدية الغزة",
@@ -27279,7 +27279,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "بلدية الماسفلة",
-            "name_en": "بلدية الماسفلة",
+            "name_en": "Bldyah almasflah",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - بلدية الماسفلة",
@@ -27369,7 +27369,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "بوابة 2",
-            "name_en": "بوابة 2",
+            "name_en": "Bwabah 2",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - بوابة 2",
@@ -27387,7 +27387,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "بوابة الجوهرة",
-            "name_en": "بوابة الجوهرة",
+            "name_en": "Bwabah aljwhrah",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - بوابة الجوهرة",
@@ -27405,7 +27405,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "تن سيتى",
-            "name_en": "تن سيتى",
+            "name_en": "Tn syta",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - تن سيتى",
@@ -27423,7 +27423,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "توب تن",
-            "name_en": "توب تن",
+            "name_en": "Twb tn",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - توب تن",
@@ -27495,7 +27495,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "جامعة",
-            "name_en": "Grand Mosqueة",
+            "name_en": "Grand Mosqueah",
             "type": "Mosque",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - جامعة",
@@ -27513,7 +27513,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "جامعة",
-            "name_en": "Grand Mosqueة",
+            "name_en": "Grand Mosqueah",
             "type": "Mosque",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - جامعة",
@@ -27747,7 +27747,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "حمامات القشاشية",
-            "name_en": "حمامات القشاشية",
+            "name_en": "Hmamat alqshashyah",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - حمامات القشاشية",
@@ -27765,7 +27765,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "حمامي الشرقي",
-            "name_en": "حمامي الشرقي",
+            "name_en": "Hmamy alshrqy",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - حمامي الشرقي",
@@ -28161,7 +28161,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "سكن عمال مستشفى الرفيع",
-            "name_en": "سكن عمال مستشفى الرفيع",
+            "name_en": "Skn 'mal mstshfa alrfy'",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - سكن عمال مستشفى الرفيع",
@@ -28179,7 +28179,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "سميت سراي",
-            "name_en": "سميت سراي",
+            "name_en": "Smyt sray",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - سميت سراي",
@@ -28197,7 +28197,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "سميت سراي",
-            "name_en": "سميت سراي",
+            "name_en": "Smyt sray",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - سميت سراي",
@@ -28215,7 +28215,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "سنا دبي",
-            "name_en": "سنا دبي",
+            "name_en": "Sna dby",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - سنا دبي",
@@ -28251,7 +28251,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "سوق الخليل",
-            "name_en": "Market الخليل",
+            "name_en": "Market alkhlyl",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - سوق الخليل",
@@ -28287,7 +28287,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "سولا للبصريات",
-            "name_en": "سولا للبصريات",
+            "name_en": "Swla llbsryat",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - سولا للبصريات",
@@ -28359,7 +28359,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "شرطة القرارة",
-            "name_en": "شرطة القرارة",
+            "name_en": "Shrtah alqrarah",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - شرطة القرارة",
@@ -28395,7 +28395,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "شركة ابراج المتحدون",
-            "name_en": "شركة ابراج المتحدون",
+            "name_en": "Company abraj almthdwn",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - شركة ابراج المتحدون",
@@ -28467,7 +28467,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "صراف الراجحي",
-            "name_en": "صراف الراجحي",
+            "name_en": "ATM alrajhy",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - صراف الراجحي",
@@ -28503,7 +28503,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "صراف بنك البلاد",
-            "name_en": "صراف بنك البلاد",
+            "name_en": "ATM bnk alblad",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Albabin - Hassan Bin Thabet",
@@ -29061,7 +29061,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "عمارة العلوي",
-            "name_en": "عمارة العلوي",
+            "name_en": "'marah al'lwy",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - عمارة العلوي",
@@ -29133,7 +29133,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "قصر ابن سليمان",
-            "name_en": "قصر ابن سليمان",
+            "name_en": "Qsr abn slyman",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - قصر ابن سليمان",
@@ -29169,7 +29169,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "قوة امن الحرم الملكي الشريف",
-            "name_en": "قوة امن الحرم الملكي الشريف",
+            "name_en": "Qwah amn alhrm almlky alshryf",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - قوة امن الحرم الملكي الشريف",
@@ -29331,7 +29331,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مبنى أ",
-            "name_en": "مبنى أ",
+            "name_en": "Mbna a",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مبنى أ",
@@ -29349,7 +29349,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مبنى الترفيهه",
-            "name_en": "مبنى الترفيهه",
+            "name_en": "Mbna altrfyhh",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مبنى الترفيهه",
@@ -29367,7 +29367,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مبنى ح",
-            "name_en": "مبنى ح",
+            "name_en": "Mbna h",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مبنى ح",
@@ -29385,7 +29385,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مبنى ز",
-            "name_en": "مبنى ز",
+            "name_en": "Mbna z",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مبنى ز",
@@ -29403,7 +29403,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مبنى ط",
-            "name_en": "مبنى ط",
+            "name_en": "Mbna t",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مبنى ط",
@@ -29421,7 +29421,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مبنى هـ",
-            "name_en": "مبنى هـ",
+            "name_en": "Mbna h",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مبنى هـ",
@@ -29439,7 +29439,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مبنى و",
-            "name_en": "مبنى و",
+            "name_en": "Mbna w",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مبنى و",
@@ -29457,7 +29457,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مبنى ي",
-            "name_en": "مبنى ي",
+            "name_en": "Mbna y",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مبنى ي",
@@ -29475,7 +29475,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "متجر ، تمور ، حلويات",
-            "name_en": "متجر ، تمور ، حلويات",
+            "name_en": "Mtjr tmwr hlwyat",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - متجر ، تمور ، حلويات",
@@ -29493,7 +29493,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "متجر ساعات الفجر",
-            "name_en": "متجر ساعات الفجر",
+            "name_en": "Mtjr sa'at alfjr",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - متجر ساعات الفجر",
@@ -29511,7 +29511,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "متجر ساعات الفجر مكة",
-            "name_en": "متجر ساعات الفجر مكة",
+            "name_en": "Mtjr sa'at alfjr mkah",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - متجر ساعات الفجر مكة",
@@ -29673,7 +29673,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "محطة الإطفاء",
-            "name_en": "محطة الإطفاء",
+            "name_en": "Mhtah alitfa'",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - محطة الإطفاء",
@@ -29727,7 +29727,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "محلات زينة سيارات",
-            "name_en": "محلات زينة سيارات",
+            "name_en": "Mhlat zynah syarat",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - محلات زينة سيارات",
@@ -29745,7 +29745,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مخابز وحلويات نعمة",
-            "name_en": "مخابز وحلويات نعمة",
+            "name_en": "Mkhabz whlwyat n'mah",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مخابز وحلويات نعمة",
@@ -29763,7 +29763,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مخبز طيبه",
-            "name_en": "مخبز طيبه",
+            "name_en": "Mkhbz tybh",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مخبز طيبه",
@@ -29781,7 +29781,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مدارس ابن الصلاح الابتدائية",
-            "name_en": "مHouse/Hotelس ابن الصلاح الابتدائية",
+            "name_en": "Mdars abn alslah alabtda'yah",
             "type": "Hotel",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مدارس ابن الصلاح الابتدائية",
@@ -29799,7 +29799,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مدارس ابن الصلاح المتوسطة والثانوية",
-            "name_en": "مHouse/Hotelس ابن الصلاح المتوسطة والثانوية",
+            "name_en": "Mdars abn alslah almtwstah walthanwyah",
             "type": "Hotel",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مدارس ابن الصلاح المتوسطة والثانوية",
@@ -29853,7 +29853,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مركز الاصيل للتسويق",
-            "name_en": "مركز الاصيل للتسويق",
+            "name_en": "Center alasyl lltswyq",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مركز الاصيل للتسويق",
@@ -29871,7 +29871,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مركز الاهله التجاري",
-            "name_en": "مركز الاهله التجاري",
+            "name_en": "Center alahlh altjary",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مركز الاهله التجاري",
@@ -29907,7 +29907,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مركز الحجامة الحديث مكة",
-            "name_en": "مركز الحجامة الحديث مكة",
+            "name_en": "Center alhjamah alhdyth mkah",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مركز الحجامة الحديث مكة",
@@ -29925,7 +29925,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مركز الدائري الثالث للتسويق",
-            "name_en": "مركز الدائري الثالث للتسويق",
+            "name_en": "Center alda'ry althalth lltswyq",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مركز الدائري الثالث للتسويق",
@@ -29979,7 +29979,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مركز النوري للتسويق",
-            "name_en": "مركز النوري للتسويق",
+            "name_en": "Center alnwry lltswyq",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مركز النوري للتسويق",
@@ -29997,7 +29997,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مركز خدمات المسجد الحرام",
-            "name_en": "مركز خدمات الMasjid الحرام",
+            "name_en": "Center khdmat alMasjid alhram",
             "type": "Mosque",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مركز خدمات المسجد الحرام",
@@ -30015,7 +30015,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مركز خدمة شل",
-            "name_en": "مركز خدمة شل",
+            "name_en": "Center khdmah shl",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مركز خدمة شل",
@@ -30105,7 +30105,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مركز غيل باوزير التجاري",
-            "name_en": "مركز غيل باوزير التجاري",
+            "name_en": "Center ghyl bawzyr altjary",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مركز غيل باوزير التجاري",
@@ -30159,7 +30159,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مستلزمات طبيه",
-            "name_en": "مستلزمات طبيه",
+            "name_en": "Mstlzmat tbyh",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مستلزمات طبيه",
@@ -30267,7 +30267,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مصرف ١",
-            "name_en": "مصرف ١",
+            "name_en": "Bank",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مصرف ١",
@@ -30303,7 +30303,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مصفف شعر العنقاء",
-            "name_en": "مصفف شعر العنقاء",
+            "name_en": "Msff sh'r al'nqa'",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مصفف شعر العنقاء",
@@ -30447,7 +30447,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مكتب الترجمة",
-            "name_en": "مكتب الترجمة",
+            "name_en": "Mktb altrjmah",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مكتب الترجمة",
@@ -30573,7 +30573,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مكتب روائد للهندسة المدنية",
-            "name_en": "مكتب روائد للهندسة المدنية",
+            "name_en": "Mktb rwa'd llhndsah almdnyah",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "تصاميم هندسية - رفع مساحي - اشراف - تقارير",
@@ -30627,7 +30627,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مكتب منازل مكة للإستشارات الهندسية",
-            "name_en": "مكتب منازل مكة للإستشارات الهندسية",
+            "name_en": "Mktb mnazl mkah llistsharat alhndsyah",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مكتب منازل مكة للإستشارات الهندسية",
@@ -30717,7 +30717,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مكتبة جرير",
-            "name_en": "Library جرير",
+            "name_en": "Library jryr",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مكتبة جرير",
@@ -30753,7 +30753,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "منازل الفتح للوحدات السكنيه",
-            "name_en": "منازل الفتح للوحدات السكنيه",
+            "name_en": "Mnazl alfth llwhdat alsknyh",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - منازل الفتح للوحدات السكنيه",
@@ -30771,7 +30771,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "منزل النايته",
-            "name_en": "منزل النايته",
+            "name_en": "Mnzl alnayth",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - منزل النايته",
@@ -30789,7 +30789,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "منزل خالد ناقور",
-            "name_en": "منزل خالد ناقور",
+            "name_en": "Mnzl khald naqwr",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - منزل خالد ناقور",
@@ -30807,7 +30807,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "منزل عبد الرحيم مرزا",
-            "name_en": "منزل عبد الرحيم مرزا",
+            "name_en": "Mnzl 'bd alrhym mrza",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - منزل عبد الرحيم مرزا",
@@ -30825,7 +30825,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "منزل فؤاد صدقة سبحي",
-            "name_en": "منزل فؤاد صدقة سبحي",
+            "name_en": "Mnzl f'ad sdqah sbhy",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - منزل فؤاد صدقة سبحي",
@@ -30843,7 +30843,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مواقف زين",
-            "name_en": "مواقف زين",
+            "name_en": "Mwaqf zyn",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مواقف زين",
@@ -30861,7 +30861,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مول ميرا",
-            "name_en": "مول ميرا",
+            "name_en": "Mwl myra",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - مول ميرا",
@@ -30879,7 +30879,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "ميركاتو",
-            "name_en": "ميركاتو",
+            "name_en": "Myrkatw",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - ميركاتو",
@@ -31041,7 +31041,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "هلال احمر الحجون",
-            "name_en": "هلال احمر الحجون",
+            "name_en": "Hlal ahmr alhjwn",
             "type": "Landmark",
             "icon": "fa-map-marker-alt",
             "description": "Landmark - هلال احمر الحجون",
@@ -32355,7 +32355,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "آيس كريم توتي",
-            "name_en": "آيس كريم توتي",
+            "name_en": "Aays krym twty",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - آيس كريم توتي",
@@ -32391,7 +32391,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "ارزاق البحر",
-            "name_en": "ارزاق البحر",
+            "name_en": "Arzaq albhr",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - ارزاق البحر",
@@ -32409,7 +32409,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "الأطباق",
-            "name_en": "الأطباق",
+            "name_en": "Alatbaq",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - الأطباق",
@@ -32481,7 +32481,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "البيك",
-            "name_en": "البيك",
+            "name_en": "Albyk",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - البيك",
@@ -32499,7 +32499,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "البيك",
-            "name_en": "البيك",
+            "name_en": "Albyk",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - البيك",
@@ -32589,7 +32589,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "المطعم اليمني في جدة",
-            "name_en": "الRestaurant اليمني في جدة",
+            "name_en": "AlRestaurant alymny fy jdah",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - المطعم اليمني في جدة",
@@ -32607,7 +32607,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "النزهه",
-            "name_en": "النزهه",
+            "name_en": "Alnzhh",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - النزهه",
@@ -32625,7 +32625,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "بيتزا هت",
-            "name_en": "بيتزا هت",
+            "name_en": "Bytza ht",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - بيتزا هت",
@@ -32643,7 +32643,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "ترويقة زمان",
-            "name_en": "ترويقة زمان",
+            "name_en": "Trwyqah zman",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - ترويقة زمان",
@@ -32787,7 +32787,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "فايف قايز",
-            "name_en": "فايف قايز",
+            "name_en": "Fayf qayz",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - فايف قايز",
@@ -32805,7 +32805,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "كافتريا خيرات",
-            "name_en": "كافتريا خيرات",
+            "name_en": "Kaftrya khyrat",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - كافتريا خيرات",
@@ -32823,7 +32823,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "كافيتيريا الابراج",
-            "name_en": "كافيتيريا الابراج",
+            "name_en": "Kafytyrya alabraj",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - كافيتيريا الابراج",
@@ -32841,7 +32841,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "كافيتيريا الضيافة",
-            "name_en": "كافيتيريا الضيافة",
+            "name_en": "Kafytyrya aldyafah",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - كافيتيريا الضيافة",
@@ -32877,7 +32877,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "ماليزيا",
-            "name_en": "ماليزيا",
+            "name_en": "Malyzya",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - ماليزيا",
@@ -32895,7 +32895,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "محل مطبق",
-            "name_en": "محل مطبق",
+            "name_en": "Mhl mtbq",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - محل مطبق",
@@ -32913,7 +32913,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مشويات بلودان",
-            "name_en": "مشويات بلودان",
+            "name_en": "Mshwyat blwdan",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - مشويات بلودان",
@@ -33039,7 +33039,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مطعم تركي",
-            "name_en": "Restaurant تركي",
+            "name_en": "Restaurant trky",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - مطعم تركي",
@@ -33075,7 +33075,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مطعم خليج عدن",
-            "name_en": "Restaurant خليج عدن",
+            "name_en": "Restaurant khlyj 'dn",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - مطعم خليج عدن",
@@ -33111,7 +33111,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مطعم زمزم",
-            "name_en": "Restaurant زمزم",
+            "name_en": "Restaurant zmzm",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - مطعم زمزم",
@@ -33183,7 +33183,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مطعم لذيذ البخاري",
-            "name_en": "Restaurant لذيذ البخاري",
+            "name_en": "Restaurant ldhydh albkhary",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - مطعم لذيذ البخاري",
@@ -33201,7 +33201,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "مطعم ماكدونالد",
-            "name_en": "Restaurant ماكدونالد",
+            "name_en": "Restaurant makdwnald",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - مطعم ماكدونالد",
@@ -33273,7 +33273,7 @@ const masjidilHaramLocations = [
         "type": "Feature",
         "properties": {
             "name": "هارديز",
-            "name_en": "هارديز",
+            "name_en": "Hardyz",
             "type": "Food",
             "icon": "fa-utensils",
             "description": "Food - هارديز",
@@ -33284,6 +33284,24 @@ const masjidilHaramLocations = [
             "coordinates": [
                 39.8216522,
                 21.420939
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Shami Corner",
+            "name_en": "Shami Corner",
+            "type": "Holy Site",
+            "icon": "fa-kaaba",
+            "description": "Holy Site - Shami Corner",
+            "osm_id": "8794911101"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8261095,
+                21.4225371
             ]
         }
     }
