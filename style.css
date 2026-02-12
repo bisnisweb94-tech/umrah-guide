@@ -36,6 +36,11 @@ textarea {
     font-size: 16px !important;
 }
 
+html {
+    /* Safe area support for fullscreen PWA */
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
 body {
     font-family: var(--font-main);
     background-color: var(--primary-dark);
@@ -47,6 +52,10 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     min-height: 100vh;
+    min-height: -webkit-fill-available;
+    /* Remove default padding/margin */
+    margin: 0;
+    padding: 0;
 }
 
 /* Header & Navigation */
