@@ -1,6 +1,6 @@
 // Data Lokasi Penting Masjidil Haram - Versi Premium (OSM Map-3 Updated)
-// Diperbarui dengan data dari map-3.osm dan transliterasi otomatis
-// Total POIs: 1911
+// Diperbarui dengan data dari map-3.osm, overpass-turbo (toilets), dan transliterasi otomatis
+// Total POIs: 1944
 
 const masjidilHaramLocations = [
     {
@@ -34398,6 +34398,600 @@ const masjidilHaramLocations = [
             "coordinates": [
                 39.8227914,
                 21.4127459
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "دورات مياه الرجال - 6",
+            "name_en": "Men's Toilets - 6",
+            "type": "Toilet",
+            "icon": "fa-male",
+            "description": "Toilet (Men) - Men's Toilets - 6",
+            "osm_id": "way/444718630"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.82315848823529,
+                21.42039522352941
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Erkekler Tuvaleti",
+            "name_en": "Toilet (Men)",
+            "type": "Toilet",
+            "icon": "fa-male",
+            "description": "Toilet (Men) - Toilet (Men)",
+            "osm_id": "way/620427918"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.82533044,
+                21.4265444
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Kadınlar Tuvaleti",
+            "name_en": "Toilet (Women)",
+            "type": "Toilet",
+            "icon": "fa-female",
+            "description": "Toilet (Women) - Toilet (Women)",
+            "osm_id": "way/620427920"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.825747459999995,
+                21.426583479999998
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "دورات مياه الرجال - 13",
+            "name_en": "Men's Toilets - 13",
+            "type": "Toilet",
+            "icon": "fa-male",
+            "description": "Toilet (Men) - Men's Toilets - 13",
+            "osm_id": "way/620427922"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.82509384,
+                21.42610604
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "دورات مياه النساء - 14",
+            "name_en": "Women's Toiltets - 14",
+            "type": "Toilet",
+            "icon": "fa-female",
+            "description": "Toilet (Women) - Women's Toiltets - 14",
+            "osm_id": "way/620427924"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.826064419999994,
+                21.42624292
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Erkekler Tuvaleti",
+            "name_en": "Toilet (Men)",
+            "type": "Toilet",
+            "icon": "fa-male",
+            "description": "Toilet (Men) - Toilet (Men)",
+            "osm_id": "way/620427925"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.82470774,
+                21.42598114
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Erkekler Tuvaleti",
+            "name_en": "Toilet (Men)",
+            "type": "Toilet",
+            "icon": "fa-male",
+            "description": "Toilet (Men) - Toilet (Men)",
+            "osm_id": "way/620427927"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.823912039999996,
+                21.426040519999997
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Kadınlar Tuvaleti",
+            "name_en": "Toilet (Women)",
+            "type": "Toilet",
+            "icon": "fa-female",
+            "description": "Toilet (Women) - Toilet (Women)",
+            "osm_id": "way/620427929"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8235598,
+                21.425819800000003
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "دورات مياه النساء - 11",
+            "name_en": "Women's Toiltets - 11",
+            "type": "Toilet",
+            "icon": "fa-female",
+            "description": "Toilet (Women) - Women's Toiltets - 11",
+            "osm_id": "way/620427930"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.82332976666667,
+                21.425112300000002
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Erkekler Tuvaleti",
+            "name_en": "Toilet (Men)",
+            "type": "Toilet",
+            "icon": "fa-male",
+            "description": "Toilet (Men) - Toilet (Men)",
+            "osm_id": "way/620427931"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.82252752,
+                21.424813259999997
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Erkekler Tuvaleti",
+            "name_en": "Toilet (Men)",
+            "type": "Toilet",
+            "icon": "fa-male",
+            "description": "Toilet (Men) - Toilet (Men)",
+            "osm_id": "way/620427932"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.82232436,
+                21.424503100000003
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Erkekler Tuvaleti",
+            "name_en": "Toilet (Men)",
+            "type": "Toilet",
+            "icon": "fa-male",
+            "description": "Toilet (Men) - Toilet (Men)",
+            "osm_id": "way/620427933"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8225501,
+                21.42406944
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Erkekler Tuvaleti",
+            "name_en": "Toilet (Men)",
+            "type": "Toilet",
+            "icon": "fa-male",
+            "description": "Toilet (Men) - Toilet (Men)",
+            "osm_id": "way/620427934"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.82305976,
+                21.4248461
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Erkekler Tuvaleti",
+            "name_en": "Toilet (Men)",
+            "type": "Toilet",
+            "icon": "fa-male",
+            "description": "Toilet (Men) - Toilet (Men)",
+            "osm_id": "way/620428885"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.822397540000004,
+                21.4237059
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Erkekler Tuvaleti",
+            "name_en": "Toilet (Men)",
+            "type": "Toilet",
+            "icon": "fa-male",
+            "description": "Toilet (Men) - Toilet (Men)",
+            "osm_id": "way/620428886"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.82226552000001,
+                21.42327486
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "دورات مياه النساء - 8",
+            "name_en": "Women's WC - 8",
+            "type": "Toilet",
+            "icon": "fa-female",
+            "description": "Toilet (Women) - Women's WC - 8",
+            "osm_id": "way/620428887"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.82264024285714,
+                21.422568585714288
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Erkekler Tuvaleti",
+            "name_en": "Toilet (Men)",
+            "type": "Toilet",
+            "icon": "fa-male",
+            "description": "Toilet (Men) - Toilet (Men)",
+            "osm_id": "way/620428888"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.823092880000004,
+                21.423117859999998
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "دورات مياه النساء - 7",
+            "name_en": "Women's WC - 7",
+            "type": "Toilet",
+            "icon": "fa-female",
+            "description": "Toilet (Women) - Women's WC - 7",
+            "osm_id": "way/620428889"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.822652157142855,
+                21.422228914285714
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Toilet (Women)",
+            "type": "Toilet",
+            "icon": "fa-female",
+            "description": "Toilet (Women) - Toilet (Women)",
+            "osm_id": "way/621288961"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8245341,
+                21.42034822
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Toilet (Men)",
+            "type": "Toilet",
+            "icon": "fa-male",
+            "description": "Toilet (Men) - Toilet (Men)",
+            "osm_id": "node/5862054603"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8286892,
+                21.4248517
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Toilet (Women)",
+            "type": "Toilet",
+            "icon": "fa-female",
+            "description": "Toilet (Women) - Toilet (Women)",
+            "osm_id": "node/5862054604"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8282164,
+                21.4250444
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Toilet (Men)",
+            "type": "Toilet",
+            "icon": "fa-male",
+            "description": "Toilet (Men) - Toilet (Men)",
+            "osm_id": "node/5862288832"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8300249,
+                21.4232362
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Toilet (Women)",
+            "type": "Toilet",
+            "icon": "fa-female",
+            "description": "Toilet (Women) - Toilet (Women)",
+            "osm_id": "node/5862288833"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.83031,
+                21.4229161
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "حمامات رجال",
+            "name_en": "Men's WC - 8",
+            "type": "Toilet",
+            "icon": "fa-male",
+            "description": "Toilet (Men) - Men's WC - 8",
+            "osm_id": "node/5869157285"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8237035,
+                21.4206025
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Toilet",
+            "type": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Toilet - Toilet",
+            "osm_id": "node/12898339022"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8213574,
+                21.4251632
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Toilet",
+            "type": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Toilet - Toilet",
+            "osm_id": "node/12898339023"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8211451,
+                21.4252752
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Toilet",
+            "type": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Toilet - Toilet",
+            "osm_id": "node/12898339024"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8207911,
+                21.4254201
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Toilet",
+            "type": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Toilet - Toilet",
+            "osm_id": "node/12898339025"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8216689,
+                21.4258089
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Toilet",
+            "type": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Toilet - Toilet",
+            "osm_id": "node/12898339026"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8213928,
+                21.4260725
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Toilet",
+            "type": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Toilet - Toilet",
+            "osm_id": "node/12898339027"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8219166,
+                21.4256376
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Toilet",
+            "type": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Toilet - Toilet",
+            "osm_id": "node/12898339028"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8226032,
+                21.4264151
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Toilet",
+            "type": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Toilet - Toilet",
+            "osm_id": "node/12898339029"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8224758,
+                21.4266457
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Toilet",
+            "name_en": "Toilet",
+            "type": "Toilet",
+            "icon": "fa-restroom",
+            "description": "Toilet - Toilet",
+            "osm_id": "node/12898339030"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8222847,
+                21.4269422
             ]
         }
     }
