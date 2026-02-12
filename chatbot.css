@@ -327,8 +327,13 @@ body.show-chatbot .chatbot {
         padding: 25px 15px 100px;
     }
 
+    .chatbot header {
+        padding-top: calc(12px + env(safe-area-inset-top));
+    }
+
     .chatbot header .close-btn {
         display: block;
+        top: calc(12px + env(safe-area-inset-top));
     }
 
     body.show-chatbot .chatbot {

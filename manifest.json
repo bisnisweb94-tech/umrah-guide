@@ -3,7 +3,7 @@
   "short_name": "Al Haramain",
   "description": "Panduan Umrah Digital Premium dengan peta interaktif Masjidil Haram",
   "start_url": "index.html",
-  "display": "fullscreen",
+  "display": "standalone",
   "orientation": "portrait",
   "background_color": "#1a3a2a",
   "theme_color": "#1a3a2a",

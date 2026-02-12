@@ -91,9 +91,10 @@ class IslamQARetriever {
             score: this.calculateScore(fatwa, keywords)
         }));
 
-        // Sort by score and get top K
+        // Sort by score and get top K (minimum score 5 to avoid weak/irrelevant matches)
+        const MIN_SCORE = 5;
         const topResults = scored
-            .filter(item => item.score > 0)
+            .filter(item => item.score >= MIN_SCORE)
             .sort((a, b) => b.score - a.score)
             .slice(0, topK)
             .map(item => item.fatwa);
