@@ -591,6 +591,21 @@ body {
     transform: translateX(-50%) translateY(0);
 }
 
+@media (max-width: 768px) {
+    .toast {
+        top: 1rem;
+        /* Higher up on mobile */
+        width: 90%;
+        /* Take up most width */
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
 /* Success Area */
 .success-content {
     text-align: center;
@@ -849,6 +864,7 @@ body {
 .tr-card.active .tr-indo {
     color: var(--text-white);
 }
+
 /* --- PREMIUM LOCK SCREEN --- */
 #site-lock {
     position: fixed;
@@ -935,7 +951,7 @@ body {
 .lock-btn:hover {
     background: #f1c40f;
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .lock-error {
@@ -947,4 +963,6 @@ body {
     transition: opacity 0.3s ease;
 }
 
-.lock-error.show { opacity: 1; }
+.lock-error.show {
+    opacity: 1;
+}

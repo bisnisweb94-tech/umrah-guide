@@ -1,0 +1,19 @@
+{
+  "name": "Al Haramain - Panduan Umrah Digital",
+  "short_name": "Al Haramain",
+  "description": "Panduan Umrah Digital Premium dengan peta interaktif Masjidil Haram",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1a3a2a",
+  "theme_color": "#1a3a2a",
+  "icons": [
+    {
+      "src": "kaaba_illustration_1770741171195.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "scope": "./"
+}

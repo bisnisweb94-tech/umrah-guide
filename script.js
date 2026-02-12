@@ -236,13 +236,12 @@ function handleTawafRotation() {
         badge.classList.add('hidden');
     }
 
-    // Select prayer based on current round count (0-7)
-    const doaIdx = count;
-
-    if (DATA_DOA.tawaf[doaIdx]) {
-        renderDoa('tawaf', doaIdx);
-        document.getElementById('doa-title-tawaf').innerText = DATA_DOA.tawaf[doaIdx].title;
-    }
+    // Logic doa per putaran dihapus karena UI baru menggunakan doa statis (umum)
+    // const doaIdx = count;
+    // if (DATA_DOA.tawaf[doaIdx]) {
+    //    renderDoa('tawaf', doaIdx);
+    //    document.getElementById('doa-title-tawaf').innerText = DATA_DOA.tawaf[doaIdx].title;
+    // }
 
     if (count === 7) {
         document.getElementById('btn-next-tawaf').classList.remove('hidden');

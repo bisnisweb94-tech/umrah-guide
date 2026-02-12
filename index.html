@@ -8,6 +8,28 @@
     <meta name="description"
         content="Panduan Umrah Digital dengan antarmuka premium, fitur penghitung putaran Tawaf & Sa'i, serta doa-doa lengkap sesuai sunnah.">
 
+    <!-- Hide lock instantly if already unlocked (injected before paint) -->
+    <script>
+        (function() {
+            var unlocked = false;
+            try { unlocked = localStorage.getItem('site_unlocked') === 'true'; } catch(e) {}
+            if (!unlocked) unlocked = location.search.indexOf('unlocked=1') !== -1;
+            if (unlocked) {
+                document.write('<style>#site-lock{display:none!important;transition:none!important}</style>');
+                try { localStorage.setItem('site_unlocked', 'true'); } catch(e) {}
+            }
+        })();
+    </script>
+
+    <!-- PWA Standalone -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Al Haramain">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#1a3a2a">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="kaaba_illustration_1770741171195.png">
+
     <!-- Font Arab & Latin -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +67,7 @@
 
             if (input === 'al-fatihah') {
                 lock.classList.add('unlocked');
-                sessionStorage.setItem('site_unlocked', 'true');
+                localStorage.setItem('site_unlocked', 'true');
                 triggerHaptic(50);
             } else {
                 error.classList.add('show');
@@ -60,12 +82,6 @@
             if (e.key === 'Enter') checkKey();
         });
 
-        // Check if already unlocked in this session
-        document.addEventListener('DOMContentLoaded', () => {
-            if (sessionStorage.getItem('site_unlocked') === 'true') {
-                document.getElementById('site-lock').style.display = 'none';
-            }
-        });
     </script>
     <div id="toast" class="toast">Selamat Datang di Panduan Umrah</div>
 
@@ -75,7 +91,7 @@
             <nav class="nav-pills">
                 <button id="nav-panduan" class="nav-item active" onclick="switchTab('panduan')">PRAKTEK</button>
                 <button id="nav-rukun" class="nav-item" onclick="switchTab('rukun')">TEORI</button>
-                <a href="peta.html" class="nav-item"
+                <a href="peta.html?unlocked=1" class="nav-item"
                     style="text-decoration: none; display: flex; align-items: center; justify-content: center;">PETA</a>
             </nav>
         </div>
@@ -1281,6 +1297,11 @@
     <script src="https://js.puter.com/v2/"></script>
     <script src="chatbot_rag.js"></script>
     <script src="chatbot_core.js?v=6.0"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').catch(() => {});
+        }
+    </script>
 </body>
 
 </html>
