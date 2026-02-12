@@ -1,8 +1,6 @@
-// Data Lokasi Penting Masjidil Haram - Versi Premium (OSM Map-3)
-// Diperbarui dengan koordinat lebih akurat dan kategori tambahan
-// Total POIs: 1850
-// Total Roads: 4508
-// Total Buildings: 2650
+// Data Lokasi Penting Masjidil Haram - Versi Premium (OSM Map-3 Updated)
+// Diperbarui dengan data dari map-3.osm dan transliterasi otomatis
+// Total POIs: 1911
 
 const masjidilHaramLocations = [
     {
@@ -33302,6 +33300,1104 @@ const masjidilHaramLocations = [
             "coordinates": [
                 39.8261095,
                 21.4225371
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Asfar Travel &amp; Tourism",
+            "name_en": "Asfar Travel amp Tourism",
+            "type": "Shop",
+            "icon": "fa-shopping-cart",
+            "description": "Shop - Asfar Travel amp Tourism",
+            "osm_id": "6484543163"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8199552,
+                21.4390302
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Nasayim aljoury hotel فندق نسائم الجوري",
+            "name_en": "Nasayim aljoury hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Nasayim aljoury hotel",
+            "osm_id": "12396780865"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8309326,
+                21.4067889
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Al Qasswa Tower Hotel فندق أبراج القصواء",
+            "name_en": "Al Qasswa Tower Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Al Qasswa Tower Hotel",
+            "osm_id": "12396789195"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8302981,
+                21.4073117
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Al Olayan Palace Hotel فندق قصر العليان",
+            "name_en": "Al Olayan Palace Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Al Olayan Palace Hotel",
+            "osm_id": "12396813612"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8301154,
+                21.4069914
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Najmat Ajyad Hotel فندق نجمة أجياد",
+            "name_en": "Najmat Ajyad Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Najmat Ajyad Hotel",
+            "osm_id": "12396813695"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8300883,
+                21.4065175
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Samah Tower Hotel فندق برج السماح",
+            "name_en": "Samah Tower Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Samah Tower Hotel",
+            "osm_id": "12396824842"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8298078,
+                21.406033
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Al Nokbha Hotel 2 فندق النخبة",
+            "name_en": "Al Nokbha Hotel 2",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Al Nokbha Hotel 2",
+            "osm_id": "12396852547"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8293154,
+                21.4077914
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Batoul Ajyad Hotel فندق بتول أجياد",
+            "name_en": "Batoul Ajyad Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Batoul Ajyad Hotel",
+            "osm_id": "12396855441"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8290968,
+                21.4075438
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Rawdat Al Bait Hotel فندق روضة البيت",
+            "name_en": "Rawdat Al Bait Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Rawdat Al Bait Hotel",
+            "osm_id": "12396855458"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8295236,
+                21.4074276
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Rawabi ajyad Hotel فندق رؤيا روابي أجياد",
+            "name_en": "Rawabi ajyad Hotel Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Rawabi ajyad Hotel Hotel",
+            "osm_id": "12397197908"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8290029,
+                21.4094606
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Snood Al Rayan Hotel فندق سنود الريان",
+            "name_en": "Snood Al Rayan Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Snood Al Rayan Hotel",
+            "osm_id": "12397198027"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8289344,
+                21.4093909
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Shuraka a al khair ajyad Hotel فندق شركاء الخير أجياد",
+            "name_en": "Shuraka a al khair ajyad Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Shuraka a al khair ajyad Hotel",
+            "osm_id": "12397198041"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8291811,
+                21.4094604
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "اعمار ايليت",
+            "name_en": "Emaar Elite Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Emaar Elite Hotel",
+            "osm_id": "12397198060"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8292216,
+                21.4088207
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Nawazi hotel towers ابراج نوازي الفندقية",
+            "name_en": "Nawazi hotel towers",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Nawazi hotel towers",
+            "osm_id": "12397465287"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8298498,
+                21.409603
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "shurfat Al Alam Hotel فندق شرفة العالم الفندقية",
+            "name_en": "shurfat Al Alam Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - shurfat Al Alam Hotel",
+            "osm_id": "12397561819"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8296195,
+                21.4099744
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "shurfat makkah Hotel فندق شرفة مكة",
+            "name_en": "shurfat altalyie Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - shurfat altalyie Hotel",
+            "osm_id": "12397561881"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8297623,
+                21.4099467
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Arak Ajyad Hotel فندق اراك اجياد",
+            "name_en": "Arak Ajyad Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Arak Ajyad Hotel",
+            "osm_id": "12397604618"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8299268,
+                21.4103493
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "School House Elementary Science Boys مدرسة دار العلوم الابتدائية للبنين",
+            "name_en": "School House Elementary Science Boys",
+            "type": "Landmark",
+            "icon": "fa-map-marker-alt",
+            "description": "Landmark - School House Elementary Science Boys",
+            "osm_id": "12397676838"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8304579,
+                21.4044104
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Mira Awan Hotel فندق ميرا اوان",
+            "name_en": "Mira Awan Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Mira Awan Hotel",
+            "osm_id": "12397680340"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8310935,
+                21.4062684
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Rehab almarwa Hotel فندق رحاب المروة",
+            "name_en": "Rehab almarwa Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Rehab almarwa Hotel",
+            "osm_id": "12397792724"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8306262,
+                21.4038631
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Al Haram 4 Residential Tower برج الحرم 4 السكني",
+            "name_en": "Al Haram 4 Residential Tower",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Al Haram 4 Residential Tower",
+            "osm_id": "12397792751"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8305837,
+                21.4040052
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Rawasi Taif Hotel فندق رواسى الطائف",
+            "name_en": "Rawasi Taif Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Rawasi Taif Hotel",
+            "osm_id": "12406667874"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8267581,
+                21.4021129
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Riffa Riy Bakhsh Hotel فندق الرفاع ريع بخش",
+            "name_en": "Riffa Riy Bakhsh Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Riffa Riy Bakhsh Hotel",
+            "osm_id": "12406772243"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8313799,
+                21.4039071
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Rawabi Al Hajr Hotel فندق روابي الهجر",
+            "name_en": "Rawabi Al Hajr Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Rawabi Al Hajr Hotel",
+            "osm_id": "12406935950"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8325049,
+                21.4057557
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Naba Taiba Hotel 4 فندق نبع طيبة",
+            "name_en": "Naba Taiba Hotel 4",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Naba Taiba Hotel 4",
+            "osm_id": "12406944350"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8325322,
+                21.404968
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Al Naseem Mawaddah Hotel فندق النسيم مودة",
+            "name_en": "Al Naseem Mawaddah Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Al Naseem Mawaddah Hotel",
+            "osm_id": "12406944402"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8322037,
+                21.4056996
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Rawabi Salam Hotel فندق روابي سلام",
+            "name_en": "Rawabi Salam Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Rawabi Salam Hotel",
+            "osm_id": "12406944470"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8318302,
+                21.4052411
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Al Aseel Plaza Hotel فندق الأصيل بلازا",
+            "name_en": "Al Aseel Plaza Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Al Aseel Plaza Hotel",
+            "osm_id": "12407519823"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8338809,
+                21.4061924
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Sari Marmarah Hotel فندق ساري مرمرة",
+            "name_en": "Sari Marmarah Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Sari Marmarah Hotel",
+            "osm_id": "12407565148"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8339311,
+                21.4064368
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Sadaf al khair serviced unit صدف الخير للشقق المخدومة",
+            "name_en": "sadaf al khair serviced unit",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - sadaf al khair serviced unit",
+            "osm_id": "12407674326"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8322626,
+                21.4064705
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Alaseel Refadah hotel فندق الأصيل رفادة",
+            "name_en": "Alaseel Refadah hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Alaseel Refadah hotel",
+            "osm_id": "12407707752"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8325495,
+                21.4063648
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "alaseel saqaia hotel فندق الأصيل سقاية",
+            "name_en": "alaseel saqaia hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - alaseel saqaia hotel",
+            "osm_id": "12424515705"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8343207,
+                21.4063101
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "alsayfa hotel فندق السيف",
+            "name_en": "alsayfa hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - alsayfa hotel",
+            "osm_id": "12424523807"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8334746,
+                21.4066964
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "nazel rawabi al wahaj نزل روابي الوهج",
+            "name_en": "nazel rawabi al wahaj",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - nazel rawabi al wahaj",
+            "osm_id": "12424535574"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8343424,
+                21.4078087
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Luluat Al Hamiri Hotel فندق لؤلؤة الحميري",
+            "name_en": "Luluat Al Hamiri Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Luluat Al Hamiri Hotel",
+            "osm_id": "12425591922"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8330819,
+                21.4065977
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Masjid Mohamed Al Sabil مسجد محمد السبيل",
+            "name_en": "Masjid Mohamed Al Sabil",
+            "type": "Mosque",
+            "icon": "fa-mosque",
+            "description": "Mosque - Masjid Mohamed Al Sabil",
+            "osm_id": "12512621514"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.835717,
+                21.4156299
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Miaad almajd hotel فندق ميعاد المجد",
+            "name_en": "Miaad almajd hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Miaad almajd hotel",
+            "osm_id": "12806420626"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8244699,
+                21.4120556
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Algerian Hadj Affairs Office مكتب شؤون حجاج الجزائر",
+            "name_en": "Algerian Hajj Affairs Office",
+            "type": "Mosque",
+            "icon": "fa-mosque",
+            "description": "Mosque - Algerian Hajj Affairs Office",
+            "osm_id": "12806456551"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8249211,
+                21.4123508
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "اعمار الخير الذهبي",
+            "name_en": "Emaar Al Khair Golden Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Emaar Al Khair Golden Hotel",
+            "osm_id": "12806776568"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8238116,
+                21.4122661
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "najmat ul khalij Hotel فندق نجمة الخليج",
+            "name_en": "najmat ul khalij Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - najmat ul khalij Hotel",
+            "osm_id": "12809347167"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8242926,
+                21.4132736
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "rihab Al bustan Hotel 3 فندق رحاب البستان",
+            "name_en": "rihab Al bustan Hotel 3",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - rihab Al bustan Hotel 3",
+            "osm_id": "12809358514"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8240018,
+                21.412926
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Masjid Abu Marwan مسجد ابو مروان",
+            "name_en": "Masjid Abu Marwan",
+            "type": "Mosque",
+            "icon": "fa-mosque",
+            "description": "Mosque - Masjid Abu Marwan",
+            "osm_id": "12809358519"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8241278,
+                21.41299
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "luluah al iman hotel فندق لؤلؤة الإيمان",
+            "name_en": "luluah al iman hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - luluah al iman hotel",
+            "osm_id": "12809369891"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8238841,
+                21.4128684
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "al mosafir al hijrah hotel فندق المسافر الهجرة",
+            "name_en": "al mosafir al hijrah hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - al mosafir al hijrah hotel",
+            "osm_id": "12809375097"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8236047,
+                21.4123806
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "mawaddat alhasanayn hotel فندق مودة الحسنين",
+            "name_en": "mawaddat alhasanayn hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - mawaddat alhasanayn hotel",
+            "osm_id": "12809375119"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8235067,
+                21.4123261
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Pharmacy صيدلية",
+            "name_en": "Pharmacy",
+            "type": "Landmark",
+            "icon": "fa-map-marker-alt",
+            "description": "Landmark - Pharmacy",
+            "osm_id": "12809375131"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8230549,
+                21.4123945
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "shrook al misk hotel فندق شروق المسك",
+            "name_en": "shrook al misk hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - shrook al misk hotel",
+            "osm_id": "12809459116"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8231538,
+                21.4123852
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Al Massa Hani Hotel فندق الماسة هاني",
+            "name_en": "Al Massa Hani Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - Al Massa Hani Hotel",
+            "osm_id": "12809498958"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8232855,
+                21.4126866
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Masjid مسجد",
+            "name_en": "Masjid",
+            "type": "Mosque",
+            "icon": "fa-mosque",
+            "description": "Mosque - Masjid",
+            "osm_id": "12811373897"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8245485,
+                21.4132618
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "baity al zahaby hotel فندق بيتي الذهبي",
+            "name_en": "baity al zahaby hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - baity al zahaby hotel",
+            "osm_id": "12811519297"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8233869,
+                21.4128925
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "kadi al hijrah hotal فندق كادي الهجرة",
+            "name_en": "kadi al hijrah hotal",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - kadi al hijrah hotal",
+            "osm_id": "12811542924"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.823583,
+                21.4129967
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "al jafaria hotel 1 فندق الجعفرية",
+            "name_en": "al jafaria hotel 1",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - al jafaria hotel 1",
+            "osm_id": "12811717793"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8233852,
+                21.4130009
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "besan almasi hotel فندق بيسان الماسي",
+            "name_en": "besan almasi hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - besan almasi hotel",
+            "osm_id": "12811956541"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.824616,
+                21.4112083
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "bessan hotel فندق بيسان",
+            "name_en": "bessan hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - bessan hotel",
+            "osm_id": "12811956554"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8223235,
+                21.4119563
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Osama Mini Market بقالة اسامة",
+            "name_en": "Osama Mini Market",
+            "type": "Shop",
+            "icon": "fa-shopping-cart",
+            "description": "Shop - Osama Mini Market",
+            "osm_id": "12811972021"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8228146,
+                21.4121469
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "al noor super market مركز النور",
+            "name_en": "al noor super market",
+            "type": "Shop",
+            "icon": "fa-shopping-cart",
+            "description": "Shop - al noor super market",
+            "osm_id": "12811972057"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8227626,
+                21.4120918
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "afwaj al tawba hotel فندق افواج التوبة",
+            "name_en": "afwaj al tawba hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - afwaj al tawba hotel",
+            "osm_id": "12811972088"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8227306,
+                21.4118821
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "al shamooa hotel فندق الشموع",
+            "name_en": "al shamooa hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - al shamooa hotel",
+            "osm_id": "12811972126"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8226627,
+                21.4117092
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "زوارالحرمين",
+            "name_en": "zowar al haramain Hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - zowar al haramain Hotel",
+            "osm_id": "12812121182"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8230124,
+                21.4125684
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "jalal mutamaiz Hotel 2 فندق جلال المتميز",
+            "name_en": "jalal mutamaiz Hotel 2",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - jalal mutamaiz Hotel 2",
+            "osm_id": "12812341886"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8225201,
+                21.4125523
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "asawir altaj hotel فندق اساور التاج",
+            "name_en": "asawir altaj hotel",
+            "type": "Hotel",
+            "icon": "fa-hotel",
+            "description": "Hotel - asawir altaj hotel",
+            "osm_id": "12812346305"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                39.8227914,
+                21.4127459
             ]
         }
     }
