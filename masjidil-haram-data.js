@@ -3639,24 +3639,7 @@ const masjidilHaramLocations = [
             ]
         }
     },
-    {
-        "type": "Feature",
-        "properties": {
-            "name": "Bab Al-Salam",
-            "name_en": "Bab Al-Salam",
-            "type": "Gate",
-            "icon": "fa-door-open",
-            "description": "Gate - Bab Al-Salam",
-            "osm_id": "6301219294"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                39.829878,
-                21.4283825
-            ]
-        }
-    },
+
     {
         "type": "Feature",
         "properties": {
