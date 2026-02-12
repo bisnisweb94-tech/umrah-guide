@@ -25,7 +25,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Al Haramain">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#1a3a2a">
+    <meta name="theme-color" content="#ffffff">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
@@ -66,6 +66,8 @@
         .map-header {
             position: fixed;
             top: 12px;
+            /* Safe area adjustment */
+            top: max(12px, env(safe-area-inset-top) + 12px);
             left: 12px;
             right: 12px;
             z-index: 1000;
@@ -235,6 +237,8 @@
             left: 0;
             right: 0;
             padding: 16px 20px;
+            /* Safe area adjustment */
+            padding-top: max(16px, env(safe-area-inset-top) + 16px);
             background: #34a853;
             color: white;
             z-index: 1100;
@@ -272,6 +276,8 @@
         .chips-wrapper {
             position: fixed;
             top: 84px;
+            /* Safe area adjustment */
+            top: calc(84px + env(safe-area-inset-top));
             /* Below search box on mobile */
             left: 0;
             right: 0;

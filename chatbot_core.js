@@ -79,12 +79,12 @@ const linkify = (text) => {
 const getSystemPrompt = (context) => {
     return `Kamu adalah IslamAI, asisten Islami yang hangat, empati, dan bijaksana. 
 Sampaikan jawaban HANYA berdasarkan konteks berikut:
-${context}
+${context || "Gunakan pengetahuan umum Islami jika konteks tidak spesifik, namun utamakan rujukan IslamQA."}
 
 ATURAN:
-1. JANGAN menggunakan pengetahuan umum. Jika tidak ada di konteks, katakan tidak tahu.
-2. Santun & Menyejukkan.
-3. Sertakan nomor fatwa/URL jika ada di konteks.`;
+1. Santun & Menyejukkan.
+2. Sertakan nomor fatwa/URL jika ada di konteks.
+3. Jangan mengarang informasi.`;
 }
 
 // Main Generation Function
@@ -92,43 +92,108 @@ const generateResponse = async (chatElement) => {
     const messageElement = chatElement.querySelector("p");
 
     try {
-        // 1. Get Local Context (Optional fallback/additional)
-        let localContext = "";
+        // 1. Get Context (Local RAG)
+        let context = "";
         if (typeof islamQARetriever !== 'undefined') {
             try {
-                localContext = await islamQARetriever.getContext(userMessage, 2);
-            } catch (e) { console.warn("Local RAG Error:", e); }
+                context = await islamQARetriever.getContext(userMessage, 3);
+            } catch (e) { console.warn("RAG Error:", e); }
         }
 
-        // 2. Call Server API (Always uses Vector DB + AI Provider)
-        const response = await fetch('/api/chat', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                messages: [
-                    ...chatHistory.map(msg => ({
-                        role: msg.role === 'model' ? 'assistant' : 'user',
-                        content: msg.parts[0].text
-                    })),
-                    { role: 'user', content: userMessage }
-                ],
-                provider: currentProvider,
-                context: localContext // Send local context to be merged with Vector DB context on server
-            })
-        });
-
-        const data = await response.json();
-        if (data.error) throw new Error(data.error);
-
-        displayResponse(messageElement, data.message.content);
+        // 2. Select Provider Logic
+        if (currentProvider === "claude") {
+            await generateClaude(messageElement, context);
+        } else if (currentProvider === "gemini") {
+            await generateGemini(messageElement, context);
+        } else if (currentProvider === "gpt4o") {
+            await generateOpenAIStyle(messageElement, context, AI_PROVIDERS.gpt4o);
+        } else if (currentProvider === "groq") {
+            await generateOpenAIStyle(messageElement, context, AI_PROVIDERS.groq);
+        }
 
     } catch (error) {
         console.error("Chat Error:", error);
-        messageElement.textContent = "Maaf, terjadi kesalahan atau API belum siap. Mohon coba lagi.";
+        messageElement.textContent = "Maaf, terjadi kesalahan. Mohon coba lagi atau ganti provider.";
         messageElement.classList.add("error");
     } finally {
         chatbox.scrollTo(0, chatbox.scrollHeight);
     }
+}
+
+// --- Specific Generators ---
+
+const generateClaude = async (messageElement, context) => {
+    const messages = [{ role: "system", content: getSystemPrompt(context) }];
+    chatHistory.forEach(msg => {
+        messages.push({
+            role: msg.role === "model" ? "assistant" : "user",
+            content: msg.parts[0].text
+        });
+    });
+
+    const response = await puter.ai.chat(messages, { model: 'claude-3.5-sonnet' });
+    const responseText = response.message.content;
+    displayResponse(messageElement, responseText);
+}
+
+const generateGemini = async (messageElement, context, retryCount = 0) => {
+    const provider = AI_PROVIDERS.gemini;
+    const key = provider.keys[provider.currentKeyIndex];
+    const url = provider.endpoint(key);
+
+    const contents = chatHistory.map(msg => ({
+        role: msg.role === 'model' ? 'model' : 'user',
+        parts: [{ text: msg.parts[0].text }]
+    }));
+
+    const response = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            system_instruction: { parts: [{ text: getSystemPrompt(context) }] },
+            contents: contents
+        })
+    });
+
+    const data = await response.json();
+
+    if (data.error) {
+        if (retryCount < provider.keys.length - 1) {
+            provider.currentKeyIndex++;
+            showLimitNotification("Gemini", "Mencoba kunci cadangan...");
+            return generateGemini(messageElement, context, retryCount + 1);
+        }
+        throw new Error(data.error.message);
+    }
+
+    displayResponse(messageElement, data.candidates[0].content.parts[0].text);
+}
+
+const generateOpenAIStyle = async (messageElement, context, provider) => {
+    const messages = [
+        { role: 'system', content: getSystemPrompt(context) },
+        ...chatHistory.map(msg => ({
+            role: msg.role === 'model' ? 'assistant' : 'user',
+            content: msg.parts[0].text
+        }))
+    ];
+
+    const response = await fetch(provider.endpoint, {
+        method: 'POST',
+        headers: {
+            'Authorization': `Bearer ${provider.keys[0]}`,
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            model: provider.model,
+            messages: messages,
+            temperature: 0.7
+        })
+    });
+
+    const data = await response.json();
+    if (data.error) throw new Error(data.error.message);
+    displayResponse(messageElement, data.choices[0].message.content);
 }
 
 const displayResponse = (element, text) => {
