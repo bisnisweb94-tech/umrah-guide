@@ -7,50 +7,7 @@ const sendChatBtn = document.querySelector(".chat-input span");
 let userMessage = null;
 const inputInitHeight = chatInput.scrollHeight;
 let chatHistory = [];
-let currentProvider = "claude"; // Default provider
-
-// AI Provider Configuration (CLIENT-SIDE FOR LOCAL DEV)
-const AI_PROVIDERS = {
-    claude: {
-        name: "Claude 3.5 (Pro)",
-        model: "claude-3.5-sonnet", // Uses Puter.js
-        color: "#d97757"
-    },
-    gpt4o: {
-        name: "GPT-4o (GitHub)",
-        keys: [(() => {
-            const codes = [103, 105, 116, 104, 117, 98, 95, 112, 97, 116, 95, 49, 49, 66, 52, 79, 82, 76, 82, 65, 48, 82, 122, 67, 103, 72, 108, 106, 66, 99, 57, 90, 97, 95, 106, 100, 80, 105, 102, 70, 116, 110, 100, 72, 72, 90, 108, 113, 104, 81, 105, 108, 113, 66, 76, 115, 74, 97, 88, 110, 119, 118, 102, 113, 108, 122, 114, 117, 81, 102, 119, 76, 119, 70, 85, 75, 99, 51, 71, 52, 50, 50, 67, 81, 54, 103, 78, 108, 49, 109, 99, 54, 116];
-            return codes.map(c => String.fromCharCode(c)).join("");
-        })()],
-        currentKeyIndex: 0,
-        model: "gpt-4o",
-        endpoint: "https://models.inference.ai.azure.com/chat/completions",
-        color: "#1a7f37"
-    },
-    gemini: {
-        name: "Gemini 3 Flash",
-        keys: [
-            "AIzaSyBod86uKNfCRbuQw9DaQbYAJzIWrlFeyts",
-            "AIzaSyCSn38z15_DaQxJCWGZ4sjYTHcpg4U0bkg",
-            "AIzaSyC2Kwu6gHkKdLLyWaCB73r70mY6WGuCjRw"
-        ],
-        currentKeyIndex: 0,
-        model: "gemini-3-flash-preview",
-        endpoint: (key) => `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${key}`,
-        color: "#4285f4"
-    },
-    groq: {
-        name: "Groq (Lightning)",
-        keys: [(() => {
-            const codes = [103, 115, 107, 95, 114, 85, 79, 82, 81, 98, 56, 78, 122, 71, 76, 84, 84, 90, 87, 116, 90, 76, 56, 72, 87, 71, 100, 121, 98, 51, 70, 89, 73, 122, 105, 55, 116, 103, 57, 77, 107, 72, 90, 56, 118, 108, 53, 55, 101, 70, 72, 81, 49, 81, 86, 66];
-            return codes.map(c => String.fromCharCode(c)).join("");
-        })()],
-        currentKeyIndex: 0,
-        model: "llama-3.3-70b-versatile",
-        endpoint: "https://api.groq.com/openai/v1/chat/completions",
-        color: "#f55036"
-    }
-};
+let currentProvider = "gemini"; // Default provider
 
 const createChatLi = (message, className) => {
     const chatLi = document.createElement("li");
@@ -61,14 +18,6 @@ const createChatLi = (message, className) => {
     return chatLi;
 }
 
-const showLimitNotification = (providerName, message = null) => {
-    const notification = document.createElement("div");
-    notification.className = "limit-notification";
-    notification.innerHTML = `⚠️ ${message || `${providerName} limit reached. Switching...`}`;
-    chatbox.appendChild(notification);
-    setTimeout(() => notification.remove(), 4000);
-}
-
 const linkify = (text) => {
     const urlRegex = /(https?:\/\/[^\s]+)/g;
     return text.replace(urlRegex, (url) => {
@@ -76,162 +25,42 @@ const linkify = (text) => {
     });
 }
 
-// Daftar website terpercaya yang diizinkan sebagai sumber
-const TRUSTED_SOURCES = [
-    "islamqa.info",
-    "binbaz.org.sa",
-    "islamweb.net",
-    "alquranmulia.wordpress.com",
-    "muslim.or.id",
-    "almanhaj.or.id"
-];
-
-const getSystemPrompt = (context) => {
-    const sourceList = TRUSTED_SOURCES.map(s => `- ${s}`).join('\n');
-
-    if (!context) {
-        return `Kamu adalah IslamAI, asisten Islami yang hangat, empati, dan bijaksana.
-
-ATURAN KETAT:
-1. Kamu TIDAK BOLEH menjawab menggunakan pengetahuan umum atau hafalanmu sendiri.
-2. Kamu HANYA boleh merujuk informasi dari sumber-sumber terpercaya berikut:
-${sourceList}
-3. Karena saat ini TIDAK ADA konteks yang relevan dari database, jawab dengan:
-   "Mohon maaf, saya belum memiliki informasi mengenai hal tersebut dalam database kami. Silakan kunjungi langsung islamqa.info untuk mencari jawabannya."
-4. Tetap santun dan menyejukkan.
-5. JANGAN mengarang atau mengira-ngira jawaban.`;
-    }
-
-    return `Kamu adalah IslamAI, asisten Islami yang hangat, empati, dan bijaksana.
-
-Jawab HANYA berdasarkan konteks berikut:
-${context}
-
-ATURAN KETAT:
-1. DILARANG menjawab di luar konteks yang diberikan di atas.
-2. DILARANG menggunakan pengetahuan umum atau hafalanmu sendiri.
-3. Sumber yang diizinkan HANYA dari website berikut:
-${sourceList}
-4. Jika pertanyaan user TIDAK tercakup dalam konteks di atas, jawab:
-   "Mohon maaf, saya belum memiliki informasi mengenai hal tersebut dalam database kami. Silakan kunjungi langsung islamqa.info untuk mencari jawabannya."
-5. SELALU sertakan nomor fatwa dan URL sumber dari konteks.
-6. Tetap santun & menyejukkan.
-7. JANGAN mengarang atau mengira-ngira jawaban.`;
-}
-
-// Main Generation Function
+// Main Generation Function — semua lewat /api/chat (server-side)
 const generateResponse = async (chatElement) => {
     const messageElement = chatElement.querySelector("p");
 
     try {
-        // 1. Get Context (Local RAG)
-        let context = "";
-        if (typeof islamQARetriever !== 'undefined') {
-            try {
-                context = await islamQARetriever.getContext(userMessage, 3);
-            } catch (e) { console.warn("RAG Error:", e); }
+        const response = await fetch('/api/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                messages: chatHistory.map(msg => ({
+                    role: msg.role === 'model' ? 'assistant' : 'user',
+                    content: msg.parts[0].text
+                })),
+                provider: currentProvider
+            })
+        });
+
+        if (!response.ok) {
+            const err = await response.json();
+            throw new Error(err.error || 'Server error');
         }
 
-        // 2. Select Provider Logic
-        if (currentProvider === "claude") {
-            await generateClaude(messageElement, context);
-        } else if (currentProvider === "gemini") {
-            await generateGemini(messageElement, context);
-        } else if (currentProvider === "gpt4o") {
-            await generateOpenAIStyle(messageElement, context, AI_PROVIDERS.gpt4o);
-        } else if (currentProvider === "groq") {
-            await generateOpenAIStyle(messageElement, context, AI_PROVIDERS.groq);
-        }
+        const data = await response.json();
+        const responseText = data.message.content;
+
+        messageElement.innerHTML = linkify(responseText.trim());
+        chatHistory.push({ role: "model", parts: [{ text: responseText }] });
+        if (chatHistory.length > 20) chatHistory = chatHistory.slice(-20);
 
     } catch (error) {
         console.error("Chat Error:", error);
-        messageElement.textContent = "Maaf, terjadi kesalahan. Mohon coba lagi atau ganti provider.";
+        messageElement.textContent = "Maaf, terjadi kesalahan koneksi ke server. Mohon coba lagi.";
         messageElement.classList.add("error");
     } finally {
         chatbox.scrollTo(0, chatbox.scrollHeight);
     }
-}
-
-// --- Specific Generators ---
-
-const generateClaude = async (messageElement, context) => {
-    const messages = [{ role: "system", content: getSystemPrompt(context) }];
-    chatHistory.forEach(msg => {
-        messages.push({
-            role: msg.role === "model" ? "assistant" : "user",
-            content: msg.parts[0].text
-        });
-    });
-
-    const response = await puter.ai.chat(messages, { model: 'claude-3.5-sonnet' });
-    const responseText = response.message.content;
-    displayResponse(messageElement, responseText);
-}
-
-const generateGemini = async (messageElement, context, retryCount = 0) => {
-    const provider = AI_PROVIDERS.gemini;
-    const key = provider.keys[provider.currentKeyIndex];
-    const url = provider.endpoint(key);
-
-    const contents = chatHistory.map(msg => ({
-        role: msg.role === 'model' ? 'model' : 'user',
-        parts: [{ text: msg.parts[0].text }]
-    }));
-
-    const response = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            system_instruction: { parts: [{ text: getSystemPrompt(context) }] },
-            contents: contents
-        })
-    });
-
-    const data = await response.json();
-
-    if (data.error) {
-        if (retryCount < provider.keys.length - 1) {
-            provider.currentKeyIndex++;
-            showLimitNotification("Gemini", "Mencoba kunci cadangan...");
-            return generateGemini(messageElement, context, retryCount + 1);
-        }
-        throw new Error(data.error.message);
-    }
-
-    displayResponse(messageElement, data.candidates[0].content.parts[0].text);
-}
-
-const generateOpenAIStyle = async (messageElement, context, provider) => {
-    const messages = [
-        { role: 'system', content: getSystemPrompt(context) },
-        ...chatHistory.map(msg => ({
-            role: msg.role === 'model' ? 'assistant' : 'user',
-            content: msg.parts[0].text
-        }))
-    ];
-
-    const response = await fetch(provider.endpoint, {
-        method: 'POST',
-        headers: {
-            'Authorization': `Bearer ${provider.keys[0]}`,
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            model: provider.model,
-            messages: messages,
-            temperature: 0.7
-        })
-    });
-
-    const data = await response.json();
-    if (data.error) throw new Error(data.error.message);
-    displayResponse(messageElement, data.choices[0].message.content);
-}
-
-const displayResponse = (element, text) => {
-    element.innerHTML = linkify(text.trim());
-    chatHistory.push({ role: "model", parts: [{ text: text }] });
-    if (chatHistory.length > 20) chatHistory = chatHistory.slice(-20);
 }
 
 // --- Event Handlers ---
@@ -247,7 +76,7 @@ const handleChat = () => {
     chatHistory.push({ role: "user", parts: [{ text: userMessage }] });
 
     setTimeout(() => {
-        const incomingChatLi = createChatLi("Sedang mengetik...", "incoming");
+        const incomingChatLi = createChatLi("Mencari jawaban...", "incoming");
         chatbox.appendChild(incomingChatLi);
         chatbox.scrollTo(0, chatbox.scrollHeight);
         generateResponse(incomingChatLi);
