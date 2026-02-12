@@ -1,6 +1,6 @@
 // Data Lokasi Penting Masjidil Haram - Versi Premium (OSM Map-3 Updated)
 // Diperbarui dengan data dari map-3.osm, overpass-turbo (toilets), dan transliterasi otomatis
-// Total POIs: 1944
+// Total POIs: 1943
 
 const masjidilHaramLocations = [
     {

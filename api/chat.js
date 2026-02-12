@@ -14,14 +14,15 @@ export default async function handler(req, res) {
     try {
         let context = clientContext;
 
-        // Only use Vector DB if no client context provided (server-side backup)
-        if (!context) {
-            // 1. Generate Embeddings for the Query
-            const embedding = await generateEmbedding(userQuery);
+        // Always use Vector DB for RAG
+        // 1. Generate Embeddings for the Query
+        const embedding = await generateEmbedding(userQuery);
 
-            // 2. Search Upstash Vector DB
-            context = await searchVectorDB(embedding);
-        }
+        // 2. Search Upstash Vector DB
+        const vectorContext = await searchVectorDB(embedding);
+
+        // Combine client context (if any) with vector context
+        context = clientContext ? `${clientContext}\n\n${vectorContext}` : vectorContext;
 
         // 3. Construct System Prompt with Context
         const systemPrompt = constructSystemPrompt(context);
@@ -79,7 +80,10 @@ function constructSystemPrompt(context) {
 Sampaikan jawaban HANYA berdasarkan konteks berikut:
 ${context}
 
-Jika tidak ada di konteks, katakan tidak tahu. Selalu sertakan rujukan dari teks tersebut.`;
+ATURAN PENTING:
+1. JANGAN menjawab menggunakan pengetahuan umum atau hafalanmu.
+2. JIKA informasi tidak ada di konteks, KATAKAN: "Mohon maaf, saya belum memiliki ilmu mengenai hal tersebut berdasarkan database yang tersedia."
+3. Selalu sertakan rujukan (nomor fatwa/sumber) yang ada di konteks.`;
 }
 
 async function callAIProvider(provider, systemPrompt, messages) {
@@ -108,7 +112,36 @@ async function callAIProvider(provider, systemPrompt, messages) {
         return { message: { content: data.candidates[0].content.parts[0].text } };
     }
 
-    // 2. OPENAI-COMPATIBLE IMPLEMENTATION (Groq, GPT-4o)
+    // 2. CLAUDE (ANTHROPIC) IMPLEMENTATION
+    if (provider === 'claude') {
+        if (!process.env.ANTHROPIC_API_KEY) {
+            throw new Error('ANTHROPIC_API_KEY is not set on server.');
+        }
+
+        const response = await fetch('https://api.anthropic.com/v1/messages', {
+            method: 'POST',
+            headers: {
+                'x-api-key': process.env.ANTHROPIC_API_KEY,
+                'anthropic-version': '2023-06-01',
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify({
+                model: 'claude-3-5-sonnet-20240620',
+                max_tokens: 1024,
+                system: systemPrompt,
+                messages: messages.map(m => ({
+                    role: m.role === 'model' ? 'assistant' : (m.role === 'assistant' ? 'assistant' : 'user'),
+                    content: m.content
+                }))
+            })
+        });
+
+        const data = await response.json();
+        if (data.error) throw new Error(data.error.message || JSON.stringify(data.error));
+        return { message: { content: data.content[0].text } };
+    }
+
+    // 3. OPENAI-COMPATIBLE IMPLEMENTATION (Groq, GPT-4o)
     const githubKey = [103, 105, 116, 104, 117, 98, 95, 112, 97, 116, 95, 49, 49, 66, 52, 79, 82, 76, 82, 65, 48, 82, 122, 67, 103, 72, 108, 106, 66, 99, 57, 90, 97, 95, 106, 100, 80, 105, 102, 70, 116, 110, 100, 72, 72, 90, 108, 113, 104, 81, 105, 108, 113, 66, 76, 115, 74, 97, 88, 110, 119, 118, 102, 113, 108, 122, 114, 117, 81, 102, 119, 76, 119, 70, 85, 75, 99, 51, 71, 52, 50, 50, 67, 81, 54, 103, 78, 108, 49, 109, 99, 54, 116].map(c => String.fromCharCode(c)).join("");
     const groqKey = [103, 115, 107, 95, 114, 85, 79, 82, 81, 98, 56, 78, 122, 71, 76, 84, 84, 90, 87, 116, 90, 76, 56, 72, 87, 71, 100, 121, 98, 51, 70, 89, 73, 122, 105, 55, 116, 103, 57, 77, 107, 72, 90, 56, 118, 108, 53, 55, 101, 70, 72, 81, 49, 81, 86, 66].map(c => String.fromCharCode(c)).join("");
 
