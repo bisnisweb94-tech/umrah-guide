@@ -8,13 +8,13 @@
 
     <!-- Hide lock instantly if already unlocked (injected before paint) -->
     <script>
-        (function() {
+        (function () {
             var unlocked = false;
-            try { unlocked = localStorage.getItem('site_unlocked') === 'true'; } catch(e) {}
+            try { unlocked = localStorage.getItem('site_unlocked') === 'true'; } catch (e) { }
             if (!unlocked) unlocked = location.search.indexOf('unlocked=1') !== -1;
             if (unlocked) {
                 document.write('<style>#site-lock{display:none!important;transition:none!important}</style>');
-                try { localStorage.setItem('site_unlocked', 'true'); } catch(e) {}
+                try { localStorage.setItem('site_unlocked', 'true'); } catch (e) { }
             }
         })();
     </script>
@@ -26,7 +26,9 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#1a3a2a">
     <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="kaaba_illustration_1770741171195.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
     <!-- Leaflet & GIS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -650,10 +652,12 @@
                 -webkit-mask-image: linear-gradient(to right, black 0%, black calc(100% - 40px), transparent 100%);
                 mask-image: linear-gradient(to right, black 0%, black calc(100% - 40px), transparent 100%);
             }
+
             .chips-wrapper.can-scroll-left .category-chips {
                 -webkit-mask-image: linear-gradient(to right, transparent 0%, black 40px, black 100%);
                 mask-image: linear-gradient(to right, transparent 0%, black 40px, black 100%);
             }
+
             .chips-wrapper.can-scroll-left.can-scroll-right .category-chips {
                 -webkit-mask-image: linear-gradient(to right, transparent 0%, black 40px, black calc(100% - 40px), transparent 100%);
                 mask-image: linear-gradient(to right, transparent 0%, black 40px, black calc(100% - 40px), transparent 100%);
@@ -816,7 +820,7 @@
         /* Layer control panel styling */
         .leaflet-control-layers {
             border-radius: 8px !important;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.25) !important;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25) !important;
             border: none !important;
         }
 
@@ -824,6 +828,7 @@
         .leaflet-control-layers-list {
             display: none;
         }
+
         .leaflet-control-layers-expanded .leaflet-control-layers-list {
             display: block;
             max-height: 45vh;
@@ -1388,9 +1393,11 @@
             font-weight: 500;
             border-bottom: 1px solid #f1f3f4;
         }
+
         .dir-dropdown-item.dir-myloc i {
             color: #1a73e8;
         }
+
         .dir-dropdown-item i {
             color: #5f6368;
             font-size: 12px;
@@ -2360,7 +2367,7 @@
                 closeDirDropdowns();
             } else {
                 map.locate({ setView: false, maxZoom: 18 });
-                map.once('locationfound', function(e) {
+                map.once('locationfound', function (e) {
                     if (type === 'start') {
                         setStartPoint(e.latlng, 'Lokasi Saya');
                     } else {
@@ -2368,7 +2375,7 @@
                     }
                     closeDirDropdowns();
                 });
-                map.once('locationerror', function() {
+                map.once('locationerror', function () {
                     alert('Gagal mendapatkan lokasi. Pastikan GPS aktif.');
                 });
             }
@@ -2747,7 +2754,7 @@
 
             // Register Service Worker for PWA
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('sw.js').catch(() => {});
+                navigator.serviceWorker.register('sw.js').catch(() => { });
             }
         });
     </script>
