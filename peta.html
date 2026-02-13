@@ -22,7 +22,7 @@
 
     <!-- PWA Standalone -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Al Haramain">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#ffffff">
@@ -593,14 +593,6 @@
         }
 
         /* ... (all other non-layout-specific styles like markers, popups, etc remain here) ... */
-
-        /* Lift Leaflet controls on mobile to avoid being cut off */
-        @media (max-width: 768px) {
-            .leaflet-bottom {
-                padding-bottom: env(safe-area-inset-bottom);
-                margin-bottom: 16px;
-            }
-        }
 
         /* ========== DESKTOP (>= 768px) ========== */
         @media (min-width: 768px) {
