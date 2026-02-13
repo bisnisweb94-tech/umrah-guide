@@ -128,33 +128,53 @@ async function searchVectorDB(embedding) {
 }
 
 // ============================================================
-// WEB SEARCH (Google Custom Search — hanya trusted sites)
+// WEB SEARCH (Gemini Google Search grounding — trusted sites)
 // ============================================================
 async function searchWeb(query) {
-    const API_KEY = process.env.GOOGLE_CSE_API_KEY;
-    const CX = process.env.GOOGLE_CSE_ID;
+    const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
-    if (!API_KEY || !CX) {
-        console.warn('Google CSE not configured, skipping web search');
+    if (!GEMINI_API_KEY) {
+        console.warn('Gemini API key not configured, skipping web search');
         return "";
     }
 
     try {
-        // Batasi pencarian ke trusted sites saja
-        const siteQuery = TRUSTED_SITES.map(s => `site:${s}`).join(' OR ');
-        const searchQuery = `${query} (${siteQuery})`;
+        // Gunakan Gemini 2.5 Flash dengan Google Search grounding
+        const siteHint = TRUSTED_SITES.slice(0, 3).join(', ');
+        const searchPrompt = `Cari informasi tentang: "${query}". Fokus cari dari situs: ${siteHint}. Berikan jawaban ringkas beserta sumber URL.`;
 
-        const url = `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CX}&q=${encodeURIComponent(searchQuery)}&num=3&lr=lang_id`;
+        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
 
-        const response = await fetch(url);
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                contents: [{ parts: [{ text: searchPrompt }] }],
+                tools: [{ google_search: {} }]
+            })
+        });
+
         const data = await response.json();
 
-        if (!data.items || data.items.length === 0) return "";
+        if (!data.candidates || data.candidates.length === 0) return "";
 
-        // Format hasil web sebagai konteks
-        return data.items.map(item =>
-            `[SUMBER WEB] ${item.title}\nURL: ${item.link}\nIsi: ${item.snippet || ''}`
-        ).join('\n\n---\n\n');
+        const candidate = data.candidates[0];
+        // Ambil teks jawaban dari Gemini
+        const parts = candidate.content?.parts || [];
+        const text = parts.map(p => p.text || '').join('');
+
+        // Ambil sumber dari grounding metadata
+        const gm = candidate.groundingMetadata || {};
+        const chunks = gm.groundingChunks || [];
+        const sources = chunks
+            .map(ch => ch.web)
+            .filter(Boolean)
+            .map(w => `Sumber: ${w.title || ''} - ${w.uri || ''}`)
+            .join('\n');
+
+        if (!text) return "";
+
+        return `[HASIL WEB SEARCH]\n${text}\n\n${sources}`;
     } catch (error) {
         console.error('Web Search Error:', error);
         return "";
