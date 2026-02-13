@@ -3,6 +3,9 @@
  * Flow: Input → Vector DB → Web Search (fallback) → Auto-Ingest → LLM → Output
  */
 
+// Vercel: naikkan timeout (default 10s, Pro plan bisa 60s)
+export const maxDuration = 60;
+
 // Website terpercaya yang diizinkan untuk web search
 const TRUSTED_SITES = [
     "islamqa.info",
@@ -140,10 +143,14 @@ async function searchWeb(query) {
 
     try {
         // Gunakan Gemini 2.5 Flash dengan Google Search grounding
+        // Timeout 8 detik agar tidak melebihi Vercel function limit
         const siteHint = TRUSTED_SITES.slice(0, 3).join(', ');
-        const searchPrompt = `Cari informasi tentang: "${query}". Fokus cari dari situs: ${siteHint}. Berikan jawaban ringkas beserta sumber URL.`;
+        const searchPrompt = `Cari informasi tentang: "${query}". Fokus dari situs: ${siteHint}. Jawab ringkas dengan sumber URL.`;
 
         const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 8000);
 
         const response = await fetch(url, {
             method: 'POST',
@@ -151,9 +158,11 @@ async function searchWeb(query) {
             body: JSON.stringify({
                 contents: [{ parts: [{ text: searchPrompt }] }],
                 tools: [{ google_search: {} }]
-            })
+            }),
+            signal: controller.signal
         });
 
+        clearTimeout(timeout);
         const data = await response.json();
 
         if (!data.candidates || data.candidates.length === 0) return "";
@@ -255,7 +264,7 @@ async function callAIProvider(provider, systemPrompt, messages) {
     if (provider === 'gemini') {
         const keys = process.env.GEMINI_API_KEYS ? process.env.GEMINI_API_KEYS.split(',') : [process.env.GEMINI_API_KEY];
         const GEMINI_API_KEY = keys[Math.floor(Math.random() * keys.length)];
-        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${GEMINI_API_KEY}`;
+        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
 
         const contents = messages.map(m => ({
             role: m.role === 'user' ? 'user' : 'model',
