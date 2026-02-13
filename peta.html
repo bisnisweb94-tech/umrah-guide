@@ -94,16 +94,26 @@
             left: 12px;
             right: 12px;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.9);
-            /* Slightly transparent for effect */
-            backdrop-filter: blur(10px);
-            /* Glassmorphism */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            border-radius: 0 0 16px 16px;
-            /* Rounded bottom only */
-            transition: all 0.3s ease;
+            /* REMOVED background & backdrop-filter on container to fix white bar */
             display: flex;
             flex-direction: column;
+            pointer-events: none;
+            /* Let clicks pass through empty areas */
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            gap: 12px;
+            background: white;
+            border-radius: 8px;
+            z-index: 1001;
+            /* Higher than chips */
+            position: relative;
+            pointer-events: auto;
+            /* Re-enable clicks */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         /* Lift Leaflet controls on mobile */
@@ -117,18 +127,6 @@
             .search-results {
                 max-height: calc(50vh - env(safe-area-inset-bottom));
             }
-        }
-
-        .search-box {
-            display: flex;
-            align-items: center;
-            padding: 12px 16px;
-            gap: 12px;
-            background: white;
-            border-radius: 8px;
-            z-index: 1001;
-            /* Higher than chips */
-            position: relative;
         }
 
         .search-input-wrapper {
@@ -464,6 +462,7 @@
             max-height: 70vh;
             display: flex;
             flex-direction: column;
+            padding-bottom: env(safe-area-inset-bottom);
         }
 
         .bottom-sheet.expanded {
