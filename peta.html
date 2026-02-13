@@ -598,141 +598,118 @@
         @media (min-width: 768px) {
             .map-header {
                 right: auto;
-                width: 400px;
+                width: 392px;
                 flex-direction: column;
                 background: none;
                 box-shadow: none;
             }
 
-            .bottom-sheet {
+            .search-box {
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                border-radius: 8px;
+            }
+
+            /* Directions box gets its own card on desktop */
+            .directions-box {
+                background: white;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                margin-top: 8px;
+                padding: 16px;
+            }
+
+            .directions-box .dir-dropdown {
+                border-radius: 8px;
+                margin-top: 4px;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            }
+
+            /* Search results card on desktop */
+            .search-results {
+                border-radius: 8px;
+                margin-top: 8px;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+                position: relative;
+                top: 0;
+            }
+
+            /* Chips to right of search box */
+            .chips-wrapper {
+                top: 12px;
+                left: 416px;
+                right: 12px;
+                height: auto;
+            }
+
+            .category-chips {
+                padding: 0;
+            }
+
+            .category-chips .chip {
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            }
+
+            .scroll-fade-left,
+            .scroll-fade-right {
+                display: none;
+            }
+
+            /* Mask-based fade for chips edges */
+            .chips-wrapper.can-scroll-right .category-chips {
+                -webkit-mask-image: linear-gradient(to right, black 0%, black calc(100% - 40px), transparent 100%);
+                mask-image: linear-gradient(to right, black 0%, black calc(100% - 40px), transparent 100%);
+            }
+
+            .chips-wrapper.can-scroll-left .category-chips {
+                -webkit-mask-image: linear-gradient(to right, transparent 0%, black 40px, black 100%);
+                mask-image: linear-gradient(to right, transparent 0%, black 40px, black 100%);
+            }
+
+            .chips-wrapper.can-scroll-left.can-scroll-right .category-chips {
+                -webkit-mask-image: linear-gradient(to right, transparent 0%, black 40px, black calc(100% - 40px), transparent 100%);
+                mask-image: linear-gradient(to right, transparent 0%, black 40px, black calc(100% - 40px), transparent 100%);
+            }
+
+            /* Floating buttons on right side (Google Maps style) */
+            .floating-btns {
+                top: auto;
+                bottom: 32px;
                 left: auto;
-                width: 400px;
-                border-radius: 16px 0 0 0;
-            }
-        }
-
-        /* Lift Leaflet controls on mobile to avoid being cut off */
-        @media (max-width: 768px) {
-            .leaflet-bottom.leaflet-right {
-                margin-bottom: max(32px, env(safe-area-inset-bottom) + 16px) !important;
-                margin-right: 12px !important;
+                right: 60px;
+                flex-direction: column;
             }
 
-            .leaflet-control-zoom,
-            .leaflet-control-gps {
-                margin-bottom: 12px !important;
-                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
-                border: none !important;
+            /* Bottom sheet as side panel */
+            .bottom-sheet {
+                top: 12px;
+                left: 12px;
+                bottom: 12px;
+                right: auto;
+                width: 392px;
+                max-height: none;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                transform: translateX(-420px);
+                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             }
-        }
 
+            .bottom-sheet.expanded {
+                transform: translateX(0);
+            }
 
-        .search-box {
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-        }
+            /* When bottom sheet is open, push header right */
+            .sheet-handle {
+                display: none;
+            }
 
-        /* Directions box gets its own card on desktop */
-        .directions-box {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            margin-top: 8px;
-            padding: 16px;
-        }
-
-        .directions-box .dir-dropdown {
-            border-radius: 8px;
-            margin-top: 4px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Search results card on desktop */
-        .search-results {
-            border-radius: 8px;
-            margin-top: 8px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-            position: relative;
-            top: 0;
-        }
-
-        /* Chips to right of search box */
-        .chips-wrapper {
-            top: 12px;
-            left: 416px;
-            right: 12px;
-            height: auto;
-        }
-
-        .category-chips {
-            padding: 0;
-        }
-
-        .category-chips .chip {
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-        }
-
-        .scroll-fade-left,
-        .scroll-fade-right {
-            display: none;
-        }
-
-        /* Mask-based fade for chips edges */
-        .chips-wrapper.can-scroll-right .category-chips {
-            -webkit-mask-image: linear-gradient(to right, black 0%, black calc(100% - 40px), transparent 100%);
-            mask-image: linear-gradient(to right, black 0%, black calc(100% - 40px), transparent 100%);
-        }
-
-        .chips-wrapper.can-scroll-left .category-chips {
-            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 40px, black 100%);
-            mask-image: linear-gradient(to right, transparent 0%, black 40px, black 100%);
-        }
-
-        .chips-wrapper.can-scroll-left.can-scroll-right .category-chips {
-            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 40px, black calc(100% - 40px), transparent 100%);
-            mask-image: linear-gradient(to right, transparent 0%, black 40px, black calc(100% - 40px), transparent 100%);
-        }
-
-        /* Floating buttons on right side (Google Maps style) */
-        .floating-btns {
-            top: auto;
-            bottom: 32px;
-            left: auto;
-            right: 60px;
-            flex-direction: column;
-        }
-
-        /* Bottom sheet as side panel */
-        .bottom-sheet {
-            top: 12px;
-            left: 12px;
-            bottom: 12px;
-            right: auto;
-            width: 392px;
-            max-height: none;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            transform: translateX(-420px);
-            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .bottom-sheet.expanded {
-            transform: translateX(0);
-        }
-
-        /* When bottom sheet is open, push header right */
-        .sheet-handle {
-            display: none;
-        }
-
-        /* Nav overlay constrained on desktop */
-        .nav-overlay {
-            left: auto;
-            right: 60px;
-            width: 420px;
-            border-radius: 0 0 16px 16px;
-            top: 0;
-        }
+            /* Nav overlay constrained on desktop */
+            .nav-overlay {
+                left: auto;
+                right: 60px;
+                width: 420px;
+                border-radius: 0 0 16px 16px;
+                top: 0;
+            }
         }
 
         /* MISSING LOCATION LIST STYLES */
