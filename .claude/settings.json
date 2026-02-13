@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nImplement Live RAG: route chat through server API with web search fallback\n\n- chatbot_core.js: Remove client-side API keys and direct LLM calls, route all requests through /api/chat\n- api/chat.js: Add full Live RAG pipeline \\(Vector DB → Web Search → Auto-Ingest → LLM\\)\n- Web search restricted to trusted Islamic sites only \\(islamqa.info, binbaz.org.sa, etc.\\)\n- Auto-ingest web results to Vector DB for faster future responses\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}
