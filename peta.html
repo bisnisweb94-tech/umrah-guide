@@ -22,7 +22,7 @@
 
     <!-- PWA Standalone -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Al Haramain">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#ffffff">
@@ -62,21 +62,61 @@
             width: 100vw;
         }
 
+        #site-lock {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100vh;
+            /* Enhance fallback */
+            height: -webkit-fill-available;
+            padding-top: env(safe-area-inset-top);
+            z-index: 99999;
+            background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+            /* Prevent internal scrolling */
+        }
+
         /* ========== LAYOUT & COMPONENTS (MOBILE-FIRST) ========== */
         .map-header {
             position: fixed;
-            top: 12px;
-            /* Safe area adjustment */
-            top: max(12px, env(safe-area-inset-top) + 12px);
+            top: 0;
+            /* Reset top */
+            padding-top: max(12px, env(safe-area-inset-top) + 12px);
+            /* Add safe area padding */
             left: 12px;
             right: 12px;
             z-index: 1000;
-            background: white;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.9);
+            /* Slightly transparent for effect */
+            backdrop-filter: blur(10px);
+            /* Glassmorphism */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 16px 16px;
+            /* Rounded bottom only */
             transition: all 0.3s ease;
             display: flex;
             flex-direction: column;
+        }
+
+        /* Lift Leaflet controls on mobile */
+        @media (max-width: 768px) {
+            .leaflet-bottom {
+                padding-bottom: env(safe-area-inset-bottom);
+                margin-bottom: 24px;
+                /* Extra breathing room */
+            }
+
+            .search-results {
+                max-height: calc(50vh - env(safe-area-inset-bottom));
+            }
         }
 
         .search-box {

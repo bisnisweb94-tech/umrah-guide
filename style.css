@@ -889,15 +889,17 @@ body {
 }
 
 /* --- PREMIUM LOCK SCREEN --- */
+/* --- PREMIUM LOCK SCREEN --- */
 #site-lock {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
-    min-height: 100%;
-    min-height: -webkit-fill-available;
+    height: 100vh;
+    height: -webkit-fill-available;
+    padding-top: env(safe-area-inset-top);
     background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
     z-index: 99999;
     display: flex;
@@ -908,6 +910,7 @@ body {
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 #site-lock.unlocked {
