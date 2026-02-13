@@ -136,9 +136,12 @@
         /* Directions Box - Hidden by default */
         .directions-box {
             display: none;
-            padding: 0 16px 16px;
+            padding: 16px;
             background: white;
-            border-radius: 0 0 8px 8px;
+            border-radius: 12px;
+            margin-top: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            pointer-events: auto;
         }
 
         .directions-box.active {
@@ -461,6 +464,7 @@
             z-index: 1002;
             /* Higher than bottom sheet */
             display: none;
+            pointer-events: auto;
         }
 
         /* Other base styles (markers, popups, etc.) */
