@@ -99,8 +99,7 @@
         @media (max-width: 768px) {
             .leaflet-bottom {
                 padding-bottom: env(safe-area-inset-bottom);
-                margin-bottom: 24px;
-                /* Extra breathing room */
+                margin-bottom: max(40px, env(safe-area-inset-bottom) + 16px);
             }
 
             .search-results {
@@ -142,6 +141,8 @@
             margin-top: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
             pointer-events: auto;
+            max-height: calc(100vh - 140px - env(safe-area-inset-top));
+            overflow-y: auto;
         }
 
         .directions-box.active {
@@ -390,7 +391,7 @@
 
         .floating-btns {
             position: fixed;
-            bottom: 24px;
+            bottom: max(40px, env(safe-area-inset-bottom) + 16px);
             left: 12px;
             z-index: 1002;
             display: flex;
