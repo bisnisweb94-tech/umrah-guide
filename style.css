@@ -889,7 +889,6 @@ body {
 }
 
 /* --- PREMIUM LOCK SCREEN --- */
-/* --- PREMIUM LOCK SCREEN --- */
 #site-lock {
     position: fixed;
     top: 0;
@@ -897,9 +896,9 @@ body {
     right: 0;
     bottom: 0;
     width: 100%;
+    height: 100%;
     height: 100vh;
     height: -webkit-fill-available;
-    padding-top: env(safe-area-inset-top);
     background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
     z-index: 99999;
     display: flex;
