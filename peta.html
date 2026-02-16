@@ -1646,30 +1646,30 @@
             center: [21.4245, 39.8227],
             zoom: 17,
             maxZoom: 19,
-            minZoom: 13
+            minZoom: 11
         });
 
         L.control.zoom({ position: 'bottomright' }).addTo(map);
 
         // Base Layers
-        const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-            attribution: 'Tiles &copy; Esri',
-            maxZoom: 19
+        const satellite = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+            attribution: '&copy; Google Maps',
+            maxZoom: 20
         });
 
-        const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors',
-            maxZoom: 19
+        const osmLayer = L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+            attribution: '&copy; Google Maps',
+            maxZoom: 20
         });
 
-        const labels = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', {
+        const labels = L.tileLayer('https://mt1.google.com/vt/lyrs=h&x={x}&y={y}&z={z}', {
             zIndex: 1000,
             maxZoom: 20
         });
 
         satellite.addTo(map);
 
-        const baseMaps = { "Satelit": satellite, "Peta Biasa (OSM)": osmLayer };
+        const baseMaps = { "Satelit": satellite, "Peta Biasa": osmLayer };
         const overlayMaps = { "Label": labels };
         window.layerControl = L.control.layers(baseMaps, overlayMaps, { position: 'topright' }).addTo(map);
 
