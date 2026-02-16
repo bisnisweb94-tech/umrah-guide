@@ -1,0 +1,687 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب الملك فهد - 20, 21, 22",
+      "name_en": "باب الملك فهد - 20, 21, 22",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "3059531452",
+      "tags": {
+        "historic": "city_gate",
+        "name": "باب الملك فهد - 20, 21, 22",
+        "name:ar": "باب الملك فهد - 20, 21, 22",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6111565,
+        24.4699247
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب مكة - 37",
+      "name_en": "Bab Makkah - 37",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "4562352453",
+      "tags": {
+        "historic": "city_gate",
+        "name": "باب مكة - 37",
+        "name:ar": "باب مكة - 37",
+        "name:en": "Bab Makkah - 37",
+        "name:ku": "Deriye Meke",
+        "name:tr": "Mekke Kapısı",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6124748,
+        24.4677688
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب عمر بن الخطاب 16, 17 - مدخل النساء",
+      "name_en": "Omar Bin Al Khattab Gates 16, 17 - Women Entrance",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "4562354617",
+      "tags": {
+        "historic": "city_gate",
+        "name": "باب عمر بن الخطاب 16, 17 - مدخل النساء",
+        "name:ar": "باب عمر بن الخطاب 16, 17 - مدخل النساء",
+        "name:en": "Omar Bin Al Khattab Gates 16, 17 - Women Entrance",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6099172,
+        24.4699252
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب عثمان بن عفان - 24, 25, 26 - مدخل النساء",
+      "name_en": "Othman Bin Affan Gates - 24, 25, 26 - Women Entrance",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "4562358315",
+      "tags": {
+        "historic": "city_gate",
+        "name": "باب عثمان بن عفان - 24, 25, 26 - مدخل النساء",
+        "name:ar": "باب عثمان بن عفان - 24, 25, 26 - مدخل النساء",
+        "name:en": "Othman Bin Affan Gates - 24, 25, 26 - Women Entrance",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6123761,
+        24.46994
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب بدر -19",
+      "name_en": "باب بدر -19",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "4562359894",
+      "tags": {
+        "historic": "city_gate",
+        "name": "باب بدر -19",
+        "name:ar": "باب بدر -19",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6105382,
+        24.4698374
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب العقّيق - 10, 11",
+      "name_en": "Al Aqiq Gates - 10, 11",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "4562361493",
+      "tags": {
+        "historic": "city_gate",
+        "name": "باب العقّيق - 10, 11",
+        "name:ar": "باب العقّيق - 10, 11",
+        "name:en": "Al Aqiq Gates - 10, 11",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6091146,
+        24.4688963
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب الملك سعود - 7, 8, 9",
+      "name_en": "King Saud Gates - 7, 8, 9",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "4562362787",
+      "tags": {
+        "historic": "city_gate",
+        "name": "باب الملك سعود - 7, 8, 9",
+        "name:ar": "باب الملك سعود - 7, 8, 9",
+        "name:en": "King Saud Gates - 7, 8, 9",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6091518,
+        24.468265
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب الملك عبدالعزيز - 33, 34, 35",
+      "name_en": "King Abdul Aziz Gates - 33, 34, 35",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "4562362788",
+      "tags": {
+        "historic": "city_gate",
+        "name": "باب الملك عبدالعزيز - 33, 34, 35",
+        "name:ar": "باب الملك عبدالعزيز - 33, 34, 35",
+        "name:en": "King Abdul Aziz Gates - 33, 34, 35",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.613198,
+        24.4682758
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "المكتبة النسائية - باب 16",
+      "name_en": "Women's Library - Gate 16",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "4562365940",
+      "tags": {
+        "amenity": "library",
+        "name": "المكتبة النسائية - باب 16",
+        "name:ar": "المكتبة النسائية - باب 16",
+        "name:en": "Women's Library - Gate 16"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6096906,
+        24.4698265
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مدخل – باب السلام - 1",
+      "name_en": "Entrance - As-Salam Gate - 1",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "4562374597",
+      "tags": {
+        "historic": "city_gate",
+        "image": "File:Madina_trip_14.jpg",
+        "name": "مدخل – باب السلام - 1",
+        "name:ar": "مدخل – باب السلام - 1",
+        "name:en": "Entrance - As-Salam Gate - 1",
+        "portal": "yes",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6106629,
+        24.4674402
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Abu Dhar Al-Ghafari Gates - 31, 32",
+      "name_en": "Abu Dhar Al-Ghafari Gates - 31, 32",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "4562377035",
+      "tags": {
+        "historic": "city_gate",
+        "name": "Abu Dhar Al-Ghafari Gates - 31, 32",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6132054,
+        24.4688724
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "ساندويتشات كباب",
+      "name_en": "Kebab sandwiches",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "4585857009",
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "turkish",
+        "name": "ساندويتشات كباب",
+        "name:ar": "ساندويتشات كباب",
+        "name:en": "Kebab sandwiches",
+        "phone": "+966 148 660 821"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6013184,
+        24.4822872
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Bayt al-Kabab",
+      "name_en": "Bayt al-Kabab",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "5092492296",
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "egyptian",
+        "name": "Bayt al-Kabab",
+        "phone": "+966148288843"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.600478,
+        24.4842424
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مركز صحي باب جبريل",
+      "name_en": "Bab Jebreel Health Center",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "5124261358",
+      "tags": {
+        "amenity": "doctors",
+        "healthcare": "doctor",
+        "name": "مركز صحي باب جبريل",
+        "name:ar": "مركز صحي باب جبريل",
+        "name:en": "Bab Jebreel Health Center"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6134341,
+        24.4678175
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب النساء - 39",
+      "name_en": "An-Nisa Gate - 39",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "5124306217",
+      "tags": {
+        "historic": "city_gate",
+        "name": "باب النساء - 39",
+        "name:ar": "باب النساء - 39",
+        "name:en": "An-Nisa Gate - 39",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6115451,
+        24.4678205
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب جبريل - 40",
+      "name_en": "Al-Jebreel Gate - 40",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "5124318602",
+      "tags": {
+        "historic": "city_gate",
+        "name": "باب جبريل - 40",
+        "name:ar": "باب جبريل - 40",
+        "name:en": "Al-Jebreel Gate - 40",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6115983,
+        24.4677396
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب الرحمة - 3",
+      "name_en": "Ar-Rahma Gate - 3",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "5124338122",
+      "tags": {
+        "historic": "city_gate",
+        "name": "باب الرحمة - 3",
+        "name:ar": "باب الرحمة - 3",
+        "name:en": "Ar-Rahma Gate - 3",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6106622,
+        24.4677486
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب علي بن أبو طالب - 28 , 29, 30 - مدخل النساء",
+      "name_en": "Bab Ali Bin Abu Talib - 28 , 29, 30 - Women Entrance",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "5859110900",
+      "tags": {
+        "historic": "city_gate",
+        "name": "باب علي بن أبو طالب - 28 , 29, 30 - مدخل النساء",
+        "name:ar": "باب علي بن أبو طالب - 28 , 29, 30 - مدخل النساء",
+        "name:en": "Bab Ali Bin Abu Talib - 28 , 29, 30 - Women Entrance",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.613162,
+        24.4694554
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب بلال - 38",
+      "name_en": "Bab Bilal - 38",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "5859174894",
+      "tags": {
+        "historic": "city_gate",
+        "image": "File:Madina_trip_17.jpg",
+        "name": "باب بلال - 38",
+        "name:ar": "باب بلال - 38",
+        "name:en": "Bab Bilal - 38",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6117889,
+        24.4678439
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب المجيدي - 12, 13, 14 - مدخل النساء",
+      "name_en": "Bab Sultan Abdul Majid - 12, 13, 14 - Women Entrance",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "5859327471",
+      "tags": {
+        "historic": "city_gate",
+        "name": "باب المجيدي - 12, 13, 14 - مدخل النساء",
+        "name:ar": "باب المجيدي - 12, 13, 14 - مدخل النساء",
+        "name:en": "Bab Sultan Abdul Majid - 12, 13, 14 - Women Entrance",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6091622,
+        24.4694812
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب الهجرة - 4",
+      "name_en": "Bab al-Hijra - 4",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "5895136188",
+      "tags": {
+        "historic": "city_gate",
+        "name": "باب الهجرة - 4",
+        "name:ar": "باب الهجرة - 4",
+        "name:en": "Bab al-Hijra - 4",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6105603,
+        24.4678598
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب عمر بن الخطاب 18",
+      "name_en": "Omar Bin Al Khattab Gate 18",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "5895143050",
+      "tags": {
+        "historic": "city_gate",
+        "name": "باب عمر بن الخطاب 18",
+        "name:ar": "باب عمر بن الخطاب 18",
+        "name:en": "Omar Bin Al Khattab Gate 18",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.610081,
+        24.4699263
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Women's Library - Gate 24",
+      "name_en": "Women's Library - Gate 24",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "5927483830",
+      "tags": {
+        "amenity": "library",
+        "name": "Women's Library - Gate 24"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6122188,
+        24.4698271
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Seminar Scientific texts - Gate 34",
+      "name_en": "Seminar Scientific texts - Gate 34",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "6253634180",
+      "tags": {
+        "name": "Seminar Scientific texts - Gate 34",
+        "office": "educational_institution"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6131184,
+        24.468206
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "City Siightseeing - Bus Station 4 - Alsalam Gate",
+      "name_en": "City Siightseeing - Bus Station 4 - Alsalam Gate",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "6268543193",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "City Siightseeing - Bus Station 4 - Alsalam Gate",
+        "public_transport": "platform"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.606771,
+        24.4671999
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Delegate Column",
+      "name_en": "Delegate Column",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "6985840095",
+      "tags": {
+        "advertising": "column",
+        "name": "Delegate Column"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6113326,
+        24.4675942
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Abu Lubabah Column",
+      "name_en": "Abu Lubabah Column",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "6985840107",
+      "tags": {
+        "advertising": "column",
+        "name": "Abu Lubabah Column"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6112607,
+        24.467536
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Anwar Al Madinah Mall - Gate 5",
+      "name_en": "Anwar Al Madinah Mall - Gate 5",
+      "type": "Gate",
+      "icon": "fa-door-open",
+      "description": "Gate di area Madinah.",
+      "osm_id": "7606998747",
+      "tags": {
+        "door": "yes",
+        "indoor": "door",
+        "name": "Anwar Al Madinah Mall - Gate 5"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6079643,
+        24.4716732
+      ]
+    }
+  }
+]

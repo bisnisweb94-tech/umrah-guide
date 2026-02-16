@@ -313,5 +313,27 @@
         24.4659559
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Munakhah Tunnel A",
+      "name_en": "Al Munakhah Tunnel A",
+      "type": "Transportation",
+      "icon": "fa-bus",
+      "description": "Transportation di area Masjidil Haram.",
+      "osm_id": "12944424405",
+      "tags": {
+        "highway": "bus_stop",
+        "name:en": "Al Munakhah Tunnel A"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6108746,
+        24.4607319
+      ]
+    }
   }
 ]

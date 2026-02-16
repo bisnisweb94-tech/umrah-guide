@@ -1,0 +1,5886 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "دوار السلام",
+      "name_en": "دوار السلام",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "805329424",
+      "tags": {
+        "name": "دوار السلام",
+        "place": "locality"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5826271,
+        24.4671338
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Money Changer",
+      "name_en": "Money Changer",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "3915963438",
+      "tags": {
+        "amenity": "bank",
+        "atm": "no",
+        "name": "Money Changer"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6054452,
+        24.4660381
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "بيت الاحلام",
+      "name_en": "بيت الاحلام",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "4242396889",
+      "tags": {
+        "addr:street": "2nd Ring Road",
+        "name": "بيت الاحلام",
+        "shop": "department_store"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5844547,
+        24.4598213
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "بترو بارك",
+      "name_en": "بترو بارك",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "4401923691",
+      "tags": {
+        "amenity": "fuel",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "name": "بترو بارك"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5825887,
+        24.4654757
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "معرض القرآن الكريم",
+      "name_en": "The Holy Quran Exhibition",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "4417050108",
+      "tags": {
+        "addr:city": "Al Madinah",
+        "name": "معرض القرآن الكريم",
+        "name:ar": "معرض القرآن الكريم",
+        "name:en": "The Holy Quran Exhibition",
+        "tourism": "museum",
+        "website": "www.alquranalkarim.net"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6094715,
+        24.4658839
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Saudi Post",
+      "name_en": "Saudi Post",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "4417258241",
+      "tags": {
+        "amenity": "post_office",
+        "name": "Saudi Post",
+        "operator": "Saudi Post",
+        "website": "https://www.ersal.sa/Ersal/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6060991,
+        24.4650753
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الإدارة العامة للتعليم بمنطقة المدينة المنورة",
+      "name_en": "General Directorate of Education Madinah",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "4534543091",
+      "tags": {
+        "name": "الإدارة العامة للتعليم بمنطقة المدينة المنورة",
+        "name:ar": "الإدارة العامة للتعليم بمنطقة المدينة المنورة",
+        "name:en": "General Directorate of Education Madinah",
+        "office": "government"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6354709,
+        24.4717427
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "بضاعة",
+      "name_en": "Badaah",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "4548436550",
+      "tags": {
+        "name": "بضاعة",
+        "name:ar": "بضاعة",
+        "name:en": "Badaah",
+        "place": "neighbourhood"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6092211,
+        24.4727071
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "بني خدرة",
+      "name_en": "Bani Khidrah",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "4548446277",
+      "tags": {
+        "name": "بني خدرة",
+        "name:ar": "بني خدرة",
+        "name:en": "Bani Khidrah",
+        "place": "neighbourhood"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6146338,
+        24.464309
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "شركة أبناء حمادي مرشد العوفي للصرافة",
+      "name_en": "Money Exchange",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "4550638990",
+      "tags": {
+        "addr:street": "شارع المحكمة",
+        "amenity": "bureau_de_change",
+        "name": "شركة أبناء حمادي مرشد العوفي للصرافة",
+        "name:ar": "شركة أبناء حمادي مرشد العوفي للصرافة",
+        "name:en": "Money Exchange",
+        "opening_hours": "Mo-Su 06:00-23:00",
+        "phone": "+966148161116"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6086986,
+        24.4652631
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Arabia Al Oud العربية للعود",
+      "name_en": "Al Arabia Al Oud العربية للعود",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "4560598696",
+      "tags": {
+        "name": "Al Arabia Al Oud العربية للعود",
+        "shop": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5949837,
+        24.484551
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الحرم الشريف",
+      "name_en": "Al Haram Al Sharif",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "4570896389",
+      "tags": {
+        "name": "الحرم الشريف",
+        "name:ar": "الحرم الشريف",
+        "name:en": "Al Haram Al Sharif",
+        "name:tk": "El-Harem",
+        "name:tr": "El-Harem",
+        "place": "neighbourhood",
+        "wikidata": "Q2914190",
+        "wikipedia": "ar:حرم (موقع)"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6104228,
+        24.4685666
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مدرسة الأنصار الثانوية",
+      "name_en": "مدرسة الأنصار الثانوية",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "4570896490",
+      "tags": {
+        "name": "مدرسة الأنصار الثانوية",
+        "shop": "bookmaker"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6354921,
+        24.4737809
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "المدينة المنورة",
+      "name_en": "Medina",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "4571693347",
+      "tags": {
+        "alt_name": "Al Madina;Al Madinah al Munawwarah;Al Madīnah al Munawwarah;Al Medina;El Medina;Lathrippa;Medina;Yathrib;المدينة المنورة;Al Madīnah;Al Madinah",
+        "capital": "4",
+        "GNS:dsg_code": "PPLA",
+        "GNS:dsg_name": "captial of a first-order administrative division",
+        "GNS:id": "-3092186",
+        "int_name": "Medina",
+        "is_capital": "state",
+        "name": "المدينة المنورة",
+        "name:af": "Medina",
+        "name:am": "መዲና",
+        "name:ar": "المدينة المنورة",
+        "name:as": "মদিনা",
+        "name:av": "Мадина",
+        "name:az": "Mədinə",
+        "name:ba": "Мәҙинә",
+        "name:be": "Медына",
+        "name:bg": "Медина",
+        "name:bn": "মদীনা",
+        "name:br": "Medina",
+        "name:bs": "Medina",
+        "name:ca": "Medina",
+        "name:ce": "Мадийнат",
+        "name:ckb": "مەدینە",
+        "name:cs": "Medína",
+        "name:cv": "Медина",
+        "name:cy": "Medina",
+        "name:da": "Medina",
+        "name:de": "Medina",
+        "name:diq": "Medina",
+        "name:dv": "މަދީނާ",
+        "name:el": "Μεδίνα",
+        "name:en": "Medina",
+        "name:eo": "Medino",
+        "name:es": "Medina",
+        "name:et": "Mediina",
+        "name:eu": "Medina",
+        "name:fa": "مدینه",
+        "name:fi": "Medina",
+        "name:fr": "Médine",
+        "name:fy": "Medina",
+        "name:gl": "Medina",
+        "name:gu": "મદીના",
+        "name:ha": "Madinah",
+        "name:he": "מדינה",
+        "name:hi": "मदीना",
+        "name:hr": "Medina",
+        "name:hu": "Medina",
+        "name:hy": "Մադինա",
+        "name:id": "Madinah",
+        "name:ie": "Medina",
+        "name:io": "Medina",
+        "name:is": "Medína",
+        "name:it": "Medina",
+        "name:ja": "マディーナ",
+        "name:jv": "Madinah",
+        "name:ka": "მედინა",
+        "name:kab": "Lmadina Timnewwret",
+        "name:kk": "Медине",
+        "name:km": "មេឌីណា",
+        "name:kn": "ಮದೀನಾ",
+        "name:ko": "메디나",
+        "name:ks": "مدیٖن",
+        "name:ku": "Medîne",
+        "name:ky": "Медина",
+        "name:la": "Medina",
+        "name:lt": "Medina",
+        "name:lv": "Medīna",
+        "name:mg": "Medina",
+        "name:mk": "Медина",
+        "name:ml": "മദീന",
+        "name:mr": "मदीना",
+        "name:ms": "Madinah",
+        "name:mt": "Medina",
+        "name:nb": "Medina",
+        "name:ne": "मदिना",
+        "name:nl": "Medina",
+        "name:nn": "Medina",
+        "name:os": "Мединæ",
+        "name:pa": "ਮਦੀਨਾ",
+        "name:pl": "Medyna",
+        "name:ps": "مدینه",
+        "name:pt": "Medina",
+        "name:qu": "Madina",
+        "name:ro": "Medina",
+        "name:ru": "Медина",
+        "name:sd": "مدينو",
+        "name:sk": "Medina",
+        "name:sl": "Medina",
+        "name:so": "Madiina Al-munawara",
+        "name:sq": "Medina",
+        "name:sr": "Медина",
+        "name:su": "Madinah",
+        "name:sv": "Medina",
+        "name:sw": "Madina",
+        "name:ta": "மதீனா",
+        "name:te": "మదీనా",
+        "name:tg": "Мадина",
+        "name:th": "อัลมะดีนะฮ์",
+        "name:tk": "Medine Münewwere",
+        "name:tl": "Medina",
+        "name:tr": "Medine",
+        "name:tt": "Мәдинә",
+        "name:ug": "مەدىنە",
+        "name:uk": "Медина",
+        "name:ur": "مدینہ",
+        "name:uz": "Madina",
+        "name:vi": "Medina",
+        "name:vo": "Mädinä",
+        "name:zh": "麦地那",
+        "official_name:ar": "المدينة المنورة",
+        "official_name:en": "al-Madinah al-Munawwarah",
+        "official_name:fr": "Al-Madina al-Mounawwara",
+        "official_name:ur": "مدینہ المنورہ",
+        "place": "city",
+        "population": "1100093",
+        "population:date": "2010",
+        "source:population": "stats.gov.sa",
+        "wikidata": "Q35484",
+        "wikipedia": "ar:المدينة المنورة"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6111216,
+        24.471153
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Surrati Perfumes",
+      "name_en": "Surrati Perfumes",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "4585805745",
+      "tags": {
+        "beauty": "perfumery",
+        "name": "Surrati Perfumes",
+        "shop": "perfumery",
+        "website": "surratiperfumes.com"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6115084,
+        24.4718066
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "دنيا العصائر",
+      "name_en": "دنيا العصائر",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "4656705289",
+      "tags": {
+        "name": "دنيا العصائر",
+        "shop": "beverages"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6001306,
+        24.4855431
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Zain",
+      "name_en": "Zain",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "4715765889",
+      "tags": {
+        "name": "Zain",
+        "office": "telecommunication"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6113895,
+        24.472483
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "صالون كرستال",
+      "name_en": "صالون كرستال",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "4716674290",
+      "tags": {
+        "name": "صالون كرستال",
+        "name:ar": "صالون كرستال",
+        "shop": "hairdresser"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5996685,
+        24.4874922
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "يابلاش",
+      "name_en": "يابلاش",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "4716675289",
+      "tags": {
+        "name": "يابلاش",
+        "name:ar": "يابلاش",
+        "shop": "gift"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5996177,
+        24.4876626
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مركز تركى",
+      "name_en": "مركز تركى",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "4879418221",
+      "tags": {
+        "addr:street": "Al-Seeh Street",
+        "internet_access": "wlan",
+        "name": "مركز تركى",
+        "opening_hours": "Sa-Th 09:00-24:00; Fr 16:00-24:00",
+        "phone": "0502610210",
+        "shop": "electronics"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5993666,
+        24.4688655
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مكتب وائل قاضي للاستشارات الهندسية/ عمارة - ديكور - مساحة",
+      "name_en": "مكتب وائل قاضي للاستشارات الهندسية/ عمارة - ديكور - مساحة",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5005409588",
+      "tags": {
+        "name": "مكتب وائل قاضي للاستشارات الهندسية/ عمارة - ديكور - مساحة",
+        "office": "company",
+        "opening_hours": "24/7"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.581413,
+        24.4739554
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "العربية للعود",
+      "name_en": "Arabian Oud",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5086062134",
+      "tags": {
+        "name": "العربية للعود",
+        "name:ar": "العربية للعود",
+        "name:en": "Arabian Oud",
+        "shop": "perfumery",
+        "website": "https://www.arabianoud.com/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.607578,
+        24.4607086
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Dar Alzaman Book store",
+      "name_en": "Dar Alzaman Book store",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5086074849",
+      "tags": {
+        "name": "Dar Alzaman Book store",
+        "shop": "books"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6150435,
+        24.4831479
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Rushd Bookstore",
+      "name_en": "Al Rushd Bookstore",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5092414970",
+      "tags": {
+        "name": "Al Rushd Bookstore",
+        "shop": "books",
+        "website": "rushd.com.sa"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6147108,
+        24.4809671
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "المكتبة الصوتية النسائية",
+      "name_en": "Audio Library",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5124149571",
+      "tags": {
+        "amenity": "library",
+        "name": "المكتبة الصوتية النسائية",
+        "name:ar": "المكتبة الصوتية النسائية",
+        "name:en": "Audio Library"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6101683,
+        24.4698314
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "وحدة الشؤون التعليمية بقسم القرآن الكريم",
+      "name_en": "Unit Educational Affairs Department of the Koran",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5124157156",
+      "tags": {
+        "addr:city": "المدينة المنورة",
+        "name": "وحدة الشؤون التعليمية بقسم القرآن الكريم",
+        "name:ar": "وحدة الشؤون التعليمية بقسم القرآن الكريم",
+        "name:en": "Unit Educational Affairs Department of the Koran",
+        "office": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6130632,
+        24.4684986
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "نخبة العود",
+      "name_en": "Oud Elite",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5124294990",
+      "tags": {
+        "name": "نخبة العود",
+        "name:ar": "نخبة العود",
+        "name:en": "Oud Elite",
+        "shop": "perfumery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6101988,
+        24.4710994
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Abdul Samad Al Qurashi",
+      "name_en": "Abdul Samad Al Qurashi",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5124298071",
+      "tags": {
+        "name": "Abdul Samad Al Qurashi",
+        "shop": "perfumery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6121272,
+        24.471128
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "بوابة أبو بكر الصديق - 2",
+      "name_en": "Abu Bakr as-Siddiq Gate - 2",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5124366467",
+      "tags": {
+        "historic": "city_gate",
+        "name": "بوابة أبو بكر الصديق - 2",
+        "name:ar": "بوابة أبو بكر الصديق - 2",
+        "name:en": "Abu Bakr as-Siddiq Gate - 2",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6106626,
+        24.4675676
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "المكتبة الصوتية النسائية",
+      "name_en": "Women's Audio Library",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5125011949",
+      "tags": {
+        "amenity": "library",
+        "name": "المكتبة الصوتية النسائية",
+        "name:ar": "المكتبة الصوتية النسائية",
+        "name:en": "Women's Audio Library"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6128994,
+        24.4695787
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "بترومين اكسبرس",
+      "name_en": "بترومين اكسبرس",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5139552065",
+      "tags": {
+        "amenity": "fuel",
+        "name": "بترومين اكسبرس"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6392388,
+        24.462151
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "نفط الغربية",
+      "name_en": "NAFT",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5139570586",
+      "tags": {
+        "amenity": "fuel",
+        "brand": "نفط",
+        "fuel:diesel": "yes",
+        "name": "نفط الغربية",
+        "name:ar": "نفط الغربية",
+        "name:en": "NAFT"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5912989,
+        24.4719445
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "نفط",
+      "name_en": "NAFT",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5159559472",
+      "tags": {
+        "amenity": "fuel",
+        "brand": "نفط",
+        "brand:ar": "نفط",
+        "brand:en": "NAFT",
+        "brand:wikidata": "Q105572509",
+        "name": "نفط",
+        "name:ar": "نفط",
+        "name:en": "NAFT"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6307577,
+        24.4764589
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "البنك الأول",
+      "name_en": "Alawwal Bank",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5226962105",
+      "tags": {
+        "amenity": "atm",
+        "brand": "البنك الأول",
+        "brand:ar": "البنك الأول",
+        "brand:en": "Alawwal Bank",
+        "brand:wikidata": "Q2693351",
+        "brand:wikipedia": "ar:البنك الأول",
+        "name": "البنك الأول",
+        "name:ar": "البنك الأول",
+        "name:en": "Alawwal Bank",
+        "operator": "البنك الأول",
+        "operator:wikidata": "Q2693351",
+        "operator:wikipedia": "ar:البنك الأول",
+        "website": "https://www.alawwalbank.com/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6118834,
+        24.4639885
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "301",
+      "name_en": "301",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5502661251",
+      "tags": {
+        "barrier": "gate",
+        "name": "301"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6106412,
+        24.4660643
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "302",
+      "name_en": "302",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5502661252",
+      "tags": {
+        "barrier": "gate",
+        "name": "302"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6105407,
+        24.4660649
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "303",
+      "name_en": "303",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5502661253",
+      "tags": {
+        "barrier": "gate",
+        "name": "303"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6104442,
+        24.4660654
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "304",
+      "name_en": "304",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859343975",
+      "tags": {
+        "barrier": "gate",
+        "name": "304"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6097859,
+        24.4660692
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "307",
+      "name_en": "307",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859343976",
+      "tags": {
+        "barrier": "gate",
+        "name": "307"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6090074,
+        24.4660737
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "308",
+      "name_en": "308",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859343977",
+      "tags": {
+        "barrier": "gate",
+        "name": "308"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6085101,
+        24.4660765
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "305",
+      "name_en": "305",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859343978",
+      "tags": {
+        "barrier": "gate",
+        "name": "305"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6093855,
+        24.4660801
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "369",
+      "name_en": "369",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859348091",
+      "tags": {
+        "barrier": "gate",
+        "name": "369"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6110664,
+        24.4660619
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "368",
+      "name_en": "368",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859348092",
+      "tags": {
+        "barrier": "gate",
+        "image": "File:Madina_trip_209.jpg",
+        "name": "368"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6113808,
+        24.4660601
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "367",
+      "name_en": "367",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859348093",
+      "tags": {
+        "barrier": "gate",
+        "name": "367"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6118803,
+        24.4660572
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "366",
+      "name_en": "366",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859348094",
+      "tags": {
+        "barrier": "gate",
+        "name": "366"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.612152,
+        24.4660523
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "365",
+      "name_en": "365",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859348095",
+      "tags": {
+        "barrier": "gate",
+        "name": "365"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6126483,
+        24.466051
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "310, 311",
+      "name_en": "310, 311",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859348462",
+      "tags": {
+        "barrier": "gate",
+        "name": "310, 311"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6078386,
+        24.4664354
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "312, 313",
+      "name_en": "312, 313",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859348464",
+      "tags": {
+        "barrier": "gate",
+        "name": "312, 313"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6078411,
+        24.4668593
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "314, 315, 316",
+      "name_en": "314, 315, 316",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859348465",
+      "tags": {
+        "barrier": "gate",
+        "name": "314, 315, 316"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6078468,
+        24.4674198
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "309",
+      "name_en": "309",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859350385",
+      "tags": {
+        "barrier": "gate",
+        "name": "309"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6080659,
+        24.4660791
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "317",
+      "name_en": "317",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859379976",
+      "tags": {
+        "barrier": "gate",
+        "name": "317"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6078491,
+        24.4678642
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "318",
+      "name_en": "318",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859379977",
+      "tags": {
+        "barrier": "gate",
+        "name": "318"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6078509,
+        24.4681979
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "319",
+      "name_en": "319",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859379978",
+      "tags": {
+        "barrier": "gate",
+        "name": "319"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6078524,
+        24.4684804
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "320",
+      "name_en": "320",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859379979",
+      "tags": {
+        "barrier": "gate",
+        "name": "320"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6078515,
+        24.4689122
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "322",
+      "name_en": "322",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859379980",
+      "tags": {
+        "barrier": "gate",
+        "name": "322"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6078548,
+        24.4695271
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "321",
+      "name_en": "321",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859379981",
+      "tags": {
+        "barrier": "gate",
+        "name": "321"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6078532,
+        24.4692224
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "323",
+      "name_en": "323",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859379982",
+      "tags": {
+        "barrier": "gate",
+        "name": "323"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6078577,
+        24.4699218
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "324",
+      "name_en": "324",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859379983",
+      "tags": {
+        "barrier": "gate",
+        "name": "324"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6078585,
+        24.4702282
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "326, 327",
+      "name_en": "326, 327",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859379984",
+      "tags": {
+        "barrier": "gate",
+        "name": "326, 327"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6078647,
+        24.4708615
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "325",
+      "name_en": "325",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859381885",
+      "tags": {
+        "barrier": "gate",
+        "name": "325"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6078618,
+        24.47047
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "328",
+      "name_en": "328",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859401123",
+      "tags": {
+        "barrier": "gate",
+        "name": "328"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.608353,
+        24.4709688
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "329",
+      "name_en": "329",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859401124",
+      "tags": {
+        "barrier": "gate",
+        "name": "329"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6092044,
+        24.4709711
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "330",
+      "name_en": "330",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859401125",
+      "tags": {
+        "barrier": "gate",
+        "image": "File:Bin_Dawood_Nabawi_Mosque_1.JPG",
+        "name": "330"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6098448,
+        24.4709728
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "331",
+      "name_en": "331",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859401126",
+      "tags": {
+        "barrier": "gate",
+        "name": "331"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6103761,
+        24.4709742
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "338",
+      "name_en": "338",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859401130",
+      "tags": {
+        "barrier": "gate",
+        "name": "338"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.612417,
+        24.4709806
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "337",
+      "name_en": "337",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859401131",
+      "tags": {
+        "barrier": "gate",
+        "name": "337"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6117724,
+        24.4709801
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "339",
+      "name_en": "339",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859401132",
+      "tags": {
+        "barrier": "gate",
+        "name": "339"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6130951,
+        24.4709812
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "340, 341",
+      "name_en": "340, 341",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859401133",
+      "tags": {
+        "barrier": "gate",
+        "name": "340, 341"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6135954,
+        24.4709816
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "342, 343",
+      "name_en": "342, 343",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859401134",
+      "tags": {
+        "barrier": "gate",
+        "name": "342, 343"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6139532,
+        24.4709819
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "344, 345",
+      "name_en": "344, 345",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859411563",
+      "tags": {
+        "barrier": "gate",
+        "name": "344, 345"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6143373,
+        24.4706868
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "346, 347",
+      "name_en": "346, 347",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859411564",
+      "tags": {
+        "barrier": "gate",
+        "name": "346, 347"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6143366,
+        24.4695963
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "348, 349",
+      "name_en": "348, 349",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859411565",
+      "tags": {
+        "barrier": "gate",
+        "name": "348, 349"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6143361,
+        24.4687253
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "350, 351",
+      "name_en": "350, 351",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859411566",
+      "tags": {
+        "barrier": "gate",
+        "name": "350, 351"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6143359,
+        24.4684031
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "352, 353, 354",
+      "name_en": "352, 353, 354",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859411568",
+      "tags": {
+        "barrier": "gate",
+        "name": "352, 353, 354"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6139848,
+        24.4681984
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "355, 356",
+      "name_en": "355, 356",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859424209",
+      "tags": {
+        "barrier": "gate",
+        "name": "355, 356"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6133869,
+        24.4680769
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "357, 358",
+      "name_en": "357, 358",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859424210",
+      "tags": {
+        "barrier": "gate",
+        "name": "357, 358"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6132879,
+        24.4679349
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "359, 360",
+      "name_en": "359, 360",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859424211",
+      "tags": {
+        "barrier": "gate",
+        "name": "359, 360"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6130445,
+        24.467258
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "361, 362",
+      "name_en": "361, 362",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859424212",
+      "tags": {
+        "barrier": "gate",
+        "name": "361, 362"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6130411,
+        24.4668704
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "363, 364",
+      "name_en": "363, 364",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859424214",
+      "tags": {
+        "barrier": "gate",
+        "name": "363, 364"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6130457,
+        24.4664422
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "332",
+      "name_en": "332",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859439339",
+      "tags": {
+        "barrier": "gate",
+        "name": "332"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6109178,
+        24.4707355
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "333",
+      "name_en": "333",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859439344",
+      "tags": {
+        "barrier": "gate",
+        "name": "333"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6110421,
+        24.4707355
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "335",
+      "name_en": "335",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5859439345",
+      "tags": {
+        "barrier": "gate",
+        "name": "335"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6112951,
+        24.4707355
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مدخل النساء",
+      "name_en": "Women's Entrance",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5883054851",
+      "tags": {
+        "barrier": "gate",
+        "name": "مدخل النساء",
+        "name:en": "Women's Entrance"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.61374,
+        24.4694544
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "334",
+      "name_en": "334",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5889299552",
+      "tags": {
+        "barrier": "gate",
+        "name": "334"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6111655,
+        24.4707355
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "336",
+      "name_en": "336",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5893388256",
+      "tags": {
+        "barrier": "gate",
+        "name": "336"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6114352,
+        24.4707328
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Women's Entrance",
+      "name_en": "Women's Entrance",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5895105165",
+      "tags": {
+        "barrier": "gate",
+        "name": "Women's Entrance"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6085692,
+        24.4694905
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مدخل النساء",
+      "name_en": "Women's Entrance",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5895105166",
+      "tags": {
+        "barrier": "gate",
+        "name": "مدخل النساء",
+        "name:en": "Women's Entrance"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6090367,
+        24.4704192
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Women's Entrance",
+      "name_en": "Women's Entrance",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5895119813",
+      "tags": {
+        "barrier": "gate",
+        "name": "Women's Entrance",
+        "name:fr": "Entrée des femmes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6121414,
+        24.4704468
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Women's Entrance",
+      "name_en": "Women's Entrance",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5895119814",
+      "tags": {
+        "barrier": "gate",
+        "name": "Women's Entrance"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6130383,
+        24.470448
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Kutub e Madina",
+      "name_en": "Kutub e Madina",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5919206885",
+      "tags": {
+        "name": "Kutub e Madina",
+        "tourism": "apartment"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6392902,
+        24.473313
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Baskin-Robbins",
+      "name_en": "Baskin-Robbins",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5924196505",
+      "tags": {
+        "amenity": "ice_cream",
+        "brand": "Baskin-Robbins",
+        "brand:wikidata": "Q584601",
+        "brand:wikipedia": "en:Baskin-Robbins",
+        "cuisine": "ice_cream",
+        "name": "Baskin-Robbins"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6118549,
+        24.472934
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "al-Rabia Perfumes",
+      "name_en": "al-Rabia Perfumes",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5924219476",
+      "tags": {
+        "name": "al-Rabia Perfumes",
+        "shop": "perfumery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.61571,
+        24.4642111
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Holy Quran Memorisation",
+      "name_en": "Holy Quran Memorisation",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5927480495",
+      "tags": {
+        "amenity": "library",
+        "name": "Holy Quran Memorisation",
+        "name:es": "Memorización del Sagrado Corán",
+        "name:fr": "Mémorisation du Saint Coran"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6113267,
+        24.4696647
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Women's - Quran Service",
+      "name_en": "Women's - Quran Service",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5927612354",
+      "tags": {
+        "amenity": "library",
+        "name": "Women's - Quran Service"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6125144,
+        24.4696267
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Women's - Quran Service",
+      "name_en": "Women's - Quran Service",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5927612355",
+      "tags": {
+        "amenity": "library",
+        "name": "Women's - Quran Service"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6129056,
+        24.4692756
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "جبل سلع",
+      "name_en": "Mount Selaʾ",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5953997157",
+      "tags": {
+        "name": "جبل سلع",
+        "name:ar": "جبل سلع",
+        "name:de": "Berg Sala",
+        "name:en": "Mount Selaʾ",
+        "name:es": "Monte Sela",
+        "natural": "peak"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5988573,
+        24.4770922
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "النقاء",
+      "name_en": "An Naqa",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5955564185",
+      "tags": {
+        "name": "النقاء",
+        "name:ar": "النقاء",
+        "name:en": "An Naqa",
+        "place": "neighbourhood"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6050262,
+        24.465432
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "المناخة",
+      "name_en": "Al Manakhah",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "5955564186",
+      "tags": {
+        "name": "المناخة",
+        "name:ar": "المناخة",
+        "name:en": "Al Manakhah",
+        "place": "neighbourhood"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6049323,
+        24.4696824
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "بنك البلاد",
+      "name_en": "Bank Albilad",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Al Haram Area",
+      "osm_id": "6181694587",
+      "tags": {
+        "alt_name:en": "Al Bilad Bank",
+        "amenity": "atm",
+        "brand": "بنك البلاد",
+        "brand:ar": "بنك البلاد",
+        "brand:en": "Bank Albilad",
+        "brand:wikidata": "Q4166498",
+        "brand:wikipedia": "ar:بنك البلاد",
+        "description": "Al Haram Area",
+        "name": "بنك البلاد",
+        "name:ar": "بنك البلاد",
+        "name:en": "Bank Albilad",
+        "operator": "بنك البلاد",
+        "operator:wikidata": "Q4166498",
+        "operator:wikipedia": "ar:بنك البلاد",
+        "website": "http://www.bankalbilad.com"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6126611,
+        24.4662244
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "بنك الجزيرة",
+      "name_en": "Bank Aljazira",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6181790922",
+      "tags": {
+        "amenity": "atm",
+        "brand": "بنك الجزيرة",
+        "brand:ar": "بنك الجزيرة",
+        "brand:en": "Bank Aljazira",
+        "brand:wikidata": "Q12199341",
+        "brand:wikipedia": "ar:بنك الجزيرة",
+        "name": "بنك الجزيرة",
+        "name:ar": "بنك الجزيرة",
+        "name:en": "Bank Aljazira",
+        "operator": "بنك الجزيرة",
+        "operator:wikidata": "Q12199341",
+        "operator:wikipedia": "ar:بنك الجزيرة"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6118492,
+        24.4744806
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Western Union",
+      "name_en": "Western Union",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6181870481",
+      "tags": {
+        "amenity": "money_transfer",
+        "brand": "Western Union",
+        "brand:wikidata": "Q861042",
+        "brand:wikipedia": "en:Western Union",
+        "name": "Western Union"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6116416,
+        24.4617174
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Saudi Post",
+      "name_en": "Saudi Post",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6181875631",
+      "tags": {
+        "amenity": "post_office",
+        "name": "Saudi Post"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6116013,
+        24.4617629
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Department of Civil Defense",
+      "name_en": "Department of Civil Defense",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6181884762",
+      "tags": {
+        "amenity": "fire_station",
+        "name": "Department of Civil Defense"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6050128,
+        24.4618502
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مصرف الراجحي",
+      "name_en": "مصرف الراجحي",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6181893833",
+      "tags": {
+        "amenity": "bank",
+        "brand": "مصرف الراجحي",
+        "brand:wikidata": "Q1761176",
+        "brand:wikipedia": "ar:مصرف الراجحي",
+        "name": "مصرف الراجحي"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6029015,
+        24.4611951
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "البريد السعودي",
+      "name_en": "Saudi Post",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6181972365",
+      "tags": {
+        "amenity": "post_office",
+        "name": "البريد السعودي",
+        "name:ar": "البريد السعودي",
+        "name:en": "Saudi Post"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6082624,
+        24.4640473
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "إتش أند أم",
+      "name_en": "H&M",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6231021639",
+      "tags": {
+        "addr:city": "المدينة المنورة",
+        "brand:de": "H&M",
+        "brand:en": "H&M",
+        "brand:fr": "H&M",
+        "brand:wikidata": "Q188326",
+        "brand:wikipedia": "ar:إتش أند أم",
+        "name": "إتش أند أم",
+        "name:ar": "إتش أند أم",
+        "name:de": "H&M",
+        "name:en": "H&M",
+        "name:fr": "H&M",
+        "shop": "clothes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6132478,
+        24.4713587
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Pearl City of Silver and Gems",
+      "name_en": "Pearl City of Silver and Gems",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6231028760",
+      "tags": {
+        "name": "Pearl City of Silver and Gems",
+        "shop": "jewelry"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6129972,
+        24.4719575
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "أنور المدينة",
+      "name_en": "Anwar Al Medinah",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6231039830",
+      "tags": {
+        "addr:city": "المدينة المنورة",
+        "name": "أنور المدينة",
+        "name:ar": "أنور المدينة",
+        "name:en": "Anwar Al Medinah",
+        "shop": "jewelry"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6125227,
+        24.4719593
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Amwaj",
+      "name_en": "Amwaj",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6231039835",
+      "tags": {
+        "name": "Amwaj",
+        "shop": "watches"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6123257,
+        24.4720234
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Dar Al Zaman Bookshop",
+      "name_en": "Dar Al Zaman Bookshop",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6231061449",
+      "tags": {
+        "name": "Dar Al Zaman Bookshop",
+        "shop": "books"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6128962,
+        24.4713912
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Dates of Madinah",
+      "name_en": "Dates of Madinah",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6231065401",
+      "tags": {
+        "name": "Dates of Madinah",
+        "shop": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6137211,
+        24.4727345
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Rauda Al Mubarakah for Dates",
+      "name_en": "Al Rauda Al Mubarakah for Dates",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6231065464",
+      "tags": {
+        "name": "Al Rauda Al Mubarakah for Dates",
+        "shop": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6137614,
+        24.4730795
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Abdul Samad Al Qurashi",
+      "name_en": "Abdul Samad Al Qurashi",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6231266685",
+      "tags": {
+        "name": "Abdul Samad Al Qurashi",
+        "shop": "perfumery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6109314,
+        24.4730155
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Ansar",
+      "name_en": "Al Ansar",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6232663575",
+      "tags": {
+        "name": "Al Ansar",
+        "shop": "jewelry"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6101338,
+        24.4711176
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Money Exchange",
+      "name_en": "Money Exchange",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6232663576",
+      "tags": {
+        "amenity": "bureau_de_change",
+        "name": "Money Exchange"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6099541,
+        24.4713642
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "موبايلي",
+      "name_en": "Mobily",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6232669085",
+      "tags": {
+        "brand": "موبايلي",
+        "brand:ar": "موبايلي",
+        "brand:en": "Mobily",
+        "brand:ja": "موبايلي",
+        "brand:wikidata": "Q6887331",
+        "brand:wikipedia": "ar:موبايلي",
+        "name": "موبايلي",
+        "name:en": "Mobily",
+        "office": "telecommunication",
+        "shop": "mobile_phone"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6097448,
+        24.4714521
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "العربية للعود",
+      "name_en": "Arabian Oud",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6232687608",
+      "tags": {
+        "name": "العربية للعود",
+        "name:ar": "العربية للعود",
+        "name:en": "Arabian Oud",
+        "shop": "perfumery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6090824,
+        24.4714899
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Arabian Oud",
+      "name_en": "Arabian Oud",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6236202648",
+      "tags": {
+        "name": "Arabian Oud",
+        "shop": "perfumery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6125555,
+        24.4714009
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الغزالي",
+      "name_en": "Al-Ghazali",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6236341969",
+      "tags": {
+        "addr:city": "المدينة المنورة",
+        "name": "الغزالي",
+        "name:ar": "الغزالي",
+        "name:en": "Al-Ghazali",
+        "shop": "watches"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6125458,
+        24.4730489
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Oud Elite",
+      "name_en": "Oud Elite",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6236398173",
+      "tags": {
+        "name": "Oud Elite",
+        "shop": "perfumery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6115751,
+        24.4711405
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Oud Elite",
+      "name_en": "Oud Elite",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6242831825",
+      "tags": {
+        "name": "Oud Elite",
+        "shop": "perfumery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6090212,
+        24.4652665
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Arabian Oud",
+      "name_en": "Arabian Oud",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6245276112",
+      "tags": {
+        "name": "Arabian Oud",
+        "shop": "perfumery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6088529,
+        24.4652656
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "موبايلي",
+      "name_en": "Mobily",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6247186453",
+      "tags": {
+        "brand": "موبايلي",
+        "brand:ar": "موبايلي",
+        "brand:en": "Mobily",
+        "brand:ja": "موبايلي",
+        "brand:wikidata": "Q6887331",
+        "brand:wikipedia": "ar:موبايلي",
+        "name": "موبايلي",
+        "name:en": "Mobily",
+        "office": "telecommunication",
+        "shop": "mobile_phone"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6139551,
+        24.4652542
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Waud Jewelery",
+      "name_en": "Al Waud Jewelery",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6247192862",
+      "tags": {
+        "name": "Al Waud Jewelery",
+        "shop": "jewelry"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.614137,
+        24.4652688
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Durat Al Awali",
+      "name_en": "Durat Al Awali",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6247205971",
+      "tags": {
+        "name": "Durat Al Awali",
+        "shop": "jewelry"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6151146,
+        24.4652934
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Money Exchangers",
+      "name_en": "Money Exchangers",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6247208974",
+      "tags": {
+        "amenity": "bureau_de_change",
+        "name": "Money Exchangers"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6154026,
+        24.4652951
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Sara for Electronics",
+      "name_en": "Al Sara for Electronics",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6247218157",
+      "tags": {
+        "name": "Al Sara for Electronics",
+        "shop": "radiotechnics"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6153685,
+        24.4652888
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Misk lil Hadaya",
+      "name_en": "Al Misk lil Hadaya",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6247481757",
+      "tags": {
+        "name": "Al Misk lil Hadaya",
+        "shop": "perfumery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6150113,
+        24.4645415
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Western Union",
+      "name_en": "Western Union",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6248944517",
+      "tags": {
+        "amenity": "money_transfer",
+        "brand": "Western Union",
+        "brand:wikidata": "Q861042",
+        "brand:wikipedia": "en:Western Union",
+        "name": "Western Union"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6061185,
+        24.4650289
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Ersal Money Transfer",
+      "name_en": "Ersal Money Transfer",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6248944518",
+      "tags": {
+        "amenity": "money_transfer",
+        "name": "Ersal Money Transfer",
+        "website": "ersal.de"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6061279,
+        24.4651154
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Money Changer",
+      "name_en": "Money Changer",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6248968607",
+      "tags": {
+        "amenity": "bureau_de_change",
+        "name": "Money Changer",
+        "opening_hours": "Mo-Su 08:00-14:30,16:00-23:00"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6040629,
+        24.4671152
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Oud Elite",
+      "name_en": "Oud Elite",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6249011982",
+      "tags": {
+        "name": "Oud Elite",
+        "shop": "perfumery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6074862,
+        24.4714808
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Arabian Oud",
+      "name_en": "Arabian Oud",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6249011984",
+      "tags": {
+        "name": "Arabian Oud",
+        "shop": "perfumery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6079479,
+        24.4711602
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Oud Elite",
+      "name_en": "Oud Elite",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6249041440",
+      "tags": {
+        "name": "Oud Elite",
+        "shop": "perfumery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6081787,
+        24.4712956
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "عبداللطيف للذهب",
+      "name_en": "Abdullatif for Gold",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6249053463",
+      "tags": {
+        "name": "عبداللطيف للذهب",
+        "name:ar": "عبداللطيف للذهب",
+        "name:en": "Abdullatif for Gold",
+        "shop": "jewelry"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6081696,
+        24.4711906
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Samaha for Spices",
+      "name_en": "Al Samaha for Spices",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6249188499",
+      "tags": {
+        "name": "Al Samaha for Spices",
+        "shop": "spices"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6085903,
+        24.4715323
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Silver Jewelry",
+      "name_en": "Silver Jewelry",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6249200536",
+      "tags": {
+        "name": "Silver Jewelry",
+        "shop": "jewelry"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6090218,
+        24.4711714
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Oud Elite",
+      "name_en": "Oud Elite",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6249209248",
+      "tags": {
+        "name": "Oud Elite",
+        "shop": "perfumery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6093303,
+        24.4712178
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Arabien Oud",
+      "name_en": "Arabien Oud",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6249212775",
+      "tags": {
+        "name": "Arabien Oud",
+        "shop": "perfumery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6094966,
+        24.4711226
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Jazeera Jewellry",
+      "name_en": "Al Jazeera Jewellry",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6251599184",
+      "tags": {
+        "name": "Al Jazeera Jewellry",
+        "shop": "jewelry"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6059742,
+        24.4659543
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Sama Al Salam for Gold and Jewellry",
+      "name_en": "Sama Al Salam for Gold and Jewellry",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6251616883",
+      "tags": {
+        "name": "Sama Al Salam for Gold and Jewellry",
+        "shop": "jewelry"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6059552,
+        24.4659003
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Intesar for Islamic Recordings",
+      "name_en": "Al Intesar for Islamic Recordings",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6251621448",
+      "tags": {
+        "name": "Al Intesar for Islamic Recordings",
+        "shop": "books"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6059718,
+        24.466047
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Thuraya for Gold and Juwellry",
+      "name_en": "Al Thuraya for Gold and Juwellry",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6251646870",
+      "tags": {
+        "name": "Al Thuraya for Gold and Juwellry",
+        "shop": "jewelry"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6059623,
+        24.465758
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الدروس العلمية",
+      "name_en": "Scientific Lessons",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6252533232",
+      "tags": {
+        "name": "الدروس العلمية",
+        "name:ar": "الدروس العلمية",
+        "name:en": "Scientific Lessons",
+        "name:fr": "Leçons scientifiques",
+        "office": "educational_institution"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6111503,
+        24.4687638
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الدروس العلمية",
+      "name_en": "Scientific Lessons",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6252533233",
+      "tags": {
+        "name": "الدروس العلمية",
+        "name:ar": "الدروس العلمية",
+        "name:en": "Scientific Lessons",
+        "name:fr": "Leçons scientifiques",
+        "office": "educational_institution"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6111423,
+        24.4682851
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الدروس العلمية",
+      "name_en": "Scientific Lessons",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6252533234",
+      "tags": {
+        "name": "الدروس العلمية",
+        "name:ar": "الدروس العلمية",
+        "name:en": "Scientific Lessons",
+        "name:fr": "Leçons scientifiques",
+        "office": "educational_institution"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6114963,
+        24.4685585
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الدروس العلمية",
+      "name_en": "Scientific Lessons",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6252533235",
+      "tags": {
+        "name": "الدروس العلمية",
+        "name:ar": "الدروس العلمية",
+        "name:en": "Scientific Lessons",
+        "name:fr": "Leçons scientifiques",
+        "office": "educational_institution"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6107855,
+        24.4685658
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الدروس العلمية",
+      "name_en": "Scientific Lessons",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6252533236",
+      "tags": {
+        "name": "الدروس العلمية",
+        "name:ar": "الدروس العلمية",
+        "name:en": "Scientific Lessons",
+        "office": "educational_institution"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6121207,
+        24.4681877
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الدروس العلمية",
+      "name_en": "Scientific Lessons",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6252533237",
+      "tags": {
+        "name": "الدروس العلمية",
+        "name:ar": "الدروس العلمية",
+        "name:en": "Scientific Lessons",
+        "office": "educational_institution"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6126308,
+        24.468182
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الدروس العلمية",
+      "name_en": "Scientific Lessons",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6252533238",
+      "tags": {
+        "name": "الدروس العلمية",
+        "name:ar": "الدروس العلمية",
+        "name:en": "Scientific Lessons",
+        "office": "educational_institution"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6123782,
+        24.4686389
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الدروس العلمية",
+      "name_en": "Scientific Lessons",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6252533239",
+      "tags": {
+        "name": "الدروس العلمية",
+        "name:ar": "الدروس العلمية",
+        "name:en": "Scientific Lessons",
+        "name:fr": "Leçons scientifiques",
+        "office": "educational_institution"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6099044,
+        24.4686731
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الدروس العلمية",
+      "name_en": "Scientific Lessons",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6252533240",
+      "tags": {
+        "name": "الدروس العلمية",
+        "name:ar": "الدروس العلمية",
+        "name:en": "Scientific Lessons",
+        "office": "educational_institution"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6096662,
+        24.4681933
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الدروس العلمية",
+      "name_en": "Scientific Lessons",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6252533241",
+      "tags": {
+        "name": "الدروس العلمية",
+        "name:ar": "الدروس العلمية",
+        "name:en": "Scientific Lessons",
+        "office": "educational_institution"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6101561,
+        24.4681913
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Guidance Phone",
+      "name_en": "Guidance Phone",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6253531471",
+      "tags": {
+        "amenity": "telephone",
+        "information": "audioguide",
+        "name": "Guidance Phone"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6115225,
+        24.4679273
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Guidance Phone",
+      "name_en": "Guidance Phone",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6253531472",
+      "tags": {
+        "amenity": "telephone",
+        "indoor": "yes",
+        "information": "audioguide",
+        "name": "Guidance Phone",
+        "name:fr": "Téléphone d'orientation"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6107458,
+        24.4679285
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Guidance Phone",
+      "name_en": "Guidance Phone",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6253536583",
+      "tags": {
+        "amenity": "telephone",
+        "indoor": "yes",
+        "information": "audioguide",
+        "name": "Guidance Phone",
+        "name:fr": "Téléphone d'orientation"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6115145,
+        24.4690497
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Guidance Phone",
+      "name_en": "Guidance Phone",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6253536584",
+      "tags": {
+        "amenity": "telephone",
+        "indoor": "yes",
+        "information": "audioguide",
+        "name": "Guidance Phone",
+        "name:fr": "Téléphone d'orientation"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6107458,
+        24.4690579
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "هاتف الارشاد",
+      "name_en": "Guidance Phone",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6253536785",
+      "tags": {
+        "amenity": "telephone",
+        "information": "audioguide",
+        "name": "هاتف الارشاد",
+        "name:ar": "هاتف الارشاد",
+        "name:en": "Guidance Phone"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6111194,
+        24.4698323
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Guidance Phone",
+      "name_en": "Guidance Phone",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6253536786",
+      "tags": {
+        "amenity": "telephone",
+        "information": "audioguide",
+        "name": "Guidance Phone"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6125155,
+        24.4698746
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Guidance Phone",
+      "name_en": "Guidance Phone",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6253549311",
+      "tags": {
+        "amenity": "telephone",
+        "information": "audioguide",
+        "name": "Guidance Phone"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6106333,
+        24.4684722
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Guidance Phone",
+      "name_en": "Guidance Phone",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6253549312",
+      "tags": {
+        "amenity": "telephone",
+        "information": "audioguide",
+        "name": "Guidance Phone"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6116649,
+        24.4684597
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Guidance Phone",
+      "name_en": "Guidance Phone",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6253552494",
+      "tags": {
+        "amenity": "telephone",
+        "information": "audioguide",
+        "name": "Guidance Phone"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6099241,
+        24.4698268
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Guidance Phone",
+      "name_en": "Guidance Phone",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6253552679",
+      "tags": {
+        "amenity": "telephone",
+        "information": "audioguide",
+        "name": "Guidance Phone"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6099107,
+        24.4678152
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Guidance Phone",
+      "name_en": "Guidance Phone",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6253552680",
+      "tags": {
+        "amenity": "telephone",
+        "information": "audioguide",
+        "name": "Guidance Phone"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6124749,
+        24.4678201
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Guidance Phone",
+      "name_en": "Guidance Phone",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6253554130",
+      "tags": {
+        "amenity": "telephone",
+        "information": "audioguide",
+        "name": "Guidance Phone",
+        "name:fr": "Téléphone d'orientation"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6092053,
+        24.4683352
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Guidance Phone",
+      "name_en": "Guidance Phone",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6253554131",
+      "tags": {
+        "amenity": "telephone",
+        "information": "audioguide",
+        "name": "Guidance Phone"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6131267,
+        24.4683352
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Guidance Phone",
+      "name_en": "Guidance Phone",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6253556248",
+      "tags": {
+        "amenity": "telephone",
+        "information": "audioguide",
+        "name": "Guidance Phone"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6129908,
+        24.4694543
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Guidance Phone",
+      "name_en": "Guidance Phone",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6253556249",
+      "tags": {
+        "amenity": "telephone",
+        "indoor": "yes",
+        "information": "audioguide",
+        "name": "Guidance Phone",
+        "name:fr": "Téléphone d'orientation"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6092217,
+        24.4695843
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Police Office and Lost and Found Office",
+      "name_en": "Police Office and Lost and Found Office",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6253568071",
+      "tags": {
+        "name": "Police Office and Lost and Found Office",
+        "office": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6130155,
+        24.4691867
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Police Office and Lost and Found Office",
+      "name_en": "Police Office and Lost and Found Office",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6253572903",
+      "tags": {
+        "name": "Police Office and Lost and Found Office",
+        "office": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6132617,
+        24.4690451
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Police Office and Lost and Found Office",
+      "name_en": "Police Office and Lost and Found Office",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6253573950",
+      "tags": {
+        "name": "Police Office and Lost and Found Office",
+        "office": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6128614,
+        24.4658261
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مصرف الراجحي",
+      "name_en": "مصرف الراجحي",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6275180568",
+      "tags": {
+        "amenity": "atm",
+        "brand": "مصرف الراجحي",
+        "brand:wikidata": "Q1761176",
+        "brand:wikipedia": "ar:مصرف الراجحي",
+        "name": "مصرف الراجحي",
+        "operator": "مصرف الراجحي",
+        "operator:wikidata": "Q1761176",
+        "operator:wikipedia": "ar:مصرف الراجحي"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5997231,
+        24.459754
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "زين السعودية",
+      "name_en": "Zain Saudi Arabia",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6275271625",
+      "tags": {
+        "brand": "زين السعودية",
+        "brand:ar": "زين السعودية",
+        "brand:en": "Zain Saudi Arabia",
+        "brand:ja": "زين السعودية",
+        "brand:wikidata": "Q12218575",
+        "brand:wikipedia": "ar:زين السعودية",
+        "name": "زين السعودية",
+        "name:en": "Zain Saudi Arabia",
+        "office": "telecommunication",
+        "shop": "mobile_phone"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6136808,
+        24.464952
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Madina Maps - Gift Shop",
+      "name_en": "Madina Maps - Gift Shop",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6279491039",
+      "tags": {
+        "name": "Madina Maps - Gift Shop",
+        "office": "association"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6108409,
+        24.4659435
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مركز الاطفال الضائعين",
+      "name_en": "The Center for lost Children",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6281884162",
+      "tags": {
+        "name": "مركز الاطفال الضائعين",
+        "name:ar": "مركز الاطفال الضائعين",
+        "name:en": "The Center for lost Children",
+        "office": "association"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6139923,
+        24.468008
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "i-Beauty",
+      "name_en": "i-Beauty",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6325740617",
+      "tags": {
+        "name": "i-Beauty",
+        "shop": "optician"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6175162,
+        24.462018
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "House of Donuts",
+      "name_en": "House of Donuts",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6340717798",
+      "tags": {
+        "craft": "confectionery",
+        "name": "House of Donuts"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6106128,
+        24.4711149
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Rajhi Bank",
+      "name_en": "Al Rajhi Bank",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6376846374",
+      "tags": {
+        "amenity": "bank",
+        "name": "Al Rajhi Bank"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6138285,
+        24.4762508
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "بقالة درر المدينة",
+      "name_en": "بقالة درر المدينة",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6388417658",
+      "tags": {
+        "name": "بقالة درر المدينة",
+        "shop": "grocery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6106985,
+        24.4723744
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Money Exchange",
+      "name_en": "Money Exchange",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6388425815",
+      "tags": {
+        "amenity": "bureau_de_change",
+        "name": "Money Exchange"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6107983,
+        24.472774
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Casio",
+      "name_en": "Casio",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6388427021",
+      "tags": {
+        "name": "Casio",
+        "shop": "watches"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6106893,
+        24.4727746
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Door 42",
+      "name_en": "Door 42",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6446716108",
+      "tags": {
+        "access": "no",
+        "entrance": "yes",
+        "name": "Door 42",
+        "name:es": "Puerta 42",
+        "name:fr": "Porte 42",
+        "name:ur": "دروازہ 42",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6111487,
+        24.4673329
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "شركة الاتصالات السعودية",
+      "name_en": "Saudi Telecom Company",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6474054521",
+      "tags": {
+        "brand": "شركة الاتصالات السعودية",
+        "brand:ar": "شركة الاتصالات السعودية",
+        "brand:en": "Saudi Telecom Company",
+        "brand:ja": "شركة الاتصالات السعودية",
+        "brand:wikidata": "Q1535171",
+        "brand:wikipedia": "ar:إس تي سي السعودية",
+        "name": "شركة الاتصالات السعودية",
+        "name:en": "Saudi Telecom Company",
+        "office": "telecommunication"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6113638,
+        24.4718608
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Abdul Samad Al Quraishi",
+      "name_en": "Abdul Samad Al Quraishi",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6474065098",
+      "tags": {
+        "name": "Abdul Samad Al Quraishi",
+        "shop": "perfumery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6113397,
+        24.4722563
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "The Guard Column",
+      "name_en": "The Guard Column",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6985840096",
+      "tags": {
+        "advertising": "column",
+        "name": "The Guard Column"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6113326,
+        24.4675659
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "The Bed Column",
+      "name_en": "The Bed Column",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6985840097",
+      "tags": {
+        "advertising": "column",
+        "name": "The Bed Column"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.611333,
+        24.4675351
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Aisha Column",
+      "name_en": "Aisha Column",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6985840108",
+      "tags": {
+        "advertising": "column",
+        "name": "Aisha Column"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6112095,
+        24.4675369
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Hanana Column",
+      "name_en": "Hanana Column",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "6985840111",
+      "tags": {
+        "advertising": "column",
+        "name": "Hanana Column"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6111538,
+        24.4674733
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "AlShiaka",
+      "name_en": "AlShiaka",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "7043569695",
+      "tags": {
+        "name": "AlShiaka",
+        "shop": "clothes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5972215,
+        24.4825784
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مدخل سوبر ماركت سروات",
+      "name_en": "Entrance Sarawat Superstore",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "7043602930",
+      "tags": {
+        "entrance": "yes",
+        "name": "مدخل سوبر ماركت سروات",
+        "name:ar": "مدخل سوبر ماركت سروات",
+        "name:en": "Entrance Sarawat Superstore"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5975025,
+        24.4840538
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Jazira Bank",
+      "name_en": "Al Jazira Bank",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "7043669636",
+      "tags": {
+        "amenity": "bank",
+        "name": "Al Jazira Bank"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6002177,
+        24.4853848
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Money Exchanger",
+      "name_en": "Money Exchanger",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "7300527866",
+      "tags": {
+        "amenity": "bureau_de_change",
+        "name": "Money Exchanger",
+        "opening_hours": "Su-Fr 08:00-14:30,16:00-23:00"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6109355,
+        24.4731261
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Lina for Dates",
+      "name_en": "Al Lina for Dates",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "7300579046",
+      "tags": {
+        "name": "Al Lina for Dates",
+        "shop": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6105157,
+        24.4731432
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Dates Shop - Mohi for Dates",
+      "name_en": "Dates Shop - Mohi for Dates",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "7300658230",
+      "tags": {
+        "name": "Dates Shop - Mohi for Dates",
+        "shop": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6125452,
+        24.4727072
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Durat al Rawaye for Gifts",
+      "name_en": "Durat al Rawaye for Gifts",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "7300658231",
+      "tags": {
+        "name": "Durat al Rawaye for Gifts",
+        "shop": "gift"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6120557,
+        24.4731245
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Ahmad Haleel Al Zibyani for Gifts",
+      "name_en": "Ahmad Haleel Al Zibyani for Gifts",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "7300683731",
+      "tags": {
+        "name": "Ahmad Haleel Al Zibyani for Gifts",
+        "shop": "gift"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6098372,
+        24.473174
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Madinah for Gifts",
+      "name_en": "Madinah for Gifts",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "7300712143",
+      "tags": {
+        "name": "Madinah for Gifts",
+        "shop": "gift"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6092664,
+        24.4730527
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Lovely for Gifts",
+      "name_en": "Lovely for Gifts",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "7395922604",
+      "tags": {
+        "name": "Lovely for Gifts",
+        "shop": "gift"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6059079,
+        24.4664422
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "بني عبدالاشهل",
+      "name_en": "Bani Abdul Ashhal",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "7501022041",
+      "tags": {
+        "name": "بني عبدالاشهل",
+        "name:ar": "بني عبدالاشهل",
+        "name:en": "Bani Abdul Ashhal",
+        "place": "neighbourhood"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6189307,
+        24.4802747
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مركز المجيدي التجاري - بوابة 9",
+      "name_en": "Al Majeedi Commercial Centre - Gate 9",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "7606959577",
+      "tags": {
+        "door": "yes",
+        "indoor": "door",
+        "name": "مركز المجيدي التجاري - بوابة 9",
+        "name:ar": "مركز المجيدي التجاري - بوابة 9",
+        "name:en": "Al Majeedi Commercial Centre - Gate 9"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6097716,
+        24.471334
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "نقطة تعبئة زمزم",
+      "name_en": "ZamZam filling point (Bir ZamZam)",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "7727486750",
+      "tags": {
+        "drinking_water": "yes",
+        "man_made": "water_well",
+        "name": "نقطة تعبئة زمزم",
+        "name:ar": "نقطة تعبئة زمزم",
+        "name:en": "ZamZam filling point (Bir ZamZam)"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6080948,
+        24.4703398
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "تلسكوب للبصريات",
+      "name_en": "تلسكوب للبصريات",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "8011146632",
+      "tags": {
+        "healthcare": "optometrist",
+        "name": "تلسكوب للبصريات"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6396039,
+        24.4616183
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "كلف البلوشي للوازم الخياطة",
+      "name_en": "كلف البلوشي للوازم الخياطة",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "8011158514",
+      "tags": {
+        "craft": "dressmaker",
+        "name": "كلف البلوشي للوازم الخياطة"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6318808,
+        24.461837
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مكتبة عبدون",
+      "name_en": "مكتبة عبدون",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "8011161898",
+      "tags": {
+        "amenity": "library",
+        "name": "مكتبة عبدون"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.638101,
+        24.463257
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "بسبوستي",
+      "name_en": "بسبوستي",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "8011170721",
+      "tags": {
+        "name": "بسبوستي",
+        "shop": "pastry"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6381577,
+        24.4638253
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مريم للتنجيد والستائر والديكور",
+      "name_en": "مريم للتنجيد والستائر والديكور",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "8011170750",
+      "tags": {
+        "name": "مريم للتنجيد والستائر والديكور",
+        "shop": "window_blind"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6320372,
+        24.4623347
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "السفير للمستلزمات الرجالية",
+      "name_en": "السفير للمستلزمات الرجالية",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "8011173493",
+      "tags": {
+        "name": "السفير للمستلزمات الرجالية",
+        "shop": "clothes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6377784,
+        24.4649507
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مكتب الخط الإلكتروني",
+      "name_en": "مكتب الخط الإلكتروني",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "8011201696",
+      "tags": {
+        "amenity": "library",
+        "name": "مكتب الخط الإلكتروني"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6284438,
+        24.4620563
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "شركة تنظيف خزانات",
+      "name_en": "شركة تنظيف خزانات",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "8014522191",
+      "tags": {
+        "addr:housenumber": "42315",
+        "addr:postcode": "42315",
+        "addr:street": "First Ring Road (King Faisal Road) الطريق الدائري الأول (طريق الملك فيصل)",
+        "email": "ta620139@gmail.com",
+        "name": "شركة تنظيف خزانات",
+        "office": "company",
+        "opening_hours": "24/7",
+        "phone": "0536786874",
+        "website": "https://moving-company-4605.business.site/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5946472,
+        24.4617069
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الحراج القديم",
+      "name_en": "الحراج القديم",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "8017493110",
+      "tags": {
+        "name": "الحراج القديم",
+        "shop": "antiques"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6252685,
+        24.4605424
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "صالون الخرطوم",
+      "name_en": "صالون الخرطوم",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "8017493358",
+      "tags": {
+        "name": "صالون الخرطوم",
+        "shop": "hairdresser"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6235544,
+        24.4606992
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "البنك الأهلي السعودي",
+      "name_en": "Saudi National Bank",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "8017501382",
+      "tags": {
+        "alt_name:en": "SNB",
+        "amenity": "bank",
+        "brand": "البنك الأهلي السعودي",
+        "brand:ar": "البنك الأهلي السعودي",
+        "brand:en": "Saudi National Bank",
+        "brand:wikidata": "Q1518238",
+        "brand:wikipedia": "ar:البنك الأهلي السعودي",
+        "name": "البنك الأهلي السعودي",
+        "name:ar": "البنك الأهلي السعودي",
+        "name:en": "Saudi National Bank"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6224404,
+        24.4597887
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مؤسسة موارد الصفا للتجارة",
+      "name_en": "مؤسسة موارد الصفا للتجارة",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "8023424340",
+      "tags": {
+        "name": "مؤسسة موارد الصفا للتجارة",
+        "office": "foundation"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6117477,
+        24.4597282
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "نقل عفش بالمدينة المنورة 0536786874 جميع انحاء المملكه السعوديه",
+      "name_en": "نقل عفش بالمدينة المنورة 0536786874 مع الفك والتركيب غرف النوم الستائر والمطابخ تركيب غرف النوم الجديدة وسيارات مقفلة للحفاظ علي العفش",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "8033317885",
+      "tags": {
+        "addr:housenumber": "42315",
+        "addr:postcode": "42315",
+        "addr:street": "Abu Bakr Asseddeq Road (Al Salam Road)",
+        "email": "waszxmnbjlouytp.com@gmail.com",
+        "name": "نقل عفش بالمدينة المنورة 0536786874 جميع انحاء المملكه السعوديه",
+        "name:en": "نقل عفش بالمدينة المنورة 0536786874 مع الفك والتركيب غرف النوم الستائر والمطابخ تركيب غرف النوم الجديدة وسيارات مقفلة للحفاظ علي العفش",
+        "office": "company",
+        "opening_hours": "24/7",
+        "phone": "0536786874",
+        "website": "https://moving-company-4605.business.site/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5900964,
+        24.4609293
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الكعكي مخابز و حلويات",
+      "name_en": "Kaki Bakeries and Sweets",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "8412814962",
+      "tags": {
+        "name": "الكعكي مخابز و حلويات",
+        "name:ar": "الكعكي مخابز و حلويات",
+        "name:en": "Kaki Bakeries and Sweets",
+        "shop": "bakery"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6108454,
+        24.4598987
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق قصر الاندلس",
+      "name_en": "فندق قصر الاندلس",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "9862823117",
+      "tags": {
+        "amenity": "nursing_home",
+        "name": "فندق قصر الاندلس"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6094903,
+        24.4646455
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "أحمد المغربي للعطور",
+      "name_en": "Ahmed Al Maghribi",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "10199088782",
+      "tags": {
+        "email": "estore@ahmed-perfume.com",
+        "name": "أحمد المغربي للعطور",
+        "name:ar": "أحمد المغربي للعطور",
+        "name:en": "Ahmed Al Maghribi",
+        "opening_hours": "Mo-Su 09:30-22:30",
+        "phone": "+971 6 742 0602",
+        "shop": "perfumery",
+        "website": "https://www.ahmedalmaghribi.com/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6097764,
+        24.4719088
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "أحمد المغربي للعطور",
+      "name_en": "Ahmed Al Maghribi",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "10199088800",
+      "tags": {
+        "email": "estore@ahmed-perfume.com",
+        "name": "أحمد المغربي للعطور",
+        "name:ar": "أحمد المغربي للعطور",
+        "name:en": "Ahmed Al Maghribi",
+        "opening_hours": "Mo-Su 06:00-24:00",
+        "phone": "+971 6 742 0602",
+        "shop": "perfumery",
+        "website": "https://www.ahmedalmaghribi.com/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6119973,
+        24.4711251
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "ماء ابار",
+      "name_en": "ماء ابار",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "10203241679",
+      "tags": {
+        "drinking_water": "yes",
+        "fee": "no",
+        "man_made": "water_well",
+        "name": "ماء ابار"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6377539,
+        24.4869043
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Petromin",
+      "name_en": "Petromin",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "11036833185",
+      "tags": {
+        "contact:email": "petrominexpress@petromin.com",
+        "contact:phone": "+966 800 442 0020",
+        "contact:website": "https://petromin.express/",
+        "name": "Petromin",
+        "opening_hours": "Fr 16:00-22:00; Mo-Th,Sa-Su 08:00-23:30",
+        "operator": "Petromin Express",
+        "shop": "car_repair"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.58175,
+        24.476774
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Petromin",
+      "name_en": "Petromin",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "11036833186",
+      "tags": {
+        "contact:email": "petrominexpress@petromin.com",
+        "contact:phone": "+966 800 442 0020",
+        "contact:website": "https://petromin.express/",
+        "name": "Petromin",
+        "opening_hours": "Fr 16:00-22:00; Mo-Th,Sa-Su 08:00-23:30",
+        "operator": "Petromin Express",
+        "shop": "car_repair"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.592318,
+        24.475688
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Petromin",
+      "name_en": "Petromin",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "11036833187",
+      "tags": {
+        "contact:email": "petrominexpress@petromin.com",
+        "contact:phone": "+966 800 442 0020",
+        "contact:website": "https://petromin.express/",
+        "name": "Petromin",
+        "opening_hours": "Fr 16:00-22:00; Mo-Th,Sa-Su 08:00-23:30",
+        "operator": "Petromin Express",
+        "shop": "car_repair"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.583016,
+        24.471135
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Petromin",
+      "name_en": "Petromin",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "11036864809",
+      "tags": {
+        "contact:email": "petrominexpress@petromin.com",
+        "contact:phone": "+966 800 442 0020",
+        "contact:website": "https://petromin.express/",
+        "name": "Petromin",
+        "opening_hours": "Fr 16:00-22:00; Mo-Th,Sa-Su 08:00-23:30",
+        "operator": "Petromin Express",
+        "shop": "car_repair"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6304938,
+        24.476408
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Electromin",
+      "name_en": "Electromin",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "11443435732",
+      "tags": {
+        "amenity": "charging_station",
+        "contact:instagram": "electrominksa",
+        "contact:linkedin": "electromin-emobility",
+        "email": "operations@electromin.com",
+        "name": "Electromin",
+        "opening_hours": "Fr 17:00-21:00; Mo-Th,Sa-Su 09:00-22:00",
+        "operator": "Electromin",
+        "phone": "+966 800 244 0331",
+        "website": "https://electromin.com"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5828712,
+        24.4712325
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "أحمد المغربي للعطور",
+      "name_en": "Ahmed Al Maghribi",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "12187840670",
+      "tags": {
+        "name": "أحمد المغربي للعطور",
+        "name:ar": "أحمد المغربي للعطور",
+        "name:en": "Ahmed Al Maghribi",
+        "opening_hours": "Mo-Su 10:00-24:00",
+        "phone": "+966 56 082 8191",
+        "shop": "perfumery",
+        "website": "https://www.ahmedalmaghribi.com"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6133653,
+        24.4717574
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "أحمد المغربي للعطور",
+      "name_en": "Ahmed Al Maghribi",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "12187840671",
+      "tags": {
+        "name": "أحمد المغربي للعطور",
+        "name:ar": "أحمد المغربي للعطور",
+        "name:en": "Ahmed Al Maghribi",
+        "opening_hours": "Mo-Su 05:00-23:30",
+        "phone": "+966 56 082 8191",
+        "shop": "perfumery",
+        "website": "https://www.ahmedalmaghribi.com"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.606885,
+        24.4651072
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "ردتاغ",
+      "name_en": "Redtag",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "12314099242",
+      "tags": {
+        "name": "ردتاغ",
+        "name:ar": "ردتاغ",
+        "name:en": "Redtag",
+        "opening_hours": "Fr 14:00-24:00; Mo-We,Su 09:30-12:00,16:30-24:00; Th,Sa 09:30-24:00",
+        "phone": "+966 800 304 3113",
+        "shop": "clothes",
+        "website": "https://sa.redtagfashion.com/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5838926,
+        24.4605559
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "سعد موسم",
+      "name_en": "سعد موسم",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "12495329001",
+      "tags": {
+        "amenity": "bureau_de_change",
+        "name": "سعد موسم",
+        "opening_hours": "Mo-Su 08:00-23:30"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6102644,
+        24.4739129
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "السيح",
+      "name_en": "As Sih",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "12830580740",
+      "tags": {
+        "name": "السيح",
+        "name:ar": "السيح",
+        "name:en": "As Sih",
+        "place": "neighbourhood"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5955848,
+        24.4698069
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الراية",
+      "name_en": "Ar Rayah",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "12830580747",
+      "tags": {
+        "name": "الراية",
+        "name:ar": "الراية",
+        "name:en": "Ar Rayah",
+        "place": "neighbourhood"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5998762,
+        24.4843367
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "المصانع",
+      "name_en": "Al Masani",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "12830580757",
+      "tags": {
+        "name": "المصانع",
+        "name:ar": "المصانع",
+        "name:en": "Al Masani",
+        "place": "neighbourhood"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6090602,
+        24.4797279
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الاصيفرين",
+      "name_en": "Al Usayfirin",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "12830580759",
+      "tags": {
+        "name": "الاصيفرين",
+        "name:ar": "الاصيفرين",
+        "name:en": "Al Usayfirin",
+        "place": "neighbourhood"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5900915,
+        24.4607446
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "بني ظفر",
+      "name_en": "Bani Zafar",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "12830580765",
+      "tags": {
+        "name": "بني ظفر",
+        "name:ar": "بني ظفر",
+        "name:en": "Bani Zafar",
+        "place": "neighbourhood"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6297454,
+        24.4611351
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "بني معاوية",
+      "name_en": "Bani Muawiyah",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "12830580788",
+      "tags": {
+        "name": "بني معاوية",
+        "name:ar": "بني معاوية",
+        "name:en": "Bani Muawiyah",
+        "place": "neighbourhood"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6246814,
+        24.4737129
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "السقيا",
+      "name_en": "As Suqya",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "12830607204",
+      "tags": {
+        "name": "السقيا",
+        "name:ar": "السقيا",
+        "name:en": "As Suqya",
+        "place": "neighbourhood"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5976313,
+        24.463474
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "بني النجار",
+      "name_en": "Bani Al Najjar",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "12830607205",
+      "tags": {
+        "name": "بني النجار",
+        "name:ar": "بني النجار",
+        "name:en": "Bani Al Najjar",
+        "place": "neighbourhood"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6165705,
+        24.470754
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "العنابس",
+      "name_en": "Al Anabis",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "12830607210",
+      "tags": {
+        "name": "العنابس",
+        "name:ar": "العنابس",
+        "name:en": "Al Anabis",
+        "place": "neighbourhood"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5868301,
+        24.4725411
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الفتح",
+      "name_en": "Al Fath",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "12830607219",
+      "tags": {
+        "name": "الفتح",
+        "name:ar": "الفتح",
+        "name:en": "Al Fath",
+        "place": "neighbourhood"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.595499,
+        24.4795717
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Hotel Dar Al Ashraf Madina",
+      "name_en": "Hotel Dar Al Ashraf Madina",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "13000156627",
+      "tags": {
+        "addr:city": "Al Madina",
+        "addr:place": "المغيسلة",
+        "addr:postcode": "42315",
+        "air_conditioning": "yes",
+        "brand": "Al Ahraf Hotel Group",
+        "email": "hoteldaralashrafmadina@gmail.com",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "Hotel Dar Al Ashraf Madina",
+        "opening_hours": "24/7",
+        "payment:cash": "yes",
+        "phone": "+966578580786",
+        "reservation": "yes",
+        "rooms": "21",
+        "smoking": "no",
+        "tourism": "motel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6059488,
+        24.4610749
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "ألإتقان للاثاث النجارة الحديثة",
+      "name_en": "ألإتقان للاثاث النجارة الحديثة",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "13260870501",
+      "tags": {
+        "addr:city": "المدينة المنورة",
+        "addr:housenumber": "DMAE8454، 8454",
+        "addr:postcode": "42315",
+        "addr:street": "طريق الأمير عبد المجيد",
+        "contact:instagram": "almuealim1996",
+        "email": "almuealim@almuealim.space",
+        "internet_access": "wlan",
+        "name": "ألإتقان للاثاث النجارة الحديثة",
+        "opening_hours": "Sa-Th 00:00-24:00",
+        "phone": "+9960575185899",
+        "shop": "furniture"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5936055,
+        24.4628198
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مركز التنمية الاجتماعية بالمدينة المنورة",
+      "name_en": "Social Development Center",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "13335312601",
+      "tags": {
+        "addr:city": "المدينة المنورة",
+        "addr:region": "المدينة المنورة",
+        "amenity": "social_facility",
+        "government": "ministry",
+        "name": "مركز التنمية الاجتماعية بالمدينة المنورة",
+        "name:ar": "مركز التنمية الاجتماعية بالمدينة المنورة",
+        "name:en": "Social Development Center",
+        "office": "government",
+        "operator": "وزارة الموارد البشرية والتنمية الاجتماعية",
+        "operator:en": "Ministry of Human Resources and Social Development",
+        "social_facility": "outreach",
+        "website": "https://www.hrsd.gov.sa",
+        "wheelchair": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5972447,
+        24.4678349
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "قبر النبي محمد صلى الله عليه وسلم",
+      "name_en": "Tomb of Prophet Muhammad PBUH",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "13415346081",
+      "tags": {
+        "historic": "tomb",
+        "name": "قبر النبي محمد صلى الله عليه وسلم",
+        "name:ar": "قبر النبي محمد صلى الله عليه وسلم",
+        "name:en": "Tomb of Prophet Muhammad PBUH",
+        "wikidata": "Q9458",
+        "wikipedia": "ar:محمد"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6114474,
+        24.4675768
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "غزوة الخندق",
+      "name_en": "Battle of the Trench",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "13415346085",
+      "tags": {
+        "historic": "battlefield",
+        "name": "غزوة الخندق",
+        "name:ar": "غزوة الخندق",
+        "name:en": "Battle of the Trench",
+        "wikidata": "Q826083",
+        "wikipedia": "ar:غزوة الخندق"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5997249,
+        24.4759027
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "PTT Diyanet Kargo",
+      "name_en": "PTT Diyanet Kargo",
+      "type": "Landmark",
+      "icon": "fa-map-marker-alt",
+      "description": "Landmark di area Madinah.",
+      "osm_id": "13517115401",
+      "tags": {
+        "amenity": "post_office",
+        "name": "PTT Diyanet Kargo",
+        "name:tr": "PTT Diyanet Kargo"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6136372,
+        24.4641205
+      ]
+    }
+  }
+]

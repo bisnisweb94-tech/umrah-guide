@@ -23,6 +23,10 @@ CATEGORY_MAP = {
         'drinking_water': 'Support',
         'place_of_worship': 'Holy Site',
         'bus_station': 'Transportation',
+        'restaurant': 'Food',
+        'cafe': 'Food',
+        'fast_food': 'Food',
+        'food_court': 'Food',
     },
     'tourism': {
         'hotel': 'Hotel',
@@ -49,6 +53,7 @@ ICON_MAP = {
     'Transportation': 'fa-bus',
     'Amenities': 'fa-building',
     'Landmark': 'fa-map-marker-alt',
+    'Food': 'fa-utensils',
 }
 
 def parse_osm_file():
@@ -155,7 +160,10 @@ def extract_pois(nodes_data):
         tags = node_info['tags']
         
         # Skip nodes without names (except specific amenities)
-        if 'name' not in tags and 'amenity' not in tags:
+        has_name = 'name' in tags or 'name:en' in tags or 'name:ar' in tags
+        is_food = tags.get('amenity') in ['restaurant', 'cafe', 'fast_food', 'food_court']
+        
+        if not has_name and not is_food and 'amenity' not in tags:
             continue
         
         category = categorize_node(tags)
@@ -164,6 +172,10 @@ def extract_pois(nodes_data):
         
         # Get name
         name = tags.get('name', tags.get('name:en', 'Unnamed'))
+        if name == 'Unnamed' and is_food:
+            amenity_type = tags.get('amenity', 'Food').replace('_', ' ').title()
+            name = f"{amenity_type} (Tanpa Nama)"
+            
         name_ar = tags.get('name:ar', tags.get('name', ''))
         
         # Create POI entry

@@ -1,0 +1,150 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الحافلة السياحية-المسجد الحرام",
+      "name_en": "Al Madinah City Sightseeing - Bus Station 1 - Almasged Nabawi",
+      "type": "Mosque",
+      "icon": "fa-mosque",
+      "description": "Mosque di area Madinah.",
+      "osm_id": "5900385753",
+      "tags": {
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "الحافلة السياحية-المسجد الحرام",
+        "name:en": "Al Madinah City Sightseeing - Bus Station 1 - Almasged Nabawi",
+        "public_transport": "platform",
+        "ref": "1",
+        "shelter": "no",
+        "website": "https://csmadinah.com/",
+        "wheelchair": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.611504,
+        24.4725127
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Service Mosque Prophet Mohammad",
+      "name_en": "Service Mosque Prophet Mohammad",
+      "type": "Mosque",
+      "icon": "fa-mosque",
+      "description": "Mosque di area Madinah.",
+      "osm_id": "5948948586",
+      "tags": {
+        "building": "yes",
+        "name": "Service Mosque Prophet Mohammad"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6117527,
+        24.4657984
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Service Mosque Prophet Mohammad",
+      "name_en": "Service Mosque Prophet Mohammad",
+      "type": "Mosque",
+      "icon": "fa-mosque",
+      "description": "Mosque di area Madinah.",
+      "osm_id": "5948948587",
+      "tags": {
+        "building": "yes",
+        "name": "Service Mosque Prophet Mohammad"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6110395,
+        24.4657953
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "قيادة قوة امن المسجد النبوى",
+      "name_en": "Command Security Force Prophet's Mosque",
+      "type": "Mosque",
+      "icon": "fa-mosque",
+      "description": "Mosque di area Madinah.",
+      "osm_id": "6800613498",
+      "tags": {
+        "amenity": "police",
+        "name": "قيادة قوة امن المسجد النبوى",
+        "name:ar": "قيادة قوة امن المسجد النبوى",
+        "name:en": "Command Security Force Prophet's Mosque"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6124977,
+        24.4657554
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مسجد السجدة",
+      "name_en": "مسجد السجدة",
+      "type": "Mosque",
+      "icon": "fa-mosque",
+      "description": "Mosque di area Madinah.",
+      "osm_id": "7825051585",
+      "tags": {
+        "addr:city": "المدينة المنورة",
+        "amenity": "place_of_worship",
+        "name": "مسجد السجدة",
+        "name:ar": "مسجد السجدة",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6147837,
+        24.4777281
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مسجد المسند",
+      "name_en": "مسجد المسند",
+      "type": "Mosque",
+      "icon": "fa-mosque",
+      "description": "Mosque di area Madinah.",
+      "osm_id": "7835301685",
+      "tags": {
+        "amenity": "place_of_worship",
+        "name": "مسجد المسند",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5800089,
+        24.4830034
+      ]
+    }
+  }
+]

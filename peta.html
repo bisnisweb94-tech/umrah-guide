@@ -1620,6 +1620,7 @@
 
     <!-- Data & Scripts -->
     <script src="masjidil-haram-data.js"></script>
+    <script src="madinah-data.js"></script>
     <script src="osm_data/haram-routing-graph-v2.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
@@ -1915,7 +1916,7 @@
 
 
         function renderLocationsList(data) {
-            data = data || masjidilHaramLocations;
+            data = data || [...masjidilHaramLocations, ...(typeof madinahLocations !== 'undefined' ? madinahLocations : [])];
             const grouped = {};
             data.forEach(item => {
                 const t = item.properties.type;
@@ -2012,7 +2013,8 @@
         function filterLocations() {
             const query = document.getElementById('searchInput').value.toLowerCase();
             const searchResults = document.getElementById('searchResults');
-            let filteredData = masjidilHaramLocations;
+            const allLocData = [...masjidilHaramLocations, ...(typeof madinahLocations !== 'undefined' ? madinahLocations : [])];
+            let filteredData = allLocData;
 
             // Apply category filter FIRST
             if (activeCategory !== 'all') {
@@ -2036,7 +2038,7 @@
             // Sync map, list, and chips
             renderLocationsList(filteredData);
             filterMapMarkersByData(filteredData);
-            updateCategoryChips(masjidilHaramLocations, query); // Update chips based on original data + query
+            updateCategoryChips(allLocData, query); // Update chips based on all data + query
         }
 
         function updateCategoryChips(sourceData, query) {
@@ -2333,7 +2335,8 @@
             const search = (document.getElementById('landmarkSearch').value || '').toLowerCase();
             list.innerHTML = '';
 
-            const filtered = masjidilHaramLocations.filter(loc =>
+            const allLocData = [...masjidilHaramLocations, ...(typeof madinahLocations !== 'undefined' ? madinahLocations : [])];
+            const filtered = allLocData.filter(loc =>
                 (loc.properties.name || '').toLowerCase().includes(search) ||
                 (loc.properties.name_en || '').toLowerCase().includes(search)
             ).slice(0, 50);
@@ -2368,7 +2371,7 @@
                 <span>Lokasi Saya</span>
             </div>`;
 
-            let filtered = masjidilHaramLocations;
+            let filtered = [...masjidilHaramLocations, ...(typeof madinahLocations !== 'undefined' ? madinahLocations : [])];
             if (query) {
                 filtered = filtered.filter(loc =>
                     (loc.properties.name || '').toLowerCase().includes(query) ||
@@ -2419,7 +2422,8 @@
         }
 
         function selectDirLocation(type, osmId) {
-            const loc = masjidilHaramLocations.find(l => l.properties.osm_id === osmId);
+            const allLocData = [...masjidilHaramLocations, ...(typeof madinahLocations !== 'undefined' ? madinahLocations : [])];
+            const loc = allLocData.find(l => l.properties.osm_id === osmId);
             if (!loc) return;
             const coords = loc.geometry.coordinates;
             const latlng = L.latLng(coords[1], coords[0]);
@@ -2720,6 +2724,31 @@
                     buildingsLayer.addLayer(polygon);
                 });
             }
+
+            // Madinah roads & buildings
+            if (typeof madinahRoads !== 'undefined' && madinahRoads.length > 0) {
+                madinahRoads.forEach(road => {
+                    const polyline = L.polyline(road.geometry.coordinates, {
+                        color: '#a8a29e', weight: 2, opacity: 0.6
+                    });
+                    const name = road.properties.name || road.properties.highway_type || 'Road';
+                    const nameAr = road.properties.name_ar || name;
+                    polyline.bindPopup(`<b>${nameAr}</b><br>${name}`);
+                    roadsLayer.addLayer(polyline);
+                });
+            }
+
+            if (typeof madinahBuildings !== 'undefined' && madinahBuildings.length > 0) {
+                madinahBuildings.forEach(building => {
+                    const polygon = L.polygon(building.geometry.coordinates, {
+                        color: '#c2410c', weight: 1, fillColor: '#fdba74', fillOpacity: 0.2
+                    });
+                    const name = building.properties.name || building.properties.building_type || 'Building';
+                    const nameAr = building.properties.name_ar || name;
+                    polygon.bindPopup(`<b>${nameAr}</b><br>${name}`);
+                    buildingsLayer.addLayer(polygon);
+                });
+            }
         }
 
         // ========== SHARE ==========
@@ -2744,7 +2773,13 @@
 
         // ========== LOAD DATA ==========
         document.addEventListener('DOMContentLoaded', () => {
-            masjidilHaramLocations.forEach(location => {
+            // Gabungkan data Makkah + Madinah
+            const allLocations = [
+                ...masjidilHaramLocations,
+                ...(typeof madinahLocations !== 'undefined' ? madinahLocations : [])
+            ];
+
+            allLocations.forEach(location => {
                 const marker = createPinholeMarker(location);
                 const type = location.properties.type;
                 const clusterTypes = ['Support', 'Hotel', 'Landmark', 'Transportation', 'Food', 'Holy Site', 'Mosque', 'W C'];
@@ -2757,7 +2792,7 @@
 
             renderLocationsList();
             renderExtraLayers();
-            updateCategoryChips(masjidilHaramLocations, ''); // Initial chip render
+            updateCategoryChips(allLocations, ''); // Initial chip render
 
             // ========== CHIPS SCROLL EFFECT ==========
             const categoryChipsEl = document.getElementById('categoryChips');

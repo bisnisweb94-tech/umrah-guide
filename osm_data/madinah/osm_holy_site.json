@@ -1,0 +1,456 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب قباء - 5",
+      "name_en": "Bab Qaba - 5",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "Holy Site di area Madinah.",
+      "osm_id": "4562352452",
+      "tags": {
+        "historic": "city_gate",
+        "name": "باب قباء - 5",
+        "name:ar": "باب قباء - 5",
+        "name:en": "Bab Qaba - 5",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6099202,
+        24.4677551
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب أحد - 23 - مدخل النساء",
+      "name_en": "Ohud Gate - 23 - Women Entrance",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "Holy Site di area Madinah.",
+      "osm_id": "4562359893",
+      "tags": {
+        "historic": "city_gate",
+        "name": "باب أحد - 23 - مدخل النساء",
+        "name:ar": "باب أحد - 23 - مدخل النساء",
+        "name:en": "Ohud Gate - 23 - Women Entrance",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6117534,
+        24.4698652
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "باب البقيع - 41",
+      "name_en": "Exit - Al-Baqi Gate - 41",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "Holy Site di area Madinah.",
+      "osm_id": "4562374598",
+      "tags": {
+        "historic": "city_gate",
+        "name": "باب البقيع - 41",
+        "name:ar": "باب البقيع - 41",
+        "name:en": "Exit - Al-Baqi Gate - 41",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.611599,
+        24.4674505
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مكتبة المسجد النبوي",
+      "name_en": "Prophet's Mosque Library",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "Holy Site di area Madinah.",
+      "osm_id": "5124143793",
+      "tags": {
+        "addr:city": "المدينة المنورة",
+        "amenity": "library",
+        "image": "File:Masjid_Nabawi_Library.jpg",
+        "name": "مكتبة المسجد النبوي",
+        "name:ar": "مكتبة المسجد النبوي",
+        "name:en": "Prophet's Mosque Library"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6091811,
+        24.4687114
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "معرض عمارة المسجد النبوي",
+      "name_en": "Prophet's Mosque Expansion Exhibition",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "Holy Site di area Madinah.",
+      "osm_id": "5124269757",
+      "tags": {
+        "name": "معرض عمارة المسجد النبوي",
+        "name:ar": "معرض عمارة المسجد النبوي",
+        "name:en": "Prophet's Mosque Expansion Exhibition",
+        "tourism": "museum"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6086802,
+        24.4658863
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "وكالة الرئاسة العامة لشؤون المسجد النبوي",
+      "name_en": "The General Directorate for the Affairs of Masjid Nabawi",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "Holy Site di area Madinah.",
+      "osm_id": "5124272645",
+      "tags": {
+        "name": "وكالة الرئاسة العامة لشؤون المسجد النبوي",
+        "name:ar": "وكالة الرئاسة العامة لشؤون المسجد النبوي",
+        "name:en": "The General Directorate for the Affairs of Masjid Nabawi",
+        "office": "government"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6076923,
+        24.4668621
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "ابن سينا للحجامة المدينة النبوية",
+      "name_en": "ابن سينا للحجامة المدينة النبوية",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "Holy Site di area Madinah.",
+      "osm_id": "5211070029",
+      "tags": {
+        "amenity": "nursing_home",
+        "name": "ابن سينا للحجامة المدينة النبوية"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5948474,
+        24.481782
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مدخل النساء للروضة الشريفة",
+      "name_en": "Women's Entry into noble Rawda",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "opening hours: after sunrise around 7am to 9am one hour after dohar after Isha Prayer around 9:30 - 10:00 pm to midnight",
+      "osm_id": "5927612356",
+      "tags": {
+        "barrier": "gate",
+        "description": "opening hours: after sunrise around 7am to 9am one hour after dohar after Isha Prayer around 9:30 - 10:00 pm to midnight",
+        "name": "مدخل النساء للروضة الشريفة",
+        "name:en": "Women's Entry into noble Rawda"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.611983,
+        24.4688998
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مدخل النساء للروضة الشريفة",
+      "name_en": "Women's Entry into noble Rawda",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "opening hours: after sunrise around 7am to 9am one hour after dohar after Isha Prayer around 9:30 - 10:00 pm to midnight",
+      "osm_id": "5927612357",
+      "tags": {
+        "barrier": "gate",
+        "description": "opening hours: after sunrise around 7am to 9am one hour after dohar after Isha Prayer around 9:30 - 10:00 pm to midnight",
+        "name": "مدخل النساء للروضة الشريفة",
+        "name:en": "Women's Entry into noble Rawda"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6122489,
+        24.4689002
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مدخل النساء للروضة الشريفة",
+      "name_en": "Women's Entry into noble Rawda",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "opening hours: after sunrise around 7am to 9am one hour after dohar after Isha Prayer around 9:30 - 10:00 pm to midnight",
+      "osm_id": "5927612358",
+      "tags": {
+        "barrier": "gate",
+        "description": "opening hours: after sunrise around 7am to 9am one hour after dohar after Isha Prayer around 9:30 - 10:00 pm to midnight",
+        "name": "مدخل النساء للروضة الشريفة",
+        "name:en": "Women's Entry into noble Rawda"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.612493,
+        24.4689007
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مدخل النساء للروضة الشريفة",
+      "name_en": "Women's Entry into noble Rawda",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "opening hours: after sunrise around 7am to 9am one hour after dohar after Isha Prayer around 9:30 - 10:00 pm to midnight",
+      "osm_id": "5927612359",
+      "tags": {
+        "barrier": "gate",
+        "description": "opening hours: after sunrise around 7am to 9am one hour after dohar after Isha Prayer around 9:30 - 10:00 pm to midnight",
+        "name": "مدخل النساء للروضة الشريفة",
+        "name:en": "Women's Entry into noble Rawda"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6127447,
+        24.4689001
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق روضة المختارة",
+      "name_en": "Rawdah Al-Mokhtara Hotel",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "Holy Site di area Madinah.",
+      "osm_id": "5949389200",
+      "tags": {
+        "name": "فندق روضة المختارة",
+        "name:en": "Rawdah Al-Mokhtara Hotel",
+        "stars": "2",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6063275,
+        24.4636615
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الحافلة السياحية-البقيع",
+      "name_en": "City Siightseeing - Al Baq'",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "Holy Site di area Madinah.",
+      "osm_id": "6268575546",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "الحافلة السياحية-البقيع",
+        "name:en": "City Siightseeing - Al Baq'",
+        "public_transport": "platform",
+        "ref": "2",
+        "website": "https://csmadinah.com/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6133882,
+        24.4655706
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Women's Schedule for Visiting the Noble Rawda",
+      "name_en": "Women's Schedule for Visiting the Noble Rawda",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "the schedule is sometimes changed",
+      "osm_id": "7084280000",
+      "tags": {
+        "description": "the schedule is sometimes changed",
+        "information": "board",
+        "name": "Women's Schedule for Visiting the Noble Rawda",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6124243,
+        24.4705725
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "Holy Site di area Madinah.",
+      "osm_id": "7931431559",
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5909795,
+        24.4763634
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "Holy Site di area Madinah.",
+      "osm_id": "7931431560",
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5881589,
+        24.4751085
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "Holy Site di area Madinah.",
+      "osm_id": "7931431563",
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5840631,
+        24.4781637
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "Holy Site di area Madinah.",
+      "osm_id": "7931460709",
+      "tags": {
+        "amenity": "place_of_worship",
+        "religion": "muslim"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.599852,
+        24.4620123
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مركز ضيافة الأطفال بالمسجد النبوي",
+      "name_en": "Children's Nursery Center at the Prophet's Mosque",
+      "type": "Holy Site",
+      "icon": "fa-mosque",
+      "description": "Holy Site di area Madinah.",
+      "osm_id": "12438544869",
+      "tags": {
+        "amenity": "kindergarten",
+        "name": "مركز ضيافة الأطفال بالمسجد النبوي",
+        "name:en": "Children's Nursery Center at the Prophet's Mosque",
+        "name:fr": "Centre d'accueil pour enfants à la Mosquée du Prophète"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6132037,
+        24.4710055
+      ]
+    }
+  }
+]

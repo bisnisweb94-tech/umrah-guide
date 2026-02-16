@@ -1,0 +1,390 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Petrol station",
+      "name_en": "Petrol station",
+      "type": "Transportation",
+      "icon": "fa-bus",
+      "description": "Transportation di area Madinah.",
+      "osm_id": "5081858858",
+      "tags": {
+        "amenity": "fuel",
+        "name": "Petrol station"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6368455,
+        24.4876802
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Naft Station",
+      "name_en": "Naft Station",
+      "type": "Transportation",
+      "icon": "fa-bus",
+      "description": "Transportation di area Madinah.",
+      "osm_id": "5139549953",
+      "tags": {
+        "amenity": "fuel",
+        "name": "Naft Station"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5988798,
+        24.464706
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Shubra Station",
+      "name_en": "Shubra Station",
+      "type": "Transportation",
+      "icon": "fa-bus",
+      "description": "Transportation di area Madinah.",
+      "osm_id": "5139570608",
+      "tags": {
+        "amenity": "fuel",
+        "name": "Shubra Station"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5852287,
+        24.4754436
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "ALDREES Gas Station",
+      "name_en": "ALDREES Gas Station",
+      "type": "Transportation",
+      "icon": "fa-bus",
+      "description": "Transportation di area Madinah.",
+      "osm_id": "5159086282",
+      "tags": {
+        "amenity": "fuel",
+        "name": "ALDREES Gas Station"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5824907,
+        24.4732235
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "ALDREES Gas Station",
+      "name_en": "ALDREES Gas Station",
+      "type": "Transportation",
+      "icon": "fa-bus",
+      "description": "Transportation di area Madinah.",
+      "osm_id": "5159121422",
+      "tags": {
+        "amenity": "fuel",
+        "name": "ALDREES Gas Station"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6381123,
+        24.4697165
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Naft Station",
+      "name_en": "Naft Station",
+      "type": "Transportation",
+      "icon": "fa-bus",
+      "description": "Transportation di area Madinah.",
+      "osm_id": "5159514085",
+      "tags": {
+        "amenity": "fuel",
+        "name": "Naft Station"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5903508,
+        24.4867979
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Saptco Vip Express",
+      "name_en": "Saptco Vip Express",
+      "type": "Transportation",
+      "icon": "fa-bus",
+      "description": "Transportation di area Madinah.",
+      "osm_id": "5900306332",
+      "tags": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Saptco Vip Express",
+        "public_transport": "station"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6100641,
+        24.463643
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Aliyah Bus Station",
+      "name_en": "Al Aliyah Bus Station",
+      "type": "Transportation",
+      "icon": "fa-bus",
+      "description": "Transportation di area Madinah.",
+      "osm_id": "5900331631",
+      "tags": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Al Aliyah Bus Station",
+        "public_transport": "station"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6036278,
+        24.4675654
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Azhery Bus Station",
+      "name_en": "Al Azhery Bus Station",
+      "type": "Transportation",
+      "icon": "fa-bus",
+      "description": "Transportation di area Madinah.",
+      "osm_id": "5900385754",
+      "tags": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Al Azhery Bus Station",
+        "public_transport": "station"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6112942,
+        24.4720305
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Aliyah Bus Station",
+      "name_en": "Al Aliyah Bus Station",
+      "type": "Transportation",
+      "icon": "fa-bus",
+      "description": "Transportation di area Madinah.",
+      "osm_id": "6230943760",
+      "tags": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Al Aliyah Bus Station",
+        "public_transport": "station"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.605912,
+        24.4672055
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الحافلة السياحية-ساحة المناخ",
+      "name_en": "City Sightseeing - Al Manakh Square",
+      "type": "Transportation",
+      "icon": "fa-bus",
+      "description": "Transportation di area Madinah.",
+      "osm_id": "6268439977",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "الحافلة السياحية-ساحة المناخ",
+        "name:en": "City Sightseeing - Al Manakh Square",
+        "public_transport": "platform",
+        "ref": "3",
+        "website": "https://csmadinah.com/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6072731,
+        24.4651715
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الحافلة السياحية-محطة قطار الحجاز",
+      "name_en": "City Siightseeing - Al Hijaz Railway Station",
+      "type": "Transportation",
+      "icon": "fa-bus",
+      "description": "Transportation di area Madinah.",
+      "osm_id": "6268506891",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "الحافلة السياحية-محطة قطار الحجاز",
+        "name:en": "City Siightseeing - Al Hijaz Railway Station",
+        "public_transport": "platform",
+        "ref": "11",
+        "website": "https://csmadinah.com/",
+        "wheelchair": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6016633,
+        24.4628154
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الحافلة السياحية-موقع غزوة الخندق",
+      "name_en": "City Siightseeing - The Trench Battlefield",
+      "type": "Transportation",
+      "icon": "fa-bus",
+      "description": "Transportation di area Madinah.",
+      "osm_id": "6268570461",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "الحافلة السياحية-موقع غزوة الخندق",
+        "name:en": "City Siightseeing - The Trench Battlefield",
+        "public_transport": "platform",
+        "ref": "9",
+        "website": "https://csmadinah.com/",
+        "wheelchair": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5952566,
+        24.4764979
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Shazah Bus Station",
+      "name_en": "Shazah Bus Station",
+      "type": "Transportation",
+      "icon": "fa-bus",
+      "description": "Transportation di area Madinah.",
+      "osm_id": "6279643282",
+      "tags": {
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Shazah Bus Station",
+        "public_transport": "station"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6133202,
+        24.4655757
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "حافلات المدينة المركزية الشمالية",
+      "name_en": "حافلات المدينة المركزية الشمالية",
+      "type": "Transportation",
+      "icon": "fa-bus",
+      "description": "Transportation di area Madinah.",
+      "osm_id": "11440993896",
+      "tags": {
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "حافلات المدينة المركزية الشمالية",
+        "public_transport": "platform",
+        "shelter": "no"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.610922,
+        24.4749848
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "حافلات المدينة",
+      "name_en": "حافلات المدينة",
+      "type": "Transportation",
+      "icon": "fa-bus",
+      "description": "Transportation di area Madinah.",
+      "osm_id": "12847369501",
+      "tags": {
+        "amenity": "bus_station",
+        "contact:twitter": "Madinah_Bus",
+        "name": "حافلات المدينة",
+        "opening_hours": "Mo-Su 06:00-00:00",
+        "website": "https://madinahbus.mda.gov.sa/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6025804,
+        24.4659559
+      ]
+    }
+  }
+]

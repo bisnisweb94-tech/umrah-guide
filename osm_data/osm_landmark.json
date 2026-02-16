@@ -47,115 +47,6 @@
   {
     "type": "Feature",
     "properties": {
-      "name": "Hamburger",
-      "name_en": "Hamburger",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "3915963439",
-      "tags": {
-        "amenity": "fast_food",
-        "name": "Hamburger"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6057156,
-        24.4655042
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "البيك",
-      "name_en": "Albaik",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "4108764200",
-      "tags": {
-        "amenity": "fast_food",
-        "brand": "البيك",
-        "brand:ar": "البيك",
-        "brand:en": "Albaik",
-        "brand:wikidata": "Q4703536",
-        "brand:wikipedia": "ar:البيك",
-        "cuisine": "chicken",
-        "name": "البيك",
-        "name:ar": "البيك",
-        "name:en": "Albaik",
-        "takeaway": "yes"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6160875,
-        24.4639643
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "كودو",
-      "name_en": "Kudu",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "4112494770",
-      "tags": {
-        "amenity": "fast_food",
-        "brand": "كودو",
-        "brand:ar": "كودو",
-        "brand:en": "Kudu",
-        "brand:fr": "Kudu",
-        "brand:wikidata": "Q6441777",
-        "brand:wikipedia": "ar:كودو",
-        "cuisine": "sandwich",
-        "name": "كودو",
-        "name:ar": "كودو",
-        "name:en": "Kudu",
-        "name:fr": "Kudu",
-        "takeaway": "yes"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6119646,
-        24.4721742
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Kudu",
-      "name_en": "Kudu",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "4112503036",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "regional",
-        "name": "Kudu"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.5845211,
-        24.4604933
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
       "name": "سوق الخضار",
       "name_en": "سوق الخضار",
       "type": "Landmark",
@@ -634,33 +525,6 @@
   {
     "type": "Feature",
     "properties": {
-      "name": "بيت المشويات التركية",
-      "name_en": "Turkish Grill House",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "4585773178",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "turkish",
-        "name": "بيت المشويات التركية",
-        "name:ar": "بيت المشويات التركية",
-        "name:en": "Turkish Grill House",
-        "opening_hours": "12:00-02:00",
-        "phone": "+966 148 223 255"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.582463,
-        24.4700524
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
       "name": "Surrati Perfumes",
       "name_en": "Surrati Perfumes",
       "type": "Landmark",
@@ -679,75 +543,6 @@
       "coordinates": [
         39.6115084,
         24.4718066
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Restaurant Arabesque",
-      "name_en": "Restaurant Arabesque",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "4585966245",
-      "tags": {
-        "amenity": "restaurant",
-        "name": "Restaurant Arabesque",
-        "phone": "+966 148 290 001"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6114943,
-        24.472368
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Beiruti",
-      "name_en": "Beiruti",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "4586015862",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "lebanese",
-        "name": "Beiruti"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.5891774,
-        24.4870451
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Ruqn Shami",
-      "name_en": "Ruqn Shami",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "4586018038",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "lebanese",
-        "name": "Ruqn Shami"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6304603,
-        24.4820046
       ]
     }
   },
@@ -866,102 +661,6 @@
   {
     "type": "Feature",
     "properties": {
-      "name": "بروست اكسبريس",
-      "name_en": "Borsat Express",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "4801960922",
-      "tags": {
-        "amenity": "fast_food",
-        "name": "بروست اكسبريس",
-        "name:ar": "بروست اكسبريس",
-        "name:en": "Borsat Express"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6366408,
-        24.4659663
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "ماكدونالدذ",
-      "name_en": "McDonald's",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "4801996322",
-      "tags": {
-        "amenity": "fast_food",
-        "name": "ماكدونالدذ",
-        "name:ar": "ماكدونالدذ",
-        "name:en": "McDonald's"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6345927,
-        24.4694334
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "مطاعم القرموشي",
-      "name_en": "Al-Qarmoshi",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "4802000521",
-      "tags": {
-        "amenity": "restaurant",
-        "name": "مطاعم القرموشي",
-        "name:ar": "مطاعم القرموشي",
-        "name:en": "Al-Qarmoshi"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6352282,
-        24.4692197
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "برجر اكسبريس",
-      "name_en": "Burger Express",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "4802000522",
-      "tags": {
-        "amenity": "fast_food",
-        "name": "برجر اكسبريس",
-        "name:ar": "برجر اكسبريس",
-        "name:en": "Burger Express"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6365247,
-        24.4662976
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
       "name": "مركز تركى",
       "name_en": "مركز تركى",
       "type": "Landmark",
@@ -1053,163 +752,6 @@
       "coordinates": [
         39.6368455,
         24.4876802
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "مطعم ميراج للأكلات الهندية والصينية",
-      "name_en": "Mairaj Indian and Chinese Restaurant",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "5081886622",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "chinese;asian",
-        "name": "مطعم ميراج للأكلات الهندية والصينية",
-        "name:ar": "مطعم ميراج للأكلات الهندية والصينية",
-        "name:en": "Mairaj Indian and Chinese Restaurant",
-        "phone": "+966 148 661 116"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6067313,
-        24.4798893
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Chinese Dragon Restaurant",
-      "name_en": "Chinese Dragon Restaurant",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "5081889966",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "chinese",
-        "name": "Chinese Dragon Restaurant",
-        "phone": "+966 550 144 114"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.5822258,
-        24.4883912
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "بيروتي",
-      "name_en": "Beiruti",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "5081897128",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "syrian",
-        "name": "بيروتي",
-        "name:ar": "بيروتي",
-        "name:en": "Beiruti",
-        "phone": "+966 148 461 800"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.5850796,
-        24.4880342
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Domino's",
-      "name_en": "Domino's",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "5081900286",
-      "tags": {
-        "amenity": "fast_food",
-        "brand": "Domino's",
-        "brand:wikidata": "Q839466",
-        "brand:wikipedia": "en:Domino's Pizza",
-        "cuisine": "pizza",
-        "name": "Domino's",
-        "phone": "+966 920 012 345",
-        "takeaway": "yes"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.5820873,
-        24.4887623
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "حمص ريفي",
-      "name_en": "Hummus Refi",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "5081900287",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "lebanese",
-        "name": "حمص ريفي",
-        "name:ar": "حمص ريفي",
-        "name:en": "Hummus Refi",
-        "phone": "+966 148 455 100"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.5817893,
-        24.4887507
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "مطعم سر السوشي",
-      "name_en": "Sushi secret",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "5081908779",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "sushi",
-        "name": "مطعم سر السوشي",
-        "name:ar": "مطعم سر السوشي",
-        "name:en": "Sushi secret",
-        "phone": "+966 595 959 715",
-        "website": "https://www.sushisecret.com"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.580332,
-        24.486674
       ]
     }
   },
@@ -1398,81 +940,6 @@
       "coordinates": [
         39.6332983,
         24.4676138
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "مطعم نجوم حضرموت",
-      "name_en": "Hadramout Stars Restaurant",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "5092314496",
-      "tags": {
-        "amenity": "restaurant",
-        "name": "مطعم نجوم حضرموت",
-        "name:ar": "مطعم نجوم حضرموت",
-        "name:en": "Hadramout Stars Restaurant"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6016406,
-        24.4648229
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "مطعم ابو خطاب",
-      "name_en": "Abu Khattab Restaurant",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "5092360790",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "egyptian",
-        "name": "مطعم ابو خطاب",
-        "name:ar": "مطعم ابو خطاب",
-        "name:en": "Abu Khattab Restaurant",
-        "phone": "+966 542 198 155"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.599095,
-        24.4697301
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "مطعم بلقيس",
-      "name_en": "Balkis Restaurant",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "5092368494",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "yemeni",
-        "name": "مطعم بلقيس",
-        "name:ar": "مطعم بلقيس",
-        "name:en": "Balkis Restaurant"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.5980691,
-        24.4703726
       ]
     }
   },
@@ -1714,81 +1181,6 @@
       "coordinates": [
         39.6128994,
         24.4695787
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Domino's",
-      "name_en": "Domino's",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "5126356442",
-      "tags": {
-        "amenity": "fast_food",
-        "brand": "Domino's",
-        "brand:wikidata": "Q839466",
-        "brand:wikipedia": "en:Domino's Pizza",
-        "cuisine": "pizza",
-        "name": "Domino's",
-        "phone": "+966 550 006 577",
-        "takeaway": "yes"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6088793,
-        24.4735502
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Rumah Makan Indonesia",
-      "name_en": "Rumah Makan Indonesia",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "5126359928",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "indonesian",
-        "name": "Rumah Makan Indonesia"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6091697,
-        24.4727899
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "مطعم الحلبي للرز البخاري",
-      "name_en": "Halabi Resturant",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "5126364430",
-      "tags": {
-        "amenity": "restaurant",
-        "name": "مطعم الحلبي للرز البخاري",
-        "name:ar": "مطعم الحلبي للرز البخاري",
-        "name:en": "Halabi Resturant"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6076784,
-        24.4737298
       ]
     }
   },
@@ -2096,56 +1488,6 @@
       "coordinates": [
         39.6104442,
         24.4660654
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فواكه البحر للأسماك",
-      "name_en": "Seafood Restaurant",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "5856408156",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "fish",
-        "name": "فواكه البحر للأسماك",
-        "name:ar": "فواكه البحر للأسماك",
-        "name:en": "Seafood Restaurant"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.606073,
-        24.476211
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "المطاعم البحرية",
-      "name_en": "Bahriyah Seafood Restaurant",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "5856703226",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "fish",
-        "name": "المطاعم البحرية",
-        "name:ar": "المطاعم البحرية",
-        "name:en": "Bahriyah Seafood Restaurant"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6338406,
-        24.4718874
       ]
     }
   },
@@ -3579,28 +2921,6 @@
   {
     "type": "Feature",
     "properties": {
-      "name": "Yard Restaurants",
-      "name_en": "Yard Restaurants",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "5949493632",
-      "tags": {
-        "amenity": "restaurant",
-        "name": "Yard Restaurants"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6121514,
-        24.4715682
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
       "name": "جبل سلع",
       "name_en": "Mount Selaʾ",
       "type": "Landmark",
@@ -3860,28 +3180,6 @@
   {
     "type": "Feature",
     "properties": {
-      "name": "Abu Khalid Restaurant",
-      "name_en": "Abu Khalid Restaurant",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "6231012444",
-      "tags": {
-        "amenity": "restaurant",
-        "name": "Abu Khalid Restaurant"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6121189,
-        24.4716843
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
       "name": "إتش أند أم",
       "name_en": "H&M",
       "type": "Landmark",
@@ -3908,43 +3206,6 @@
       "coordinates": [
         39.6132478,
         24.4713587
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "ستاربكس",
-      "name_en": "Starbucks",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "6231025685",
-      "tags": {
-        "amenity": "cafe",
-        "brand": "ستاربكس",
-        "brand:ar": "ستاربكس",
-        "brand:en": "Starbucks",
-        "brand:fr": "Starbucks",
-        "brand:wikidata": "Q37158",
-        "brand:wikipedia": "ar:ستاربكس",
-        "cuisine": "coffee_shop",
-        "name": "ستاربكس",
-        "name:ar": "ستاربكس",
-        "name:en": "Starbucks",
-        "name:fr": "Starbucks",
-        "official_name": "ستاربكس كافية",
-        "official_name:ar": "ستاربكس كافية",
-        "official_name:en": "Starbucks Coffee",
-        "official_name:fr": "Café Starbucks",
-        "takeaway": "yes"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6132297,
-        24.4712854
       ]
     }
   },
@@ -3989,29 +3250,6 @@
       "coordinates": [
         39.6127557,
         24.4719919
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Al Faris Lilrose Al Bukhari",
-      "name_en": "Al Faris Lilrose Al Bukhari",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "6231035245",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "pakistani;indian;arabic",
-        "name": "Al Faris Lilrose Al Bukhari"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.612677,
-        24.4719625
       ]
     }
   },
@@ -4125,29 +3363,6 @@
       "coordinates": [
         39.6137614,
         24.4730795
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "GraPARI Madinah",
-      "name_en": "GraPARI Madinah",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "6231254310",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "indonesian",
-        "name": "GraPARI Madinah"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6129499,
-        24.4720069
       ]
     }
   },
@@ -4343,29 +3558,6 @@
   {
     "type": "Feature",
     "properties": {
-      "name": "Fairouz Al Hijaz",
-      "name_en": "Fairouz Al Hijaz",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "6234968571",
-      "tags": {
-        "amenity": "fast_food",
-        "cuisine": "kebab",
-        "name": "Fairouz Al Hijaz"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6092294,
-        24.4733705
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
       "name": "Arabian Oud",
       "name_en": "Arabian Oud",
       "type": "Landmark",
@@ -4435,113 +3627,6 @@
   {
     "type": "Feature",
     "properties": {
-      "name": "Kyoto",
-      "name_en": "Kyoto",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "6236858289",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "japanese",
-        "name": "Kyoto"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6134963,
-        24.4715228
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Abu Khalid Restaurant",
-      "name_en": "Abu Khalid Restaurant",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "6236882256",
-      "tags": {
-        "amenity": "restaurant",
-        "name": "Abu Khalid Restaurant"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6087444,
-        24.473372
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "هارديز",
-      "name_en": "Hardee's",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "6236968862",
-      "tags": {
-        "amenity": "fast_food",
-        "brand": "هارديز",
-        "brand:ar": "هارديز",
-        "brand:de": "Hardee's",
-        "brand:fr": "Hardee's",
-        "brand:ur": "ہارڈیز",
-        "brand:wikidata": "Q1585088",
-        "brand:wikipedia": "ar:هارديز",
-        "cuisine": "burger",
-        "name": "هارديز",
-        "name:ar": "هارديز",
-        "name:en": "Hardee's",
-        "name:fr": "Hardee's",
-        "name:ur": "ہارڈیز",
-        "takeaway": "yes"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6107792,
-        24.4713837
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "مطعم الهدى التركية",
-      "name_en": "Al Hoda Türk Restaurant",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "6237183986",
-      "tags": {
-        "addr:street": "Al-Seeh Street",
-        "amenity": "restaurant",
-        "cuisine": "turkish",
-        "name": "مطعم الهدى التركية",
-        "name:ar": "مطعم الهدى التركية",
-        "name:en": "Al Hoda Türk Restaurant",
-        "phone": "+966 4 822 9205"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6021336,
-        24.4703153
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
       "name": "Oud Elite",
       "name_en": "Oud Elite",
       "type": "Landmark",
@@ -4602,30 +3687,6 @@
       "coordinates": [
         39.6086046,
         24.4648887
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "لايدر كاف",
-      "name_en": "Lider Cafe",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "6245373583",
-      "tags": {
-        "amenity": "cafe",
-        "name": "لايدر كاف",
-        "name:ar": "لايدر كاف",
-        "name:en": "Lider Cafe"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6107255,
-        24.4648474
       ]
     }
   },
@@ -4788,28 +3849,6 @@
       "coordinates": [
         39.6157095,
         24.4650307
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "ZamZam Al Bukhari Restaurant",
-      "name_en": "ZamZam Al Bukhari Restaurant",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "6247351806",
-      "tags": {
-        "amenity": "restaurant",
-        "name": "ZamZam Al Bukhari Restaurant"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6150431,
-        24.4634859
       ]
     }
   },
@@ -6180,31 +5219,6 @@
   {
     "type": "Feature",
     "properties": {
-      "name": "مطعم المدينة",
-      "name_en": "Madina Restaurant",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "6828675567",
-      "tags": {
-        "addr:city": "المدينة المنورة",
-        "amenity": "restaurant",
-        "name": "مطعم المدينة",
-        "name:ar": "مطعم المدينة",
-        "name:en": "Madina Restaurant"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6142895,
-        24.4775293
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
       "name": "The Guard Column",
       "name_en": "The Guard Column",
       "type": "Landmark",
@@ -6355,40 +5369,6 @@
       "coordinates": [
         39.6002177,
         24.4853848
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "ستاربكس",
-      "name_en": "Starbucks",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "7266267085",
-      "tags": {
-        "amenity": "cafe",
-        "brand": "ستاربكس",
-        "brand:ar": "ستاربكس",
-        "brand:en": "Starbucks",
-        "brand:wikidata": "Q37158",
-        "brand:wikipedia": "ar:ستاربكس",
-        "cuisine": "coffee_shop",
-        "name": "ستاربكس",
-        "name:ar": "ستاربكس",
-        "name:en": "Starbucks",
-        "official_name": "ستاربكس كافية",
-        "official_name:ar": "ستاربكس كافية",
-        "official_name:en": "Starbucks Coffee",
-        "takeaway": "yes"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6107642,
-        24.4643842
       ]
     }
   },
@@ -6550,56 +5530,6 @@
   {
     "type": "Feature",
     "properties": {
-      "name": "KFC",
-      "name_en": "KFC",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "7395968360",
-      "tags": {
-        "amenity": "fast_food",
-        "cuisine": "american;chicken",
-        "name": "KFC"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6063853,
-        24.4657904
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Hardee's",
-      "name_en": "Hardee's",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "7395985294",
-      "tags": {
-        "amenity": "fast_food",
-        "brand": "Hardee's",
-        "brand:wikidata": "Q1585088",
-        "brand:wikipedia": "en:Hardee's",
-        "cuisine": "burger",
-        "name": "Hardee's",
-        "takeaway": "yes"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6063534,
-        24.4657299
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
       "name": "بني عبدالاشهل",
       "name_en": "Bani Abdul Ashhal",
       "type": "Landmark",
@@ -6674,28 +5604,6 @@
   {
     "type": "Feature",
     "properties": {
-      "name": "مطعم أبو زيد",
-      "name_en": "مطعم أبو زيد",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "8011122869",
-      "tags": {
-        "amenity": "restaurant",
-        "name": "مطعم أبو زيد"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6392351,
-        24.4610673
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
       "name": "تلسكوب للبصريات",
       "name_en": "تلسكوب للبصريات",
       "type": "Landmark",
@@ -6712,28 +5620,6 @@
       "coordinates": [
         39.6396039,
         24.4616183
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "الحرة الذهبية للأكلات الشعبية",
-      "name_en": "الحرة الذهبية للأكلات الشعبية",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "8011154604",
-      "tags": {
-        "amenity": "restaurant",
-        "name": "الحرة الذهبية للأكلات الشعبية"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6385317,
-        24.4624955
       ]
     }
   },
@@ -6762,28 +5648,6 @@
   {
     "type": "Feature",
     "properties": {
-      "name": "زنجرجي",
-      "name_en": "زنجرجي",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "8011161863",
-      "tags": {
-        "amenity": "restaurant",
-        "name": "زنجرجي"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6312107,
-        24.4629246
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
       "name": "مكتبة عبدون",
       "name_en": "مكتبة عبدون",
       "type": "Landmark",
@@ -6800,28 +5664,6 @@
       "coordinates": [
         39.638101,
         24.463257
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "مطعم الحزام الأخضر للرز البخاري",
-      "name_en": "مطعم الحزام الأخضر للرز البخاري",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "8011169019",
-      "tags": {
-        "amenity": "restaurant",
-        "name": "مطعم الحزام الأخضر للرز البخاري"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6375328,
-        24.4643181
       ]
     }
   },
@@ -7129,94 +5971,6 @@
   {
     "type": "Feature",
     "properties": {
-      "name": "النيلين لقصب السكر والعصائر الطازجة",
-      "name_en": "النيلين لقصب السكر والعصائر الطازجة",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "8018118053",
-      "tags": {
-        "amenity": "fast_food",
-        "name": "النيلين لقصب السكر والعصائر الطازجة"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6215635,
-        24.4603043
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "مطعم الريف الشعبي",
-      "name_en": "مطعم الريف الشعبي",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "8018172746",
-      "tags": {
-        "amenity": "restaurant",
-        "name": "مطعم الريف الشعبي"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.621874,
-        24.460031
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "مطعم محمود الدقل\nالباكستاني",
-      "name_en": "مطعم محمود الدقل\nالباكستاني",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "8023295228",
-      "tags": {
-        "amenity": "restaurant",
-        "name": "مطعم محمود الدقل\nالباكستاني"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.611427,
-        24.459903
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "مطعم القريش",
-      "name_en": "مطعم القريش",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "8023418393",
-      "tags": {
-        "amenity": "restaurant",
-        "name": "مطعم القريش"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.611637,
-        24.459839
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
       "name": "مؤسسة موارد الصفا للتجارة",
       "name_en": "مؤسسة موارد الصفا للتجارة",
       "type": "Landmark",
@@ -7389,102 +6143,6 @@
       "coordinates": [
         39.6377539,
         24.4869043
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Naya Turkish Restaurant",
-      "name_en": "Naya Turkish Restaurant",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "10699958454",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "turkish",
-        "name": "Naya Turkish Restaurant"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6019605,
-        24.4686376
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Turkish Restaurant المطاعم التركية",
-      "name_en": "Turkish Restaurant المطاعم التركية",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "10699971944",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "turkish",
-        "name": "Turkish Restaurant المطاعم التركية",
-        "phone": "+966 148 274 998"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.5930768,
-        24.4789447
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Al Sanabel Turkish Restaurant",
-      "name_en": "Al Sanabel Turkish Restaurant",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "10700110086",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "turkish",
-        "name": "Al Sanabel Turkish Restaurant"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6122178,
-        24.4727509
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Domino's",
-      "name_en": "Domino's",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "10700201285",
-      "tags": {
-        "amenity": "fast_food",
-        "brand": "Domino's",
-        "brand:wikidata": "Q839466",
-        "cuisine": "pizza",
-        "name": "Domino's",
-        "takeaway": "yes"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6069848,
-        24.4625324
       ]
     }
   },
@@ -7750,80 +6408,6 @@
       "coordinates": [
         39.6102644,
         24.4739129
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Javanese Restaurant",
-      "name_en": "Javanese Restaurant",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "12597203582",
-      "tags": {
-        "amenity": "restaurant",
-        "cuisine": "indonesian",
-        "name": "Javanese Restaurant"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6132254,
-        24.4734114
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Sonargaon Restaurant",
-      "name_en": "Sonargaon Restaurant",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "12770998901",
-      "tags": {
-        "addr:housenumber": "2747",
-        "addr:postcode": "42311",
-        "addr:street": "شارع عبدالرحمن بن عوف",
-        "amenity": "restaurant",
-        "name": "Sonargaon Restaurant",
-        "opening_hours": "Mo-Su 12:30-00:00",
-        "phone": "+966 56 048 4888",
-        "self_service": "no"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.6094996,
-        24.4738279
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "بروست الفروج",
-      "name_en": "بروست الفروج",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "12786036801",
-      "tags": {
-        "amenity": "fast_food",
-        "cuisine": "chicken;sandwich",
-        "name": "بروست الفروج"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.5845911,
-        24.4640716
       ]
     }
   },
@@ -8164,79 +6748,6 @@
       "coordinates": [
         39.5972447,
         24.4678349
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "مطاعم و مطابخ نخبة حضرموت",
-      "name_en": "مطاعم و مطابخ نخبة حضرموت",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "13363253611",
-      "tags": {
-        "addr:city": "المدينة المنورة",
-        "addr:district": "حي العنابس",
-        "addr:street": "طريق الملك عبدالله",
-        "amenity": "restaurant",
-        "cuisine": "arab;chicken;regional",
-        "diet:halal": "yes",
-        "name": "مطاعم و مطابخ نخبة حضرموت",
-        "phone": "0558056448",
-        "website": "https://linktr.ee/nokhba.hdr"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.5826143,
-        24.4750324
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "family restaurant",
-      "name_en": "family restaurant",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "13383074730",
-      "tags": {
-        "amenity": "restaurant",
-        "name": "family restaurant"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.5945877,
-        24.4864008
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "family cafe",
-      "name_en": "family cafe",
-      "type": "Landmark",
-      "icon": "fa-map-marker-alt",
-      "description": "Landmark di area Masjidil Haram.",
-      "osm_id": "13383074742",
-      "tags": {
-        "amenity": "cafe",
-        "name": "family cafe"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.5930593,
-        24.4862732
       ]
     }
   },

@@ -1,0 +1,729 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "سوق الخضار",
+      "name_en": "سوق الخضار",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "4213981890",
+      "tags": {
+        "name": "سوق الخضار",
+        "shop": "supermarket"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5823905,
+        24.4623264
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "روابي المدينة للإنتاج الاعلامي",
+      "name_en": "روابي المدينة للإنتاج الاعلامي",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "4217921989",
+      "tags": {
+        "addr:housenumber": "0148157280",
+        "addr:street": "2nd Ring Road",
+        "name": "روابي المدينة للإنتاج الاعلامي",
+        "opening_hours": "Mo-Su 16:00-24:00",
+        "phone": "0569160391",
+        "shop": "convenience"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5824173,
+        24.4724441
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مركز ومخبز عوار",
+      "name_en": "مركز ومخبز عوار",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "4405740591",
+      "tags": {
+        "name": "مركز ومخبز عوار",
+        "name:ar": "مركز ومخبز عوار",
+        "shop": "supermarket"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5876086,
+        24.4808651
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "ثانوية احد",
+      "name_en": "ثانوية احد",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "4644423293",
+      "tags": {
+        "amenity": "school",
+        "name": "ثانوية احد",
+        "name:ar": "ثانوية احد"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5995288,
+        24.4889906
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "متوسطة الامام شعبة بن عياش",
+      "name_en": "متوسطة الامام شعبة بن عياش",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "4644423294",
+      "tags": {
+        "amenity": "school",
+        "name": "متوسطة الامام شعبة بن عياش"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5997487,
+        24.4883649
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الامام علي بن ابي طالب",
+      "name_en": "الامام علي بن ابي طالب",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "4644462689",
+      "tags": {
+        "amenity": "school",
+        "name": "الامام علي بن ابي طالب",
+        "name:ar": "الامام علي بن ابي طالب"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5957149,
+        24.4864135
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "التوفير",
+      "name_en": "التوفير",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "4656638692",
+      "tags": {
+        "name": "التوفير",
+        "shop": "supermarket"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6003648,
+        24.4858541
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مول بن داوود",
+      "name_en": "Bin Dawood Supermarket",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "5077513027",
+      "tags": {
+        "name": "مول بن داوود",
+        "name:ar": "مول بن داوود",
+        "name:en": "Bin Dawood Supermarket",
+        "opening_hours": "Sa-Fr 06:00-01:00",
+        "shop": "supermarket",
+        "website": "http://www.bindawood.com"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6096465,
+        24.4712944
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Bindawood - Anwar al Madinah",
+      "name_en": "Bindawood - Anwar al Madinah",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "5085986758",
+      "tags": {
+        "name": "Bindawood - Anwar al Madinah",
+        "shop": "supermarket",
+        "website": "https://bindawood.com/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6076305,
+        24.4713538
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "السروات",
+      "name_en": "Sarawat Superstore",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "5086072045",
+      "tags": {
+        "name": "السروات",
+        "name:ar": "السروات",
+        "name:en": "Sarawat Superstore",
+        "shop": "supermarket",
+        "website": "sarawat.com.sa"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5973665,
+        24.4839118
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Mandarin",
+      "name_en": "Mandarin",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "5086074982",
+      "tags": {
+        "name": "Mandarin",
+        "shop": "supermarket"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6166617,
+        24.4876643
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "بندة",
+      "name_en": "Panda",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "5086190522",
+      "tags": {
+        "name": "بندة",
+        "name:ar": "بندة",
+        "name:en": "Panda",
+        "shop": "supermarket",
+        "website": "panda.com.sa"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5842776,
+        24.4607033
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "أسواق بدر الدين",
+      "name_en": "Badruddin Markets",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "5086204259",
+      "tags": {
+        "name": "أسواق بدر الدين",
+        "name:ar": "أسواق بدر الدين",
+        "name:en": "Badruddin Markets",
+        "shop": "supermarket"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5812139,
+        24.461783
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مخابز و حلواني شقرون",
+      "name_en": "مخابز و حلواني شقرون",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "5086220786",
+      "tags": {
+        "name": "مخابز و حلواني شقرون",
+        "shop": "supermarket"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6332983,
+        24.4676138
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Super Market",
+      "name_en": "Super Market",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "6231032275",
+      "tags": {
+        "name": "Super Market",
+        "shop": "supermarket"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6127557,
+        24.4719919
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مركز نامية",
+      "name_en": "Namia Centre",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "6231256538",
+      "tags": {
+        "addr:city": "المدينة المنورة",
+        "name": "مركز نامية",
+        "name:ar": "مركز نامية",
+        "name:en": "Namia Centre",
+        "shop": "mall"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6127669,
+        24.4719531
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Supermarket Mahodeah",
+      "name_en": "Supermarket Mahodeah",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "6232670500",
+      "tags": {
+        "name": "Supermarket Mahodeah",
+        "shop": "supermarket"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6097422,
+        24.4715521
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Baqal Al Andalus",
+      "name_en": "Baqal Al Andalus",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "6233137601",
+      "tags": {
+        "name": "Baqal Al Andalus",
+        "shop": "convenience"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6077104,
+        24.4730916
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Baqal Al Sharq",
+      "name_en": "Baqal Al Sharq",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "6245317181",
+      "tags": {
+        "name": "Baqal Al Sharq",
+        "shop": "convenience"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6086046,
+        24.4648887
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Baqal",
+      "name_en": "Baqal",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "6247204244",
+      "tags": {
+        "name": "Baqal",
+        "shop": "convenience"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.614969,
+        24.465294
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Baqal Al Khair",
+      "name_en": "Baqal Al Khair",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "6247332172",
+      "tags": {
+        "name": "Baqal Al Khair",
+        "shop": "convenience"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6157095,
+        24.4650307
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "إبتدائية أحمد بن حنبل لتعليم الكبار",
+      "name_en": "إبتدائية أحمد بن حنبل لتعليم الكبار",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "8011168241",
+      "tags": {
+        "amenity": "school",
+        "name": "إبتدائية أحمد بن حنبل لتعليم الكبار"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6350792,
+        24.4632752
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مدرسة جيل القرآن",
+      "name_en": "مدرسة جيل القرآن",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "8011180422",
+      "tags": {
+        "amenity": "school",
+        "name": "مدرسة جيل القرآن"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6334794,
+        24.4634365
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "بقالة أبو هلال",
+      "name_en": "بقالة أبو هلال",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "8011180979",
+      "tags": {
+        "name": "بقالة أبو هلال",
+        "shop": "convenience"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.628137,
+        24.4616466
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "المتوسطة الخامسة والعشرون",
+      "name_en": "المتوسطة الخامسة والعشرون",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "8011182393",
+      "tags": {
+        "amenity": "school",
+        "name": "المتوسطة الخامسة والعشرون"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6324807,
+        24.463661
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "بقالة دنيا الهنا",
+      "name_en": "بقالة دنيا الهنا",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "8014663736",
+      "tags": {
+        "name": "بقالة دنيا الهنا",
+        "shop": "convenience"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.627201,
+        24.4600142
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الابتدائية الرابعة والخمسون بالعوالي",
+      "name_en": "الابتدائية الرابعة والخمسون بالعوالي",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "8014666241",
+      "tags": {
+        "amenity": "school",
+        "name": "الابتدائية الرابعة والخمسون بالعوالي"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6288264,
+        24.4600246
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "المتوسطة والثانوية الثانية لتحفيظ القران الكريم",
+      "name_en": "المتوسطة والثانوية الثانية لتحفيظ القران الكريم",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "8014684917",
+      "tags": {
+        "amenity": "school",
+        "name": "المتوسطة والثانوية الثانية لتحفيظ القران الكريم"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6284509,
+        24.460447
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "المتوسطة الرابعة والأربعون للبنات",
+      "name_en": "المتوسطة الرابعة والأربعون للبنات",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "8014687806",
+      "tags": {
+        "amenity": "school",
+        "name": "المتوسطة الرابعة والأربعون للبنات"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6290678,
+        24.4604055
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "أقرب مركز للمواد المخفضة",
+      "name_en": "أقرب مركز للمواد المخفضة",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "8014715358",
+      "tags": {
+        "name": "أقرب مركز للمواد المخفضة",
+        "shop": "convenience"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6269206,
+        24.4601505
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مخبز وتموينات الثميري",
+      "name_en": "مخبز وتموينات الثميري",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "8017443653",
+      "tags": {
+        "name": "مخبز وتموينات الثميري",
+        "shop": "convenience"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.625599,
+        24.4604738
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "ماجد للبيع الخواتم",
+      "name_en": "ماجد للبيع الخواتم",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Madinah.",
+      "osm_id": "8017443654",
+      "tags": {
+        "name": "ماجد للبيع الخواتم",
+        "shop": "convenience"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6252563,
+        24.4603088
+      ]
+    }
+  }
+]

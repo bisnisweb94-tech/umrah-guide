@@ -1,0 +1,565 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مركز صحى الصافية",
+      "name_en": "Al Safiah Health Centre",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "3808082022",
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "مركز صحى الصافية",
+        "name:ar": "مركز صحى الصافية",
+        "name:en": "Al Safiah Health Centre"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6101257,
+        24.4658029
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "النهدي",
+      "name_en": "النهدي",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "4400886196",
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "النهدي",
+        "name:ar": "النهدي"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5814652,
+        24.4718161
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "4656668490",
+      "tags": {
+        "amenity": "pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5994876,
+        24.4878277
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "صيدلية النهدي",
+      "name_en": "Nahdi",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "5077515872",
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "صيدلية النهدي",
+        "brand:ar": "صيدلية النهدي",
+        "brand:en": "Nahdi",
+        "brand:wikidata": "Q98582564",
+        "brand:wikipedia": "ar:شركة النهدي الطبية",
+        "healthcare": "pharmacy",
+        "name": "صيدلية النهدي",
+        "name:ar": "صيدلية النهدي",
+        "name:en": "Nahdi",
+        "website": "https://www.nahdi.sa/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6109068,
+        24.4727785
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Pharmacy Nahdi",
+      "name_en": "Pharmacy Nahdi",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "5077580778",
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Pharmacy Nahdi",
+        "website": "https://www.nahdi.sa/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.608798,
+        24.4859146
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nahdi Pharmacy",
+      "name_en": "Nahdi Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "5077601152",
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Nahdi Pharmacy",
+        "phone": "+966 148 207 888",
+        "website": "https://www.nahdi.sa/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.5825966,
+        24.4785173
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nahdi Pharmacy",
+      "name_en": "Nahdi Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "5077614073",
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Nahdi Pharmacy",
+        "website": "https://www.nahdi.sa/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6350404,
+        24.4688838
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Mugharbel Pharmacy",
+      "name_en": "Al Mugharbel Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "5086046958",
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Al Mugharbel Pharmacy",
+        "website": "almugharbelpharmacies.com"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6119974,
+        24.4635772
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "صيدليات الدواء",
+      "name_en": "Al-Dawaa Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "5124292405",
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "صيدليات الدواء",
+        "name:ar": "صيدليات الدواء",
+        "name:en": "Al-Dawaa Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6077725,
+        24.4711914
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Boots Pharmacy",
+      "name_en": "Boots Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "5124300165",
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Boots Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6132455,
+        24.4715229
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al-Eman Pharmacy",
+      "name_en": "Al-Eman Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "6030680430",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Al-Eman Pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6165402,
+        24.4646546
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Alsaggaf Pharmacy",
+      "name_en": "Alsaggaf Pharmacy",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "6231012445",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Alsaggaf Pharmacy",
+        "phone": "+966 82 90 708"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6120457,
+        24.4716919
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "6233132764",
+      "tags": {
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6077077,
+        24.473487
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "صيدلية النهدي",
+      "name_en": "Nahdi",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "6245303202",
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "صيدلية النهدي",
+        "brand:ar": "صيدلية النهدي",
+        "brand:en": "Nahdi",
+        "brand:wikidata": "Q98582564",
+        "brand:wikipedia": "ar:شركة النهدي الطبية",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "صيدلية النهدي",
+        "name:ar": "صيدلية النهدي",
+        "name:en": "Nahdi"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6103005,
+        24.4652485
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "صيدلية النهدي",
+      "name_en": "Nahdi",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "6245386166",
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "صيدلية النهدي",
+        "brand:ar": "صيدلية النهدي",
+        "brand:en": "Nahdi",
+        "brand:wikidata": "Q98582564",
+        "brand:wikipedia": "ar:شركة النهدي الطبية",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "صيدلية النهدي",
+        "name:ar": "صيدلية النهدي",
+        "name:en": "Nahdi"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6123559,
+        24.4645801
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "صيدلية النهدي",
+      "name_en": "Pharmacy Nahdi",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "6249230568",
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "صيدلية النهدي",
+        "brand:ar": "صيدلية النهدي",
+        "brand:en": "Nahdi",
+        "brand:wikidata": "Q98582564",
+        "brand:wikipedia": "ar:شركة النهدي الطبية",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "صيدلية النهدي",
+        "name:ar": "صيدلية النهدي",
+        "name:en": "Pharmacy Nahdi",
+        "website": "https://www.nahdi.sa"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6107869,
+        24.4711254
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "صيدلية النهدي",
+      "name_en": "Nahdi",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "6251571481",
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "صيدلية النهدي",
+        "brand:ar": "صيدلية النهدي",
+        "brand:en": "Nahdi",
+        "brand:wikidata": "Q98582564",
+        "brand:wikipedia": "ar:شركة النهدي الطبية",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "صيدلية النهدي",
+        "name:ar": "صيدلية النهدي",
+        "name:en": "Nahdi",
+        "website": "https://www.nahdi.sa"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6067442,
+        24.4653725
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "صيدلية النهدي",
+      "name_en": "Pharmacy Nahdi",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "6340718555",
+      "tags": {
+        "amenity": "pharmacy",
+        "brand": "صيدلية النهدي",
+        "brand:ar": "صيدلية النهدي",
+        "brand:en": "Nahdi",
+        "brand:wikidata": "Q98582564",
+        "brand:wikipedia": "ar:شركة النهدي الطبية",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "صيدلية النهدي",
+        "name:ar": "صيدلية النهدي",
+        "name:en": "Pharmacy Nahdi"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6100158,
+        24.4711336
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "مستودع البادى للأدوية",
+      "name_en": "مستودع البادى للأدوية",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "8014750794",
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "مستودع البادى للأدوية"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6261864,
+        24.4601879
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Al Haram Hospital",
+      "name_en": "Al Haram Hospital",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "10736723119",
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Al Haram Hospital"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6040648,
+        24.4739474
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "صيدلية بدور",
+      "name_en": "صيدلية بدور",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "10754838710",
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "صيدلية بدور"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6045991,
+        24.4702589
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "صيدلية الندى",
+      "name_en": "صيدلية الندى",
+      "type": "Medical",
+      "icon": "fa-hospital",
+      "description": "Medical di area Madinah.",
+      "osm_id": "10754839498",
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "صيدلية الندى"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6044333,
+        24.4681536
+      ]
+    }
+  }
+]

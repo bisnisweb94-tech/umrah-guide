@@ -1,0 +1,636 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Tourism Information Centre",
+      "name_en": "Tourism Information Centre",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "3808086240",
+      "tags": {
+        "name": "Tourism Information Centre",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6089121,
+        24.4657347
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "9 A, 9 B",
+      "name_en": "9 A, 9 B",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5859223025",
+      "tags": {
+        "amenity": "parking",
+        "layer": "-1",
+        "name": "9 A, 9 B",
+        "parking": "underground",
+        "wheelchair": "yes"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.610204,
+        24.4704854
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "8 A, 8 B",
+      "name_en": "8 A, 8 B",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5859223026",
+      "tags": {
+        "amenity": "parking",
+        "layer": "-1",
+        "name": "8 A, 8 B",
+        "parking": "underground"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.609209,
+        24.4704859
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "10 A, 10 B",
+      "name_en": "10 A, 10 B",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5859223027",
+      "tags": {
+        "amenity": "parking",
+        "layer": "-1",
+        "name": "10 A, 10 B",
+        "parking": "underground"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6111781,
+        24.4705025
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "11 A, 11 B",
+      "name_en": "11 A, 11 B",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5859223028",
+      "tags": {
+        "amenity": "parking",
+        "layer": "-1",
+        "name": "11 A, 11 B",
+        "parking": "underground"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6121494,
+        24.4705025
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "7 A, 7 B",
+      "name_en": "7 A, 7 B",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5859223029",
+      "tags": {
+        "amenity": "parking",
+        "layer": "-1",
+        "name": "7 A, 7 B",
+        "parking": "underground"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.608473,
+        24.469449
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "6 A, 6 B",
+      "name_en": "6 A, 6 B",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5859223030",
+      "tags": {
+        "amenity": "parking",
+        "layer": "-1",
+        "name": "6 A, 6 B",
+        "parking": "underground"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6084577,
+        24.4684618
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "5 A, 5 B",
+      "name_en": "5 A, 5 B",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5859229724",
+      "tags": {
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "yes",
+        "layer": "-1",
+        "name": "5 A, 5 B",
+        "parking": "underground"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6084577,
+        24.4675166
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "4 A, 4 B",
+      "name_en": "4 A, 4 B",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5859229725",
+      "tags": {
+        "access": "yes",
+        "amenity": "parking",
+        "fee": "yes",
+        "layer": "-1",
+        "name": "4 A, 4 B",
+        "parking": "underground"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6091192,
+        24.4665224
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "3 A, 3 B",
+      "name_en": "3 A, 3 B",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5859229726",
+      "tags": {
+        "amenity": "parking",
+        "layer": "-1",
+        "name": "3 A, 3 B",
+        "parking": "underground"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6101115,
+        24.4665154
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "2 A, 2 B",
+      "name_en": "2 A, 2 B",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5859229727",
+      "tags": {
+        "amenity": "parking",
+        "layer": "-1",
+        "name": "2 A, 2 B",
+        "parking": "underground"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6111346,
+        24.4664944
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "1 A, 1 B",
+      "name_en": "1 A, 1 B",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5859229728",
+      "tags": {
+        "amenity": "parking",
+        "layer": "-1",
+        "name": "1 A, 1 B",
+        "parking": "underground"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6120961,
+        24.4664944
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "12 B",
+      "name_en": "12 B",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5859229729",
+      "tags": {
+        "amenity": "parking",
+        "layer": "-1",
+        "name": "12 B",
+        "parking": "underground"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.613915,
+        24.4699383
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "13 B",
+      "name_en": "13 B",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5859229730",
+      "tags": {
+        "amenity": "parking",
+        "layer": "-1",
+        "name": "13 B",
+        "parking": "underground"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6139172,
+        24.469448
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Guiding the lost",
+      "name_en": "Guiding the lost",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5859331817",
+      "tags": {
+        "information": "yes",
+        "name": "Guiding the lost",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6108504,
+        24.470675
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "دليل المفقودات",
+      "name_en": "Guiding the lost",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5859331818",
+      "tags": {
+        "information": "yes",
+        "name": "دليل المفقودات",
+        "name:ar": "دليل المفقودات",
+        "name:en": "Guiding the lost",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6125196,
+        24.4662662
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Guiding the lost",
+      "name_en": "Guiding the lost",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5859448648",
+      "tags": {
+        "information": "yes",
+        "name": "Guiding the lost",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6134769,
+        24.4703423
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Guiding the lost",
+      "name_en": "Guiding the lost",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5859448649",
+      "tags": {
+        "name": "Guiding the lost",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6091766,
+        24.467958
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Distribution of Guidebooks",
+      "name_en": "Distribution of Guidebooks",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5927486691",
+      "tags": {
+        "name": "Distribution of Guidebooks",
+        "name:fr": "Distribution de guides",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6092111,
+        24.4692412
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Women's - Distribution of Guidebooks",
+      "name_en": "Women's - Distribution of Guidebooks",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5927488234",
+      "tags": {
+        "name": "Women's - Distribution of Guidebooks",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6122542,
+        24.4696359
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Distribution of Guidebooks",
+      "name_en": "Distribution of Guidebooks",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5927629684",
+      "tags": {
+        "name": "Distribution of Guidebooks",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6126149,
+        24.4678941
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Distribution of Guidebooks",
+      "name_en": "Distribution of Guidebooks",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5927641793",
+      "tags": {
+        "name": "Distribution of Guidebooks",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6107446,
+        24.4661124
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Distribution of Guidebooks",
+      "name_en": "Distribution of Guidebooks",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5927644179",
+      "tags": {
+        "name": "Distribution of Guidebooks",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6141918,
+        24.4681975
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Distribution of Guidebooks",
+      "name_en": "Distribution of Guidebooks",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "5927644180",
+      "tags": {
+        "name": "Distribution of Guidebooks",
+        "name:fr": "Distribution de guides",
+        "tourism": "information"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6113751,
+        24.4706161
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "203",
+      "name_en": "203",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "6281913091",
+      "tags": {
+        "access": "yes",
+        "amenity": "toilets",
+        "male": "yes",
+        "name": "203",
+        "wheelchair": "limited"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6116344,
+        24.4668398
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "7931460716",
+      "tags": {
+        "amenity": "parking"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6041362,
+        24.4619924
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Unnamed",
+      "name_en": "Unnamed",
+      "type": "Support",
+      "icon": "fa-info-circle",
+      "description": "Support di area Madinah.",
+      "osm_id": "10581825705",
+      "tags": {
+        "amenity": "toilets",
+        "fee": "no"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6078861,
+        24.4681121
+      ]
+    }
+  }
+]
