@@ -2,182 +2,200 @@
   {
     "type": "Feature",
     "properties": {
-      "name": "Unnamed",
-      "name_en": "Unnamed",
+      "name": "ثانوية احد",
+      "name_en": "ثانوية احد",
       "type": "Amenities",
       "icon": "fa-building",
       "description": "Amenities di area Masjidil Haram.",
-      "osm_id": "977854264",
-      "tags": {
-        "amenity": "school"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.840247,
-        21.43868
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Unnamed",
-      "name_en": "Unnamed",
-      "type": "Amenities",
-      "icon": "fa-building",
-      "description": "Amenities di area Masjidil Haram.",
-      "osm_id": "977855352",
-      "tags": {
-        "amenity": "school"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.840272,
-        21.43871
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "ثانوية الملك عبدالعزيز",
-      "name_en": "ثانوية الملك عبدالعزيز",
-      "type": "Amenities",
-      "icon": "fa-building",
-      "description": "Amenities di area Masjidil Haram.",
-      "osm_id": "2706849590",
-      "tags": {
-        "addr:city": "mecca",
-        "addr:postcode": "24243",
-        "addr:street": "شارع العزيزية",
-        "amenity": "school",
-        "name": "ثانوية الملك عبدالعزيز"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8614454,
-        21.4154546
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Pakistani school",
-      "name_en": "Pakistani school",
-      "type": "Amenities",
-      "icon": "fa-building",
-      "description": "Amenities di area Masjidil Haram.",
-      "osm_id": "4549865889",
+      "osm_id": "4644423293",
       "tags": {
         "amenity": "school",
-        "name": "Pakistani school",
-        "name:ar": "Pakistani school",
-        "name:en": "Pakistani school"
+        "name": "ثانوية احد",
+        "name:ar": "ثانوية احد"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.7893828,
-        21.4358647
+        39.5995288,
+        24.4889906
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "مدرسة سعد بن معاذ",
-      "name_en": "مدرسة سعد بن معاذ",
+      "name": "متوسطة الامام شعبة بن عياش",
+      "name_en": "متوسطة الامام شعبة بن عياش",
       "type": "Amenities",
       "icon": "fa-building",
       "description": "Amenities di area Masjidil Haram.",
-      "osm_id": "4603580892",
+      "osm_id": "4644423294",
       "tags": {
         "amenity": "school",
-        "name": "مدرسة سعد بن معاذ",
-        "name:ar": "مدرسة سعد بن معاذ"
+        "name": "متوسطة الامام شعبة بن عياش"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.7938112,
-        21.4420816
+        39.5997487,
+        24.4883649
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "وزارة التعليم",
-      "name_en": "Ministry of education",
+      "name": "الامام علي بن ابي طالب",
+      "name_en": "الامام علي بن ابي طالب",
       "type": "Amenities",
       "icon": "fa-building",
       "description": "Amenities di area Masjidil Haram.",
-      "osm_id": "5158415821",
+      "osm_id": "4644462689",
       "tags": {
         "amenity": "school",
-        "name": "وزارة التعليم",
-        "name:en": "Ministry of education"
+        "name": "الامام علي بن ابي طالب",
+        "name:ar": "الامام علي بن ابي طالب"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8628587,
-        21.4142466
+        39.5957149,
+        24.4864135
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "مدرسة دار العلوم الابتدائية للبنين",
-      "name_en": "School House Elementary Science Boys",
+      "name": "إبتدائية أحمد بن حنبل لتعليم الكبار",
+      "name_en": "إبتدائية أحمد بن حنبل لتعليم الكبار",
       "type": "Amenities",
       "icon": "fa-building",
       "description": "Amenities di area Masjidil Haram.",
-      "osm_id": "12397680339",
+      "osm_id": "8011168241",
       "tags": {
         "amenity": "school",
-        "name": "School House Elementary Science Boys مدرسة دار العلوم الابتدائية للبنين",
-        "name:ar": "مدرسة دار العلوم الابتدائية للبنين",
-        "name:en": "School House Elementary Science Boys"
+        "name": "إبتدائية أحمد بن حنبل لتعليم الكبار"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8309916,
-        21.4060318
+        39.6350792,
+        24.4632752
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "Unnamed",
-      "name_en": "Unnamed",
+      "name": "مدرسة جيل القرآن",
+      "name_en": "مدرسة جيل القرآن",
       "type": "Amenities",
       "icon": "fa-building",
       "description": "Amenities di area Masjidil Haram.",
-      "osm_id": "12674386165",
+      "osm_id": "8011180422",
       "tags": {
-        "amenity": "school"
+        "amenity": "school",
+        "name": "مدرسة جيل القرآن"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8397147,
-        21.4389809
+        39.6334794,
+        24.4634365
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "المتوسطة الخامسة والعشرون",
+      "name_en": "المتوسطة الخامسة والعشرون",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Masjidil Haram.",
+      "osm_id": "8011182393",
+      "tags": {
+        "amenity": "school",
+        "name": "المتوسطة الخامسة والعشرون"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6324807,
+        24.463661
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "الابتدائية الرابعة والخمسون بالعوالي",
+      "name_en": "الابتدائية الرابعة والخمسون بالعوالي",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Masjidil Haram.",
+      "osm_id": "8014666241",
+      "tags": {
+        "amenity": "school",
+        "name": "الابتدائية الرابعة والخمسون بالعوالي"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6288264,
+        24.4600246
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "المتوسطة والثانوية الثانية لتحفيظ القران الكريم",
+      "name_en": "المتوسطة والثانوية الثانية لتحفيظ القران الكريم",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Masjidil Haram.",
+      "osm_id": "8014684917",
+      "tags": {
+        "amenity": "school",
+        "name": "المتوسطة والثانوية الثانية لتحفيظ القران الكريم"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6284509,
+        24.460447
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "المتوسطة الرابعة والأربعون للبنات",
+      "name_en": "المتوسطة الرابعة والأربعون للبنات",
+      "type": "Amenities",
+      "icon": "fa-building",
+      "description": "Amenities di area Masjidil Haram.",
+      "osm_id": "8014687806",
+      "tags": {
+        "amenity": "school",
+        "name": "المتوسطة الرابعة والأربعون للبنات"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6290678,
+        24.4604055
       ]
     }
   }

@@ -2,123 +2,72 @@
   {
     "type": "Feature",
     "properties": {
-      "name": "Shami Corner",
-      "name_en": "Shami Corner",
+      "name": "الركن الشامي",
+      "name_en": "الركن الشامي",
       "type": "Holy Site",
       "icon": "fa-kaaba",
       "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "1199442699",
+      "osm_id": "4337168289",
       "tags": {
-        "historic": "yes",
-        "name": "Shami Corner"
+        "addr:city": "المدينة المنورة",
+        "amenity": "restaurant",
+        "name": "الركن الشامي",
+        "name:ar": "الركن الشامي"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8261095,
-        21.4225371
+        39.625153,
+        24.478527
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "الركن اليماني",
-      "name_en": "Corner of Yemen",
+      "name": "مسجد السجدة",
+      "name_en": "مسجد السجدة",
       "type": "Holy Site",
       "icon": "fa-kaaba",
       "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "1199442700",
+      "osm_id": "7825051585",
       "tags": {
-        "alt_name:en": "ar-rukn al-yamani",
-        "historic": "yes",
-        "name": "الركن اليماني",
-        "name:ar": "الركن اليماني",
-        "name:de": "Jemenitische Ecke",
-        "name:en": "Corner of Yemen",
-        "name:fa": "رکن یمانی",
-        "name:fr": "Angle du Yémen",
-        "name:ru": "угол Йемена",
-        "name:tk": "Ýemani Burçy",
-        "name:tr": "Yemani Köşesi",
-        "religion": "muslim",
-        "wikidata": "Q4115878",
-        "wikipedia": "ar:أركان الكعبة"
+        "addr:city": "المدينة المنورة",
+        "amenity": "place_of_worship",
+        "name": "مسجد السجدة",
+        "name:ar": "مسجد السجدة",
+        "religion": "muslim"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8261735,
-        21.4224468
+        39.6147837,
+        24.4777281
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "الحجر الأسود",
-      "name_en": "Black Stone",
+      "name": "مسجد المسند",
+      "name_en": "مسجد المسند",
       "type": "Holy Site",
       "icon": "fa-kaaba",
       "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "1199442721",
+      "osm_id": "7835301685",
       "tags": {
-        "historic": "stone",
-        "name": "الحجر الأسود",
-        "name:ar": "الحجر الأسود",
-        "name:de": "Schwarzer Stein",
-        "name:el": "Μαύρος Λίθος",
-        "name:en": "Black Stone",
-        "name:fa": "حجرالاسود",
-        "name:fr": "Pierre noire",
-        "name:it": "Pietra Nera",
-        "name:ml": "ഹജറുൽ അസ്‌വദ്",
-        "name:ru": "Чёрный камень",
-        "name:tk": "Gara Daş",
-        "name:tr": "Karataş",
-        "name:ur": "حجر اسود",
-        "religion": "muslim",
-        "wikidata": "Q715286",
-        "wikipedia": "ar:الحجر الأسود"
+        "amenity": "place_of_worship",
+        "name": "مسجد المسند",
+        "religion": "muslim"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8262546,
-        21.4224985
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "السليمانية",
-      "name_en": "As Sulaymaniyah",
-      "type": "Holy Site",
-      "icon": "fa-kaaba",
-      "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "1236461879",
-      "tags": {
-        "alt_name": "As Sulaymānīyah; As Sulaymaniyah",
-        "GNS:dsg_code": "PPLX",
-        "GNS:dsg_name": "section of populated place",
-        "GNS:id": "9165479",
-        "name": "السليمانية",
-        "name:ar": "السليمانية",
-        "name:de": "As Sulaymaniyah",
-        "name:en": "As Sulaymaniyah",
-        "name:fr": "As Sulaymaniyah",
-        "place": "neighbourhood"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8297309,
-        21.4330164
+        39.5800089,
+        24.4830034
       ]
     }
   },
@@ -130,10 +79,8 @@
       "type": "Holy Site",
       "icon": "fa-kaaba",
       "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "3146999469",
+      "osm_id": "7931431559",
       "tags": {
-        "addr:city": "Makkah",
-        "addr:street": "Taqadam Street",
         "amenity": "place_of_worship",
         "religion": "muslim"
       }
@@ -141,58 +88,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.7855718,
-        21.4125053
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "البخاري",
-      "name_en": "Masjid Al Bukhari",
-      "type": "Holy Site",
-      "icon": "fa-kaaba",
-      "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "4532966297",
-      "tags": {
-        "amenity": "place_of_worship",
-        "name": "البخاري",
-        "name:ar": "البخاري",
-        "name:en": "Masjid Al Bukhari",
-        "religion": "muslim"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8305175,
-        21.4157575
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "ابوبكر الصديق-الطابق الثالث",
-      "name_en": "Masjid Abu Baker As-Siddiq - 3rd Floor",
-      "type": "Holy Site",
-      "icon": "fa-kaaba",
-      "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "5126508173",
-      "tags": {
-        "amenity": "place_of_worship",
-        "name": "ابوبكر الصديق-الطابق الثالث",
-        "name:ar": "ابوبكر الصديق-الطابق الثالث",
-        "name:en": "Masjid Abu Baker As-Siddiq - 3rd Floor",
-        "religion": "muslim"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8242339,
-        21.420018
+        39.5909795,
+        24.4763634
       ]
     }
   },
@@ -204,7 +101,7 @@
       "type": "Holy Site",
       "icon": "fa-kaaba",
       "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "5451947977",
+      "osm_id": "7931431560",
       "tags": {
         "amenity": "place_of_worship",
         "religion": "muslim"
@@ -213,83 +110,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8343389,
-        21.4377028
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "مسجد زينب",
-      "name_en": "مسجد زينب",
-      "type": "Holy Site",
-      "icon": "fa-kaaba",
-      "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "5744528482",
-      "tags": {
-        "amenity": "place_of_worship",
-        "name": "مسجد زينب",
-        "religion": "muslim"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8186896,
-        21.4159581
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "الضوء الأخضر المقابل للحجر الأسود",
-      "name_en": "Green Light - mark for Start/End of Tawaf",
-      "type": "Holy Site",
-      "icon": "fa-kaaba",
-      "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "5868939385",
-      "tags": {
-        "crossing": "pedestrian_signals",
-        "highway": "crossing",
-        "level": "1",
-        "name": "الضوء الأخضر المقابل للحجر الأسود",
-        "name:ar": "الضوء الأخضر المقابل للحجر الأسود",
-        "name:en": "Green Light - mark for Start/End of Tawaf",
-        "name:tr": "Kara Taş'ın karşısında yeşil ışık",
-        "religion": "muslim",
-        "traffic_signals": "signal"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8268401,
-        21.4222904
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Prayer Hall - Abraj al Bait",
-      "name_en": "Prayer Hall - Abraj al Bait",
-      "type": "Holy Site",
-      "icon": "fa-kaaba",
-      "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "5923016911",
-      "tags": {
-        "amenity": "place_of_worship",
-        "name": "Prayer Hall - Abraj al Bait",
-        "religion": "muslim"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8256123,
-        21.4194016
+        39.5881589,
+        24.4751085
       ]
     }
   },
@@ -301,7 +123,7 @@
       "type": "Holy Site",
       "icon": "fa-kaaba",
       "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "6036354198",
+      "osm_id": "7931431563",
       "tags": {
         "amenity": "place_of_worship",
         "religion": "muslim"
@@ -310,181 +132,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8226918,
-        21.4169116
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Dawah Corner Bookstore - Ground Floor/Hilton Tower",
-      "name_en": "Dawah Corner Bookstore - Ground Floor/Hilton Tower",
-      "type": "Holy Site",
-      "icon": "fa-kaaba",
-      "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "6655078607",
-      "tags": {
-        "name": "Dawah Corner Bookstore - Ground Floor/Hilton Tower",
-        "phone": "+966 12 5311895",
-        "shop": "books",
-        "website": "https://www.dakwahbookstore.com.my"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.823626,
-        21.4196643
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Iraqi Corner",
-      "name_en": "Iraqi Corner",
-      "type": "Holy Site",
-      "icon": "fa-kaaba",
-      "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "8794911100",
-      "tags": {
-        "historic": "yes",
-        "name": "Iraqi Corner",
-        "name:tk": "Yrak-y Burçy",
-        "name:tr": "Irakî köşesi",
-        "wikidata": "Q4115878",
-        "wikipedia": "ar:أركان الكعبة"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8261922,
-        21.4225861
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Shami Corner",
-      "name_en": "Shami Corner",
-      "type": "Holy Site",
-      "icon": "fa-kaaba",
-      "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "8794911101",
-      "tags": {
-        "name": "Shami Corner",
-        "wikidata": "Q4115878",
-        "wikipedia": "ar:أركان الكعبة"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8261095,
-        21.4225371
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "مسجد محمد السبيل",
-      "name_en": "Masjid Mohamed Al Sabil",
-      "type": "Holy Site",
-      "icon": "fa-kaaba",
-      "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "12512621587",
-      "tags": {
-        "amenity": "place_of_worship",
-        "name": "Masjid Mohamed Al Sabil مسجد محمد السبيل",
-        "name:ar": "مسجد محمد السبيل",
-        "name:en": "Masjid Mohamed Al Sabil",
-        "religion": "muslim"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8330381,
-        21.4061217
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "مسجد ابن عمار",
-      "name_en": "Masjid Ibn Ammar",
-      "type": "Holy Site",
-      "icon": "fa-kaaba",
-      "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "12512621589",
-      "tags": {
-        "amenity": "place_of_worship",
-        "name": "Masjid Ibn Ammar مسجد ابن عمار",
-        "name:ar": "مسجد ابن عمار",
-        "name:en": "Masjid Ibn Ammar",
-        "religion": "muslim"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8310399,
-        21.4077199
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "مسجد ابو مروان",
-      "name_en": "Masjid Abu Marwan",
-      "type": "Holy Site",
-      "icon": "fa-kaaba",
-      "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "12809369890",
-      "tags": {
-        "amenity": "place_of_worship",
-        "name": "Masjid Abu Marwan مسجد ابو مروان",
-        "name:ar": "مسجد ابو مروان",
-        "name:en": "Masjid Abu Marwan",
-        "religion": "muslim"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.823881,
-        21.4129289
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "مسجد",
-      "name_en": "Masjid",
-      "type": "Holy Site",
-      "icon": "fa-kaaba",
-      "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "12811519291",
-      "tags": {
-        "amenity": "place_of_worship",
-        "name": "Masjid مسجد",
-        "name:ar": "مسجد",
-        "name:en": "Masjid",
-        "religion": "muslim"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.823418,
-        21.4129123
+        39.5840631,
+        24.4781637
       ]
     }
   },
@@ -496,7 +145,7 @@
       "type": "Holy Site",
       "icon": "fa-kaaba",
       "description": "Holy Site di area Masjidil Haram.",
-      "osm_id": "12856159902",
+      "osm_id": "7931460709",
       "tags": {
         "amenity": "place_of_worship",
         "religion": "muslim"
@@ -505,8 +154,8 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8555006,
-        21.4213932
+        39.599852,
+        24.4620123
       ]
     }
   }

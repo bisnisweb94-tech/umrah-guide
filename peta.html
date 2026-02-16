@@ -1657,9 +1657,9 @@
             maxZoom: 20
         });
 
-        const osmLayer = L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
-            attribution: '&copy; Google Maps',
-            maxZoom: 20
+        const osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors',
+            maxZoom: 19
         });
 
         const labels = L.tileLayer('https://mt1.google.com/vt/lyrs=h&x={x}&y={y}&z={z}', {
@@ -1667,7 +1667,7 @@
             maxZoom: 20
         });
 
-        satellite.addTo(map);
+        osmLayer.addTo(map);
 
         const baseMaps = { "Satelit": satellite, "Peta Biasa": osmLayer };
         const overlayMaps = { "Label": labels };
@@ -1675,22 +1675,22 @@
 
         // Color mapping
         const markerColors = {
-            'Holy Site': '#d4af37',
-            'Mosque': '#2e7d32',
-            'Main Gate': '#064e3b',
-            'Gate': '#3498db',
-            'Hotel': '#8e44ad',
-            'Medical': '#e67e22',
-            'W C': '#06b6d4',
-            'Food': '#10b981',
-            'Zamzam/Water': '#3b82f6',
-            'Elevator': '#8b5cf6',
-            'Escalator': '#ec4899',
-            'Stairs': '#f97316',
-            'Transportation': '#6366f1',
-            'Amenities': '#f59e0b',
-            'Support': '#475569',
-            'Landmark': '#e74c3c'
+            'Holy Site': '#D4AF37', // Gold
+            'Mosque': '#10B981',    // Emerald
+            'Main Gate': '#1a73e8', // Blue
+            'Gate': '#3B82F6',      // Blue-500
+            'W C': '#EF4444',       // Red for easy spot
+            'Zamzam/Water': '#06B6D4', // Cyan
+            'Escalator': '#F59E0B', // Amber
+            'Elevator': '#F59E0B',
+            'Stairs': '#F59E0B',
+            'Medical': '#F43F5E',   // Rose
+            'Hotel': '#8B5CF6',     // Violet
+            'Transportation': '#F97316', // Orange
+            'Amenities': '#6B7280', // Gray
+            'Support': '#6366F1',   // Indigo
+            'Landmark': '#64748b',   // Slate
+            'Food': '#10b981'       // Green
         };
         const categoryIcons = {
             'all': 'fa-globe', 'Holy Site': 'fa-kaaba', 'Mosque': 'fa-mosque',

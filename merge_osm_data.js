@@ -152,7 +152,7 @@ function saveAllData(pois, roads, buildings) {
     const sortedPOIs = sortPOIs(pois);
 
     // Create JavaScript file content
-    const jsContent = `// Data Lokasi Penting Masjidil Haram - Versi Premium (OSM Map-3)
+    const jsContent = `// Data Lokasi Penting Masjidil Haram - Versi Premium (OSM Map-4)
 // Diperbarui dengan koordinat lebih akurat dan kategori tambahan
 // Total POIs: ${sortedPOIs.length}
 // Total Roads: ${roads.length}

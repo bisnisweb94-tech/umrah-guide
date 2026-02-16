@@ -8,7 +8,7 @@ import json
 from collections import defaultdict
 
 # File paths
-OSM_FILE = '/Users/aditya/Downloads/map-3.osm'
+OSM_FILE = 'osm_data/map-4.osm'
 OUTPUT_DIR = '/Users/aditya/.gemini/antigravity/scratch/umrah-guide/osm_data/'
 
 # Category mappings

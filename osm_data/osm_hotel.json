@@ -2,3306 +2,3103 @@
   {
     "type": "Feature",
     "properties": {
-      "name": "Dar Al Eiman Royal Hotel",
-      "name_en": "Dar Al Eiman Royal Hotel",
+      "name": "فندق مآدن",
+      "name_en": "Maden Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "2655309590",
+      "osm_id": "3752773995",
       "tags": {
-        "addr:city": "Makkah",
-        "addr:street": "شارع أجياد",
+        "name": "فندق مآدن",
+        "name:en": "Maden Hotel",
+        "stars": "5",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6108774,
+        24.4729583
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق رويال المدينة",
+      "name_en": "Royal Al-Madinah Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "3752784156",
+      "tags": {
+        "name": "فندق رويال المدينة",
+        "name:en": "Royal Al-Madinah Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6066807,
+        24.4723625
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق بروفينس الشام",
+      "name_en": "Province Al-Sham Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "3752784157",
+      "tags": {
+        "addr:city": "Madinah",
+        "addr:housenumber": "146",
+        "addr:street": "شارع عبدالرحمن بن عوف",
+        "fixme": "name:الحقوق العربية = العالمية",
+        "name": "فندق بروفينس الشام",
+        "name:en": "Province Al-Sham Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6099856,
+        24.4731087
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق روز هوليدي (٣)",
+      "name_en": "Rose Holiday (i3) Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "3808060411",
+      "tags": {
+        "name": "فندق روز هوليدي (٣)",
+        "name:en": "Rose Holiday (i3) Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6150895,
+        24.465199
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق ماسة البستان",
+      "name_en": "Al Bustan Diamond Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "3808061499",
+      "tags": {
+        "name": "فندق ماسة البستان",
+        "name:en": "Al Bustan Diamond Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6153697,
+        24.4651959
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق سرايا هرموني (ب)",
+      "name_en": "Saraya Harmony (B) Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "3808062732",
+      "tags": {
+        "name": "فندق سرايا هرموني (ب)",
+        "name:en": "Saraya Harmony (B) Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6143271,
+        24.4647533
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق سكاي فيو",
+      "name_en": "Sky View Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "3808065620",
+      "tags": {
+        "name": "فندق سكاي فيو",
+        "name:en": "Sky View Hotel",
+        "stars": "3",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6139163,
+        24.46477
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق سرايا هرموني (أ)",
+      "name_en": "Saraya Harmony (A) Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "3808067949",
+      "tags": {
+        "name": "فندق سرايا هرموني (أ)",
+        "name:en": "Saraya Harmony (A) Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.613885,
+        24.4645042
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق هدى طيبة",
+      "name_en": "Huda Taiba Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "3808068056",
+      "tags": {
+        "name": "فندق هدى طيبة",
+        "name:en": "Huda Taiba Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6088935,
+        24.4645186
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق نقاط ثلاثة الكوثر",
+      "name_en": "3 Points Al-Kawthar Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "3808069906",
+      "tags": {
+        "name": "فندق نقاط ثلاثة الكوثر",
+        "name:en": "3 Points Al-Kawthar Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.613312,
+        24.4635346
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق تاج ورد",
+      "name_en": "Taj Ward Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "3808070284",
+      "tags": {
+        "name": "فندق تاج ورد",
+        "name:en": "Taj Ward Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6130401,
+        24.4635612
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق منار الإيمان",
+      "name_en": "Manar Al-Eiman Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "3808071735",
+      "tags": {
+        "name": "فندق منار الإيمان",
+        "name:en": "Manar Al-Eiman Hotel",
+        "stars": "3",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6092452,
+        24.4644984
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق راما المدينه",
+      "name_en": "Rama Al Madina Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "3808072103",
+      "tags": {
+        "name": "فندق راما المدينه",
+        "name:en": "Rama Al Madina Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6095171,
+        24.4639571
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق نسك المدينة",
+      "name_en": "Nusk Al-Madinah Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "3808072459",
+      "tags": {
+        "name": "فندق نسك المدينة",
+        "name:en": "Nusk Al-Madinah Hotel",
+        "stars": "3",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6096015,
+        24.4645164
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق منازلي المدينة",
+      "name_en": "Manazeli Madinah Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "3808072600",
+      "tags": {
+        "name": "فندق منازلي المدينة",
+        "name:en": "Manazeli Madinah Hotel",
+        "stars": "3",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6103,
+        24.4651632
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق المدينة الذهبي",
+      "name_en": "Al-Madinah Golden",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "3808079463",
+      "tags": {
+        "name": "فندق المدينة الذهبي",
+        "name:en": "Al-Madinah Golden",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6100719,
+        24.4651769
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق نسك الإيمان",
+      "name_en": "Nusk Al-Eiman Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "3808085817",
+      "tags": {
+        "addr:city": "Al Madinah al Munawwarah",
+        "addr:housenumber": "2705",
+        "addr:postcode": "42311",
+        "name": "فندق نسك الإيمان",
+        "name:en": "Nusk Al-Eiman Hotel",
+        "phone": "+966 14 820 8084",
+        "stars": "3",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6092654,
+        24.4651996
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق ون إن",
+      "name_en": "One Inn Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "3808086235",
+      "tags": {
+        "addr:city": "Al Madinah al Munawwarah",
+        "addr:housenumber": "2731",
+        "addr:postcode": "42311",
+        "name": "فندق ون إن",
+        "name:en": "One Inn Hotel",
+        "stars": "3",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6095358,
+        24.4651799
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق رؤي جراند",
+      "name_en": "Rua Grand Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "3919757295",
+      "tags": {
+        "name": "فندق رؤي جراند",
+        "name:en": "Rua Grand Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.605447,
+        24.4657424
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق أنوار الزهراء",
+      "name_en": "Anwar Al-Zahra Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "4166647489",
+      "tags": {
+        "name": "فندق أنوار الزهراء",
+        "name:en": "Anwar Al-Zahra Hotel",
+        "stars": "2",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6056127,
+        24.4638666
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق إعمار مكتان",
+      "name_en": "Emaar Maktan Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "4230271590",
+      "tags": {
+        "name": "فندق إعمار مكتان",
+        "name:en": "Emaar Maktan Hotel",
+        "phone": "+966 125 348 880",
+        "stars": "3",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6045593,
+        24.4677314
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق سما الماسي",
+      "name_en": "Sama Al-Masi Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "4424873089",
+      "tags": {
+        "alt_name": "Sama Diamond Hotel",
+        "name": "فندق سما الماسي",
+        "name:en": "Sama Al-Masi Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6058728,
+        24.4659833
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق الريتز المدينة",
+      "name_en": "Al-Ritz Al-Madina Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "4454516094",
+      "tags": {
+        "addr:city": "Madinah",
+        "addr:housenumber": "148",
+        "addr:street": "شارع عبدالرحمن بن عوف",
+        "name": "فندق الريتز المدينة",
+        "name:ar": "فندق الريتز المدينة",
+        "name:en": "Al-Ritz Al-Madina Hotel",
+        "stars": "4",
+        "tourism": "hotel",
+        "website": "https://almokhtaragroup.com/ritz-al-madinah-hotel/"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6104755,
+        24.4730852
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق قصر ابوماهر",
+      "name_en": "فندق قصر ابوماهر",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "4658688189",
+      "tags": {
+        "addr:street": "حي المصانع",
+        "name": "فندق قصر ابوماهر",
+        "name:ar": "فندق قصر ابوماهر",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6071993,
+        24.4744006
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق الأندلس دار السلام",
+      "name_en": "Al-Andalus Dar Al-Salam Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "4707121392",
+      "tags": {
+        "name": "فندق الأندلس دار السلام",
+        "name:en": "Al-Andalus Dar Al-Salam Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6058674,
+        24.466119
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "دار الأمل 2",
+      "name_en": "Dar Al Amal 2",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "4792415322",
+      "tags": {
+        "name": "دار الأمل 2",
+        "name:en": "Dar Al Amal 2",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6142178,
+        24.4803857
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "hotel",
+      "name_en": "hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5452491522",
+      "tags": {
+        "name": "hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6215684,
+        24.4600089
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق جراند بلازا بدر المقام;Money Exchange",
+      "name_en": "Grand Plaza Al-Maqam Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945036045",
+      "tags": {
+        "addr:city": "Al Madinah al Munawwarah",
+        "addr:housenumber": "3054",
+        "addr:postcode": "42311",
+        "addr:street": "Zaid ibn Thabit Street",
+        "amenity": "bureau_de_change",
+        "name": "فندق جراند بلازا بدر المقام;Money Exchange",
+        "name:en": "Grand Plaza Al-Maqam Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6126027,
+        24.4719632
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق الساحة",
+      "name_en": "Al-Saha Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945036047",
+      "tags": {
+        "addr:city": "المدينة المنورة",
+        "name": "فندق الساحة",
+        "name:ar": "فندق الساحة",
+        "name:en": "Al-Saha Hotel",
+        "stars": "4",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6126027,
+        24.4722753
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق جوهرة الفيروز",
+      "name_en": "Jawharat Al Fayrouz",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945157929",
+      "tags": {
+        "name": "فندق جوهرة الفيروز",
+        "name:en": "Jawharat Al Fayrouz",
+        "stars": "2",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6099516,
+        24.4728293
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق أركان المنار",
+      "name_en": "Arkan Al-Manar hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945228160",
+      "tags": {
+        "name": "فندق أركان المنار",
+        "name:en": "Arkan Al-Manar hotel",
+        "stars": "4",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6070051,
+        24.4723609
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق كرم الفضي",
+      "name_en": "Karam Silver Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945262560",
+      "tags": {
+        "name": "فندق كرم الفضي",
+        "name:en": "Karam Silver Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.603262,
+        24.4703503
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق كرم الذهبي",
+      "name_en": "Karam Golden Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945262561",
+      "tags": {
+        "name": "فندق كرم الذهبي",
+        "name:en": "Karam Golden Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6031413,
+        24.4701115
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق مآثر الطيبة",
+      "name_en": "Mather Al-Taiba Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945275717",
+      "tags": {
+        "name": "فندق مآثر الطيبة",
+        "name:en": "Mather Al-Taiba Hotel",
+        "stars": "2",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6028945,
+        24.4688274
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق الزهراء",
+      "name_en": "Al Zahra Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945275718",
+      "tags": {
+        "name": "فندق الزهراء",
+        "name:en": "Al Zahra Hotel",
+        "stars": "2",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6028516,
+        24.4685051
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق ربوة الصفوة الذهبي",
+      "name_en": "Rabwat Al-Safwa Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945275719",
+      "tags": {
+        "name": "فندق ربوة الصفوة الذهبي",
+        "name:en": "Rabwat Al-Safwa Hotel",
+        "stars": "1.5",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6038601,
+        24.4699474
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق رؤى السعادة",
+      "name_en": "Rua Al-Saada Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945275720",
+      "tags": {
+        "name": "فندق رؤى السعادة",
+        "name:en": "Rua Al-Saada Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.603863,
+        24.4697277
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق وقت النزيل",
+      "name_en": "Guest Time Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945275721",
+      "tags": {
+        "name": "فندق وقت النزيل",
+        "name:en": "Guest Time Hotel",
+        "stars": "2.5",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6038869,
+        24.469052
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق فيرتا المدينة",
+      "name_en": "Verta Al-Madinah Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945275722",
+      "tags": {
+        "name": "فندق فيرتا المدينة",
+        "name:en": "Verta Al-Madinah Hotel",
+        "stars": "5",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6038762,
+        24.4688176
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق رؤى الفخآمة",
+      "name_en": "Rua Al-Fakhama Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945308975",
+      "tags": {
+        "name": "فندق رؤى الفخآمة",
+        "name:en": "Rua Al-Fakhama Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6042517,
+        24.4708292
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق واحة النزيل",
+      "name_en": "Guest Oasis Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945308976",
+      "tags": {
+        "name": "فندق واحة النزيل",
+        "name:en": "Guest Oasis Hotel",
+        "stars": "2.5",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6042678,
+        24.4706534
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق مرجان الذهبي",
+      "name_en": "Marjan Golden Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945308977",
+      "tags": {
+        "name": "فندق مرجان الذهبي",
+        "name:en": "Marjan Golden Hotel",
+        "phone": "+966 148 197 007",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6045621,
+        24.4708241
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق إلياس الفضي",
+      "name_en": "Elyas Silver Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945308978",
+      "tags": {
+        "check_date": "2024-08-07",
+        "name": "فندق إلياس الفضي",
+        "name:en": "Elyas Silver Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6045682,
+        24.4706144
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق كرم الحجاز",
+      "name_en": "Karam Al Hejaz Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945308979",
+      "tags": {
+        "name": "فندق كرم الحجاز",
+        "name:en": "Karam Al Hejaz Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.604253,
+        24.4699263
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق أرجوان السعادة",
+      "name_en": "Arjwan Al-Saadah Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945342144",
+      "tags": {
+        "name": "فندق أرجوان السعادة",
+        "name:en": "Arjwan Al-Saadah Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6030634,
+        24.467745
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق سبال بلس",
+      "name_en": "Sebal Plus Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945342145",
+      "tags": {
+        "name": "فندق سبال بلس",
+        "name:en": "Sebal Plus Hotel",
+        "stars": "2",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6033317,
+        24.4677458
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق وفادة الزهراء",
+      "name_en": "Wefadah Al Zahra Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945342146",
+      "tags": {
+        "name": "فندق وفادة الزهراء",
+        "name:en": "Wefadah Al Zahra Hotel",
+        "stars": "2",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6035952,
+        24.4677425
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق أمجاد السلام",
+      "name_en": "Amjad Al Salam Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945368774",
+      "tags": {
+        "name": "فندق أمجاد السلام",
+        "name:en": "Amjad Al Salam Hotel",
+        "stars": "3",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6043686,
+        24.4677275
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق رياض الزهراء",
+      "name_en": "Riyadh Al-Zahra Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945384134",
+      "tags": {
+        "name": "فندق رياض الزهراء",
+        "name:en": "Riyadh Al-Zahra Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6042795,
+        24.4686045
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق كرم الخير",
+      "name_en": "Karam Al-Khair Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5945384135",
+      "tags": {
+        "name": "فندق كرم الخير",
+        "name:en": "Karam Al-Khair Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6042646,
+        24.4683945
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق منازل الفلاح الذهبي",
+      "name_en": "Golden Manazil Al-Falah Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5948230619",
+      "tags": {
+        "check_date": "2024-08-06",
+        "name": "فندق منازل الفلاح الذهبي",
+        "name:en": "Golden Manazil Al-Falah Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6053999,
+        24.4670311
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق ميراج السلام",
+      "name_en": "Mirage Al Salam Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5948230620",
+      "tags": {
+        "check_date": "2024-08-06",
+        "name": "فندق ميراج السلام",
+        "name:en": "Mirage Al Salam Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6056467,
+        24.4670356
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق البركة كريم",
+      "name_en": "Al-Baraka Karim Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5948446719",
+      "tags": {
+        "name": "فندق البركة كريم",
+        "name:en": "Al-Baraka Karim Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6032734,
+        24.4665927
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق أبراج طابة الفضي",
+      "name_en": "Silver Tabah Towers Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5948446720",
+      "tags": {
+        "name": "فندق أبراج طابة الفضي",
+        "name:en": "Silver Tabah Towers Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6032813,
+        24.4664271
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق إعمار طيبة",
+      "name_en": "Emaar Taibah Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "EMAAR TAIBAH in the City Center Medina, Walk to Al Haram in 3Min. Conc 24-hour front desk, and express check-in are available at this hotel. Wi-Fi in public areas is free. Other amenities include express check-out. Al Bustan Hotel offers 130 accommodatio",
+      "osm_id": "5948446721",
+      "tags": {
+        "addr:city": "MADINAH",
+        "addr:housenumber": "5064",
+        "addr:postcode": "9309",
+        "addr:street": "Sa'ad Bin Abi Waqaas Street",
+        "air_conditioning": "yes",
+        "branch": "EMAAR ALDIYAFA",
+        "brand": "شركة إعمار للضيافة الفندقية",
+        "description": "EMAAR TAIBAH in the City Center Medina, Walk to Al Haram in 3Min. Conc 24-hour front desk, and express check-in are available at this hotel. Wi-Fi in public areas is free. Other amenities include express check-out. Al Bustan Hotel offers 130 accommodatio",
+        "email": "info@emaaraldiyafa.com",
         "internet_access": "wlan",
-        "name": "Dar Al Eiman Royal Hotel",
-        "name:en": "Dar Al Eiman Royal Hotel",
-        "stars": "5",
+        "internet_access:fee": "customers",
+        "internet_access:ssid": "Emaar Taibah",
+        "name": "فندق إعمار طيبة",
+        "name:en": "Emaar Taibah Hotel",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:coins": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "phone": "+966148252130 - +966148252140",
+        "ref:vatin": "310868198900003",
+        "reservation": "recommended",
+        "rooms": "170",
+        "stars": "2",
         "tourism": "hotel",
-        "website": "https://www.daraleiman.com/",
-        "wheelchair": "yes"
+        "website": "https://emaaraldiyafa.com/",
+        "wheelchair": "limited"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.826808,
-        21.418874
+        39.6035779,
+        24.4666035
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق الاصيل بلازا",
-      "name_en": "فندق الاصيل بلازا",
+      "name": "فندق بلازا إن احد",
+      "name_en": "Plaza Inn Uhud Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "2707114349",
+      "osm_id": "5948446722",
       "tags": {
-        "addr:city": "mecca",
-        "addr:postcode": "24243",
-        "addr:street": "شارع العزيزية",
-        "name": "فندق الاصيل بلازا",
-        "name:ar": "فندق الاصيل بلازا",
+        "name": "فندق بلازا إن احد",
+        "name:en": "Plaza Inn Uhud Hotel",
+        "stars": "3",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8592614,
-        21.4192075
+        39.6035502,
+        24.4664199
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق أثمان الحجاز",
-      "name_en": "فندق أثمان الحجاز",
+      "name": "فندق ديار السلام الفضي",
+      "name_en": "Diyar Al-Salam Silver Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "4293912789",
+      "osm_id": "5948446723",
       "tags": {
-        "addr:street": "التيسير",
-        "name": "فندق أثمان الحجاز",
-        "name:ar": "فندق أثمان الحجاز",
+        "name": "فندق ديار السلام الفضي",
+        "name:en": "Diyar Al-Salam Silver Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.814891,
-        21.4272676
+        39.6038705,
+        24.4665891
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "My hotel",
-      "name_en": "My hotel",
+      "name": "فندق الجاد المدينة",
+      "name_en": "Al-Jad Al-Madinah",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "4311299293",
+      "osm_id": "5948446724",
       "tags": {
-        "name": "My hotel",
+        "name": "فندق الجاد المدينة",
+        "name:en": "Al-Jad Al-Madinah",
+        "stars": "4",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8559001,
-        21.4167786
+        39.6038784,
+        24.4664199
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق نواره",
-      "name_en": "فندق نواره",
+      "name": "فندق ضيافة المختارة",
+      "name_en": "Diyafat Al -Mokhtara Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "4372109993",
+      "osm_id": "5948500087",
       "tags": {
-        "name": "فندق نواره",
-        "name:ar": "فندق نواره",
-        "opening_hours": "24/7",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8460072,
-        21.4233228
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "MashaAllah TabarakAllah",
-      "name_en": "MashaAllah TabarakAllah",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "4394510090",
-      "tags": {
-        "internet_access": "wlan",
-        "name": "MashaAllah TabarakAllah",
-        "name:ar": "MashaAllah TabarakAllah",
-        "name:en": "MashaAllah TabarakAllah",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.7959263,
-        21.4395314
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "روضة الأصيل",
-      "name_en": "روضة الأصيل",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "4432093794",
-      "tags": {
-        "addr:street": "شارع العزيزية",
-        "name": "روضة الأصيل",
-        "name:ar": "روضة الأصيل",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8480828,
-        21.4348409
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق صرح المنامة",
-      "name_en": "sarh almanama hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "4643414289",
-      "tags": {
-        "addr:housenumber": "1",
-        "addr:postcode": "0000",
-        "addr:street": "Al Masjid Al Haram Road",
-        "internet_access": "wlan",
-        "name": "فندق صرح المنامة",
-        "name:ar": "فندق صرح المنامة",
-        "name:en": "sarh almanama hotel",
-        "opening_hours": "24/7",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8307341,
-        21.4348696
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق فجربديع6",
-      "name_en": "فندق فجربديع6",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "4819340621",
-      "tags": {
-        "name": "فندق فجربديع6",
-        "name:ar": "فندق فجربديع6",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8365493,
-        21.4402048
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "اىفجر البديع٦",
-      "name_en": "اىفجر البديع٦",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "4894542621",
-      "tags": {
-        "name": "اىفجر البديع٦",
-        "name:ar": "اىفجر البديع٦",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8345207,
-        21.439621
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "ميار ميسال",
-      "name_en": "ميار ميسال",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "4901255131",
-      "tags": {
-        "addr:street": "Al Hujoon Street",
-        "name": "ميار ميسال",
-        "name:ar": "ميار ميسال",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.7925919,
-        21.4403334
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "منى كونكورد",
-      "name_en": "Mina concord",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "4927525721",
-      "tags": {
-        "addr:street": "Al Masjid Al Haram Road",
-        "name": "منى كونكورد",
-        "name:ar": "منى كونكورد",
-        "name:en": "Mina concord",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8633172,
-        21.4144082
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق صفاء الاخوة 1",
-      "name_en": "Safa Alokhwa hotel 1",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "5049812722",
-      "tags": {
-        "name": "فندق صفاء الاخوة 1",
-        "name:ar": "فندق صفاء الاخوة 1",
-        "name:en": "Safa Alokhwa hotel 1",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8593554,
-        21.4317834
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Hotel Pullmann ZamZam Makkah",
-      "name_en": "Hotel Pullmann ZamZam Makkah",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "5077417300",
-      "tags": {
-        "name": "Hotel Pullmann ZamZam Makkah",
-        "name:en": "Hotel Pullmann ZamZam Makkah",
-        "stars": "5",
+        "name": "فندق ضيافة المختارة",
+        "name:en": "Diyafat Al -Mokhtara Hotel",
+        "phone": "+966-0125488882",
+        "stars": "3",
         "tourism": "hotel",
-        "website": "https://www.pullman-zamzam-makkah.com/"
+        "website": "https://www.deafah.com/"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8249601,
-        21.4183327
+        39.60363,
+        24.464641
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق سويس اوتيل",
-      "name_en": "Swissôtel Makkah",
+      "name": "فندق وردة الصفا",
+      "name_en": "Wardah Al-Safa Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "5077709540",
+      "osm_id": "5948514070",
       "tags": {
-        "addr:city": "Makkah",
-        "addr:street": "Ajyad Street",
-        "email": "reservations.almaqam@swissotel.com",
-        "internet_access": "wlan",
-        "name": "فندق سويس اوتيل",
-        "name:ar": "فندق سويس اوتيل",
-        "name:en": "Swissôtel Makkah",
-        "name:ru": "свисс отел",
-        "phone": "+966 125 718 000",
-        "stars": "5",
-        "tourism": "hotel",
-        "website": "https://www.swissotel.com/hotels/makkah/",
-        "wheelchair": "yes"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8268075,
-        21.41838
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق وريزيدنس موفنبيك برج هاجر",
-      "name_en": "Mövenpick Hotel & Residence Hajar Tower Makkah",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "5077716754",
-      "tags": {
-        "internet_access": "wlan",
-        "name": "فندق وريزيدنس موفنبيك برج هاجر",
-        "name:ar": "فندق وريزيدنس موفنبيك برج هاجر",
-        "name:en": "Mövenpick Hotel & Residence Hajar Tower Makkah",
-        "phone": "+966 12 571 7171",
-        "stars": "5",
-        "tourism": "hotel",
-        "website": "https://www.movenpick.com",
-        "wheelchair": "yes"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8262712,
-        21.4183039
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق جوهرة الادهم",
-      "name_en": "Gawharat eladham hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "5245510021",
-      "tags": {
-        "name": "فندق جوهرة الادهم",
-        "name:ar": "فندق جوهرة الادهم",
-        "name:en": "Gawharat eladham hotel",
+        "name": "فندق وردة الصفا",
+        "name:en": "Wardah Al-Safa Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8221734,
-        21.4117441
+        39.603878,
+        24.4646595
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق سما الضيف",
-      "name_en": "فندق سما الضيف",
+      "name": "فندق السعفة",
+      "name_en": "As'Saafa Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "5381156721",
+      "osm_id": "5948514072",
       "tags": {
-        "name": "فندق سما الضيف",
-        "name:ar": "فندق سما الضيف",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8474287,
-        21.420822
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق سراي اسطنبول 2",
-      "name_en": "فندق سراي اسطنبول 2",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "5398610821",
-      "tags": {
-        "name": "فندق سراي اسطنبول 2",
-        "name:ar": "فندق سراي اسطنبول 2",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8474911,
-        21.4228706
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق فيرمونت مكة الحرم",
-      "name_en": "Fairmont Makkah Clock Royal Tower",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "5432376384",
-      "tags": {
-        "name": "فندق فيرمونت مكة الحرم",
-        "name:ar": "فندق فيرمونت مكة الحرم",
-        "name:en": "Fairmont Makkah Clock Royal Tower",
-        "phone": "+966 12 571 7777",
-        "stars": "5",
+        "name": "فندق السعفة",
+        "name:en": "As'Saafa Hotel",
+        "phone": "+966 481 90 222",
+        "stars": "2",
         "tourism": "hotel",
-        "wikidata": "Q18712428",
-        "wikipedia": "en:Makkah Clock Royal Tower Hotel"
+        "website": "https://www.elafgroup.com/"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.825302,
-        21.4180383
+        39.6035614,
+        24.4648918
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق إيلاف كندة",
-      "name_en": "Elaf Kinda Hotel",
+      "name": "فندق ارجوان روز",
+      "name_en": "Arjwan Rose Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "5434306441",
+      "osm_id": "5948535557",
       "tags": {
-        "email": "info-kinda@elafhotels.com",
-        "name": "فندق إيلاف كندة",
-        "name:ar": "فندق إيلاف كندة",
-        "name:en": "Elaf Kinda Hotel",
-        "stars": "5",
-        "tourism": "hotel",
-        "website": "https://www.elafgroup.com/elaf-hotels-makkah/hotels/elaf-kinda/"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8242938,
-        21.4187809
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "Mawakib al rawdah",
-      "name_en": "Mawakib al rawdah",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "5541131724",
-      "tags": {
-        "name": "Mawakib al rawdah",
-        "name:ar": "Mawakib al rawdah",
+        "name": "فندق ارجوان روز",
+        "name:en": "Arjwan Rose Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.7989168,
-        21.4390045
+        39.6035348,
+        24.4660506
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "أضواء النعيم",
-      "name_en": "أضواء النعيم",
+      "name": "فندق بر الإيمان",
+      "name_en": "Bir Al-Eiman Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "5617483922",
+      "osm_id": "5948535558",
       "tags": {
-        "name": "أضواء النعيم",
+        "name": "فندق بر الإيمان",
+        "name:en": "Bir Al-Eiman Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8343125,
-        21.4403404
+        39.6032569,
+        24.4660567
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "سويت هوتيل المقام",
-      "name_en": "Swissôtel Al Maqam Makkah",
+      "name": "فندق سدرة المديناة",
+      "name_en": "Sidra Al-Madinah Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "6159271844",
+      "osm_id": "5948539273",
       "tags": {
-        "addr:city": "Makkah",
-        "addr:postcode": "24231",
-        "addr:street": "Ibrahim Al Khalil Road",
-        "name": "سويت هوتيل المقام",
-        "name:ar": "سويت هوتيل المقام",
-        "name:en": "Swissôtel Al Maqam Makkah",
-        "phone": "+966 (12) 577 5888",
-        "stars": "5",
-        "tourism": "hotel",
-        "website": "https://www.swissotel.com/hotels/makkah-al-maqam/"
+        "name": "فندق سدرة المديناة",
+        "name:en": "Sidra Al-Madinah Hotel",
+        "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8244146,
-        21.4184744
+        39.6038495,
+        24.4657428
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "Raffles Makkah Palace",
-      "name_en": "Raffles Makkah Palace",
+      "name": "فندق ديار النخيل",
+      "name_en": "Diyar Al-Nakheel Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "6159278110",
+      "osm_id": "5948553877",
       "tags": {
-        "addr:city": "Makkah",
-        "addr:housenumber": "CR9G+V3 Mecca",
-        "addr:postcode": "24231",
-        "addr:street": "Ibrahim Al Khalil Rd",
+        "name": "فندق ديار النخيل",
+        "name:en": "Diyar Al-Nakheel Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6042725,
+        24.4661561
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق سلسبيل الفضي",
+      "name_en": "Salsabil Al-Fadi Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5948553878",
+      "tags": {
+        "name": "فندق سلسبيل الفضي",
+        "name:en": "Salsabil Al-Fadi Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6045537,
+        24.466149
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق حياة السلام الفضي",
+      "name_en": "Silver Haya Al Salam",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5948553879",
+      "tags": {
+        "name": "فندق حياة السلام الفضي",
+        "name:en": "Silver Haya Al Salam",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6045615,
+        24.4659499
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق الفيروز الذهبي",
+      "name_en": "Al-Fayrouz Golden Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5948553880",
+      "tags": {
+        "name": "فندق الفيروز الذهبي",
+        "name:en": "Al-Fayrouz Golden Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6042702,
+        24.4659549
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق كيان المدينة",
+      "name_en": "Kayan Al-Madina Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5948718309",
+      "tags": {
+        "name": "فندق كيان المدينة",
+        "name:en": "Kayan Al-Madina Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6042714,
+        24.4651027
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق لؤلؤة المدينة",
+      "name_en": "Luluat Al-Madinah Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5948718310",
+      "tags": {
+        "name": "فندق لؤلؤة المدينة",
+        "name:en": "Luluat Al-Madinah Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6042748,
+        24.4652948
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق ارجوان السلام",
+      "name_en": "Arguan Al-Salam Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5948736238",
+      "tags": {
+        "name": "فندق ارجوان السلام",
+        "name:en": "Arguan Al-Salam Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6039028,
+        24.464863
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق رؤي الضيافة",
+      "name_en": "Rua Al-Diyafah Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5948762069",
+      "tags": {
+        "name": "فندق رؤي الضيافة",
+        "name:en": "Rua Al-Diyafah Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6053817,
+        24.4655923
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق المختارة الذهبي",
+      "name_en": "Al Mokhtara Golden Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5948762070",
+      "tags": {
         "internet_access": "yes",
-        "internet_access:fee": "no",
-        "name": "Raffles Makkah Palace",
-        "phone": "+966 12571 7888",
-        "stars": "5",
+        "name": "فندق المختارة الذهبي",
+        "name:en": "Al Mokhtara Golden Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6050793,
+        24.4657627
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "(i1) فندق روز هوليدي",
+      "name_en": "Rose Holiday (i1) Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5948807671",
+      "tags": {
+        "name": "(i1) فندق روز هوليدي",
+        "name:en": "Rose Holiday (i1) Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6053941,
+        24.4663892
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق المختارة الماسي",
+      "name_en": "Al-Mokhtara Diamond Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "5948807672",
+      "tags": {
+        "addr:city": "Al Madinah",
+        "addr:housenumber": "359",
+        "addr:street": "شارع أبي هريرة",
+        "name": "فندق المختارة الماسي",
+        "name:en": "Al-Mokhtara Diamond Hotel",
         "tourism": "hotel",
-        "website": "https://www.raffles.com/makkah/"
+        "website": "https://almokhtaragroup.com/al-mokhtara-diamond/"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8249791,
-        21.4192239
+        39.6053832,
+        24.4665769
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "Al Marwa Rayhaan by Rotana",
-      "name_en": "Al Marwa Rayhaan by Rotana",
+      "name": "فندق سما الذهبي",
+      "name_en": "Sama Al-Zahabi Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "6159278111",
+      "osm_id": "5948807673",
       "tags": {
-        "name": "Al Marwa Rayhaan by Rotana",
-        "phone": "+966 12 571 4444",
-        "stars": "5",
-        "tourism": "hotel",
-        "website": "https://www.rotana.com"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8260952,
-        21.4191648
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "دار الغفران- فندق برج الصفاء",
-      "name_en": "Dar Al Ghufran - Al Safwah Towers Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "6159368716",
-      "tags": {
-        "name": "دار الغفران- فندق برج الصفاء",
-        "name:ar": "دار الغفران- فندق برج الصفاء",
-        "name:en": "Dar Al Ghufran - Al Safwah Towers Hotel",
-        "phone": "+966 12 577 7773",
-        "stars": "5",
-        "tourism": "hotel",
-        "website": "https://www.daralghufran.com/makkah"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8265113,
-        21.4193627
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق الزاملية",
-      "name_en": "فندق الزاملية",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "6214479887",
-      "tags": {
-        "name": "فندق الزاملية",
+        "name": "فندق سما الذهبي",
+        "name:en": "Sama Al-Zahabi Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8128773,
-        21.4404576
+        39.6051034,
+        24.4665745
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فال التاج",
-      "name_en": "فال التاج",
+      "name": "فندق رحاب هارموني",
+      "name_en": "Rehab Harmony Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "6253172086",
+      "osm_id": "5949389197",
       "tags": {
-        "name": "فال التاج",
+        "addr:housenumber": "384",
+        "addr:street": "Zaynab bint Jahsh Street",
+        "name": "فندق رحاب هارموني",
+        "name:en": "Rehab Harmony Hotel",
+        "stars": "2",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8067005,
-        21.4248525
+        39.6060191,
+        24.4638378
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق رفاف المشاعر الفندقية",
-      "name_en": "فندق رفاف المشاعر الفندقية",
+      "name": "فندق ديار المدينة",
+      "name_en": "Diyar Al-Madina Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "6640154287",
+      "osm_id": "5949389198",
       "tags": {
-        "addr:street": "Bir Balilah Street",
-        "email": "refaf.almashaer@hotmail.com",
-        "internet_access": "wlan",
-        "name": "فندق رفاف المشاعر الفندقية",
-        "name:fr": "Refaf almashaer alfoundokia",
-        "phone": "00966125757577",
+        "name": "فندق ديار المدينة",
+        "name:en": "Diyar Al-Madina Hotel",
+        "stars": "3",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8295054,
-        21.4134955
+        39.6063196,
+        24.4638414
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "الزائر الماسي",
-      "name_en": "zaher al massi",
+      "name": "فندق طيبة روز",
+      "name_en": "Taiba Rose Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "6668264385",
+      "osm_id": "5949389199",
       "tags": {
-        "addr:street": "Pedestrian Road",
-        "internet_access": "wlan",
-        "name": "الزائر الماسي",
-        "name:en": "zaher al massi",
-        "opening_hours": "24/7",
+        "name": "فندق طيبة روز",
+        "name:en": "Taiba Rose Hotel",
+        "stars": "3",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8550779,
-        21.4231239
+        39.6060309,
+        24.4636651
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "قفيص النوري",
-      "name_en": "قفيص النوري",
+      "name": "فندق روضة المختارة",
+      "name_en": "Rawdah Al-Mokhtara Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "6670038586",
+      "osm_id": "5949389200",
       "tags": {
-        "name": "قفيص النوري",
+        "name": "فندق روضة المختارة",
+        "name:en": "Rawdah Al-Mokhtara Hotel",
+        "stars": "2",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8571621,
-        21.41814
+        39.6063275,
+        24.4636615
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "القفيص الذهبي",
-      "name_en": "القفيص الذهبي",
+      "name": "فندق سلسبيل الذهبي",
+      "name_en": "Salsabil Al-Zahabi Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "6684925585",
+      "osm_id": "5949393910",
       "tags": {
-        "name": "القفيص الذهبي",
+        "name": "فندق سلسبيل الذهبي",
+        "name:en": "Salsabil Al-Zahabi Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8551391,
-        21.4173048
+        39.6059716,
+        24.4634455
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق برج الوقار",
-      "name_en": "فندق برج الوقار",
+      "name": "فندق جوار طيبة",
+      "name_en": "Jawar Taibah Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "8770150628",
+      "osm_id": "5949418019",
       "tags": {
-        "name": "فندق برج الوقار",
+        "name": "فندق جوار طيبة",
+        "name:en": "Jawar Taibah Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8320395,
-        21.4367601
+        39.6069856,
+        24.4636317
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق انوار المجد",
-      "name_en": "فندق انوار المجد",
+      "name": "فندق رؤى طيبة",
+      "name_en": "Rua Taibah Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "9587911834",
+      "osm_id": "5949418020",
       "tags": {
-        "name": "فندق انوار المجد",
+        "name": "فندق رؤى طيبة",
+        "name:en": "Rua Taibah Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8066333,
-        21.4267363
+        39.6067269,
+        24.4638234
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "الفجر السعيد ٥",
-      "name_en": "الفجر السعيد ٥",
+      "name": "فندق نجوم المدينة",
+      "name_en": "Al Madinah Stars Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "10086693217",
+      "osm_id": "5949418021",
       "tags": {
-        "name": "الفجر السعيد ٥",
+        "name": "فندق نجوم المدينة",
+        "name:en": "Al Madinah Stars Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8203663,
-        21.4148111
+        39.6069879,
+        24.4638234
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق أميرة معتوق حسن خياط",
-      "name_en": "Amira Matuk Hasan Khaiat Hotel",
+      "name": "فندق برادايس",
+      "name_en": "Paradise Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "10600566408",
+      "osm_id": "5949418022",
       "tags": {
-        "name": "فندق أميرة معتوق حسن خياط",
-        "name:en": "Amira Matuk Hasan Khaiat Hotel",
+        "name": "فندق برادايس",
+        "name:en": "Paradise Hotel",
+        "stars": "2",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8323419,
-        21.4209519
+        39.6067348,
+        24.4636435
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق بكر حسن حبحب",
-      "name_en": "Bakr Hasan Habhab Hotel",
+      "name": "فندق المختارة الغربي",
+      "name_en": "Al-Mukhtara Al Gharbi",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "10600687541",
+      "osm_id": "5951659021",
       "tags": {
-        "name": "فندق بكر حسن حبحب",
-        "name:ar": "فندق بكر حسن حبحب",
-        "name:en": "Bakr Hasan Habhab Hotel",
+        "name": "فندق المختارة الغربي",
+        "name:en": "Al-Mukhtara Al Gharbi",
+        "stars": "3",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8323489,
-        21.4203015
+        39.6035666,
+        24.4681419
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق احلی القصور ٣",
-      "name_en": "Ahla Al-Qswr 3 Hotel",
+      "name": "فندق حياة الهدى",
+      "name_en": "Hayah Al-Huda Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "10600738296",
+      "osm_id": "5951659022",
       "tags": {
-        "name": "فندق احلی القصور ٣",
-        "name:en": "Ahla Al-Qswr 3 Hotel",
+        "name": "فندق حياة الهدى",
+        "name:en": "Hayah Al-Huda Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8323595,
-        21.4202819
+        39.603548,
+        24.4683752
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق دار المنافع",
-      "name_en": "Dar al manafa",
+      "name": "فندق جراند الزوار",
+      "name_en": "Grand Zowar Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "10858149222",
+      "osm_id": "5951659023",
       "tags": {
-        "name": "فندق دار المنافع",
-        "name:en": "Dar al manafa",
-        "name:ru": "Дар аль-манафия",
+        "name": "فندق جراند الزوار",
+        "name:en": "Grand Zowar Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.858757,
-        21.421256
+        39.6032848,
+        24.4682654
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "Hotel",
-      "name_en": "azizia building",
+      "name": "فندق سرايا طابة",
+      "name_en": "Saraya Taba Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "11002525805",
+      "osm_id": "6030762227",
       "tags": {
-        "name": "Hotel",
-        "name:en": "azizia building",
+        "name": "فندق سرايا طابة",
+        "name:en": "Saraya Taba Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.863558,
-        21.4321671
+        39.6143057,
+        24.4645141
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "أبراج معاد",
-      "name_en": "Abraj Maad",
+      "name": "فندق منازل الأسواف",
+      "name_en": "Manazil Al Aswaf",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "11005547740",
+      "osm_id": "6031553043",
       "tags": {
-        "name": "أبراج معاد",
-        "name:en": "Abraj Maad",
+        "name": "فندق منازل الأسواف",
+        "name:en": "Manazil Al Aswaf",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8326416,
-        21.4215643
+        39.609244,
+        24.4638674
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق رحلتي",
-      "name_en": "فندق رحلتي",
+      "name": "فندق صفا طيبه",
+      "name_en": "Safa Taiba Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "11083811905",
+      "osm_id": "6031587072",
       "tags": {
-        "addr:street": "Al Balad Al Amin Street",
-        "internet_access": "wlan",
-        "name": "فندق رحلتي",
-        "phone": "057517301",
+        "name": "فندق صفا طيبه",
+        "name:en": "Safa Taiba Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8659106,
-        21.4042937
+        39.6089092,
+        24.4642596
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "Fajr Al Badea 1 Hotel",
-      "name_en": "Fajr Al Badea 1 Hotel",
+      "name": "فندق براء طيبه",
+      "name_en": "Bara Taiba Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "11803514242",
+      "osm_id": "6031587073",
       "tags": {
-        "bar": "yes",
-        "brand": "Refaa",
-        "email": "hujuzaty@gmail.com",
+        "name": "فندق براء طيبه",
+        "name:en": "Bara Taiba Hotel",
+        "stars": "1",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6086707,
+        24.464495
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق روتانا المسك",
+      "name_en": "Rotana Al-Mesk Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "6031666598",
+      "tags": {
+        "name": "فندق روتانا المسك",
+        "name:en": "Rotana Al-Mesk Hotel",
+        "stars": "3",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6092705,
+        24.4642703
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق جوار المدينة",
+      "name_en": "Jiwar Al-Madina Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "6031670339",
+      "tags": {
+        "name": "فندق جوار المدينة",
+        "name:en": "Jiwar Al-Madina Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.609536,
+        24.4642508
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق سنابل المدينة",
+      "name_en": "Sanabel Al Madina Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "6231238056",
+      "tags": {
+        "name": "فندق سنابل المدينة",
+        "name:en": "Sanabel Al Madina Hotel",
+        "phone": "+966 4 829 0400",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6121427,
+        24.4727874
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق صفوة المدينة",
+      "name_en": "Safwat Al-Madina Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "6231238057",
+      "tags": {
+        "name": "فندق صفوة المدينة",
+        "name:en": "Safwat Al-Madina Hotel",
+        "stars": "4",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6124296,
+        24.4727838
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق جراند بلازا المدينة",
+      "name_en": "Grand Plaza Al-Madinah Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "6231242673",
+      "tags": {
+        "addr:city": "Al Madinah al Munawwarah",
+        "addr:housenumber": "3079",
+        "addr:postcode": "42311",
+        "name": "فندق جراند بلازا المدينة",
+        "name:en": "Grand Plaza Al-Madinah Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6129523,
+        24.4721539
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق نزل رويال إن",
+      "name_en": "Nozol Royal Inn Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "6231285785",
+      "tags": {
+        "brand": "Royal Inn",
+        "name": "فندق نزل رويال إن",
+        "name:en": "Nozol Royal Inn Hotel",
+        "stars": "4",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6104785,
+        24.4728029
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق المرسى",
+      "name_en": "Al-Marsa Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "6235016219",
+      "tags": {
+        "name": "فندق المرسى",
+        "name:en": "Al-Marsa Hotel",
+        "stars": "2",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6089713,
+        24.4734628
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق درة المدينة",
+      "name_en": "Durrat Al-Madinah Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "6235025653",
+      "tags": {
+        "name": "فندق درة المدينة",
+        "name:en": "Durrat Al-Madinah Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6091317,
+        24.4734322
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق مرجان المدينة",
+      "name_en": "Mercan Medine Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "6237119158",
+      "tags": {
+        "name": "فندق مرجان المدينة",
+        "name:en": "Mercan Medine Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6042491,
+        24.4655114
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق روابي الزهراء",
+      "name_en": "Rawabi Al Zahra Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "6248968608",
+      "tags": {
+        "check_date": "2024-12-23",
+        "name": "فندق روابي الزهراء",
+        "name:en": "Rawabi Al Zahra Hotel",
+        "stars": "2",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.604089,
+        24.467016
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق منازل الرحمة",
+      "name_en": "Manazel Al-Rahma Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "6248968609",
+      "tags": {
+        "check_date": "2024-08-06",
+        "name": "فندق منازل الرحمة",
+        "name:en": "Manazel Al-Rahma Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6042687,
+        24.4670159
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق محمدية الزهراء",
+      "name_en": "Mohamdia Al Zahra Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "6251482041",
+      "tags": {
+        "name": "فندق محمدية الزهراء",
+        "name:en": "Mohamdia Al Zahra Hotel",
+        "stars": "2",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6055648,
+        24.463698
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق سبال",
+      "name_en": "Sebal Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "6266921991",
+      "tags": {
+        "name": "فندق سبال",
+        "name:en": "Sebal Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6063035,
+        24.463439
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق ديار الهدى",
+      "name_en": "Diyar Al Huda Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "6781622043",
+      "tags": {
+        "name": "فندق ديار الهدى",
+        "name:en": "Diyar Al Huda Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6038645,
+        24.4660094
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "(i2) فندق روز هوليدي",
+      "name_en": "Rose Holiday (i2) Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "6781635385",
+      "tags": {
+        "name": "(i2) فندق روز هوليدي",
+        "name:en": "Rose Holiday (i2) Hotel",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6051132,
+        24.4663972
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق جلنار",
+      "name_en": "فندق جلنار",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "6874939907",
+      "tags": {
+        "name": "فندق جلنار",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6032319,
+        24.4873635
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق ديار السلام",
+      "name_en": "Diyar Al-Salam Hotel",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "7395680502",
+      "tags": {
+        "name": "فندق ديار السلام",
+        "name:en": "Diyar Al-Salam Hotel",
+        "stars": "3",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6041156,
+        24.4677382
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق الدخيل بلازا",
+      "name_en": "فندق الدخيل بلازا",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "8018165012",
+      "tags": {
+        "name": "فندق الدخيل بلازا",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6219127,
+        24.4598119
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق ارتال طيبة",
+      "name_en": "فندق ارتال طيبة",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "8018170535",
+      "tags": {
+        "name": "فندق ارتال طيبة",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.6196525,
+        24.4597301
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "فندق سعيد",
+      "name_en": "فندق سعيد",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "Hotel di area Masjidil Haram.",
+      "osm_id": "8018999290",
+      "tags": {
+        "name": "فندق سعيد",
+        "tourism": "hotel"
+      }
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        39.604498,
+        24.4615894
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "أجنحة فيردان للوحدات السكنية",
+      "name_en": "أجنحة فيردان للوحدات السكنية",
+      "type": "Hotel",
+      "icon": "fa-hotel",
+      "description": "أجنحة فاخرة ومؤثثة بأرقى التجهيزات, لراحتكم",
+      "osm_id": "8987842247",
+      "tags": {
+        "addr:city": "المدينة المنورة",
+        "addr:place": "مندوس بنت خلاد - العريض",
+        "addr:postcode": "42313",
+        "addr:street": "حي بني عبدالاشهل",
+        "description": "أجنحة فاخرة ومؤثثة بأرقى التجهيزات, لراحتكم",
+        "email": "info@verdun-suites.com",
         "internet_access": "yes",
-        "internet_access:fee": "no",
-        "name": "Fajr Al Badea 1 Hotel",
-        "opening_hours": "24/7",
-        "phone": "+966536161330",
+        "name": "أجنحة فيردان للوحدات السكنية",
+        "opening_hours": "24 Hours",
+        "phone": "014-815-3391",
+        "rooms": "24",
+        "smoking": "outside",
         "tourism": "hotel",
-        "website": "https://newhaj.com/places/fajr-al-badea-1-hotel/"
+        "website": "https://www.verdun-suites.com/",
+        "wheelchair": "limited"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8555009,
-        21.423661
+        39.633286,
+        24.4759441
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "ابراج المنسي",
-      "name_en": "Abraj al Mansi",
+      "name": "فندق البلد روافد",
+      "name_en": "Mysk Touch Al Balad Rawafed Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "11871306927",
+      "osm_id": "10264117410",
       "tags": {
-        "alt_name": "Abrāj al Mansī",
-        "alt_name:ar": "أبراج المنسي",
-        "name": "ابراج المنسي",
-        "name:ar": "ابراج المنسي",
-        "name:en": "Abraj al Mansi",
-        "source": "GNS",
+        "name": "فندق البلد روافد",
+        "name:en": "Mysk Touch Al Balad Rawafed Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8189051,
-        21.40437
+        39.609849,
+        24.4651881
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق السنود المعالی",
-      "name_en": "Snood al-MaAli Hotel",
+      "name": "فندق طيبة هيلز",
+      "name_en": "Taibah Hills Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "11968994569",
+      "osm_id": "11301532769",
       "tags": {
-        "name": "فندق السنود المعالی",
-        "name:en": "Snood al-MaAli Hotel",
-        "name:fa": "هتل سُنود المعالی",
+        "name": "فندق طيبة هيلز",
+        "name:en": "Taibah Hills Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8575919,
-        21.4138108
+        39.6038636,
+        24.4677443
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق نسائم الجوري",
-      "name_en": "Nasayim aljoury hotel",
+      "name": "فندق المغربي",
+      "name_en": "Al-mugharabi hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12396789190",
+      "osm_id": "11445058669",
       "tags": {
-        "name": "Nasayim aljoury hotel فندق نسائم الجوري",
-        "name:ar": "فندق نسائم الجوري",
-        "name:en": "Nasayim aljoury hotel",
+        "name": "فندق المغربي",
+        "name:en": "Al-mugharabi hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8300958,
-        21.407369
+        39.6051134,
+        24.4853222
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق أبراج القصواء",
-      "name_en": "Al Qasswa Tower Hotel",
+      "name": "زها طيبة",
+      "name_en": "Zaha Taiba",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12396813611",
+      "osm_id": "11510100470",
       "tags": {
-        "name": "Al Qasswa Tower Hotel فندق أبراج القصواء",
-        "name:ar": "فندق أبراج القصواء",
-        "name:en": "Al Qasswa Tower Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8301682,
-        21.4069195
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق قصر العليان",
-      "name_en": "Al Olayan Palace Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12396813694",
-      "tags": {
-        "name": "Al Olayan Palace Hotel فندق قصر العليان",
-        "name:ar": "فندق قصر العليان",
-        "name:en": "Al Olayan Palace Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8303036,
-        21.4065037
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق نجمة أجياد",
-      "name_en": "Najmat Ajyad Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12396824811",
-      "tags": {
-        "name": "Najmat Ajyad Hotel فندق نجمة أجياد",
-        "name:ar": "فندق نجمة أجياد",
-        "name:en": "Najmat Ajyad Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8307033,
-        21.4065037
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق غدير أجياد",
-      "name_en": "Ghadeer Ajyad Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12396824841",
-      "tags": {
-        "name": "فندق غدير أجياد",
-        "name:ar": "فندق غدير أجياد",
-        "name:en": "Ghadeer Ajyad Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8295935,
-        21.4059119
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق برج السماح",
-      "name_en": "Samah Tower Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12396852546",
-      "tags": {
-        "name": "Samah Tower Hotel فندق برج السماح",
-        "name:ar": "فندق برج السماح",
-        "name:en": "Samah Tower Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8292911,
-        21.4077523
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق النخبة 2",
-      "name_en": "Al Nokbha Hotel 2",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12396855440",
-      "tags": {
-        "name": "Al Nokbha Hotel 2 فندق النخبة",
-        "name:ar": "فندق النخبة 2",
-        "name:en": "Al Nokbha Hotel 2",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8293199,
-        21.4075557
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق بتول أجياد",
-      "name_en": "Batoul Ajyad Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12396855457",
-      "tags": {
-        "name": "Batoul Ajyad Hotel فندق بتول أجياد",
-        "name:ar": "فندق بتول أجياد",
-        "name:en": "Batoul Ajyad Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8293769,
-        21.4073615
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق روضة البيت",
-      "name_en": "Rawdat Al Bait Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12396868904",
-      "tags": {
-        "name": "Rawdat Al Bait Hotel فندق روضة البيت",
-        "name:ar": "فندق روضة البيت",
-        "name:en": "Rawdat Al Bait Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8297618,
-        21.4086688
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "دار المنافع للخدمات الفندقية",
-      "name_en": "Dar almanafea for hotel service",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12397197905",
-      "tags": {
-        "name": "دار المنافع للخدمات الفندقية",
-        "name:ar": "دار المنافع للخدمات الفندقية",
-        "name:en": "Dar almanafea for hotel service",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8288894,
-        21.4097088
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق عالية أجياد",
-      "name_en": "Aleyat ajyad Hote",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12397197906",
-      "tags": {
-        "name": "Aleyat ajyad Hotel فندق عالية أجياد",
-        "name:ar": "فندق عالية أجياد",
-        "name:en": "Aleyat ajyad Hote",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8289075,
-        21.4096139
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق النخبة 1",
-      "name_en": "Al Nokbha Hotel 1",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12397197907",
-      "tags": {
-        "name": "Al Nokbha Hotel 1 فندق النخبة",
-        "name:ar": "فندق النخبة 1",
-        "name:en": "Al Nokbha Hotel 1",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8289853,
-        21.4092743
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق رؤيا روابي أجياد",
-      "name_en": "Rawabi ajyad Hotel Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12397197931",
-      "tags": {
-        "name": "Rawabi ajyad Hotel فندق رؤيا روابي أجياد",
-        "name:ar": "فندق رؤيا روابي أجياد",
-        "name:en": "Rawabi ajyad Hotel Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8289354,
-        21.4095178
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق ريحان المشاعر",
-      "name_en": "Rayhaan almashaer Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12397197932",
-      "tags": {
-        "name": "Rayhaan almashaer Hotel فندق ريحان المشاعر",
-        "name:ar": "فندق ريحان المشاعر",
-        "name:en": "Rayhaan almashaer Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8289568,
-        21.4094516
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق سنود الريان",
-      "name_en": "Snood Al Rayan Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12397198040",
-      "tags": {
-        "name": "Snood Al Rayan Hotel فندق سنود الريان",
-        "name:ar": "فندق سنود الريان",
-        "name:en": "Snood Al Rayan Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8289974,
-        21.409117
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق شركاء الخير أجياد",
-      "name_en": "Shuraka a al khair ajyad Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12397198059",
-      "tags": {
-        "name": "Shuraka a al khair ajyad Hotel فندق شركاء الخير أجياد",
-        "name:ar": "فندق شركاء الخير أجياد",
-        "name:en": "Shuraka a al khair ajyad Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8290792,
-        21.4086819
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق إعمار ايليت",
-      "name_en": "Emaar Elite Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12397209008",
-      "tags": {
-        "name": "اعمار ايليت",
-        "name:ar": "فندق إعمار ايليت",
-        "name:en": "Emaar Elite Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8295233,
-        21.4094088
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق شرفة الطلائع",
-      "name_en": "shurfat altalyie Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12397465286",
-      "tags": {
-        "name": "shurfat altalyie Hotel فندق شرفة الطلائع",
-        "name:ar": "فندق شرفة الطلائع",
-        "name:en": "shurfat altalyie Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8297893,
-        21.4096714
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "ابراج نوازي الفندقية",
-      "name_en": "Nawazi hotel towers",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12397557548",
-      "tags": {
-        "name": "Nawazi hotel towers ابراج نوازي الفندقية",
-        "name:ar": "ابراج نوازي الفندقية",
-        "name:en": "Nawazi hotel towers",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8293421,
-        21.4104442
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق قلعة اجياد",
-      "name_en": "Castle ajyad Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12397561818",
-      "tags": {
-        "name": "فندق قلعة اجياد",
-        "name:ar": "فندق قلعة اجياد",
-        "name:en": "Castle ajyad Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8294198,
-        21.4099136
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق شرفة العالم الفندقية",
-      "name_en": "shurfat Al Alam Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12397561880",
-      "tags": {
-        "name": "shurfat Al Alam Hotel فندق شرفة العالم الفندقية",
-        "name:ar": "فندق شرفة العالم الفندقية",
-        "name:en": "shurfat Al Alam Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.829741,
-        21.4098587
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق شرفة مكة",
-      "name_en": "shurfat altalyie Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12397561893",
-      "tags": {
-        "name": "shurfat makkah Hotel فندق شرفة مكة",
-        "name:ar": "فندق شرفة مكة",
-        "name:en": "shurfat altalyie Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8296877,
-        21.4096158
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق اراك اجياد",
-      "name_en": "Arak Ajyad Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12397676837",
-      "tags": {
-        "name": "Arak Ajyad Hotel فندق اراك اجياد",
-        "name:ar": "فندق اراك اجياد",
-        "name:en": "Arak Ajyad Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8305745,
-        21.4046059
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق ميرا اوان",
-      "name_en": "Mira Awan Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12397792723",
-      "tags": {
-        "name": "Mira Awan Hotel فندق ميرا اوان",
-        "name:ar": "فندق ميرا اوان",
-        "name:en": "Mira Awan Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8307006,
-        21.403813
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق رحاب المروة",
-      "name_en": "Rehab almarwa Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12397792750",
-      "tags": {
-        "name": "Rehab almarwa Hotel فندق رحاب المروة",
-        "name:ar": "فندق رحاب المروة",
-        "name:en": "Rehab almarwa Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8306872,
-        21.4039766
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "برج الحرم 4 السكني",
-      "name_en": "Al Haram 4 Residential Tower",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12398011229",
-      "tags": {
-        "name": "Al Haram 4 Residential Tower برج الحرم 4 السكني",
-        "name:ar": "برج الحرم 4 السكني",
-        "name:en": "Al Haram 4 Residential Tower",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8308891,
-        21.4029414
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فنادق سجى",
-      "name_en": "saja hotels",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12406667872",
-      "tags": {
-        "name": "فنادق سجى",
-        "name:ar": "فنادق سجى",
-        "name:en": "saja hotels",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8261891,
-        21.4035708
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق رواسى الطائف",
-      "name_en": "Rawasi Taif Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12406772242",
-      "tags": {
-        "name": "Rawasi Taif Hotel فندق رواسى الطائف",
-        "name:ar": "فندق رواسى الطائف",
-        "name:en": "Rawasi Taif Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8313497,
-        21.4038717
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق الرفاع ريع بخش",
-      "name_en": "Riffa Riy Bakhsh Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12406935949",
-      "tags": {
-        "name": "Riffa Riy Bakhsh Hotel فندق الرفاع ريع بخش",
-        "name:ar": "فندق الرفاع ريع بخش",
-        "name:en": "Riffa Riy Bakhsh Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8325124,
-        21.4058626
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق روابي الهجر",
-      "name_en": "Rawabi Al Hajr Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12406944349",
-      "tags": {
-        "name": "Rawabi Al Hajr Hotel فندق روابي الهجر",
-        "name:ar": "فندق روابي الهجر",
-        "name:en": "Rawabi Al Hajr Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8324682,
-        21.4049442
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق نبع طيبة 4",
-      "name_en": "Naba Taiba Hotel 4",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12406944366",
-      "tags": {
-        "name": "Naba Taiba Hotel 4 فندق نبع طيبة",
-        "name:ar": "فندق نبع طيبة 4",
-        "name:en": "Naba Taiba Hotel 4",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8325205,
-        21.4053276
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق حياة مكارم اجياد",
-      "name_en": "Hayatt Makarem Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12406944400",
-      "tags": {
-        "name": "فندق حياة مكارم اجياد",
-        "name:ar": "فندق حياة مكارم اجياد",
-        "name:en": "Hayatt Makarem Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8321973,
-        21.4055948
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق نبع طيبة 3",
-      "name_en": "Naba Taiba Hotel 3",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12406944401",
-      "tags": {
-        "name": "Naba Taiba Hotel 3 فندق نبع طيبة",
-        "name:ar": "فندق نبع طيبة 3",
-        "name:en": "Naba Taiba Hotel 3",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8321007,
-        21.4055086
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق النسيم مودة",
-      "name_en": "Al Naseem Mawaddah Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12406944469",
-      "tags": {
-        "name": "Al Naseem Mawaddah Hotel فندق النسيم مودة",
-        "name:ar": "فندق النسيم مودة",
-        "name:en": "Al Naseem Mawaddah Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8317601,
-        21.4052626
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق روابي السلام",
-      "name_en": "Rawabi Salam Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12407519821",
-      "tags": {
-        "name": "Rawabi Salam Hotel فندق روابي سلام",
-        "name:ar": "فندق روابي السلام",
-        "name:en": "Rawabi Salam Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8336967,
-        21.4062827
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق الأصيل بلازا",
-      "name_en": "Al Aseel Plaza Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12407565113",
-      "tags": {
-        "name": "Al Aseel Plaza Hotel فندق الأصيل بلازا",
-        "name:ar": "فندق الأصيل بلازا",
-        "name:en": "Al Aseel Plaza Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8343215,
-        21.4065624
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق ساري مرمرة",
-      "name_en": "Sari Marmarah Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12407674325",
-      "tags": {
-        "name": "Sari Marmarah Hotel فندق ساري مرمرة",
-        "name:ar": "فندق ساري مرمرة",
-        "name:en": "Sari Marmarah Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.83233,
-        21.4063277
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "صدف الخير للشقق المخدومة",
-      "name_en": "sadaf al khair serviced unit",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12407707751",
-      "tags": {
-        "name": "Sadaf al khair serviced unit صدف الخير للشقق المخدومة",
-        "name:ar": "صدف الخير للشقق المخدومة",
-        "name:en": "sadaf al khair serviced unit",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8325215,
-        21.4063758
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق الأصيل رفادة",
-      "name_en": "Alaseel Refadah hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12424515704",
-      "tags": {
-        "name": "Alaseel Refadah hotel فندق الأصيل رفادة",
-        "name:ar": "فندق الأصيل رفادة",
-        "name:en": "Alaseel Refadah hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8339595,
-        21.4065574
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق الأصيل سقاية",
-      "name_en": "alaseel saqaia hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12424515794",
-      "tags": {
-        "name": "alaseel saqaia hotel فندق الأصيل سقاية",
-        "name:ar": "فندق الأصيل سقاية",
-        "name:en": "alaseel saqaia hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8339608,
-        21.406937
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق السيف",
-      "name_en": "alsayfa hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12424535573",
-      "tags": {
-        "name": "alsayfa hotel فندق السيف",
-        "name:ar": "فندق السيف",
-        "name:en": "alsayfa hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8344396,
-        21.4077736
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "نزل روابي الوهج",
-      "name_en": "nazel rawabi al wahaj",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12425576869",
-      "tags": {
-        "name": "nazel rawabi al wahaj نزل روابي الوهج",
-        "name:ar": "نزل روابي الوهج",
-        "name:en": "nazel rawabi al wahaj",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8326875,
-        21.4069969
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق زاد اجياد",
-      "name_en": "Zad Ajyad hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12425576883",
-      "tags": {
-        "name": "فندق زاد اجياد",
-        "name:ar": "فندق زاد اجياد",
-        "name:en": "Zad Ajyad hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8326908,
-        21.4067347
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "شقق الفندقية",
-      "name_en": "Hotel Apartments",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12425591920",
-      "tags": {
-        "name": "شقق الفندقية",
-        "name:ar": "شقق الفندقية",
-        "name:en": "Hotel Apartments",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8332447,
-        21.4072442
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق فرسان الأصيل",
-      "name_en": "Fursan alaseel hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12425591921",
-      "tags": {
-        "name": "فندق فرسان الأصيل",
-        "name:ar": "فندق فرسان الأصيل",
-        "name:en": "Fursan alaseel hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8330113,
-        21.4067172
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق لؤلؤة الحميري",
-      "name_en": "Luluat Al Hamiri Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12425591995",
-      "tags": {
-        "name": "Luluat Al Hamiri Hotel فندق لؤلؤة الحميري",
-        "name:ar": "فندق لؤلؤة الحميري",
-        "name:en": "Luluat Al Hamiri Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.833419,
-        21.4070219
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق نسك كدي",
-      "name_en": "Nusuk Kudai Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12512075247",
-      "tags": {
-        "name": "Nusuk Kudai Hotel فندق نسك كدي",
-        "name:ar": "فندق نسك كدي",
-        "name:en": "Nusuk Kudai Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8319505,
-        21.406259
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق ايثار الوهج",
-      "name_en": "Hotel Ethar Al Wahj",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12512075248",
-      "tags": {
-        "name": "فندق ايثار الوهج",
-        "name:ar": "فندق ايثار الوهج",
-        "name:en": "Hotel Ethar Al Wahj",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8321222,
-        21.4059843
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق شموخ المقام",
-      "name_en": "Shumookh Al Maqam Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12512075249",
-      "tags": {
-        "name": "Shumookh Al Maqam Hotel فندق شموخ المقام",
-        "name:ar": "فندق شموخ المقام",
-        "name:en": "Shumookh Al Maqam Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8318928,
-        21.4058657
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق دائري المجد",
-      "name_en": "dairy almajd hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12806420624",
-      "tags": {
-        "name": "فندق دائري المجد",
-        "name:ar": "فندق دائري المجد",
-        "name:en": "dairy almajd hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.824901,
-        21.4117889
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق جوهرة المجد",
-      "name_en": "Jawharet almajd hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12806420625",
-      "tags": {
-        "name": "Jawharet almajd hotel فندق جوهرة المجد",
-        "name:ar": "فندق جوهرة المجد",
-        "name:en": "Jawharet almajd hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8244752,
-        21.4118891
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق ميعاد المجد",
-      "name_en": "Miaad almajd hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12806420630",
-      "tags": {
-        "name": "Miaad almajd hotel فندق ميعاد المجد",
-        "name:ar": "فندق ميعاد المجد",
-        "name:en": "Miaad almajd hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8247715,
-        21.4119469
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق كورت يارد ماريوت",
-      "name_en": "Courtyard Marriott Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12806456550",
-      "tags": {
-        "name": "فندق كورت يارد ماريوت",
-        "name:ar": "فندق كورت يارد ماريوت",
-        "name:en": "Courtyard Marriott Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8307764,
-        21.4042113
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق سيف المجد",
-      "name_en": "Saif almajd hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12806456559",
-      "tags": {
-        "name": "Saif almajd hotel فندق سيف المجد",
-        "name:ar": "فندق سيف المجد",
-        "name:en": "Saif almajd hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8246636,
-        21.4123857
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق اعمار الخير الذهبي",
-      "name_en": "Emaar Al Khair Golden Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12806782769",
-      "tags": {
-        "name": "اعمار الخير الذهبي",
-        "name:ar": "فندق اعمار الخير الذهبي",
-        "name:en": "Emaar Al Khair Golden Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8232661,
-        21.4116201
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق غندورة",
-      "name_en": "gandourah Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12809347166",
-      "tags": {
-        "name": "فندق غندورة",
-        "name:ar": "فندق غندورة",
-        "name:en": "gandourah Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8243283,
-        21.4132716
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق نجمة الخليج",
-      "name_en": "najmat ul khalij Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12809347185",
-      "tags": {
-        "name": "najmat ul khalij Hotel فندق نجمة الخليج",
-        "name:ar": "فندق نجمة الخليج",
-        "name:en": "najmat ul khalij Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8242136,
-        21.4130743
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق رحاب البستان 3",
-      "name_en": "rihab Al bustan Hotel 3",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12809358518",
-      "tags": {
-        "name": "rihab Al bustan Hotel 3 فندق رحاب البستان",
-        "name:ar": "فندق رحاب البستان 3",
-        "name:en": "rihab Al bustan Hotel 3",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8241566,
-        21.4129851
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق لؤلؤة الإيمان",
-      "name_en": "luluah al iman hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12809375060",
-      "tags": {
-        "name": "luluah al iman hotel فندق لؤلؤة الإيمان",
-        "name:ar": "فندق لؤلؤة الإيمان",
-        "name:en": "luluah al iman hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8237005,
-        21.4124715
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق زهرة الهجرة",
-      "name_en": "zahrat al hijrah hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12809375096",
-      "tags": {
-        "name": "فندق زهرة الهجرة",
-        "name:ar": "فندق زهرة الهجرة",
-        "name:en": "zahrat al hijrah hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8236407,
-        21.4123501
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق المسافر الهجرة",
-      "name_en": "al mosafir al hijrah hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12809375118",
-      "tags": {
-        "name": "al mosafir al hijrah hotel فندق المسافر الهجرة",
-        "name:ar": "فندق المسافر الهجرة",
-        "name:en": "al mosafir al hijrah hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8234437,
-        21.4123
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق مودة الحسنين",
-      "name_en": "mawaddat alhasanayn hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12809375130",
-      "tags": {
-        "name": "mawaddat alhasanayn hotel فندق مودة الحسنين",
-        "name:ar": "فندق مودة الحسنين",
-        "name:en": "mawaddat alhasanayn hotel",
-        "tourism": "hotel"
+        "addr:city": "المدينة المنورة",
+        "addr:housenumber": "7162",
+        "addr:street": "شارع أبي ذر الغفاري",
+        "internet_access": "wlan",
+        "name": "زها طيبة",
+        "name:ar": "زها طيبة",
+        "name:en": "Zaha Taiba",
+        "opening_hours": "24/7",
+        "tourism": "hotel",
+        "website": "https://www.booking.com/hotel/sa/zaha-taiba-medina2.ar.html"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8231615,
-        21.4121841
+        39.6144335,
+        24.4793789
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق مكارم الهجرة",
-      "name_en": "makarem alhijra hotel",
+      "name": "فندق منازل الحسن",
+      "name_en": "Manazel Al-Hassan Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12809375239",
+      "osm_id": "12000060469",
       "tags": {
-        "name": "makarem alhijra hotel فندق مكارم الهجرة",
-        "name:ar": "فندق مكارم الهجرة",
-        "name:en": "makarem alhijra hotel",
+        "name": "فندق منازل الحسن",
+        "name:en": "Manazel Al-Hassan Hotel",
+        "name:fa": "هتل منازل الحسن مدینه",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8233305,
-        21.4119662
+        39.6042577,
+        24.4697331
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "وردة عين شمس",
-      "name_en": "wardat Ain Shams Hotel",
+      "name": "GH Hotel",
+      "name_en": "GH Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12809459111",
+      "osm_id": "12366219801",
       "tags": {
-        "name": "وردة عين شمس",
-        "name:ar": "وردة عين شمس",
-        "name:en": "wardat Ain Shams Hotel",
+        "addr:postcode": "42314",
+        "addr:street": "Airport Road",
+        "internet_access": "wlan",
+        "name": "GH Hotel",
+        "phone": "+966 14 818 3493",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8231348,
-        21.4124201
+        39.6322558,
+        24.4834855
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق شروق المسك",
-      "name_en": "shrook al misk hotel",
+      "name": "فندق فيو المدينة",
+      "name_en": "View Al-Madinah Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12809498955",
+      "osm_id": "12558760468",
       "tags": {
-        "name": "shrook al misk hotel فندق شروق المسك",
-        "name:ar": "فندق شروق المسك",
-        "name:en": "shrook al misk hotel",
+        "name": "فندق فيو المدينة",
+        "name:en": "View Al-Madinah Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8231756,
-        21.4124981
+        39.6129842,
+        24.464286
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق لؤلؤة القصور الذهبية",
-      "name_en": "loloa al kosour al zahabia hotel",
+      "name": "فندق فندا المدينة",
+      "name_en": "Finda Al-Madinah Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12809498956",
+      "osm_id": "12558760469",
       "tags": {
-        "name": "loloa al kosour al zahabia hotel فندق لؤلؤة القصور الذهبية",
-        "name:ar": "فندق لؤلؤة القصور الذهبية",
-        "name:en": "loloa al kosour al zahabia hotel",
+        "name": "فندق فندا المدينة",
+        "name:en": "Finda Al-Madinah Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8232146,
-        21.4126672
+        39.6134706,
+        24.4643104
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق لمار",
-      "name_en": "lamar hotel",
+      "name": "فندق معين طيبة",
+      "name_en": "Maien Taiba Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12809498957",
+      "osm_id": "12558760470",
       "tags": {
-        "name": "lamar hotel فندق لمار",
-        "name:ar": "فندق لمار",
-        "name:en": "lamar hotel",
+        "name": "فندق معين طيبة",
+        "name:en": "Maien Taiba Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8232306,
-        21.4128001
+        39.6129431,
+        24.4640028
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق الماسة هاني",
-      "name_en": "Al Massa Hani Hotel",
+      "name": "فندق ڤالي المدينة",
+      "name_en": "Valy Al-Madinah Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12811373896",
+      "osm_id": "12558760471",
       "tags": {
-        "name": "Al Massa Hani Hotel فندق الماسة هاني",
-        "name:ar": "فندق الماسة هاني",
-        "name:en": "Al Massa Hani Hotel",
+        "name": "فندق ڤالي المدينة",
+        "name:en": "Valy Al-Madinah Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8231937,
-        21.4125948
+        39.6134294,
+        24.464024
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق بيتي الذهبي",
-      "name_en": "baity al zahaby hotel",
+      "name": "فندق أرجوان الذهبي",
+      "name_en": "Goden Ergwan Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12811542903",
+      "osm_id": "12560531777",
       "tags": {
-        "name": "baity al zahaby hotel فندق بيتي الذهبي",
-        "name:ar": "فندق بيتي الذهبي",
-        "name:en": "baity al zahaby hotel",
+        "name": "فندق أرجوان الذهبي",
+        "name:en": "Goden Ergwan Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8234995,
-        21.4128939
+        39.6038436,
+        24.4707747
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق كادي الهجرة",
-      "name_en": "kadi al hijrah hotal",
+      "name": "فندق وقف عثمان بن عفان",
+      "name_en": "Waqf Outhman Bin Affan Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12811717746",
+      "osm_id": "12560532458",
       "tags": {
-        "name": "kadi al hijrah hotal فندق كادي الهجرة",
-        "name:ar": "فندق كادي الهجرة",
-        "name:en": "kadi al hijrah hotal",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8240038,
-        21.412852
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق لينا 1",
-      "name_en": "lina hotel 1",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12811717747",
-      "tags": {
-        "name": "lina hotel 1 فندق لينا",
-        "name:ar": "فندق لينا 1",
-        "name:en": "lina hotel 1",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8234894,
-        21.4127937
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "زهور التاج",
-      "name_en": "zohoor al taj hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12811717754",
-      "tags": {
-        "name": "زهور التاج",
-        "name:ar": "زهور التاج",
-        "name:en": "zohoor al taj hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8237348,
-        21.4128677
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق لؤلؤة الدور",
-      "name_en": "luluat al door hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12811717783",
-      "tags": {
-        "name": "فندق لؤلؤة الدور",
-        "name:ar": "فندق لؤلؤة الدور",
-        "name:en": "luluat al door hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8232608,
-        21.4130006
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق هجرة الخير",
-      "name_en": "hijrat alkhayr Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12811717792",
-      "tags": {
-        "name": "فندق هجرة الخير",
-        "name:ar": "فندق هجرة الخير",
-        "name:en": "hijrat alkhayr Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8234284,
-        21.4130037
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق الجعفرية 1",
-      "name_en": "al jafaria hotel 1",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12811766849",
-      "tags": {
-        "name": "al jafaria hotel 1 فندق الجعفرية",
-        "name:ar": "فندق الجعفرية 1",
-        "name:en": "al jafaria hotel 1",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8237074,
-        21.4126634
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق بيسان الماسي",
-      "name_en": "besan almasi hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12811956553",
-      "tags": {
-        "name": "besan almasi hotel فندق بيسان الماسي",
-        "name:ar": "فندق بيسان الماسي",
-        "name:en": "besan almasi hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8223948,
-        21.4118582
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق بيسان",
-      "name_en": "bessan hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12811956559",
-      "tags": {
-        "name": "bessan hotel فندق بيسان",
-        "name:ar": "فندق بيسان",
-        "name:en": "bessan hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8222824,
-        21.4116716
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق فهد",
-      "name_en": "fahad hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12811956599",
-      "tags": {
-        "name": "فندق فهد",
-        "name:ar": "فندق فهد",
-        "name:en": "fahad hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8228702,
-        21.412175
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق هبة الهجرة",
-      "name_en": "hibba al hijra hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12811972077",
-      "tags": {
-        "name": "فندق هبة الهجرة",
-        "name:ar": "فندق هبة الهجرة",
-        "name:en": "hibba al hijra hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8227649,
-        21.4119035
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق افواج التوبة",
-      "name_en": "afwaj al tawba hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12811972113",
-      "tags": {
-        "name": "afwaj al tawba hotel فندق افواج التوبة",
-        "name:ar": "فندق افواج التوبة",
-        "name:en": "afwaj al tawba hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8228906,
-        21.4124051
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق جوهرة فاز",
-      "name_en": "jawharat faz hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12811972114",
-      "tags": {
-        "name": "jawharat faz hotel فندق جوهرة فاز",
-        "name:ar": "فندق جوهرة فاز",
-        "name:en": "jawharat faz hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.822835,
-        21.4120836
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق ندی الهجرة",
-      "name_en": "nada al hijra hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12811972115",
-      "tags": {
-        "name": "nada al hijra hotel فندق ندی الهجرة",
-        "name:ar": "فندق ندی الهجرة",
-        "name:en": "nada al hijra hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8225694,
-        21.4117309
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق الشموع",
-      "name_en": "al shamooa hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12812121181",
-      "tags": {
-        "name": "al shamooa hotel فندق الشموع",
-        "name:ar": "فندق الشموع",
-        "name:en": "al shamooa hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8227222,
-        21.4125994
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق زوار الحرمين",
-      "name_en": "zowar al haramain Hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12812203206",
-      "tags": {
-        "name": "زوارالحرمين",
-        "name:ar": "فندق زوار الحرمين",
-        "name:en": "zowar al haramain Hotel",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.82295,
-        21.4126651
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق جلال المتميز 2",
-      "name_en": "jalal mutamaiz Hotel 2",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12812341894",
-      "tags": {
-        "name": "jalal mutamaiz Hotel 2 فندق جلال المتميز",
-        "name:ar": "فندق جلال المتميز 2",
-        "name:en": "jalal mutamaiz Hotel 2",
-        "tourism": "hotel"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        39.8228491,
-        21.4125555
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "name": "فندق زهرة المسيال",
-      "name_en": "zahret almisyal hotel",
-      "type": "Hotel",
-      "icon": "fa-hotel",
-      "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12812341895",
-      "tags": {
-        "name": "فندق زهرة المسيال",
-        "name:ar": "فندق زهرة المسيال",
-        "name:en": "zahret almisyal hotel",
-        "tourism": "hotel"
+        "addr:city": "Al Madinah al Munawwarah",
+        "addr:housenumber": "176",
+        "addr:street": "شارع أبو دجانة الأنصاري",
+        "name": "فندق وقف عثمان بن عفان",
+        "name:en": "Waqf Outhman Bin Affan Hotel",
+        "tourism": "hotel",
+        "website": "https://almokhtaragroup.com/waqf-outhman-bin-affan-hotel/"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8230851,
-        21.4128158
+        39.6066661,
+        24.4736303
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق زهرة المسيال",
-      "name_en": "zahret almisyal hotel",
+      "name": "فندق الحياة العالمي",
+      "name_en": "Al-Hayatt International Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12812346304",
+      "osm_id": "12560532459",
       "tags": {
-        "name": "فندق زهرة المسيال",
-        "name:ar": "فندق زهرة المسيال",
-        "name:en": "zahret almisyal hotel",
+        "name": "فندق الحياة العالمي",
+        "name:en": "Al-Hayatt International Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8231226,
-        21.412872
+        39.6069917,
+        24.4736539
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق اساور التاج",
-      "name_en": "asawir altaj hotel",
+      "name": "فندق جراند بلازا بدر المقام",
+      "name_en": "Grand Plaza Badr Al-Maqam Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "12812346306",
+      "osm_id": "12560654869",
       "tags": {
-        "name": "asawir altaj hotel فندق اساور التاج",
-        "name:ar": "فندق اساور التاج",
-        "name:en": "asawir altaj hotel",
+        "name": "فندق جراند بلازا بدر المقام",
+        "name:en": "Grand Plaza Badr Al-Maqam Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8228464,
-        21.4126779
+        39.612597,
+        24.4720789
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "فندق مآثر اللؤلؤة",
-      "name_en": "فندق مآثر اللؤلؤة",
+      "name": "فندق برج المرجان العالمي",
+      "name_en": "Al-Murjan International Tower Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "13235955401",
+      "osm_id": "12560824537",
       "tags": {
-        "name": "فندق مآثر اللؤلؤة",
+        "name": "فندق برج المرجان العالمي",
+        "name:en": "Al-Murjan International Tower Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8228097,
-        21.413984
+        39.604551,
+        24.4654882
       ]
     }
   },
   {
     "type": "Feature",
     "properties": {
-      "name": "ساري",
-      "name_en": "ساري",
+      "name": "فندق ندى السلام",
+      "name_en": "Nada Al-Salam Hotel",
       "type": "Hotel",
       "icon": "fa-hotel",
       "description": "Hotel di area Masjidil Haram.",
-      "osm_id": "13298984084",
+      "osm_id": "12560824538",
       "tags": {
-        "addr:city": "مكه",
-        "addr:postcode": "24235",
-        "addr:street": "العزيزيه",
-        "brand": "فندق",
-        "email": "as6155788@gmail.com",
-        "name": "ساري",
+        "name": "فندق ندى السلام",
+        "name:en": "Nada Al-Salam Hotel",
         "tourism": "hotel"
       }
     },
     "geometry": {
       "type": "Point",
       "coordinates": [
-        39.8508446,
-        21.4206391
+        39.6045361,
+        24.4657311
       ]
     }
   }
